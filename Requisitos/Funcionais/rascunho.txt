@@ -1,0 +1,21 @@
+estetica
+nome
+imagens
+
+
+---
+loja de bolos
+cupcake
+
+jogo para fazer seu doce
+
+---
+Cadastro:
+
+Endereço (bairro, rua, cep, nº, complemento(bloco,andar,nº apart){apartamento})
+Email
+senha
+Nome
+
+forma de pagamento
+
