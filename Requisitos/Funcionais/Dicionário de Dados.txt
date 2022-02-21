@@ -1,0 +1,86 @@
+;/
+Pra fazer:
+1 DCU ┘
+2 Prototipo ┘
+3 Diagrama classe ┘
+4 Dicionario de dados (Json)
+
+Atualizado:
+prototipo -
+DCU -
+criticidade -
+----------------------------------------------------------------------------------
+USUARIO:
+
+POST - Create
+{
+"id":1,
+"email":"teste123@gmail.com",
+"senha":"1234567890",
+"nome":"Matheus Beli",
+
+"rua":"Rua Senai",
+"bairro":"Jardim Mauá",
+"cep":"12357-582",
+"numerocasa":"23",
+"complemento":"casa verde",
+
+"nometitular":"MATHEUS B.",
+"numerocartao":"5438 8200 1234 5678",
+"data":"08/21",
+"vali":"10/24",
+"cod":"123",
+
+"pix":"41226f99-2f4f-486d-b515-b0"
+}
+
+GET - Read
+{
+"id":1,
+"email":"teste123@gmail.com",
+"senha":"1234567890",
+"nome":"Matheus Beli",
+
+"rua":"Rua Senai",
+"bairro":"Jardim Mauá",
+"cep":"12357-582",
+"numerocasa":"23",
+"complemento":"casa verde",
+
+"nometitular":"MATHEUS B.",
+"numerocartao":"5438 8200 1234 5678",
+"data":"08/21",
+"vali":"10/24",
+"cod":"123",
+
+"pix":"41226f99-2f4f-486d-b515-b0"
+}
+
+PUT - Update
+{
+"id":1,
+"email":"teste123@gmail.com",
+"senha":"1234567890",
+"nome":"Matheus Beli",
+
+"rua":"Rua Senai",
+"bairro":"Jardim Mauá",
+"cep":"12357-582",
+"numerocasa":"23",
+"complemento":"casa verde",
+
+"nometitular":"MATHEUS B.",
+"numerocartao":"5438 8200 1234 5678",
+"data":"08/21",
+"vali":"10/24",
+"cod":"123",
+
+"pix":"41226f99-2f4f-486d-b515-b0"
+}
+
+DEL - Delete
+{
+"id":"7"
+}
+
+----------------------------------------------------------------------------------
