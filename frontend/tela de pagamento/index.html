@@ -41,15 +41,23 @@
     <div class="pagamento" id="pagamento"  visibility="hidden">
         <h1>Selecione uma forma de pagamento</h1>
 
-        <div id="check">
-            <input type="checkbox"/>
+        <div>
+            <input type="checkbox" onchange="options(this)" id="check"/>
             <text>Cartão de Débito</text>
+            <div id="cartao_d">
+                <button>+</button>
+                <button id="salvo"></button>
+            </div>
         </div>
 
 
         <div>
-            <input type="checkbox"/>
+            <input type="checkbox" onchange="options(this)" id="check"/>
             <text>Cartão de Crédito</text>
+            <div id="cartao_c">
+                <button>+</button>
+                <button id="salvo"></button>
+            </div>
         </div>
 
 
@@ -112,10 +120,11 @@
     
     <div class="confirmacao">
         <h1>Está tudo correto?</h1>
-        <button id="vol" onclick="voltar()">Voltar</button>
-        <button id="prox" onclick="proximo()">Próximo</button>
+        <button id="vol" onclick="voltar()">Não</button>
+        <button id="prox" onclick="proximo()">Sim</button>
     </div>
-   <!-- <div class="final">
+   <div class="final">
+       <h1>Seu pedido será aceito quando o pagamento for processado, obrigado pela compra</h1>
         <img src="https://www.comidaereceitas.com.br/wp-content/uploads/2020/08/bolo_guirlanda.jpg"/>
         <div class="info">
             <text>Bolo de Frutas</text>
@@ -124,7 +133,7 @@
             <text>Total: R$40,00</text>
 
             <text>Forma de pagamento: </text>
-    </div> -->
+    </div>
 </body>
 <script src="index.js"></script>
 </html>
