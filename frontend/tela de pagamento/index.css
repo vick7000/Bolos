@@ -30,13 +30,28 @@ ol {
 
 .bolinhas li {
     display: flex;
-    background-color: #7D5A5A;
     width: 40px;
     height: 40px;
     border-radius: 40px;
     align-items: center;
     justify-content: center;
     border: solid #7D5A5A;
+}
+
+#b1 {
+    background-color: #7D5A5A;
+}
+
+#b2 {
+    background-color: #FAF2F2;
+}
+
+#b3 {
+    background-color: #FAF2F2;
+}
+
+#b4 {
+    background-color: #FAF2F2;
 }
 
 .bolo {
@@ -66,6 +81,7 @@ ol {
     cursor: pointer;
     color: #FAF2F2;
     font-family: 'Pinky Cupid', regular;
+    font-size: 20px;
 }
 
 h1 {
@@ -79,11 +95,65 @@ h1 {
     justify-content: center;
     grid-template-rows: 210px 50px 50px 50px 50px;
     text-align: center;
-    
+    font-size: 19px;
 }
 
 .info img {
     width: 270px;
     height: 170px;
     border-radius: 150px;
+}
+
+.pagamento {
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    background-color: #F3E1E1;
+    width: 45%;
+    height: 60%;
+    color: #7D5A5A;
+    grid-template-rows: 80px 80px 80px 80px 80px;
+    grid-template-columns: 400px 400px;
+}
+
+.pagamento div {
+    background-color: #FAF2F2;
+    height: 50px;
+    width: 300px;
+    margin-top: 10%;
+    margin-left: 20%;
+    text-align: center;
+}
+
+.pagamento button {
+    display: flex;
+    width: 150px;
+    height: 50px;
+    align-self: flex-end;
+    margin-left: 150px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #7D5A5A;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    color: #FAF2F2;
+    font-family: 'Pinky Cupid', regular;
+    font-size: 20px;
+}
+
+.confirmacao {
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    background-color: #F3E1E1;
+    width: 45%;
+    height: 60%;
+    color: #7D5A5A;
+    grid-template-rows: 80px 80px 80px 80px 80px;
+    grid-template-columns: 400px 400px;
 }
