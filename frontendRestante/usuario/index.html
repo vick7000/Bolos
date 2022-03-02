@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Usuario</title>
+</head>
+<body>
+    <header>
+        <div class="lista">
+            <ul>
+                <li>Catalogo</li>
+                <li>Home</li>
+                <li>LOGO</li>
+                <li>Monte seu Bolo</li>
+                <li>Login</li>
+            </ul>
+        </div>
+    </header>
+    <section class="maain">
+        <div class="dados">
+            <div class="pessoal">
+                <h2>Dados Pessoais</h2>
+
+                <input type="text" placeholder="Nome Completo..." id="nome">
+                <input type="email" placeholder="Email..." id="cadEmail">
+                <input type="password" placeholder="Senha..." id="senha">
+            </div>
+
+            
+            <div class="endereco">
+                <h2>Endereço</h2>
+                <input type="text" placeholder="Rua..." id="rua">
+                <input type="text" placeholder="Bairro..." id="bairro">
+                <input type="text" placeholder="CEP..." id="cep">
+                <input type="text" placeholder="Complemento (Opcional)..." id="comp">
+                <button type="button" id="sign" onclick="alterando()">Alterar</button>
+            </div>
+
+            <div class="pagamentos">
+                <h2>Cartao de débito/crédito</h2>
+
+                <input type="text" placeholder="Nome Titular..." id="titular">
+                <input type="number" placeholder="Número do cartão..." id="numero">
+                <input type="text" placeholder="Data de emissão..." id="emissao">
+                <input type="text" placeholder="Data de validade..." id="validade">
+                <input type="number" placeholder="Código de segurança..." id="cod">
+
+                <h2>PIX</h2>
+
+                <input type="text" placeholder="PIX..." id="pix">
+
+                
+            </div>
+            
+        </div>
+        
+    </section>
+</body>
+<script src="script.js"></script>
+</html>

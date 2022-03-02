@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../login/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <div class="lista">
+            <ul>
+                <li>Catalogo</li>
+                <li>Home</li>
+                <li>LOGO</li>
+                <li>Monte seu Bolo</li>
+                <li>Login</li>
+            </ul>
+        </div>
+    </header>
+    <section class="comando">
+        <div class="info">
+            <h1>Entre na sua conta</h1>
+            <!-- <button onclick="O()">UP</button> -->
+            <h3>Não tem conta? <a href="#" onclick="caad()" id="link" >Cadastre-se</a></h3>
+        </div>
+
+        <div class="cad modal">
+            <div class="modal-content">
+                <img src="../assets/cancelar.png" alt="" class="x">
+                <div class="pessoal">
+                    <h2>Dados Pessoais</h2>
+
+                    <input type="text" placeholder="Nome Completo..." id="nome">
+                    <input type="email" placeholder="Email..." id="cadEmail">
+                    <input type="password" placeholder="Senha..." id="senha">
+                </div>
+    
+                <div class="endereco">
+                    <input type="text" placeholder="Rua..." id="rua">
+                    <input type="text" placeholder="Número..." id="num">
+                    <input type="text" placeholder="Bairro..." id="bairro">
+                    <input type="text" placeholder="CEP..." id="cep">
+                    <input type="text" placeholder="Complemento (Opcional)..." id="comp">
+                </div>
+    
+                <div class="pagamentos">
+                    <h2>Cartao de débito/crédito</h2>
+    
+                    <input type="text" placeholder="Nome Titular..." id="titular">
+                    <input type="text" placeholder="Número do cartão..." id="numero">
+                    <input type="text" placeholder="Data de emissão..." id="emissao">
+                    <input type="text" placeholder="Data de validade..." id="validade">
+                    <input type="text" placeholder="Código de segurança..." id="cod">
+    
+                    <h2>PIX</h2>
+    
+                    <input type="text" placeholder="PIX..." id="pix">
+
+                    <button type="button" id="sign" onclick="cadastro()">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="dados">
+            <input type="email" placeholder="Email..." id="email">
+            <input type="password" placeholder="Senha..." id="psw">
+            <button type="button" id="btn" onclick="login()">Entrar</button>
+
+        </div>
+
+    </section>
+
+</body>
+<script src="script.js"></script>
+</html>
