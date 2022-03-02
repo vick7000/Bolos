@@ -41,7 +41,7 @@
     <div class="pagamento" id="pagamento"  visibility="hidden">
         <h1>Selecione uma forma de pagamento</h1>
 
-        <div>
+        <div id="pag">
             <input type="checkbox" onchange="options(this)" id="check"/>
             <text>Cartão de Débito</text>
             <div id="cartao_d">
@@ -51,65 +51,66 @@
         </div>
 
 
-        <div>
-            <input type="checkbox" onchange="options(this)" id="check"/>
+        <div id="pag">
+            <input type="checkbox" onchange="options(this)" id="check2"/>
             <text>Cartão de Crédito</text>
             <div id="cartao_c">
-                <button>+</button>
+                <button onclick="adicionar()">+</button>
                 <button id="salvo"></button>
             </div>
         </div>
 
+        
 
-        <div>
+        <div id="pag">
             <input type="checkbox"/>
             <text>Pix</text>
         </div>
 
 
-        <div>
+        <div id="pag">
             <input type="checkbox"/>
             <text>Mercado Pago</text>
         </div>
 
 
-        <div>
+        <div id="pag">
             <input type="checkbox"/>
             <text>Boleto Bancário</text>
         </div>
 
 
-        <div>
+        <div id="pag">
             <input type="checkbox"/>
             <text>PayPal</text>
         </div>
 
 
-        <div>
+        <div id="pag">
             <input type="checkbox"/>
             <text>Depósito Banco Bradesco</text>
         </div>
 
 
-        <div>
+        <div id="pag">
             <input type="checkbox"/>
             <text>Depósito Banco Santander</text>
         </div>
 
 
-        <div>
+        <div id="pag">
             <input type="checkbox"/>
             <text>Depósito Banco do Brasil</text>
         </div>
 
 
-        <div>
+        <div id="pag">
             <input type="checkbox"/>
             <text>Depósito Banco Itaú</text>
         </div>
 
 
-        <div>
+        <div id="pag">
             <input type="checkbox"/>
             <text>Depósito Banco HSBC</text>
         </div>
@@ -118,6 +119,25 @@
         <button id="prox" onclick="proximo()">Próximo</button>
     </div>
     
+    <div class="mcredito">
+        <text>Nome do Titular do Cartão</text>
+        <input id="nome"/>
+        <text>Número do Cartão</text>
+        <input id="numero"/>
+        <text>Data de Expiração</text>
+        <input id="mes" placeholder="MM"/>
+        <text id="barra">/</text>
+        <input id="ano" placeholder="AA"/>
+        <text id="t">CVV</text>
+        <input id="cvv"/>
+        <div class="endereco">
+            <h3>Endereço para cobrança</h3>
+            <text>Avenida das Ruas, 5010</text>
+            <text>Jaguariuna-São Paulo 13587-203</text>
+        </div>
+    </div>
+        
+
     <div class="confirmacao">
         <h1>Está tudo correto?</h1>
         <button id="vol" onclick="voltar()">Não</button>

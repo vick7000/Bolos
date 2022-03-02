@@ -92,21 +92,43 @@ function voltar() {
 }
 
 function options(e) {
+    let check = document.getElementById("check");
+    let check2 = document.getElementById("check2");
+    
 
     var cartaod = document.getElementById("cartao_d");
     var cartaoc = document.getElementById("cartao_c");
     
-    if(e.checked == true) {
+    if(check.checked == true) {
+
         cartaod.visibility = "visible";
         cartaod.style.display = "grid";
 
-        cartaoc.visibility = "visible";
-        cartaoc.style.display = "grid";
     } else {
+
         cartaod.visibility = "hidden";
         cartaod.style.display = "none";
 
+    }
+
+    if(check2.checked == true) { 
+        cartaoc.visibility = "visible";
+        cartaoc.style.display = "grid";
+    } else {
+
         cartaoc.visibility = "hidden";
         cartaoc.style.display = "none";
+
     }
+}
+
+function adicionar() {
+    let mcredito = document.querySelector(".mcredito");
+    let pagamento = document.querySelector(".pagamento");
+
+    mcredito.visibility = "visible";
+    mcredito.style.display = "flex";
+
+    
+
 }

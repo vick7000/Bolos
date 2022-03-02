@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 100%;
 }
 
 html{
@@ -48,6 +49,10 @@ html{
                 "item4  item4"
     ;
 
+}
+
+.x {
+    cursor: pointer;
 }
 
 .item1{
