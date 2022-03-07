@@ -37,11 +37,13 @@ html{
 .lista a {
     width: 250px;
     margin-left: 120px;
+    cursor: pointer;
 }
 
 #logo {
     width: 230px;
     height: 190px;
+    cursor: pointer;
 }
 
 .bloco1 {

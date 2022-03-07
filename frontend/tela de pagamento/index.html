@@ -120,21 +120,37 @@
     </div>
     
     <div class="mcredito">
-        <text>Nome do Titular do Cartão</text>
-        <input id="nome"/>
-        <text>Número do Cartão</text>
-        <input id="numero"/>
-        <text>Data de Expiração</text>
-        <input id="mes" placeholder="MM"/>
-        <text id="barra">/</text>
-        <input id="ano" placeholder="AA"/>
-        <text id="t">CVV</text>
-        <input id="cvv"/>
-        <div class="endereco">
-            <h3>Endereço para cobrança</h3>
-            <text>Avenida das Ruas, 5010</text>
-            <text>Jaguariuna-São Paulo 13587-203</text>
+        <div class="content">
+            <text>Nome do Titular do Cartão</text>
+            <input id="nome"/>
+            <text>Número do Cartão</text>
+            <input id="numero"/>
+            <div id="data">
+                <div id="d">
+                    <label>Data de Expiração</label>
+                    <input id="mes" placeholder="MM"/>
+                    <span id="barra">/</span>
+                    <input id="ano" placeholder="AA"/>
+                    <div id="cvv">
+                        <label id="t">CVV</label>
+                         <input id="cv"/>
+                    </div>
+                </div> 
+            </div>
+                
+            
+                <h3>Endereço para cobrança</h3>
+                <text>Avenida das Ruas, 5010</text>
+                <text>Jaguariuna-São Paulo 13587-203</text>
+            
+            <div class="botoes">
+                <button  onclick="cancelar()">Cancelar</button>
+                <button>Confirmar</button>
+            </div>
+                
+            
         </div>
+        
     </div>
         
 

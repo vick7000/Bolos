@@ -124,11 +124,14 @@ function options(e) {
 
 function adicionar() {
     let mcredito = document.querySelector(".mcredito");
-    let pagamento = document.querySelector(".pagamento");
 
     mcredito.visibility = "visible";
     mcredito.style.display = "flex";
+}
 
-    
+function cancelar() {
+    let mcredito = document.querySelector(".mcredito");
 
+    mcredito.visibility = "hidden";
+    mcredito.style.display = "none";
 }
