@@ -56,7 +56,7 @@
             <text>Cartão de Crédito</text>
             <div id="cartao_c">
                 <button onclick="adicionar()">+</button>
-                <button id="salvo"></button>
+                
             </div>
         </div>
 
@@ -127,14 +127,17 @@
             <input id="numero"/>
             <div id="data">
                 <div id="d">
-                    <label>Data de Expiração</label>
-                    <input id="mes" placeholder="MM"/>
-                    <span id="barra">/</span>
-                    <input id="ano" placeholder="AA"/>
                     <div id="cvv">
+                        <label>Data de Expiração</label>
                         <label id="t">CVV</label>
-                         <input id="cv"/>
                     </div>
+                    <div id="dat">
+                        <input id="mes" placeholder="MM"/>
+                        <span id="barra">/</span>
+                        <input id="ano" placeholder="AA"/>
+                        <input id="cv"/>
+                    </div>
+                    
                 </div> 
             </div>
                 
@@ -145,7 +148,7 @@
             
             <div class="botoes">
                 <button  onclick="cancelar()">Cancelar</button>
-                <button>Confirmar</button>
+                <button onclick="AdicionarCartao()">Confirmar</button>
             </div>
                 
             

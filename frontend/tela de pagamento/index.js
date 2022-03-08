@@ -135,3 +135,24 @@ function cancelar() {
     mcredito.visibility = "hidden";
     mcredito.style.display = "none";
 }
+
+function AdicionarCartao() {
+    let salvo = document.createElement("div");
+
+    let nome = document.getElementById("nome").value;
+    let numero = document.getElementById("numero").value;
+    let mes = document.getElementById("mes").value;
+    let ano = document.getElementById("ano").value;
+    let cvv = document.getElementById("cv").value;
+
+    salvo.setAttribute("id", "salvo");
+
+    salvo.innerHTML = nome + numero + mes + ano + cvv
+
+
+    
+
+    let cartao = document.getElementById("cartao_c");
+    cartao.appendChild(salvo)
+
+}
