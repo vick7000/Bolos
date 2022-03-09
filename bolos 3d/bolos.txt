@@ -1,0 +1,61 @@
+bolo retangulo choco ±
+bolo cilindo choco ±
+
+bolo retangulo limao
+bolo cilindo limao
+--------------------
+bolo retangulo choco, cobertura branca
+bolo cilindo choco, cobertura branca
+
+bolo retangulo limao, cobertura rosa
+bolo cilindo limao, cobertura rosa
+~~~~~~~~~~~~~~~~~~
+bolo retangulo choco, cobertura rosa
+bolo cilindo choco, cobertura rosa
+
+bolo retangulo limao, cobertura branca
+bolo cilindo limao, cobertura branca
+--------------------------------------
+bolo retangulo choco, cobertura branca, morango
+bolo cilindo choco, cobertura branca, morango
+
+bolo retangulo limao, cobertura rosa, morango
+bolo cilindo limao, cobertura rosa, morango
+
+bolo retangulo choco, cobertura rosa, morango
+bolo cilindo choco, cobertura rosa, morango
+
+bolo retangulo limao, cobertura branca, morango
+bolo cilindo limao, cobertura branca, morango
+~~~~~~~~~~~~~~~~~~
+bolo retangulo choco, cobertura branca, chocolate
+bolo cilindo choco, cobertura branca, chocolate
+
+bolo retangulo limao, cobertura rosa, chocolate
+bolo cilindo limao, cobertura rosa, chocolate
+
+bolo retangulo choco, cobertura rosa, chocolate
+bolo cilindo choco, cobertura rosa, chocolate
+
+bolo retangulo limao, cobertura branca, chocolate
+bolo cilindo limao, cobertura branca, chocolate
+
+chocolate
+bolo
+0.566357
+0.192237
+0.014213
+corb
+0.302485
+0.087958
+0.021785
+
+limao
+bolo
+0.128571
+0.378572
+1.0
+corb
+0.215931
+0.627661
+0.586031

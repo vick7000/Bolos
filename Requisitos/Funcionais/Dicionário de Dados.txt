@@ -10,7 +10,7 @@ prototipo -
 DCU -
 criticidade -
 ----------------------------------------------------------------------------------
-USUARIO:
+USUARIO 1:
 
 POST - Create
 {
@@ -35,52 +35,98 @@ POST - Create
 }
 
 GET - Read
+{"id":1,"email":"teste123@gmail.com","senha":"1234567890","nome":"Matheus Beli","rua":"Rua Senai","bairro":"Jardim Mauá","cep":"12357-582","numerocasa":"23","complemento":"casa verde","nometitular":"MATHEUS B.","numerocartao":"5438 8200 1234 5678","data":"08/21","vali":"10/24","cod":"123","pix":"41226f99-2f4f-486d-b515-b0"}
+
+PUT - Update (altera tudo que estava na parte de cadastro)
 {
 "id":1,
-"email":"teste123@gmail.com",
-"senha":"1234567890",
-"nome":"Matheus Beli",
-
-"rua":"Rua Senai",
-"bairro":"Jardim Mauá",
-"cep":"12357-582",
-"numerocasa":"23",
-"complemento":"casa verde",
-
-"nometitular":"MATHEUS B.",
-"numerocartao":"5438 8200 1234 5678",
-"data":"08/21",
-"vali":"10/24",
-"cod":"123",
-
-"pix":"41226f99-2f4f-486d-b515-b0"
-}
-
-PUT - Update
-{
-"id":1,
-"email":"teste123@gmail.com",
-"senha":"1234567890",
-"nome":"Matheus Beli",
-
-"rua":"Rua Senai",
-"bairro":"Jardim Mauá",
-"cep":"12357-582",
-"numerocasa":"23",
-"complemento":"casa verde",
-
-"nometitular":"MATHEUS B.",
-"numerocartao":"5438 8200 1234 5678",
-"data":"08/21",
-"vali":"10/24",
-"cod":"123",
-
-"pix":"41226f99-2f4f-486d-b515-b0"
+"email":"mathBe12@gmail.com",
+"senha":"0987654321",
 }
 
 DEL - Delete
 {
-"id":"7"
+"id":"1"
 }
 
 ----------------------------------------------------------------------------------
+USUARIO 2:
+
+POST - Create
+{
+"id":2,
+"email":"vikt@gmail.com",
+"senha":"caç901928374-56",
+"nome":"Victória Rosa",
+
+"rua":"Rua São João",
+"bairro":"Miguel Martini",
+"cep":"13578-124",
+"numerocasa":"03",
+"complemento":"casa branca",
+
+"nometitular":"VICTORIA R.",
+"numerocartao":"5678 8200 5438 4019",
+"data":"02/22",
+"vali":"11/25",
+"cod":"183",
+
+"pix":"61448f66-3f9f-248d-c434-c2"
+}
+
+GET - Read
+
+PUT - Update
+{
+"rua":"Rua Abobrinha",
+"bairro":"Campi",
+"cep":"11548-231",
+"numerocasa":"03",
+"complemento":"casa verde"
+}
+
+DEL - Delete
+{
+"id":"2"
+}
+
+----------------------------------------------------------------------------------
+USUARIO 3:
+
+POST - Create
+{
+"id":3,
+"email":"gabriFR#21@gmail.com",
+"senha":"456159357852",
+"nome":"Gabriel Alex",
+
+"rua":"Rua Tocantinis João",
+"bairro":"cENTRO",
+"cep":"12450-003",
+"numerocasa":"03",
+"complemento":"casa branca",
+
+"nometitular":"GABRIEL A.",
+"numerocartao":"3409 2583 7843 4739",
+"data":"05/20",
+"vali":"05/23",
+"cod":"767",
+
+"pix":""
+}
+
+GET - Read
+
+PUT - Update
+{
+"nometitular":"GABRIEL A. S.",
+"numerocartao":"3409 2583 7843 4739",
+"data":"02/22",
+"vali":"01/26",
+"cod":"765",
+}
+
+DEL - Delete
+{
+"id":"3"
+}
