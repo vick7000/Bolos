@@ -3,6 +3,7 @@ shift+MMB cima baixo
 crtl+MMB lado
 capslock+MMB ampliar
 shift+crtl+MMB gira
+SHIFT+A criar novos objetos
 
 (a) seleciona o cubo
 (s) aumenta e diminui o tamanho do obj selecionado
