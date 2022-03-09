@@ -38,6 +38,8 @@
         <button id="prox" onclick="proximo()">Sim</button>
         <button>Não</button>
     </div>
+
+    
     <div class="pagamento" id="pagamento"  visibility="hidden">
         <h1>Selecione uma forma de pagamento</h1>
 
@@ -45,8 +47,8 @@
             <input type="checkbox" onchange="options(this)" id="check"/>
             <text>Cartão de Débito</text>
             <div id="cartao_d">
-                <button>+</button>
-                <button id="salvo"></button>
+                <button id="bd" onclick="adicionar()">+</button>
+                
             </div>
         </div>
 
@@ -55,7 +57,7 @@
             <input type="checkbox" onchange="options(this)" id="check2"/>
             <text>Cartão de Crédito</text>
             <div id="cartao_c">
-                <button onclick="adicionar()">+</button>
+                <button id="bc" onclick="adicionar()">+</button>
                 
             </div>
         </div>
@@ -141,6 +143,7 @@
                 </div> 
             </div>
                 
+            
             
                 <h3>Endereço para cobrança</h3>
                 <text>Avenida das Ruas, 5010</text>

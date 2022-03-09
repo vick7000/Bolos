@@ -148,9 +148,9 @@ h1 {
     position: relative;
     right: 20%;
     width: 300px;
-    height: 150px;
+    height: 200px;
     color: #7D5A5A;
-    grid-template-rows: 80px 60px;
+    overflow: auto;
 }
 
 #cartao_d button {
@@ -166,7 +166,7 @@ h1 {
     position: relative;
     right: 20%;
     width: 300px;
-    height: 300px;
+    height: 200px;
     color: #7D5A5A;
     overflow: auto;
 }
@@ -303,14 +303,38 @@ h1 {
 }
 
 #salvo {
-    background-image: linear-gradient(to right ,rgb(43, 0, 184), rgb(0, 0, 251));
+    background-image: linear-gradient(to right ,rgb(241, 209, 209),rgb(252, 173, 173));
     background-size: cover;
     height: 90px;
     width: 100%;
     margin-left: 0;
     cursor: pointer;
     color: white;
-    justify-content: space-around;
+    display: flex;
+}
+
+#inf1 {
+    position: relative;
+    left: 20px;
+    top: 20px;
+    font-size: 18px;
+    height: 20px;
+}
+
+#inf2 {
+    position: relative;
+    right: 20px;
+    top: 50px;
+    font-size: 15px;
+    height: 20px;
+}
+
+#logo {
+    background-image: url("../assets/mcl.png");
+    background-size: cover;
+    width: 90px;
+    height: 50px;
+    top: 10px;
 }
 
 .confirmacao {

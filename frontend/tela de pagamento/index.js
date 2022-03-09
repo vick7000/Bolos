@@ -138,21 +138,48 @@ function cancelar() {
 
 function AdicionarCartao() {
     let salvo = document.createElement("div");
+    let inf1 = document.createElement("span");
+    let inf2 = document.createElement("span");
+    let logo = document.createElement("span");
+    let mcredito = document.querySelector(".mcredito");
+    let check = document.getElementById("check");
+    let check2 = document.getElementById("check2");
 
     let nome = document.getElementById("nome").value;
     let numero = document.getElementById("numero").value;
     let mes = document.getElementById("mes").value;
     let ano = document.getElementById("ano").value;
-    let cvv = document.getElementById("cv").value;
 
     salvo.setAttribute("id", "salvo");
+    inf1.setAttribute("id", "inf1");
+    inf2.setAttribute("id", "inf2");
+    logo.setAttribute("id", "logo");
 
-    salvo.innerHTML = nome + numero + mes + ano + cvv
+    inf1.innerHTML = nome
+    inf2.innerHTML = numero + " " + mes + "/" + ano
+    logo.innerHTML = " "
 
-
-    
-
+    if(check2.checked == true && check.checked == false) {
     let cartao = document.getElementById("cartao_c");
     cartao.appendChild(salvo)
 
+    salvo.appendChild(inf1);
+    salvo.appendChild(inf2);
+    salvo.appendChild(logo);
+
+    mcredito.visibility = "hidden";
+    mcredito.style.display = "none";
+    } else if(check2.checked == false && check.checked == true){
+    let cartao2 = document.getElementById("cartao_d");
+    cartao2.appendChild(salvo)
+
+    salvo.appendChild(inf1);
+    salvo.appendChild(inf2);
+    salvo.appendChild(logo);
+
+    mcredito.visibility = "hidden";
+    mcredito.style.display = "none";
+    } else {
+        alert("Desmarque uma das opções")
+    }
 }
