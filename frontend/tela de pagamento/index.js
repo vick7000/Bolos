@@ -1,6 +1,7 @@
 let prox = document.getElementById("#prox");
 let vol = document.getElementById("#vol");
 
+const pro = document.querySelector(".pro");
 const bolo = document.querySelector(".bolo");
 const pagamento = document.querySelector(".pagamento");
 const confirmacao = document.querySelector(".confirmacao");
@@ -26,7 +27,8 @@ function proximo() {
     
         pagamento.visibility = "visible";
         pagamento.style.display = "grid";
-
+        pro.vibility = "hidden";
+        pro.style.display = "none";
        
         b2.style.backgroundColor = "#7D5A5A";
     }else if(atual == 3) {
@@ -94,31 +96,41 @@ function voltar() {
 function options(e) {
     let check = document.getElementById("check");
     let check2 = document.getElementById("check2");
-    
+    let check6 = document.getElementById("check6");
 
     var cartaod = document.getElementById("cartao_d");
     var cartaoc = document.getElementById("cartao_c");
+    var paypal = document.getElementById("paypal")
     
     if(check.checked == true) {
-
         cartaod.visibility = "visible";
         cartaod.style.display = "grid";
 
     } else {
-
         cartaod.visibility = "hidden";
         cartaod.style.display = "none";
-
     }
+
 
     if(check2.checked == true) { 
         cartaoc.visibility = "visible";
         cartaoc.style.display = "grid";
     } else {
-
         cartaoc.visibility = "hidden";
         cartaoc.style.display = "none";
+    }
 
+
+    if(check6.checked == true) {
+        paypal.visibility = "visible";
+        paypal.style.display = "grid";
+        pro.visibility = "visible";
+        pro.style.display = "grid";
+    } else {
+        paypal.visibility = "hidden";
+        paypal.style.display = "none";
+        pro.visibility = "hidden";
+        pro.style.display = "none";
     }
 }
 
@@ -159,27 +171,51 @@ function AdicionarCartao() {
     inf2.innerHTML = numero + " " + mes + "/" + ano
     logo.innerHTML = " "
 
-    if(check2.checked == true && check.checked == false) {
-    let cartao = document.getElementById("cartao_c");
-    cartao.appendChild(salvo)
 
-    salvo.appendChild(inf1);
-    salvo.appendChild(inf2);
-    salvo.appendChild(logo);
-
-    mcredito.visibility = "hidden";
-    mcredito.style.display = "none";
-    } else if(check2.checked == false && check.checked == true){
-    let cartao2 = document.getElementById("cartao_d");
-    cartao2.appendChild(salvo)
-
-    salvo.appendChild(inf1);
-    salvo.appendChild(inf2);
-    salvo.appendChild(logo);
-
-    mcredito.visibility = "hidden";
-    mcredito.style.display = "none";
+    if(nome !== 0 && numero !== 0 && mes !== 0 && ano !== 0) {
+        if(check2.checked == true && check.checked == false) {
+            let cartao = document.getElementById("cartao_c");
+            cartao.appendChild(salvo)
+        
+            salvo.appendChild(inf1);
+            salvo.appendChild(inf2);
+            salvo.appendChild(logo);
+        
+            mcredito.visibility = "hidden";
+            mcredito.style.display = "none";
+            } else if(check2.checked == false && check.checked == true){
+            let cartao2 = document.getElementById("cartao_d");
+            cartao2.appendChild(salvo)
+        
+            salvo.appendChild(inf1);
+            salvo.appendChild(inf2);
+            salvo.appendChild(logo);
+        
+            mcredito.visibility = "hidden";
+            mcredito.style.display = "none";
+            } else {
+                alert("Desmarque uma das opções")
+            }
     } else {
-        alert("Desmarque uma das opções")
+        alert("Preencha todos os campos")
+    }
+
+    document.getElementById("salvo").addEventListener("click", function (event){
+        if(check2.checked == true && check.checked == false) {
+            cartao_c.visibility = "hidden";
+            cartao_c.style.display = "none";
+
+            salvo.visibility = "visible";
+            salvo.style.display = "flex";
+
+            pro.visibility = "visible";
+            pro.style.display = "grid";
+        }
+    })
+}
+
+function addConta() {
+    if(window.confirm("Você abrirá a página de login do paypal, tem certeza?")) {
+        window.open("https://www.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-2T455261YH255244Y");
     }
 }

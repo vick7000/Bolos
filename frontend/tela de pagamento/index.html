@@ -58,11 +58,9 @@
             <text>Cartão de Crédito</text>
             <div id="cartao_c">
                 <button id="bc" onclick="adicionar()">+</button>
-                
             </div>
         </div>
 
-        
 
         <div id="pag">
             <input type="checkbox"/>
@@ -70,10 +68,7 @@
         </div>
 
 
-        <div id="pag">
-            <input type="checkbox"/>
-            <text>Mercado Pago</text>
-        </div>
+        
 
 
         <div id="pag">
@@ -83,42 +78,18 @@
 
 
         <div id="pag">
-            <input type="checkbox"/>
+            <input type="checkbox" onchange="options(this)" id="check6"/>
             <text>PayPal</text>
+            <div id="paypal">
+                <button id="ac" onclick="addConta()">Adicionar conta</button>
+            </div>
         </div>
 
 
-        <div id="pag">
-            <input type="checkbox"/>
-            <text>Depósito Banco Bradesco</text>
-        </div>
-
-
-        <div id="pag">
-            <input type="checkbox"/>
-            <text>Depósito Banco Santander</text>
-        </div>
-
-
-        <div id="pag">
-            <input type="checkbox"/>
-            <text>Depósito Banco do Brasil</text>
-        </div>
-
-
-        <div id="pag">
-            <input type="checkbox"/>
-            <text>Depósito Banco Itaú</text>
-        </div>
-
-
-        <div id="pag">
-            <input type="checkbox"/>
-            <text>Depósito Banco HSBC</text>
-        </div>
+        
 
         <button id="vol" onclick="voltar()">Voltar</button>
-        <button id="prox" onclick="proximo()">Próximo</button>
+        <button id="prox" class="pro" onclick="proximo()">Próximo</button>
     </div>
     
     <div class="mcredito">

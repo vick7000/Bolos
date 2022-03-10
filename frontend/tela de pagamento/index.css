@@ -111,7 +111,7 @@ h1 {
     width: 45%;
     height: 580px;
     color: #7D5A5A;
-    grid-template-rows: 80px 80px 80px 80px 80px;
+    grid-template-rows: 150px 150px 150px 100px;
     grid-template-columns: 400px 400px;
 }
 
@@ -119,7 +119,7 @@ h1 {
     background-color: #FAF2F2;
     height: 50px;
     width: 300px;
-    margin-top: 10%;
+    margin-top: 20%;
     margin-left: 20%;
     text-align: center;
 }
@@ -143,17 +143,18 @@ h1 {
     font-size: 20px;
 }
 
-#cartao_d {
+#cartao_d,  #cartao_c, #paypal  {
     display: none;
     position: relative;
     right: 20%;
     width: 300px;
-    height: 200px;
+    height: 150px;
     color: #7D5A5A;
     overflow: auto;
+    margin-top: 5px;
 }
 
-#cartao_d button {
+#cartao_d button, #cartao_c button, #paypal button {
     width: 100%;
     border-radius: 0;
     background-color: rgb(255, 255, 255, 0.5);
@@ -161,23 +162,7 @@ h1 {
     margin-left: 0;
 }
 
-#cartao_c {
-    display: none;
-    position: relative;
-    right: 20%;
-    width: 300px;
-    height: 200px;
-    color: #7D5A5A;
-    overflow: auto;
-}
 
-#cartao_c button {
-    width: 100%;
-    border-radius: 0;
-    background-color: rgb(255, 255, 255, 0.5);
-    color: #7D5A5A;
-    margin-left: 0;
-}
 
 .mcredito {
     background-color: rgb(250, 242, 242, .6);
@@ -330,11 +315,14 @@ h1 {
 }
 
 #logo {
+    position: absolute;
     background-image: url("../assets/mcl.png");
-    background-size: cover;
-    width: 90px;
-    height: 50px;
-    top: 10px;
+    background-size: 60px  29.5px;
+    width: 60px;
+    height: 30px;
+    margin-top: 10px;
+    right: 20px;
+    border-radius: unset;
 }
 
 .confirmacao {
