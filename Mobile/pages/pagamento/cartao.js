@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, TextInput, Text, TouchableOpacity} from 'react-native';
+import { View, TextInput, Text, TouchableOpacity,ScrollView} from 'react-native';
 
 
 import style from './style';
@@ -9,6 +9,7 @@ export default function Cartao({ navigation }) {
 
 
     return (
+    <ScrollView>   
         <View>     
             <Text>Digite os dados do cartão</Text>
             <TextInput style={style.inputlogin} placeholder='Nome titular do cartão...'></TextInput>
@@ -21,5 +22,6 @@ export default function Cartao({ navigation }) {
             </TouchableOpacity>
 
         </View>
+    </ScrollView>    
 );
 }

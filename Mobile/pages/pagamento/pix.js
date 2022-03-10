@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, TextInput, Text, TouchableOpacity} from 'react-native';
+import { View, TextInput, Text, TouchableOpacity,ScrollView} from 'react-native';
 
 
 import style from './style';
@@ -9,6 +9,7 @@ export default function Pix({ navigation }) {
 
 
     return (
+    <ScrollView>   
         <View>     
             <Text>Digite a chave Pix</Text>
             <TextInput style={style.inputlogin} placeholder='Chave PIX...'></TextInput>
@@ -19,5 +20,7 @@ export default function Pix({ navigation }) {
             </TouchableOpacity>
 
         </View>
+
+    </ScrollView>
 );
 }
