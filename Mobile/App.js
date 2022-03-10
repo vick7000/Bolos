@@ -15,29 +15,35 @@ import Cartao from './pages/pagamento/cartao';
 import Pix from './pages/pagamento/pix';
 import Boleto from './pages/pagamento/boleto';
 import Confirm from './pages/pagamento/confirm';
+import Home from './pages/home/home';
+import Seubolo from './pages/montabolo/pag1';
 
 function LogoTitle() {
   const navigation = useNavigation();
   return (
     <View 
     style={{ flex:1,flexDirection:'row', alignItems: 'center',
-    justifyContent:'space-around' }}>
+    justifyContent:'space-around', padding:2 }}>
+
+      <TouchableOpacity
+                onPress={ () => navigation.navigate('Cadastro')}>
+                <Text>Catálogo</Text>
+      </TouchableOpacity>
+
       <Image
         style={{ width: 70, height: 70 }}
-        source={require('./assets/logo.png')}
+        source={require('./assets/logohome.png')}
       />
       <TouchableOpacity
-                onPress={ () => navigation.navigate('Cadastro')}>
-                <Text>Home</Text>
+                onPress={ () => navigation.navigate('Login')}>
+                <Text>Entre</Text>
       </TouchableOpacity>
-      <TouchableOpacity
-                onPress={ () => navigation.navigate('Cadastro')}>
-                <Text>Catalogo</Text>
-      </TouchableOpacity>
-      <TouchableOpacity
-                onPress={ () => navigation.navigate('Cadastro')}>
-                <Text>Monte seu Bolo</Text>
-      </TouchableOpacity>
+      
+      <Image
+        style={{ width: 50, height: 50,  }}
+        source={require('./assets/carcomp.png')}
+      />
+      
       
       
     </View>
@@ -49,24 +55,72 @@ export default function App() {
     <NavigationContainer>
     <Stack.Navigator>
       <Stack.Screen
-       name="Login" 
-       component={Login} 
+       name="Home" 
+       component={Home} 
        
         options={{ headerTitle: (props) => <LogoTitle {...props} />,
         headerStyle: {
           backgroundColor: '#F3E1E1'
         }, 
         headerTintColor: 'black'}}/>
+    
         
-      <Stack.Screen name="Cadastro" component={Cadastro} />
+      <Stack.Screen name="Cadastro" component={Cadastro}
+      
+       options={{
+        headerStyle: {
+          backgroundColor: '#F3E1E1'
+      }, 
+        headerTintColor: '#FF69B4'}}/>
 
-      <Stack.Screen name="Cad2" component={Cad2} />
+      <Stack.Screen name="Login" component={Login} 
+        options={{
+          headerStyle: {
+            backgroundColor: '#F3E1E1'
+        }, 
+          headerTintColor: '#FF69B4'}}/>
 
-      <Stack.Screen name="Cartao" component={Cartao} />
-      <Stack.Screen name="Pix" component={Pix} />
-      <Stack.Screen name="Boleto" component={Boleto} />
+      <Stack.Screen name="Cad2" component={Cad2} 
+        options={{
+          headerStyle: {
+            backgroundColor: '#F3E1E1'
+        }, 
+          headerTintColor: '#FF69B4'}}/>
 
-      <Stack.Screen name="Confirm" component={Confirm} />
+      <Stack.Screen name="Cartao" component={Cartao}
+        options={{
+          headerStyle: {
+            backgroundColor: '#F3E1E1'
+        }, 
+          headerTintColor: '#FF69B4'}}/>
+
+      <Stack.Screen name="Pix" component={Pix} 
+        options={{
+          headerStyle: {
+            backgroundColor: '#F3E1E1'
+        }, 
+          headerTintColor: '#FF69B4'}}/>
+
+      <Stack.Screen name="Boleto" component={Boleto} 
+        options={{
+          headerStyle: {
+            backgroundColor: '#F3E1E1'
+        }, 
+          headerTintColor: '#FF69B4'}}/>
+
+      <Stack.Screen name="Confirm" component={Confirm} 
+        options={{
+          headerStyle: {
+            backgroundColor: '#F3E1E1'
+        }, 
+          headerTintColor: '#FF69B4'}}/>
+
+      <Stack.Screen name="Seubolo" component={Seubolo} 
+              options={{
+                headerStyle: {
+                  backgroundColor: '#F3E1E1'
+              }, 
+                headerTintColor: '#FF69B4'}}/>
 
 
     </Stack.Navigator>
