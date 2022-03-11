@@ -1,9 +1,9 @@
 let prox = document.getElementById("#prox");
-let vol = document.getElementById("#vol");
+var vol = document.getElementById("vol");
 
 const pro = document.querySelector(".pro");
 const bolo = document.querySelector(".bolo");
-const pagamento = document.querySelector(".pagamento");
+var pagamento = document.querySelector(".pagamento");
 const confirmacao = document.querySelector(".confirmacao");
 const final = document.querySelector(".final");
 
@@ -156,23 +156,25 @@ function AdicionarCartao() {
     let mcredito = document.querySelector(".mcredito");
     let check = document.getElementById("check");
     let check2 = document.getElementById("check2");
+    
 
     let nome = document.getElementById("nome").value;
     let numero = document.getElementById("numero").value;
     let mes = document.getElementById("mes").value;
     let ano = document.getElementById("ano").value;
 
-    salvo.setAttribute("id", "salvo");
+    salvo.setAttribute("class", "salvo");
     inf1.setAttribute("id", "inf1");
     inf2.setAttribute("id", "inf2");
     logo.setAttribute("id", "logo");
+    
 
     inf1.innerHTML = nome
     inf2.innerHTML = numero + " " + mes + "/" + ano
     logo.innerHTML = " "
 
 
-    if(nome !== 0 && numero !== 0 && mes !== 0 && ano !== 0) {
+    
         if(check2.checked == true && check.checked == false) {
             let cartao = document.getElementById("cartao_c");
             cartao.appendChild(salvo)
@@ -196,22 +198,99 @@ function AdicionarCartao() {
             } else {
                 alert("Desmarque uma das opções")
             }
-    } else {
-        alert("Preencha todos os campos")
-    }
+    
+/*https://codekila.com/javascript-get-multiple-elements/*/ 
+    document.getElementsByClassName("salvo").addEventListener("click", function (event){
+        let block = document.createElement("div");
+        let cancel = document.createElement("button");
+        let bc = document.getElementById("bc");
+        let bd = document.getElementById("bd");
 
-    document.getElementById("salvo").addEventListener("click", function (event){
+        block.setAttribute("id", "block");
+        cancel.setAttribute("id", "cancel");
+        cancel.textContent = "Cancelar"
+
+        pagamento.appendChild(block);
+        pagamento.appendChild(cancel);
+
         if(check2.checked == true && check.checked == false) {
-            cartao_c.visibility = "hidden";
-            cartao_c.style.display = "none";
+            
 
-            salvo.visibility = "visible";
-            salvo.style.display = "flex";
+            cartao_c.style.backgroundColor = "transparent";
+            cartao_c.style.overflow = "hidden";
+            
 
+            bc.visibility = "hidden"
+            bc.style.display = "none";
+
+            salvo.visibble = true;
+            salvo.style.display = "inline";
+            
             pro.visibility = "visible";
             pro.style.display = "grid";
+
+            vol.visibility = "hidden";
+            vol.style.display = "none";
+
+        } else if(check.checked == true && check2.checked == false) {
+            
+
+            cartao_d.style.backgroundColor = "transparent";
+            cartao_d.style.overflow = "hidden";
+            
+
+            bd.visibility = "hidden"
+            bd.style.display = "none";
+
+            salvo.visibble = true;
+            salvo.style.display = "inline";
+            
+            pro.visibility = "visible";
+            pro.style.display = "grid";
+
+            vol.visibility = "hidden";
+            vol.style.display = "none";
+
+        } else if(check.checked == true && check2.checked == true){
+            alert("Desmarque uma das opções")
+            block.remove();
+            cancel.remove();
         }
+
+        document.getElementById("cancel").addEventListener("click", function (event) {
+            block.remove();
+
+            cartao_c.style.backgroundColor = "#FAF2F2";
+            cartao_c.style.overflow = "auto";
+            
+
+            cartao_d.style.backgroundColor = "#FAF2F2";
+            cartao_d.style.overflow = "auto";
+            
+            
+
+            bc.visibility = "visible"
+            bc.style.display = "grid";
+
+            bd.visibility = "visible"
+            bd.style.display = "grid";
+
+            pro.visibility = "hidden";
+            pro.style.display = "none";
+
+            vol.visibility = "visible";
+            vol.style.display = "flex";
+
+            cancel.remove();
+        })
+
     })
+
+    /*
+    if (salvo.clicked == false) {
+        salvo.style.zIndex = 0;
+    }
+    */
 }
 
 function addConta() {

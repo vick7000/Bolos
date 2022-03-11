@@ -129,9 +129,7 @@ h1 {
     width: 150px;
     height: 50px;
     align-self: flex-end;
-    margin-left: 150px;
     margin-right: 30px;
-    margin-bottom: 20px;
     justify-content: center;
     align-items: center;
     background-color: #7D5A5A;
@@ -141,6 +139,11 @@ h1 {
     color: #FAF2F2;
     font-family: 'Pinky Cupid', regular;
     font-size: 20px;
+}
+
+#vol {
+    margin-left: 150px;
+    margin-bottom: 20px;
 }
 
 #cartao_d,  #cartao_c, #paypal  {
@@ -161,8 +164,6 @@ h1 {
     color: #7D5A5A;
     margin-left: 0;
 }
-
-
 
 .mcredito {
     background-color: rgb(250, 242, 242, .6);
@@ -197,13 +198,11 @@ h1 {
 .mcredito input{
     height: 30px;
     margin: 4%;
-    
 }
 
 .mcredito text {
     margin-left: 5%;
 }
-
 
 #mes,  #ano{
     width: 50px;
@@ -287,7 +286,7 @@ h1 {
     margin-left: 7%;
 }
 
-#salvo {
+.salvo {
     background-image: linear-gradient(to right ,rgb(241, 209, 209),rgb(252, 173, 173));
     background-size: cover;
     height: 90px;
@@ -323,6 +322,27 @@ h1 {
     margin-top: 10px;
     right: 20px;
     border-radius: unset;
+}
+
+#block {
+    background-color: rgb(241, 209, 209, .5);
+    position: relative; 
+    right: 120%;
+    top: -530%;
+    width: 864px;
+    height: 470px;
+}
+
+.pro {
+    margin-left: 600px;
+    margin-top: 50%;
+    padding: 0;
+}
+
+#cancel {
+    display: flex;
+    margin-left: 150px;
+    
 }
 
 .confirmacao {
