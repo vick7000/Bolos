@@ -28,7 +28,7 @@
 
         <div class="cad modal">
             <div class="modal-content">
-                <img src="../assets/cancelar.png" alt="" class="x">
+                <img src="../assets/cancelar.png" alt="" id="x">
                 <div class="pessoal">
                     <h2>Dados Pessoais</h2>
 
@@ -44,21 +44,19 @@
                     <input type="text" placeholder="CEP..." id="cep">
                     <input type="text" placeholder="Complemento (Opcional)..." id="comp">
                 </div>
-    
-                <div class="pagamentos">
-                    <h2>Cartao de débito/crédito</h2>
-    
-                    <input type="text" placeholder="Nome Titular..." id="titular">
-                    <input type="text" placeholder="Número do cartão..." id="numero">
-                    <input type="text" placeholder="Data de emissão..." id="emissao">
-                    <input type="text" placeholder="Data de validade..." id="validade">
-                    <input type="text" placeholder="Código de segurança..." id="cod">
-    
-                    <h2>PIX</h2>
-    
-                    <input type="text" placeholder="PIX..." id="pix">
 
-                    <button type="button" id="sign" onclick="cadastro()">Cadastrar</button>
+                <button type="button" id="sign" class="sss" onclick="cadastro()">Cadastrar</button>
+                
+                </div>
+            </div>
+            <div class="del modal2">
+                <div class="modal-content2">
+                    <img src="../assets/cancelar.png" alt="" id="aa">
+                    <h3 id="texto">Se deseja deletar sua conta onde todas as suas informações sejam apagadas e não poderam ser restauradas depois. Coloque sua senha no campo abaixo duas vezes para a confirmação.</h3>
+
+                    <input type="password" placeholder="Senha..." id="psw1">
+                    <input type="password" placeholder="Confirme sua senha..." id="psw2">
+                    <button type="button" id="ex" class="sss">Deletar</button>
                 </div>
             </div>
         </div>
@@ -67,6 +65,7 @@
             <input type="email" placeholder="Email..." id="email">
             <input type="password" placeholder="Senha..." id="psw">
             <button type="button" id="btn" onclick="login()">Entrar</button>
+            <button type="button" id="del" class="sss">Deletar conta</button>
 
         </div>
 
