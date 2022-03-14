@@ -128,7 +128,7 @@ h1 {
     display: flex;
     width: 150px;
     height: 50px;
-    align-self: flex-end;
+    
     margin-right: 30px;
     justify-content: center;
     align-items: center;
@@ -144,9 +144,10 @@ h1 {
 #vol {
     margin-left: 150px;
     margin-bottom: 20px;
+    align-self: flex-end;
 }
 
-#cartao_d,  #cartao_c, #paypal  {
+#cartao_d,  #cartao_c  {
     display: none;
     position: relative;
     right: 20%;
@@ -155,6 +156,17 @@ h1 {
     color: #7D5A5A;
     overflow: auto;
     margin-top: 5px;
+}
+
+#paypal  {
+    display: none;
+    position: relative;
+    right: 20%;
+    width: 300px;
+    height: 150px;
+    color: #7D5A5A;
+    overflow: auto;
+    margin-top: -172px;
 }
 
 #cartao_d button, #cartao_c button, #paypal button {
@@ -286,12 +298,13 @@ h1 {
     margin-left: 7%;
 }
 
-.salvo {
+#salvo {
     background-image: linear-gradient(to right ,rgb(241, 209, 209),rgb(252, 173, 173));
     background-size: cover;
     height: 90px;
     width: 100%;
     margin-left: 0;
+    margin-top: 10px;
     cursor: pointer;
     color: white;
     display: flex;
@@ -334,14 +347,14 @@ h1 {
 }
 
 .pro {
-    margin-left: 600px;
-    margin-top: 50%;
+    margin-left: 100%;
+    margin-top: 10%; 
     padding: 0;
 }
 
 #cancel {
     display: flex;
-    margin-left: 150px;
+    margin-left: 10%;
     
 }
 

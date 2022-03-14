@@ -81,6 +81,7 @@ function voltar() {
     
         pagamento.visibility = "visible";
         pagamento.style.display = "grid";
+        
 
         b3.style.backgroundColor = "#FAF2F2";
         
@@ -124,13 +125,15 @@ function options(e) {
     if(check6.checked == true) {
         paypal.visibility = "visible";
         paypal.style.display = "grid";
-        pro.visibility = "visible";
-        pro.style.display = "grid";
+        
     } else {
         paypal.visibility = "hidden";
         paypal.style.display = "none";
+
         pro.visibility = "hidden";
         pro.style.display = "none";
+    
+        
     }
 }
 
@@ -156,6 +159,8 @@ function AdicionarCartao() {
     let mcredito = document.querySelector(".mcredito");
     let check = document.getElementById("check");
     let check2 = document.getElementById("check2");
+    let check6 = document.getElementById("check6");
+
     
 
     let nome = document.getElementById("nome").value;
@@ -164,6 +169,7 @@ function AdicionarCartao() {
     let ano = document.getElementById("ano").value;
 
     salvo.setAttribute("class", "salvo");
+    salvo.setAttribute("id", "salvo");
     inf1.setAttribute("id", "inf1");
     inf2.setAttribute("id", "inf2");
     logo.setAttribute("id", "logo");
@@ -198,23 +204,38 @@ function AdicionarCartao() {
             } else {
                 alert("Desmarque uma das opções")
             }
+
+
+   document.querySelectorAll(".salvo").forEach(item => {
     
-/*https://codekila.com/javascript-get-multiple-elements/*/ 
-    document.getElementsByClassName("salvo").addEventListener("click", function (event){
+    
+    let bc = document.getElementById("bc");
+    let bd = document.getElementById("bd");
+
+    
+    
+    
+    item.addEventListener('click', event => {
+
+        salvo.visibility = "visible";
+        salvo.style.display = "inline";
+        salvo.style.marginTop = 0;
+
+        
+
         let block = document.createElement("div");
         let cancel = document.createElement("button");
-        let bc = document.getElementById("bc");
-        let bd = document.getElementById("bd");
 
-        block.setAttribute("id", "block");
         cancel.setAttribute("id", "cancel");
-        cancel.textContent = "Cancelar"
+        cancel.textContent = "Cancelar";
+        block.setAttribute("id", "block");
 
         pagamento.appendChild(block);
         pagamento.appendChild(cancel);
 
-        if(check2.checked == true && check.checked == false) {
-            
+             
+    
+        if(check2.checked == true && check.checked == false && check6.checked == false) {
 
             cartao_c.style.backgroundColor = "transparent";
             cartao_c.style.overflow = "hidden";
@@ -223,16 +244,15 @@ function AdicionarCartao() {
             bc.visibility = "hidden"
             bc.style.display = "none";
 
-            salvo.visibble = true;
-            salvo.style.display = "inline";
             
+
             pro.visibility = "visible";
             pro.style.display = "grid";
 
             vol.visibility = "hidden";
             vol.style.display = "none";
 
-        } else if(check.checked == true && check2.checked == false) {
+        } else if(check.checked == true && check2.checked == false && check6.checked == false) {
             
 
             cartao_d.style.backgroundColor = "transparent";
@@ -251,50 +271,54 @@ function AdicionarCartao() {
             vol.visibility = "hidden";
             vol.style.display = "none";
 
-        } else if(check.checked == true && check2.checked == true){
+        } else if(check.checked == true && check2.checked == true && check6.checked == false || check.checked == true && check2.checked == true && check6.checked == true || check.checked == true && check2.checked == false && check6.checked == true || check.checked == false && check2.checked == true && check6.checked == true){
             alert("Desmarque uma das opções")
             block.remove();
             cancel.remove();
+            salvo.style.marginTop = "10px";
         }
 
-        document.getElementById("cancel").addEventListener("click", function (event) {
-            block.remove();
+        document.getElementById("cancel").addEventListener('click', event =>{
+        
+            salvo.style.marginTop = "10px";
 
+           block.remove();
+        
             cartao_c.style.backgroundColor = "#FAF2F2";
             cartao_c.style.overflow = "auto";
             
-
+        
             cartao_d.style.backgroundColor = "#FAF2F2";
             cartao_d.style.overflow = "auto";
             
             
-
+        
             bc.visibility = "visible"
             bc.style.display = "grid";
-
+        
             bd.visibility = "visible"
             bd.style.display = "grid";
-
+        
             pro.visibility = "hidden";
             pro.style.display = "none";
-
+        
             vol.visibility = "visible";
             vol.style.display = "flex";
-
+        
             cancel.remove();
         })
 
     })
+   })
 
-    /*
-    if (salvo.clicked == false) {
-        salvo.style.zIndex = 0;
-    }
-    */
 }
 
 function addConta() {
     if(window.confirm("Você abrirá a página de login do paypal, tem certeza?")) {
-        window.open("https://www.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=EC-2T455261YH255244Y");
-    }
+        window.open("https://www.paypal.com/signin");
+
+        pro.visibility = "visible";
+        pro.style.display = "grid";
+    } 
+
 }
