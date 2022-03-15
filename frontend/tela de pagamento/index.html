@@ -11,11 +11,8 @@
     <div class="checkout">
         <ol class="bolinhas">
             <li id="b1">1</li>
-            
             <li id="b2">2</li>
-            
             <li id="b3">3</li>
-    
             <li id="b4">4</li>
         </ol>
         <ol>
@@ -39,7 +36,6 @@
         <button>Não</button>
     </div>
 
-    
     <div class="pagamento" id="pagamento"  visibility="hidden">
         <h1>Selecione uma forma de pagamento</h1>
 
@@ -48,7 +44,6 @@
             <text>Cartão de Débito</text>
             <div id="cartao_d">
                 <button id="bd" onclick="adicionar()">+</button>
-                
             </div>
         </div>
 
@@ -63,30 +58,22 @@
 
 
         <div id="pag">
-            <input type="checkbox"/>
+            <input type="checkbox" onchange="options2()" id="check3"/>
             <text>Pix</text>
         </div>
 
-
-        
-
-
         <div id="pag">
-            <input type="checkbox"/>
+            <input type="checkbox" onchange="options2()" id="check4"/>
             <text>Boleto Bancário</text>
         </div>
 
-
         <div id="pag">
-            <input type="checkbox" onchange="options(this)" id="check6"/>
+            <input type="checkbox" onchange="options(this)" id="check5"/>
             <text>PayPal</text>
             <div id="paypal">
                 <button id="ac" onclick="addConta()">Adicionar conta</button>
             </div>
         </div>
-
-
-        
 
         <button id="vol" onclick="voltar()">Voltar</button>
         <button id="prox" class="pro" onclick="proximo()">Próximo</button>
@@ -95,9 +82,9 @@
     <div class="mcredito">
         <div class="content">
             <text>Nome do Titular do Cartão</text>
-            <input id="nome"/>
+            <input id="nome" maxlength="150"/>
             <text>Número do Cartão</text>
-            <input id="numero"/>
+            <input id="numero" maxlength="16"/>
             <div id="data">
                 <div id="d">
                     <div id="cvv">
@@ -105,17 +92,15 @@
                         <label id="t">CVV</label>
                     </div>
                     <div id="dat">
-                        <input id="mes" placeholder="MM"/>
+                        <input id="mes" placeholder="MM" maxlength="1"/>
                         <span id="barra">/</span>
-                        <input id="ano" placeholder="AA"/>
-                        <input id="cv"/>
+                        <input id="ano" placeholder="AA" maxlength="2"/>
+                        <input id="cv" maxlength="3"/>
                     </div>
                     
                 </div> 
             </div>
                 
-            
-            
                 <h3>Endereço para cobrança</h3>
                 <text>Avenida das Ruas, 5010</text>
                 <text>Jaguariuna-São Paulo 13587-203</text>
@@ -124,13 +109,9 @@
                 <button  onclick="cancelar()">Cancelar</button>
                 <button onclick="AdicionarCartao()">Confirmar</button>
             </div>
-                
-            
         </div>
-        
     </div>
         
-
     <div class="confirmacao">
         <h1>Está tudo correto?</h1>
         <button id="vol" onclick="voltar()">Não</button>

@@ -7,10 +7,12 @@ var pagamento = document.querySelector(".pagamento");
 const confirmacao = document.querySelector(".confirmacao");
 const final = document.querySelector(".final");
 
-
 var atual = 1;
 
 function proximo() {
+    let check3 = document.getElementById("check3");
+    let check4 = document.getElementById("check4");
+
     if(atual <= 4) atual++;
 
     if(atual == 1) {
@@ -18,6 +20,9 @@ function proximo() {
         bolo.visibility = "visible";
         bolo.style.display = "flex";
 
+
+    } else if(check3.checked == true && check4.checked == true) {
+            alert("Desmarque uma das opções")
     }else if(atual == 2) {
         
         let b2 = document.getElementById("b2");
@@ -29,8 +34,10 @@ function proximo() {
         pagamento.style.display = "grid";
         pro.vibility = "hidden";
         pro.style.display = "none";
+        
        
         b2.style.backgroundColor = "#7D5A5A";
+
     }else if(atual == 3) {
         let b3 = document.getElementById("b3");
 
@@ -52,6 +59,7 @@ function proximo() {
 
         b4.style.backgroundColor = "#7D5A5A";
     }
+    
 }
 
 function voltar() {
@@ -82,7 +90,6 @@ function voltar() {
         pagamento.visibility = "visible";
         pagamento.style.display = "grid";
         
-
         b3.style.backgroundColor = "#FAF2F2";
         
     }else if(atual == 3) {
@@ -97,7 +104,7 @@ function voltar() {
 function options(e) {
     let check = document.getElementById("check");
     let check2 = document.getElementById("check2");
-    let check6 = document.getElementById("check6");
+    let check5 = document.getElementById("check5");
 
     var cartaod = document.getElementById("cartao_d");
     var cartaoc = document.getElementById("cartao_c");
@@ -112,7 +119,6 @@ function options(e) {
         cartaod.style.display = "none";
     }
 
-
     if(check2.checked == true) { 
         cartaoc.visibility = "visible";
         cartaoc.style.display = "grid";
@@ -121,19 +127,22 @@ function options(e) {
         cartaoc.style.display = "none";
     }
 
-
-    if(check6.checked == true) {
+    if(check5.checked == true) {
         paypal.visibility = "visible";
         paypal.style.display = "grid";
         
+        vol.vibility = "hidden";
+        vol.style.display = "none";
     } else {
         paypal.visibility = "hidden";
         paypal.style.display = "none";
 
         pro.visibility = "hidden";
         pro.style.display = "none";
+
+        vol.vibility = "visible";
+        vol.style.display = "flex";
     
-        
     }
 }
 
@@ -151,6 +160,27 @@ function cancelar() {
     mcredito.style.display = "none";
 }
 
+function options2() {
+    let check3 = document.getElementById("check3");
+    let check4 = document.getElementById("check4");
+
+    if(check3.checked == true || check4.checked == true) {
+        pro.visibility = "visible";
+        pro.style.display = "grid";
+
+        vol.visibility = "hidden";
+        vol.style.display = "none";
+    } else if (check3.checked == false || check4.checked == false) {
+        pro.visibility = "hidden";
+        pro.style.display = "none";
+
+        vol.visibility = "visible";
+        vol.style.display = "grid";
+    } 
+
+}
+
+
 function AdicionarCartao() {
     let salvo = document.createElement("div");
     let inf1 = document.createElement("span");
@@ -159,8 +189,7 @@ function AdicionarCartao() {
     let mcredito = document.querySelector(".mcredito");
     let check = document.getElementById("check");
     let check2 = document.getElementById("check2");
-    let check6 = document.getElementById("check6");
-
+    let check5 = document.getElementById("check5");
     
 
     let nome = document.getElementById("nome").value;
@@ -180,8 +209,7 @@ function AdicionarCartao() {
     logo.innerHTML = " "
 
 
-    
-        if(check2.checked == true && check.checked == false) {
+        if(check2.checked == true && check.checked == false && check5.checked == false) {
             let cartao = document.getElementById("cartao_c");
             cartao.appendChild(salvo)
         
@@ -191,7 +219,7 @@ function AdicionarCartao() {
         
             mcredito.visibility = "hidden";
             mcredito.style.display = "none";
-            } else if(check2.checked == false && check.checked == true){
+        } else if(check2.checked == false && check.checked == true  && check5.checked == false){
             let cartao2 = document.getElementById("cartao_d");
             cartao2.appendChild(salvo)
         
@@ -201,18 +229,16 @@ function AdicionarCartao() {
         
             mcredito.visibility = "hidden";
             mcredito.style.display = "none";
-            } else {
-                alert("Desmarque uma das opções")
-            }
 
+        } else {
+                alert("Desmarque uma das opções")
+        }
 
    document.querySelectorAll(".salvo").forEach(item => {
     
     
     let bc = document.getElementById("bc");
     let bd = document.getElementById("bd");
-
-    
     
     
     item.addEventListener('click', event => {
@@ -221,7 +247,6 @@ function AdicionarCartao() {
         salvo.style.display = "inline";
         salvo.style.marginTop = 0;
 
-        
 
         let block = document.createElement("div");
         let cancel = document.createElement("button");
@@ -234,17 +259,13 @@ function AdicionarCartao() {
         pagamento.appendChild(cancel);
 
              
-    
-        if(check2.checked == true && check.checked == false && check6.checked == false) {
+        if(check2.checked == true && check.checked == false) {
 
             cartao_c.style.backgroundColor = "transparent";
             cartao_c.style.overflow = "hidden";
             
-
             bc.visibility = "hidden"
             bc.style.display = "none";
-
-            
 
             pro.visibility = "visible";
             pro.style.display = "grid";
@@ -252,13 +273,11 @@ function AdicionarCartao() {
             vol.visibility = "hidden";
             vol.style.display = "none";
 
-        } else if(check.checked == true && check2.checked == false && check6.checked == false) {
+        } else if(check.checked == true && check2.checked == false) {
             
-
             cartao_d.style.backgroundColor = "transparent";
             cartao_d.style.overflow = "hidden";
             
-
             bd.visibility = "hidden"
             bd.style.display = "none";
 
@@ -271,28 +290,25 @@ function AdicionarCartao() {
             vol.visibility = "hidden";
             vol.style.display = "none";
 
-        } else if(check.checked == true && check2.checked == true && check6.checked == false || check.checked == true && check2.checked == true && check6.checked == true || check.checked == true && check2.checked == false && check6.checked == true || check.checked == false && check2.checked == true && check6.checked == true){
+        } else if(check.checked == true && check2.checked == true){
             alert("Desmarque uma das opções")
             block.remove();
             cancel.remove();
             salvo.style.marginTop = "10px";
         }
-
+         
         document.getElementById("cancel").addEventListener('click', event =>{
         
-            salvo.style.marginTop = "10px";
+           salvo.style.marginTop = "10px";
 
            block.remove();
         
             cartao_c.style.backgroundColor = "#FAF2F2";
             cartao_c.style.overflow = "auto";
-            
         
             cartao_d.style.backgroundColor = "#FAF2F2";
             cartao_d.style.overflow = "auto";
             
-            
-        
             bc.visibility = "visible"
             bc.style.display = "grid";
         
@@ -319,6 +335,9 @@ function addConta() {
 
         pro.visibility = "visible";
         pro.style.display = "grid";
-    } 
+
+        vol.visibility = "hidden";
+        vol.style.display = "none";
+    }
 
 }
