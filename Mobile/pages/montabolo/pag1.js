@@ -8,7 +8,7 @@ export default function Seubolo ({navigation}) {
     return (
         <ScrollView>
             <View style={style.slides}>
-                <Text>teste EFEITO SLIDE</Text>
+                <Text>teste E</Text>
             </View>
         <View style={style.viewmbolo}>
                 <View style={style.montabolo}>

@@ -6,8 +6,30 @@ export default StyleSheet.create({
     container:{
         backgroundColor:'#FAF2F2',
         flex:1,
+        alignItems:'stretch',
+        justifyContent:'center',
+        margin:15,
+        
+    },
+    viewtitulo:{
+        flex: 1,
         alignItems:'center',
         justifyContent:'center',
+        
+    },
+
+    txttitulo: {
+        color:'#FF69B4',
+        fontSize:25,
+        fontWeight: 'bold'
+        
+    },
+    txt: {
+        color:'#FF69B4',
+        fontSize:15,
+        fontWeight: 'bold',
+        margin:5
+        
     },
 
     btns: {
@@ -22,7 +44,7 @@ export default StyleSheet.create({
     height:50,
     borderColor:'#828282',
     borderWidth:1,
-    marginTop: 15,
+    marginTop: 5,
     margin:5,
     padding:5,
     backgroundColor:'white'    
@@ -30,7 +52,7 @@ export default StyleSheet.create({
 },
 btnproximo: {
     
-    color: 'white',
+    color: '#FF69B4',
     textAlign: 'center',
     width: 120,
     height: 50,
@@ -46,7 +68,7 @@ btnproximo: {
 },
 btncartao: {
     
-    color: 'white',
+    color: '#FF69B4',
     textAlign: 'center',
     width: 150,
     height: 50,

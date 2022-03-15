@@ -1,15 +1,18 @@
-import React,{ useState} from "react";
-import { View, TextInput, Text, TouchableOpacity, ScrollView} from 'react-native';
+import React,{ useEffect, useRef,  useState} from "react";
+import { StyleSheet,View, TextInput, Text, TouchableOpacity, ScrollView, Dimensions, Image} from 'react-native';
 
-import style from './style';
+import style from './styles';
+//import { useKeenSliderNative } from 'keen-slider/react-native'
 
-export default function Home ({navigation}) {
 
+export default function Home ({navigation}) {            
     return (
         <ScrollView>
-            <View style={style.slides}>
-                <Text>teste EFEITO SLIDE</Text>
-            </View>
+          <View style={style.containerProps}>
+
+          </View>
+  
+
         <View style={style.viewmbolo}>
                 <View style={style.montabolo}>
                     
