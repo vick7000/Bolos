@@ -20,12 +20,13 @@ export default StyleSheet.create({
     borderRadius:10,
     width:350,
     height:50,
-    borderColor:'#828282',
+    borderColor:'#FFB6C1',
     borderWidth:1,
     marginTop: 15,
     margin:5,
     padding:5,
-    backgroundColor:'white'    
+    backgroundColor:'white',
+        
    
 },
 btnproximo: {
@@ -41,8 +42,10 @@ btnproximo: {
     paddingTop: 10,
     borderRadius: 8,
     fontSize:20,
-    fontWeight: 'bold'
-    
+    fontWeight: 'bold',
+    borderWidth:1,
+    borderColor: '#FF1493'
+        
 },
 btncartao: {
     
@@ -57,7 +60,10 @@ btncartao: {
     paddingTop: 4,
     borderRadius: 8,
     fontSize:16,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    borderWidth:1,
+    borderColor: '#FF1493'
+    
 },
 viewproximo:{
     alignItems:'flex-end',

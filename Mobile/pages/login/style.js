@@ -45,9 +45,9 @@ export default StyleSheet.create({
     justifyContent:'center',
     borderRadius:10,
     width:350,
-    height:50,
-    borderColor:'#828282',
-    borderWidth:1,
+    height:50,   
+   borderColor:'#FFB6C1',
+    borderWidth:1,   
     marginTop: 1,
     margin:5,
     padding:5,
@@ -99,11 +99,11 @@ btnentrar: {
  //  marginBottom: 4,
     borderRadius: 15,
     fontWeight: 'bold',
-    fontSize:20
+    fontSize:20,
+    borderWidth:1,
+    borderColor: '#FF1493'
+    
       
 },
 
-  // btnentrar.hover:{
-//
- //   }
 });

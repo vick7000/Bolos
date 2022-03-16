@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, TextInput, Text,TouchableOpacity,ScrollView} from 'react-native';
-import { useForm } from 'react-hook-form';
+//import { useForm } from 'react-hook-form';
 
 import style from './stylecadastro';
 

@@ -42,7 +42,7 @@ export default StyleSheet.create({
     borderRadius:10,
     width:350,
     height:50,
-    borderColor:'#828282',
+    borderColor:'#FFB6C1',
     borderWidth:1,
     marginTop: 5,
     margin:5,
@@ -63,7 +63,9 @@ btnproximo: {
     paddingTop: 10,
     borderRadius: 8,
     fontSize:20,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    borderWidth:1,
+    borderColor: '#FF1493'
     
 },
 btncartao: {
