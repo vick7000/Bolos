@@ -314,15 +314,15 @@ h1 {
     position: relative;
     left: 20px;
     top: 20px;
-    font-size: 18px;
+    font-size: 14px;
     height: 20px;
 }
 
 #inf2 {
     position: relative;
-    right: 20px;
+    right: 80px;
     top: 50px;
-    font-size: 15px;
+    font-size: 12px;
     height: 20px;
 }
 
@@ -350,6 +350,10 @@ h1 {
     margin-left: 550px;
     margin-top: 10%; 
     padding: 0;
+}
+
+#prox {
+    align-self: flex-end;
 }
 
 #cancel {

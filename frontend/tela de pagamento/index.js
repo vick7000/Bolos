@@ -6,12 +6,15 @@ const bolo = document.querySelector(".bolo");
 var pagamento = document.querySelector(".pagamento");
 const confirmacao = document.querySelector(".confirmacao");
 const final = document.querySelector(".final");
+var check = document.getElementById("check");
+var check2 = document.getElementById("check2");
+var check3 = document.getElementById("check3");
+var check4 = document.getElementById("check4");
+var check5 = document.getElementById("check5");
 
 var atual = 1;
 
 function proximo() {
-    let check3 = document.getElementById("check3");
-    let check4 = document.getElementById("check4");
 
     if(atual <= 4) atual++;
 
@@ -22,8 +25,30 @@ function proximo() {
 
 
     } else if(check3.checked == true && check4.checked == true) {
-            alert("Desmarque uma das opções")
-    }else if(atual == 2) {
+        alert("Desmarque uma das opções")
+        atual--
+    } else if(check2.checked == true && check3.checked == true){
+        alert("Desmarque uma das opções")
+        atual--
+    } else if(check.checked == true && check4.checked == true) {
+        alert("Desmarque uma das opções")
+        atual--
+    } else if(check4.checked == true && check5.checked == true) {
+        alert("Desmarque uma das opções")
+        atual--
+    } else if(check.checked == true && check5.checked == true) {
+        alert("Desmarque uma das opções")
+        atual--
+    } else if(check2.checked == true && check5.checked == true) {
+        alert("Desmarque uma das opções") 
+        atual--
+    } else if(check.checked == true && check3.checked == true) {
+        alert("Desmarque uma das opções") 
+        atual--
+    } else if(check2.checked == true && check4.checked == true) {
+        alert("Desmarque uma das opções") 
+        atual--
+    } else if(atual == 2) {
         
         let b2 = document.getElementById("b2");
 
@@ -102,9 +127,6 @@ function voltar() {
 }
 
 function options(e) {
-    let check = document.getElementById("check");
-    let check2 = document.getElementById("check2");
-    let check5 = document.getElementById("check5");
 
     var cartaod = document.getElementById("cartao_d");
     var cartaoc = document.getElementById("cartao_c");
@@ -161,8 +183,6 @@ function cancelar() {
 }
 
 function options2() {
-    let check3 = document.getElementById("check3");
-    let check4 = document.getElementById("check4");
 
     if(check3.checked == true || check4.checked == true) {
         pro.visibility = "visible";
@@ -187,9 +207,6 @@ function AdicionarCartao() {
     let inf2 = document.createElement("span");
     let logo = document.createElement("span");
     let mcredito = document.querySelector(".mcredito");
-    let check = document.getElementById("check");
-    let check2 = document.getElementById("check2");
-    let check5 = document.getElementById("check5");
     
 
     let nome = document.getElementById("nome").value;
@@ -209,7 +226,7 @@ function AdicionarCartao() {
     logo.innerHTML = " "
 
 
-        if(check2.checked == true && check.checked == false && check5.checked == false) {
+        if(check2.checked == true && check.checked == false && check5.checked == false && check3.checked == false && check4.checked == false) {
             let cartao = document.getElementById("cartao_c");
             cartao.appendChild(salvo)
         
@@ -219,7 +236,7 @@ function AdicionarCartao() {
         
             mcredito.visibility = "hidden";
             mcredito.style.display = "none";
-        } else if(check2.checked == false && check.checked == true  && check5.checked == false){
+        } else if(check2.checked == false && check.checked == true  && check5.checked == false && check3.checked == false && check4.checked == false){
             let cartao2 = document.getElementById("cartao_d");
             cartao2.appendChild(salvo)
         
@@ -230,8 +247,9 @@ function AdicionarCartao() {
             mcredito.visibility = "hidden";
             mcredito.style.display = "none";
 
+
         } else {
-                alert("Desmarque uma das opções")
+            alert("Desmarque uma das opções")
         }
 
    document.querySelectorAll(".salvo").forEach(item => {
@@ -295,7 +313,7 @@ function AdicionarCartao() {
             block.remove();
             cancel.remove();
             salvo.style.marginTop = "10px";
-        }
+        } 
          
         document.getElementById("cancel").addEventListener('click', event =>{
         
@@ -338,6 +356,6 @@ function addConta() {
 
         vol.visibility = "hidden";
         vol.style.display = "none";
-    }
+    } 
 
 }
