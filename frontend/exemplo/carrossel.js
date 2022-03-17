@@ -23,14 +23,11 @@ function toggleState3() {
      
     for (let i = 0; i < imgObject.length - 1; i++) {
       let tileItem = document.createElement("div");
-      let tile = document.createElement("div");
       tileItem.classList.add("tileItem");
       tile.classList.add("tile");
       tileItem.style.background =  "url(" + imgObject[i] + ")";
-      tile.style.background = "url(" + textObject[i] + ")";
-      tileItem.style.backgroundSize = "contain";  
+      tileItem.style.backgroundSize = "100% 100%";  
       tilesContainer.appendChild(tileItem);
-      tilesContainer.appendChild(tile);  
     }
   };
 }
@@ -49,13 +46,26 @@ let imgObject = [
   "https://picsum.photos/id/5/450/450",
 ];
 
-let textObject = {
-  a: 'bolo',
-  b: 'ar',
-}
-  
-console.log(Object.values(textObject))
+let testeObject = [
+  "Um belissimo bolo cortado",
+  "../assets/pedido.png",
+  "https://placeimg.com/450/450/architecture",
+  "https://placeimg.com/450/450/nature",
+  "https://placeimg.com/450/450/people",
+  "https://placeimg.com/450/450/tech",
+  "https://picsum.photos/id/1/450/450",
+  "https://picsum.photos/id/8/450/450",
+  "https://picsum.photos/id/12/450/450",
+  "https://picsum.photos/id/15/450/450",
+  "https://picsum.photos/id/5/450/450",
+];
 
+
+let textObject = [
+  "formato: redondo","sabor: chocolate",
+  "formato","cubo","sabor","morango"
+]
+  
 let mainImg = 0;
 let prevImg = imgObject.length - 1;
 let nextImg = 1;
@@ -68,9 +78,18 @@ function loadGallery() {
 
   let mainView = document.getElementById("mainView");
   mainView.style.background = "url(" + imgObject[mainImg] + ")";
+  document.getElementById("texto").innerHTML = textObject[mainImg];
 
-  let texto = document.getElementById("texto")
-  texto.textContent = textObject[mainText]; ;
+  for (i=0, i<textObject.length - 1; i++;) {
+    let texto = document.getElementById("texto")
+
+    console.log(textObject) 
+    texto.textContent = (textObject.join(' '));
+  }
+
+  
+  
+  
 
   let leftView = document.getElementById("leftView");
   leftView.style.background = "url(" + imgObject[prevImg] + textObject[prevText] + ")";
@@ -78,8 +97,7 @@ function loadGallery() {
   let rightView = document.getElementById("rightView");
   rightView.style.background = "url(" + imgObject[nextImg] + textObject[nextText] + ")";
   
-  let linkTag = document.getElementById("linkTag")
-  linkTag.href = imgObject[mainImg];
+  
 
 };
 
