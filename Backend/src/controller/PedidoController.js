@@ -1,4 +1,8 @@
 const Pedido = require('../model/pedido');
+const Item = require('../model/item');
+const Usuario = require('../model/usuario');
+const Confeiteiro = require('../model/confeiteiro');
+const Entregador = require('../model/entregador');
 
 
 const create = async (req, res) => {
@@ -11,13 +15,27 @@ const create = async (req, res) => {
 
 const read = async (req, res) => {
     const id = req.params.id;
+    const id_pedido = req.query.id;
 
     let filtro = {};
 
     if(id !== undefined) filtro = {where: {id: id}};
 
-    const ret = await Pedido.findAll(filtro);
+    filtro.include = { 
+        exclude: ['id_pedido']
+    }
+    filtro.include = [
+        {model: Usuario, attributes: {exclude: ['senha']}},
+        {model: Item},
+        {model: Confeiteiro},
+        {model: Entregador}
+    ];
 
+    if(id_pedido !== undefined){
+        filtro.include[0].where = {id: id_perfil}
+    }
+
+    const ret = await Pedido.findAll(filtro);
 
     res.json(ret);
 }

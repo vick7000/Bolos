@@ -7,12 +7,7 @@ var numero = document.getElementById("num");
 var bairro = document.getElementById("bairro");
 var cep = document.getElementById("cep");
 var complemento = document.getElementById("comp"); //nao obrigatório
-var nomeTitular = document.getElementById("titular");
-var numeroCartao = document.getElementById("numero");
-var dataEmissao = document.getElementById("emissao");
-var validade = document.getElementById("validade");
-var codigo = document.getElementById("cod");
-var pix = document.getElementById("pix");
+
 
 
 function alterando(){

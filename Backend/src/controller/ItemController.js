@@ -1,4 +1,5 @@
 const Item = require('../model/item');
+const Config = require('../model/config');
 
 
 const create = async (req, res) => {
@@ -12,12 +13,24 @@ const create = async (req, res) => {
 const read = async (req, res) => {
     const id = req.params.id;
 
+    let id_config = req.query.id_config;
+
     let filtro = {};
 
     if(id !== undefined) filtro = {where: {id: id}};
 
-    const ret = await Item.findAll(filtro);
+    filtro.include = {
+        exclude: ['id_config']
+    }
 
+    filtro.include = [
+        { model: Config}
+    ];
+
+    if(id_config !== undefined){
+        filtro.include[0].where = {id: id_config}
+    }
+    const ret = await Item.findAll(filtro);
 
     res.json(ret);
 }

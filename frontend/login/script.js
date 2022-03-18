@@ -5,6 +5,7 @@ var div1 = document.querySelector(".pessoal");
 var div2 = document.querySelector(".endereco");
 var div3 = document.querySelector(".pagamentos");
 var cadastrar = document.getElementById("sign");
+var dele = document.getElementById("del");
 
 // Cadastro
 var nome = document.getElementById("nome");
@@ -39,7 +40,9 @@ function login (){
 
 }
 
-
+function dele(){
+    
+}
 
 function O (){
     window.location.href = "../usuario/index.html"

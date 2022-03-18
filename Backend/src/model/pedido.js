@@ -22,15 +22,6 @@ class pedido extends Model {
                     }
                 },
 
-                id_entregador: {
-                    type: DataTypes.INTEGER,
-                    allowNull: false,
-                    references: {
-                        model: 'entregadores',
-                        key: 'id',
-                    }
-                },
-
                 id_usuario: {
                     type: DataTypes.INTEGER,
                     allowNull: false,
@@ -47,7 +38,16 @@ class pedido extends Model {
                         model: 'confeiteiros',
                         key: 'id',
                     }
-                }
+                },
+
+                id_entregador: {
+                    type: DataTypes.INTEGER,
+                    allowNull: false,
+                    references: {
+                        model: 'entregadores',
+                        key: 'id',
+                    }
+                },
             },
             {
                 sequelize: datacon,
