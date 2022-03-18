@@ -44,9 +44,21 @@
                     <input type="text" placeholder="CEP..." id="cep">
                     <input type="text" placeholder="Complemento (Opcional)..." id="comp">
                 </div>
+    
+                <div class="pagamentos">
+                    <h2>Cartao de débito/crédito</h2>
+    
+                    <input type="text" placeholder="Nome Titular..." id="titular">
+                    <input type="text" placeholder="Número do cartão..." id="numero">
+                    <input type="text" placeholder="Data de emissão..." id="emissao">
+                    <input type="text" placeholder="Data de validade..." id="validade">
+                    <input type="text" placeholder="Código de segurança..." id="cod">
+    
+                    <h2>PIX</h2>
+    
+                    <input type="text" placeholder="PIX..." id="pix">
 
-                <button type="button" id="sign" class="sss" onclick="cadastro()">Cadastrar</button>
-               
+                    <button type="button" id="sign" onclick="cadastro()">Cadastrar</button>
                 </div>
             </div>
         </div>
@@ -55,7 +67,6 @@
             <input type="email" placeholder="Email..." id="email">
             <input type="password" placeholder="Senha..." id="psw">
             <button type="button" id="btn" onclick="login()">Entrar</button>
-            <button type="button" id="del" class="sss" onclick="dele()">Deletar conta</button>
 
         </div>
 

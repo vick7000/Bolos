@@ -132,18 +132,21 @@
 .espaco {
   height: 600px;
   width: 400px;
+  margin-left: 5px;
+  margin-right: 10px;
+  z-index: 1;
   border-radius: 20px;
 }
 
 #mainView, #texto {
-    
   height: 300px;
   width: 400px;
   background-color: #eb9100;
-  margin-left: 10px;
+  margin-left: 5px;
   margin-right: 10px;
   z-index: 1;
-  transition: all 1s;  
+  transition: all 1s;
+  justify-content: center;
 }
 
 .espaco:hover {
@@ -213,10 +216,4 @@
 
 #navRight {
   right: 50px;
-}
-
-#linkTag { 
-  cursor: pointer;
-  z-index: 1;
-  box-sizing: border-box;
 }

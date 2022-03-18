@@ -1,4 +1,4 @@
-
+document.getElementById("outer3").addEventListener("click", toggleState3);
     
 function toggleState3() {
   let galleryView = document.getElementById("galleryView")
@@ -9,8 +9,7 @@ function toggleState3() {
   if (slider.classList.contains("active")) {
     slider.classList.remove("active");
     outer.classList.remove("outerActive");
-    galleryView.style.display = "flex";
-    tilesView.style.display = "none";
+    
     
     while (tilesContainer.hasChildNodes()) {
       tilesContainer.removeChild(tilesContainer.firstChild)
@@ -18,15 +17,13 @@ function toggleState3() {
   } else {
     slider.classList.add("active");
     outer.classList.add("outerActive");
-    galleryView.style.display = "none";
-    tilesView.style.display = "flex";
+    
      
     for (let i = 0; i < imgObject.length - 1; i++) {
       let tileItem = document.createElement("div");
       tileItem.classList.add("tileItem");
       tile.classList.add("tile");
       tileItem.style.background =  "url(" + imgObject[i] + ")";
-      tileItem.style.backgroundSize = "100% 100%";  
       tilesContainer.appendChild(tileItem);
     }
   };
@@ -43,7 +40,6 @@ let imgObject = [
   "https://picsum.photos/id/8/450/450",
   "https://picsum.photos/id/12/450/450",
   "https://picsum.photos/id/15/450/450",
-  "https://picsum.photos/id/5/450/450",
 ];
 
 let testeObject = [
@@ -61,44 +57,106 @@ let testeObject = [
 ];
 
 
-let textObject = [
-  "formato: redondo","sabor: chocolate",
-  "formato","cubo","sabor","morango"
-]
-  
+
+  let textObject =[
+    {
+      forma: 'redondo',
+      recheio: 'Chocolate',
+      cobertura: 'Chocolate',
+      valor: 'R$ 5,50',
+    },
+    {
+      forma: 'quadrado',
+      recheio: 'Morango',
+      cobertura: 'Caramelo',
+      valor: 'R$ 15,50',
+    },
+    {
+      forma: 'pirâmide',
+      recheio: 'Prestigio',
+      cobertura: 'coco ralado',
+      valor: 'R$ 20,00',
+    },
+    {
+      forma: 'tubo',
+      recheio: 'Macarrão',
+      cobertura: 'Tomate',
+      valor: 'R$ 10,90',
+    },
+    {
+      forma: 'redondo',
+      recheio: 'Chocolate',
+      cobertura: 'Chocolate',
+      valor: 'R$ 5,50',
+    },
+    {
+      forma: 'redondo',
+      recheio: 'Chocolate',
+      cobertura: 'Chocolate',
+      valor: 'R$ 5,50',
+    },
+    {
+      forma: 'redondo',
+      recheio: 'Chocolate',
+      cobertura: 'Chocolate',
+      valor: 'R$ 5,50',
+    },
+    {
+      forma: 'redondo',
+      recheio: 'Chocolate',
+      cobertura: 'Chocolate',
+      valor: 'R$ 5,50',
+    },
+    {
+      forma: 'redondo',
+      recheio: 'Chocolate',
+      cobertura: 'Chocolate',
+      valor: 'R$ 5,50',
+    },
+    {
+      forma: 'redondo',
+      recheio: 'Chocolate',
+      cobertura: 'Chocolate',
+      valor: 'R$ 5,50',
+    },
+    {
+      forma: 'redondo',
+      recheio: 'Chocolate',
+      cobertura: 'Chocolate',
+      valor: 'R$ 5,50',
+    },
+  ]
+    
+
+
 let mainImg = 0;
 let prevImg = imgObject.length - 1;
 let nextImg = 1;
 
 let mainText = 0;
-let prevText = textObject.length - 1
+let prevText = textObject.length - 1;
 let nextText = 1;
 
 function loadGallery() {
 
   let mainView = document.getElementById("mainView");
   mainView.style.background = "url(" + imgObject[mainImg] + ")";
-  document.getElementById("texto").innerHTML = textObject[mainImg];
+  document.getElementById("texto").innerHTML = "forma : " + textObject[mainImg].forma + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "Preço : " + textObject[nextImg].valor;
+  mainView.style.backgroundSize = "cover";
 
-  for (i=0, i<textObject.length - 1; i++;) {
+  for (i = 0, i < textObject.length - 1; i++;) {
     let texto = document.getElementById("texto")
 
     console.log(textObject) 
     texto.textContent = (textObject.join(' '));
   }
 
-  
-  
-  
-
   let leftView = document.getElementById("leftView");
-  leftView.style.background = "url(" + imgObject[prevImg] + textObject[prevText] + ")";
+  leftView.style.background = "url(" + imgObject[prevImg] +")";
   
   let rightView = document.getElementById("rightView");
-  rightView.style.background = "url(" + imgObject[nextImg] + textObject[nextText] + ")";
+  rightView.style.background = "url(" + imgObject[nextImg] +")";
   
-  
-
 };
 
 function scrollRight() {
