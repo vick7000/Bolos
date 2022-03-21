@@ -15,6 +15,10 @@ import Boleto from '../pages/pagamento/boleto';
 import Confirm from '../pages/pagamento/confirm';
 import Home from '../pages/home/home';
 import Seubolo from '../pages/montabolo/pag1';
+import Mountone from '../pages/mbolo1/index';
+import MountTwo from '../pages/montar2/index';
+import MountThree from '../pages/montar3';
+import MountFour from '../pages/montar4';
 
 function LogoTitle(props) {  
   const navigation = useNavigation();
@@ -116,6 +120,37 @@ export default function Routes() {
                   backgroundColor: '#F3E1E1'
               }, 
                 headerTintColor: '#FF69B4'}}/>
+
+      <Stack.Screen name="Mountone" component={Mountone} 
+             options=
+             {{  title: 'Formato do Bolo' ,
+                headerStyle: {
+                  backgroundColor: '#F3E1E1'
+              }, 
+                headerTintColor: '#FF69B4'}}/>
+
+      <Stack.Screen name="MountTwo" component={MountTwo} 
+              options={{
+                title: 'Recheio',
+                headerStyle: {
+                  backgroundColor: '#F3E1E1'
+              }, 
+                headerTintColor: '#FF69B4'}}/>
+     <Stack.Screen name="MountThree" component={MountThree} 
+              options={{
+                title: 'Cobertura do Bolo',
+                headerStyle: {
+                  backgroundColor: '#F3E1E1'
+              }, 
+                headerTintColor: '#FF69B4'}}/>
+    <Stack.Screen name="MountFour" component={MountFour} 
+              options={{
+                title: 'Confeitar seu Bolo',
+                headerStyle: {
+                  backgroundColor: '#F3E1E1'
+              }, 
+                headerTintColor: '#FF69B4'}}/>
+
 
 
     </Stack.Navigator>

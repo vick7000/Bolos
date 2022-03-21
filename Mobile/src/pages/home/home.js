@@ -53,7 +53,7 @@ export default function Home ({navigation}) {
         <View style={style.viewmbolo}>
                 <View style={style.montabolo}>
                     
-                    <TouchableOpacity onPress={ () => { navigation.navigate("Seubolo") }}> 
+                    <TouchableOpacity onPress={ () => { navigation.navigate("Mountone") }}> 
                             <Image
                                 style={{ width: 130, height: 130, marginTop:10 }}
                                 source={require('../../../assets/montebolo.png')}
