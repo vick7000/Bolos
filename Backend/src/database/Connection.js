@@ -32,7 +32,7 @@ const sync = () => {
     confeiteiro.associate(sequelize.models);
     config.associate(sequelize.models);
 
-    sequelize.sync({ force : true });
+    sequelize.sync({ force : false });
 }
 
 module.exports = {
