@@ -146,13 +146,20 @@
   margin-right: 10px;
   z-index: 1;
   transition: all 1s;
-  justify-content: center;
 }
 
 .espaco:hover {
   transform: scale(1.2);
   transition: all 1s;   
 }
+
+#texto {
+  display: flex;
+  padding: 40px;
+  justify-content: center;
+}
+
+
 
 #leftView {
   height: 400px;

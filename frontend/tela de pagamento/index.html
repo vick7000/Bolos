@@ -24,16 +24,22 @@
     </div>
     <div class="bolo">
         <h1>Seu pedido está correto?</h1>
-        <div class="info">
-            <img src="https://www.comidaereceitas.com.br/wp-content/uploads/2020/08/bolo_guirlanda.jpg"/>
-            <text>Bolo de Frutas</text>
-            <text>Formato: Redondo</text>
-            <text>Massa: Chocolate</text>
-            <text>Extras: Morango,Laranja e Pessêgo</text>
-            <text>Total: R$40,00</text>
-        </div>
+
+    
+            <div id="galleryContainer">
+                <div id="leftView"></div>
+                <button id="navLeft" class="navBtns"><</button>
+                <div class="info">
+                    <div id="mainView"></div>
+                    <div id="texto"></div>
+                </div>
+                <div id="rightView"></div>
+                <button id="navRight" class="navBtns">></button>
+            </div>
+
         <button id="prox" onclick="proximo()">Sim</button>
         <button>Não</button>
+
     </div>
 
     <div class="pagamento" id="pagamento"  visibility="hidden">
