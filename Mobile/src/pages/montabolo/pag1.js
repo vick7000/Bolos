@@ -8,7 +8,7 @@ export default function Seubolo ({navigation}) {
     return (
         <ScrollView>
             <View style={style.slides}>
-                <Text>teste E</Text>
+                <Text>Seu Bolo</Text>
             </View>
         <View style={style.viewmbolo}>
                 <View style={style.montabolo}>
@@ -22,8 +22,8 @@ export default function Seubolo ({navigation}) {
 
                 <View style={style.imgbolo}>
                     
-                    <TouchableOpacity> 
-                        <Text>Img Bolo</Text>
+                    <TouchableOpacity onPress={ () => { navigation.navigate("Mountone") }}> 
+                        <Text>Próximo</Text>
                     </TouchableOpacity>
                 
                 </View>
