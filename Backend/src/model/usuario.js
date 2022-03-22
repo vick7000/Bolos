@@ -19,6 +19,16 @@ class usuario extends Model {
                     allowNull: false,
                 },
 
+                complemento: {
+                    type: DataTypes.STRING(150),
+                    allowNull: false,
+                },
+
+                cep: {
+                    type: DataTypes.STRING(9),
+                    allowNull: false,
+                },
+
                 email: {
                     type: DataTypes.STRING(100),
                     allowNull: false,
@@ -35,7 +45,38 @@ class usuario extends Model {
                     allowNull: false,
 
                 },
-            
+
+                nome_titular: {
+                    type: DataTypes.STRING(150),
+                    allowNull: false,
+                },
+
+                numero:{
+                    type: DataTypes.STRING(150),
+                    allowNull: false,
+                },
+
+                data_criacao:{
+                    type: DataTypes.STRING(150),
+                    allowNull: false,
+                },
+
+                validade:{
+                    type: DataTypes.STRING(150),
+                    allowNull: false,
+                },
+
+                codigo:{
+                    type: DataTypes.INTEGER,
+                    allowNull: false,
+                },
+
+                pix:{
+                    type: DataTypes.STRING(500),
+                    allowNull: false,
+                }
+
+
             },
             {
                 sequelize: datacon,
