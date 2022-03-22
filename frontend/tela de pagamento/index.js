@@ -10,7 +10,6 @@ var check = document.getElementById("check");
 var check2 = document.getElementById("check2");
 var check3 = document.getElementById("check3");
 var check4 = document.getElementById("check4");
-var check5 = document.getElementById("check5");
 
 var atual = 1;
 
@@ -32,15 +31,6 @@ function proximo() {
         atual--
     } else if(check.checked == true && check4.checked == true) {
         alert("Desmarque uma das opções")
-        atual--
-    } else if(check4.checked == true && check5.checked == true) {
-        alert("Desmarque uma das opções")
-        atual--
-    } else if(check.checked == true && check5.checked == true) {
-        alert("Desmarque uma das opções")
-        atual--
-    } else if(check2.checked == true && check5.checked == true) {
-        alert("Desmarque uma das opções") 
         atual--
     } else if(check.checked == true && check3.checked == true) {
         alert("Desmarque uma das opções") 
@@ -130,7 +120,6 @@ function options(e) {
 
     var cartaod = document.getElementById("cartao_d");
     var cartaoc = document.getElementById("cartao_c");
-    var paypal = document.getElementById("paypal")
     
     if(check.checked == true) {
         cartaod.visibility = "visible";
@@ -149,23 +138,6 @@ function options(e) {
         cartaoc.style.display = "none";
     }
 
-    if(check5.checked == true) {
-        paypal.visibility = "visible";
-        paypal.style.display = "grid";
-        
-        vol.vibility = "hidden";
-        vol.style.display = "none";
-    } else {
-        paypal.visibility = "hidden";
-        paypal.style.display = "none";
-
-        pro.visibility = "hidden";
-        pro.style.display = "none";
-
-        vol.vibility = "visible";
-        vol.style.display = "flex";
-    
-    }
 }
 
 function adicionar() {
@@ -226,7 +198,7 @@ function AdicionarCartao() {
     logo.innerHTML = " "
 
 
-        if(check2.checked == true && check.checked == false && check5.checked == false && check3.checked == false && check4.checked == false) {
+        if(check2.checked == true && check.checked == false && check3.checked == false && check4.checked == false) {
             let cartao = document.getElementById("cartao_c");
             cartao.appendChild(salvo)
         
@@ -236,7 +208,7 @@ function AdicionarCartao() {
         
             mcredito.visibility = "hidden";
             mcredito.style.display = "none";
-        } else if(check2.checked == false && check.checked == true  && check5.checked == false && check3.checked == false && check4.checked == false){
+        } else if(check2.checked == false && check.checked == true && check3.checked == false && check4.checked == false){
             let cartao2 = document.getElementById("cartao_d");
             cartao2.appendChild(salvo)
         
@@ -284,6 +256,9 @@ function AdicionarCartao() {
             
             bc.visibility = "hidden"
             bc.style.display = "none";
+
+          block.visibility = "visible"
+          block.style.display = "flex"
 
             pro.visibility = "visible";
             pro.style.display = "grid";
@@ -347,21 +322,7 @@ function AdicionarCartao() {
 
 }
 
-function addConta() {
-    if(window.confirm("Você abrirá a página de login do paypal, tem certeza?")) {
-        window.open("https://www.paypal.com/signin");
-
-        pro.visibility = "visible";
-        pro.style.display = "grid";
-
-        vol.visibility = "hidden";
-        vol.style.display = "none";
-    } 
-
-}
-
-
-    
+  
 function toggleState3() {
   let galleryView = document.getElementById("galleryView")
   let tilesView = document.getElementById("tilesView")
@@ -500,9 +461,11 @@ function loadGallery() {
 
   let leftView = document.getElementById("leftView");
   leftView.style.background = "url(" + imgObject[prevImg] +")";
+  leftView.style.backgroundSize = "cover";
   
   let rightView = document.getElementById("rightView");
   rightView.style.background = "url(" + imgObject[nextImg] +")";
+  rightView.style.backgroundSize = "cover";
   
 };
 

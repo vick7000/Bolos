@@ -23,7 +23,7 @@
         </ol>
     </div>
     <div class="bolo">
-        <h1>Seu pedido está correto?</h1>
+        <h1 id="h11">Seu pedido está correto?</h1>
 
     
             <div id="galleryContainer">
@@ -63,23 +63,16 @@
         </div>
 
 
-        <div id="pag">
+        <div id="pag2">
             <input type="checkbox" onchange="options2()" id="check3"/>
             <text>Pix</text>
         </div>
 
-        <div id="pag">
+        <div id="pag2" >
             <input type="checkbox" onchange="options2()" id="check4"/>
             <text>Boleto Bancário</text>
         </div>
 
-        <div id="pag">
-            <input type="checkbox" onchange="options(this)" id="check5"/>
-            <text>PayPal</text>
-            <div id="paypal">
-                <button id="ac" onclick="addConta()">Adicionar conta</button>
-            </div>
-        </div>
 
         <button id="vol" onclick="voltar()">Voltar</button>
         <button id="prox" class="pro" onclick="proximo()">Próximo</button>
@@ -120,7 +113,21 @@
         
     <div class="confirmacao">
         <h1>Está tudo correto?</h1>
-        <button id="vol" onclick="voltar()">Não</button>
+
+        <div id="galleryContainer2">
+            <div id="leftView"></div>
+            <button id="navLeft" class="navBtns"><</button>
+            <div class="info">
+                <div id="mainView"></div>
+                <div id="texto"></div>
+            </div>
+            <div id="rightView"></div>
+            <button id="navRight" class="navBtns">></button>
+        </div>
+
+        <text>forma de pagamento: </text>
+
+        <button id="vol2" onclick="voltar()">Não</button>
         <button id="prox" onclick="proximo()">Sim</button>
     </div>
    <div class="final">

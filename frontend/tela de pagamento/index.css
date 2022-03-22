@@ -69,8 +69,8 @@ ol {
     width: 120px;
     height: 50px;
     align-self: flex-end;
-    margin-left: 10px;
-    margin-right: 30px;
+    margin-left: -180px;
+    margin-right: -90px;
     margin-bottom: 20px;
     justify-content: center;
     align-items: center;
@@ -83,12 +83,15 @@ ol {
     font-size: 20px;
 }
 
-h1 {
-    
+#h11 {
     margin-left: 20px;
-    
+    white-space: nowrap;
     height: 20px;
-    width: 500px;
+}
+
+h1 {
+    margin-left: 20px;
+    height: 20px;
 }
 
 .pagamento {
@@ -99,8 +102,8 @@ h1 {
     width: 45%;
     height: 580px;
     color: #7D5A5A;
-    grid-template-rows: 150px 150px 150px 100px;
-    grid-template-columns: 400px 400px;
+    grid-template-rows:  250px 300px 900px;
+    grid-template-columns: 400px 400px 500px;
 }
 
 .pagamento div {
@@ -108,16 +111,22 @@ h1 {
     height: 50px;
     width: 300px;
     margin-top: 20%;
-    margin-left: 20%;
     text-align: center;
+}
+
+#pag {
+    margin-top: 190px;
+    margin-left: -320px;
+}
+
+#pag2 {
+    margin-left: 80px;
 }
 
 .pagamento button {
     display: flex;
     width: 150px;
     height: 50px;
-    margin-right: 200px;
-    
     justify-content: center;
     align-items: center;
     background-color: #7D5A5A;
@@ -130,7 +139,12 @@ h1 {
 }
 
 #vol {
-    margin-left: 150px;
+    margin-bottom: 20px;
+    margin-left: -700px;
+    align-self: flex-end;
+}
+
+#vol2 {
     margin-bottom: 20px;
     align-self: flex-end;
 }
@@ -138,7 +152,6 @@ h1 {
 #cartao_d,  #cartao_c  {
     display: none;
     position: relative;
-    right: 20%;
     width: 300px;
     height: 150px;
     color: #7D5A5A;
@@ -146,18 +159,7 @@ h1 {
     margin-top: 5px;
 }
 
-#paypal  {
-    display: none;
-    position: relative;
-    right: 20%;
-    width: 300px;
-    height: 150px;
-    color: #7D5A5A;
-    overflow: auto;
-    margin-top: -172px;
-}
-
-#cartao_d button, #cartao_c button, #paypal button {
+#cartao_d button, #cartao_c button {
     width: 100%;
     border-radius: 0;
     background-color: rgb(255, 255, 255, 0.5);
@@ -327,16 +329,16 @@ h1 {
 
 #block {
     background-color: rgb(241, 209, 209, .5);
-    position: relative; 
     right: 120%;
-    top: -530%;
+    margin-top: -550px;
     width: 864px;
     height: 470px;
+    z-index: 1;
 }
 
 .pro {
-    margin-left: 550px;
-    margin-top: 10%; 
+    margin-left: -220px;
+    margin-bottom: 4%;
     padding: 0;
 }
 
@@ -346,8 +348,8 @@ h1 {
 
 #cancel {
     display: flex;
-    margin-left: 35%;
-    margin-top: -15%;
+    margin-left: -70%;
+    margin-top: -17%;
 }
 
 .confirmacao {
@@ -431,17 +433,27 @@ h1 {
 }
   
 .tileItem:hover {
-     transform: scale(1.05);
+    transform: scale(1.05);
     transition: all 0.5s ease;
 }
   
 #galleryContainer {
-    top: 25%;
+    margin-top: 12%;
     height: 400px;
     width: 800px;
-    margin-right: 100px;
+    margin-left: -270px;
     background: transparent;
-    /*display: flex; */
+    display: flex;
+    flex-direction: row;
+}
+
+#galleryContainer2 {
+    margin-top: 12%;
+    height: 400px;
+    width: 800px;
+    margin-left: -270px;
+    background: transparent;
+    display: flex;
 }
 
 #toggle {
@@ -464,8 +476,8 @@ h1 {
   
 .info {
     height: 300px;
-    width: 300px;
-    margin-right: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
     z-index: 1;
     border-radius: 20px;
 }
@@ -491,16 +503,17 @@ h1 {
     width: 250px;
     height: 120px;
     justify-content: center;
-    background-color: #eb9100;
+    align-items: center;
+    background-color: #7D5A5A;
     margin-left: 5px;
     margin-right: 10px;
     z-index: 1;
     transition: all 1s;
+    color: #F1D1D1;
 }
    
 #leftView {
-    top: 25%;
-    margin-right: 100px;
+    top: 80%;
     height: 200px;
     width: 150px;
     opacity: 0.5;
@@ -551,10 +564,9 @@ h1 {
     color: #FAF2F2;
     justify-content: center;
     align-items: center;
-    align-self: flex-end;
-    margin-left: 10px;
+    margin-left: 30px;
     margin-right: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
     font-family: 'Pinky Cupid', regular;
     font-size: 20px;
 }
@@ -562,11 +574,11 @@ h1 {
 #galleryContainer button:hover {
     opacity: 1;
     transition: all 1s;
-    background-color: #eb9100;
+    background-color: #f390d5;
 }
-  
+
 #navLeft {
-    left: 50px;
+    left: 50px; 
 }
   
 #navRight {
