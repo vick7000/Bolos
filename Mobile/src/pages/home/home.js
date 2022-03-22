@@ -21,6 +21,7 @@ const carouselItens =[
         image:
             'https://raw.githubusercontent.com/vick7000/Bolos/master/frontend/assets/03.png',
     },
+   
 
 ]
 

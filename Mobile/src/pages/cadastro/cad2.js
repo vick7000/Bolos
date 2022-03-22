@@ -10,10 +10,14 @@ export default function Cad2({ navigation }) {
 return (
 <ScrollView>
       
-        <View style={style.containerlogin}>  
-                <View style={style.criarlogin}>
+      
+        <View style={style.criarlogin}>
                         <Text style={style.txts}>Crie seu login</Text>
-                </View>
+        </View>
+        <View>
+                
+        </View>
+        <View style={style.containerlogin}>  
                 <Text style={style.txts}>Email:</Text>
                 <TextInput style={style.inputlogin} placeholder='Digite seu email...'></TextInput>
         
@@ -22,7 +26,7 @@ return (
         </View>
         <View style={style.viewproximo}>
                 <TouchableOpacity onPress={ () => { navigation.navigate("Cadastro") }}>
-                        <Text style={style.btnproximo}>Próximo</Text>
+                        <Text style={style.btnproximo}>Confirmar</Text>
                 </TouchableOpacity>
          </View>
    

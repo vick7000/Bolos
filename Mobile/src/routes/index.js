@@ -19,6 +19,8 @@ import Mountone from '../pages/mbolo1/index';
 import MountTwo from '../pages/montar2/index';
 import MountThree from '../pages/montar3';
 import MountFour from '../pages/montar4';
+import Car from '../pages/car/car';
+import Catalogo from '../pages/catalogo/catalogo';
 
 function LogoTitle(props) {  
   const navigation = useNavigation();
@@ -28,7 +30,7 @@ function LogoTitle(props) {
     justifyContent:'space-around', padding:2 }}>
 
       <TouchableOpacity
-                onPress={ () => navigation.navigate('Cadastro')}>
+                onPress={ () => navigation.navigate('Catalogo')}>
                 <Text>Catálogo</Text>
       </TouchableOpacity>
 
@@ -41,10 +43,13 @@ function LogoTitle(props) {
                 <Text>Entre</Text>
       </TouchableOpacity>
       
+      <TouchableOpacity
+                onPress={ () => navigation.navigate('Car')}>
       <Image
         style={{ width: 50, height: 50,  }}
         source={require('../../assets/carcomp.png')}
-      />      
+      />    
+      </TouchableOpacity>  
     </View>
   );
 }
@@ -146,6 +151,22 @@ export default function Routes() {
     <Stack.Screen name="MountFour" component={MountFour} 
               options={{
                 title: 'Confeitar seu Bolo',
+                headerStyle: {
+                  backgroundColor: '#F3E1E1'
+              }, 
+                headerTintColor: '#FF69B4'}}/>
+
+    <Stack.Screen name="Car" component={Car} 
+              options={{
+                title: 'Carrinho',
+                headerStyle: {
+                  backgroundColor: '#F3E1E1'
+              }, 
+                headerTintColor: '#FF69B4'}}/>
+
+    <Stack.Screen name="Catalogo" component={Catalogo} 
+              options={{
+                title: 'Catálogo',
                 headerStyle: {
                   backgroundColor: '#F3E1E1'
               }, 

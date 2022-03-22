@@ -5,20 +5,33 @@ export default StyleSheet.create({
     
     
     containerlogin:{
-
+        flex:1,
         backgroundColor:'blue',
         width:'100%',
+        height:'100%',
         paddingStart:'5%'
     },
 
     criarlogin:{
+        flex:1,
         backgroundColor:'green',
         alignItems:'center',
         justifyContent:'center',
         width:'100%',
+        height:'100%',
      //   marginBottom:12,
        
     },
+
+    viewproximo:{
+        flex:2,
+        alignItems:'flex-end',
+        justifyContent:'flex-end',
+        backgroundColor:'gray',
+        width:'100%',
+        height:'100%',
+    },
+
     txts: {
         color:'#808080',
         fontSize: 15,
@@ -76,10 +89,5 @@ btncartao: {
     borderColor: '#FF1493'
     
 },
-viewproximo:{
-    alignItems:'flex-end',
-    justifyContent:'flex-end',
-    backgroundColor:'gray',
-    width:'100%',
-}
+
 });
