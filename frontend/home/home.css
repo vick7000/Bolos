@@ -6,9 +6,9 @@
 .header {
     background-image: linear-gradient(to top, #F1D1D1, #FAF2F2);
     height: 180px;
-    display: flex;
-    flex-direction: row;
-   /* grid-template-columns: 250px 550px 520px 250px 200px;*/
+    display: grid;
+    /*flex-direction: row;*/
+    grid-template-columns: 250px 550px 400px 250px 200px 200px;
     font-size: larger;
     font-family: 'Pinky Cupid', regular;
     border-bottom: solid #7D5A5A;
@@ -26,7 +26,14 @@
 .header img {
     height: 200px;
     width: 250px;
-    margin-left: 100px;
+}
+
+#carrinho {
+    margin-top: 40px;
+    width: 80px;
+    height: 80px;
+    margin-left: 60px;
+    cursor: pointer;
 }
 
 @keyframes tonext {
@@ -341,4 +348,11 @@ h4 {
     background-image: url("https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX1167996.jpg");
     color: #F3E1E1;
     text-align: center;
+}
+
+.compras {
+    display: none;
+    background-color: white;
+    width: 500px;
+    height: 500px;
 }

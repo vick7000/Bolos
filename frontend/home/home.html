@@ -8,14 +8,18 @@
     <link rel="stylesheet" href="home.css">
     <link rel="shortcut icon" href="../assets/logo.png">
 </head>
-<body>
+<body class="body">
     <header class="header">
         <a href="../catalogo/index.html">Catalogo</a>
         <a>Monte seu Bolo</a>
         <img src="../assets/logo.png"/>
         <a href="../login/index.html">Entre</a>
         <a>Usúario</a>
+        <img id="carrinho" src="../assets/carrinho.png" onclick="carrinho()"/>
     </header>
+
+    <div class="compras"></div>
+
 
         <section class="carroussel">
             <ol class="lista_carrossel">
@@ -150,4 +154,5 @@
     </div>
     <div class="copyright">Copyright © 2022-Todos os direitos reservados. Ciasto®</div>
 </body>
+<script src="home.js"></script>
 </html>

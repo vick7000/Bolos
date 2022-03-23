@@ -63,6 +63,10 @@ function proximo() {
         confirmacao.style.display = "flex";
 
         b3.style.backgroundColor = "#7D5A5A";
+
+        
+        loadGallery();
+
     } else if (atual == 4){
         let b4 = document.getElementById("b4");
 
@@ -324,7 +328,8 @@ function AdicionarCartao() {
 
   
 function toggleState3() {
-  let galleryView = document.getElementById("galleryView")
+  let galleryView = document.getElementById("galleryView");
+  let galleryView2 = document.getElementById("galleryView2")
   let tilesView = document.getElementById("tilesView")
   let outer = document.getElementById("outer3");
   let slider = document.getElementById("slider3");
@@ -448,24 +453,61 @@ let nextText = 1;
 function loadGallery() {
 
   let mainView = document.getElementById("mainView");
+  let mainView2 = document.getElementById("mainView2");
+  let mainView3 = document.getElementById("mainView3");
   mainView.style.background = "url(" + imgObject[mainImg] + ")";
+  mainView2.style.background = "url(" + imgObject[mainImg] + ")";
+  mainView3.style.background = "url(" + imgObject[mainImg] + ")";
   document.getElementById("texto").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor;
-  mainView.style.backgroundSize = "cover";
+  console.log("teste")
+  if (check.checked == true) {
+    document.getElementById("texto2").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Cartão de Débito";
+    document.getElementById("texto3").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Cartão de Débito";
+  } else if(check2.checked == true) {
 
-  for (i = 0, i < textObject.length - 1; i++;) {
-    let texto = document.getElementById("texto")
+    document.getElementById("texto2").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Cartão de Crédito";
+    document.getElementById("texto3").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Cartão de Crédito";
+  } else if (check3.checked == true) {
+    document.getElementById("texto2").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Pix";
+    document.getElementById("texto3").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Pix";
+  } else if(check4.checked == true) {
+    document.getElementById("texto2").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Boleto Bancário";
+    document.getElementById("texto3").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Boleto Bancário";
+ 
+   
+  } else if(check4.checked == true && atual == 3) {
+    let boleto = document.createElement("button")
 
-    console.log(textObject) 
-    texto.textContent = (textObject.join(' '));
+    boleto.setAttribute("class", "boleto");
+    boleto.textContent = "Gerar Boleto"
+
+    final.appendChild(boleto)
   }
+  
+  mainView.style.backgroundSize = "cover";
+  mainView2.style.backgroundSize = "cover";
+  mainView3.style.backgroundSize = "cover";
+
 
   let leftView = document.getElementById("leftView");
   leftView.style.background = "url(" + imgObject[prevImg] +")";
   leftView.style.backgroundSize = "cover";
+  let leftView2 = document.getElementById("leftView2");
+  leftView2.style.background = "url(" + imgObject[prevImg] +")";
+  leftView2.style.backgroundSize = "cover";
+  let leftView3 = document.getElementById("leftView3");
+  leftView3.style.background = "url(" + imgObject[prevImg] +")";
+  leftView3.style.backgroundSize = "cover"
   
   let rightView = document.getElementById("rightView");
   rightView.style.background = "url(" + imgObject[nextImg] +")";
   rightView.style.backgroundSize = "cover";
+  let rightView2 = document.getElementById("rightView2");
+  rightView2.style.background = "url(" + imgObject[nextImg] +")";
+  rightView2.style.backgroundSize = "cover";
+  let rightView3 = document.getElementById("rightView3");
+  rightView3.style.background = "url(" + imgObject[nextImg] +")";
+  rightView3.style.backgroundSize = "cover";
   
 };
 
@@ -505,8 +547,11 @@ function scrollLeft() {
 
 document.getElementById("navRight").addEventListener("click", scrollRight);
 document.getElementById("navLeft").addEventListener("click", scrollLeft);
-document.getElementById("rightView").addEventListener("click", scrollRight);
-document.getElementById("leftView").addEventListener("click", scrollLeft);
+document.getElementById("navRight2").addEventListener("click", scrollRight);
+document.getElementById("navLeft2").addEventListener("click", scrollLeft);
+document.getElementById("navRight3").addEventListener("click", scrollRight);
+document.getElementById("navLeft3").addEventListener("click", scrollLeft);
+
 document.addEventListener('keyup',function(e){
     if (e.keyCode === 37) {
     scrollLeft();

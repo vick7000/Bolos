@@ -145,7 +145,7 @@ h1 {
 }
 
 #vol2 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     align-self: flex-end;
 }
 
@@ -366,11 +366,11 @@ h1 {
 
 .confirmacao button {
     display: flex;
-    width: 150px;
+    width: 130px;
     height: 50px;
-    margin-left: 150px;
-    margin-right: 30px;
-    margin-bottom: 20px;
+    margin-left: -180px;
+    margin-right: -90px;
+    margin-bottom: 10px;
     justify-content: center;
     align-items: center;
     background-color: #7D5A5A;
@@ -382,6 +382,10 @@ h1 {
     font-size: 20px;
 }
 
+.confirmacao h1 {
+    white-space: nowrap;
+}
+
 .final {
     display: none;
     position: relative;
@@ -390,6 +394,38 @@ h1 {
     width: 45%;
     height: 580px;
     color: #7D5A5A;
+}
+
+.final form {
+    display: flex;
+    align-self: flex-end;
+    
+    margin-left: -180px;
+    margin-right: -90px;
+    margin-bottom: 20px;
+    
+   
+    
+    
+}
+
+.final button {
+    background-color: #7D5A5A;
+    font-family: 'Pinky Cupid', regular;
+    width: 120px;
+    height: 50px;
+    border: none;
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #FAF2F2;
+    
+    font-size: 20px;
+}
+
+.final h1 {
+    white-space: nowrap;
 }
 
 #toggleContainer label { 
@@ -448,12 +484,23 @@ h1 {
 }
 
 #galleryContainer2 {
-    margin-top: 12%;
+    margin-top: 9%;
     height: 400px;
     width: 800px;
-    margin-left: -270px;
+    margin-left: -200px;
     background: transparent;
     display: flex;
+    flex-direction: row;
+}
+
+#galleryContainer3 {
+    margin-top: 14%;
+    height: 400px;
+    width: 800px;
+    margin-left: -700px;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
 }
 
 #toggle {
@@ -482,7 +529,7 @@ h1 {
     border-radius: 20px;
 }
 
-#mainView {
+#mainView, #mainView2, #mainView3{
     height: 200px;
     width: 330px;
     background-color: #F1D1D1;
@@ -511,8 +558,38 @@ h1 {
     transition: all 1s;
     color: #F1D1D1;
 }
+
+#texto2 {
+    display: flex;
+    padding: 40px;
+    width: 250px;
+    height: 160px;
+    justify-content: center;
+    align-items: center;
+    background-color: #7D5A5A;
+    margin-left: 5px;
+    margin-right: 10px;
+    z-index: 1;
+    transition: all 1s;
+    color: #F1D1D1;
+}
+
+#texto3 {
+    display: flex;
+    padding: 40px;
+    width: 250px;
+    height: 160px;
+    justify-content: center;
+    align-items: center;
+    background-color: #7D5A5A;
+    margin-left: 5px;
+    margin-right: 10px;
+    z-index: 1;
+    transition: all 1s;
+    color: #F1D1D1;
+}
    
-#leftView {
+#leftView, #leftView2, #leftView3 {
     top: 80%;
     height: 200px;
     width: 150px;
@@ -527,12 +604,12 @@ h1 {
     transition: all 1s;  
 }
   
-#leftView:hover {
+#leftView:hover, #leftView2:hover, #leftView3:hover {
     opacity: 1;
     transition: all 1s;
 }
   
-#rightView {
+#rightView, #rightView2, #rightView3{
     height: 200px;
     width: 150px;
     opacity: 0.5;
@@ -546,11 +623,11 @@ h1 {
     transition: all 1s;
 }
   
-#rightView:hover {
+#rightView:hover, #rightView2:hover, #rightView3:hover {
     opacity: 1;
     transition: all 1s;
 }
-  
+
 #galleryContainer button {
     display: flex;
     width: 60px;
@@ -571,16 +648,56 @@ h1 {
     font-size: 20px;
 }
   
-#galleryContainer button:hover {
+#galleryContainer button:hover, #galleryContainer2 button:hover, #galleryContainer3 button:hover{
     opacity: 1;
     transition: all 1s;
     background-color: #f390d5;
 }
 
-#navLeft {
+#galleryContainer2 button {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+    border: none;
+    position: absolute;
+    opacity: 0.8;
+    background-color: #7D5A5A;
+    cursor: pointer;
+    color: #FAF2F2;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 250px;
+    font-family: 'Pinky Cupid', regular;
+    font-size: 20px;
+}
+
+#galleryContainer3 button {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+    border: none;
+    position: absolute;
+    opacity: 0.8;
+    background-color: #7D5A5A;
+    cursor: pointer;
+    color: #FAF2F2;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 220px;
+    font-family: 'Pinky Cupid', regular;
+    font-size: 20px;
+}
+
+#navLeft, #navLeft2, #navLeft3 {
     left: 50px; 
 }
   
-#navRight {
+#navRight, #navRight2, #navRight3 {
     right: 50px;
 }  
