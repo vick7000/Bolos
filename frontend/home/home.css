@@ -6,8 +6,9 @@
 .header {
     background-image: linear-gradient(to top, #F1D1D1, #FAF2F2);
     height: 180px;
-    display: grid;
-    grid-template-columns: 250px 550px 520px 250px 200px;
+    display: flex;
+    flex-direction: row;
+   /* grid-template-columns: 250px 550px 520px 250px 200px;*/
     font-size: larger;
     font-family: 'Pinky Cupid', regular;
     border-bottom: solid #7D5A5A;
@@ -25,6 +26,7 @@
 .header img {
     height: 200px;
     width: 250px;
+    margin-left: 100px;
 }
 
 @keyframes tonext {
@@ -79,6 +81,7 @@ body {
     max-height: 100%;
     margin: 0 auto;
     font-family: 'Pinky Cupid', regular;
+    box-sizing: border-box;
 }
 
 * {
@@ -260,6 +263,10 @@ ol, li {
     grid-template-rows: 250px 400px;
     align-items: center;
     justify-content: center;
+}
+
+.bolos a {
+    width: 300px;
 }
 
 .bolo {
