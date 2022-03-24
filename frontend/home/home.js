@@ -1,7 +1,10 @@
-
+var compras = document.querySelector(".compras");
+var fechar = document.querySelector(".fechar");
 
 function carrinho() { 
-    let compras = document.querySelector("compras")
+    compras.style.display = "flex"
 
-    compras.style.display = "block"
+    fechar.addEventListener("click", () => {
+        compras.style.display = "none"
+    })
 }
