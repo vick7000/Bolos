@@ -10,26 +10,67 @@ const [selectedLanguage, setSelectedLanguage] = useState();
 
 return (
 <ScrollView>
-        <View>
-            <Text> Escolha sua confeitaria</Text>
+        <View style={{
+                backgroundColor:'blue',
+                flex:1,
+                width:'100%',
+                height:'100%',
+                alignItems:'center',
+                justifyContent:'center',                          
+             
+                }}>
+            <Text style={{
+                   color:'white',
+                   fontSize:20,
+                   fontWeight: 'bold',
+                 }}> Escolha sua confeitaria</Text>
+        </View>
+        
+        <View style={{
+                flex:1,
+                backgroundColor:'yellow',
+                alignItems:'center',
+                justifyContent:'center',
+                width:'100%',
+                height:'100%',
+                        }}>
                 <Picker
                         selectedValue={selectedLanguage}
+                        style={{
+                                backgroundColor:'gray',
+                                height:'10%',
+                                width:'70%',
+                                borderRadius:10,
+                        }}
                         onValueChange={(itemValue, itemIndex) => 
                         setSelectedLanguage(itemValue)
                 }>
                 <Picker.Item label="Selecione sabor..." value="" />
-                <Picker.Item label="Morangos" value="101" />
-                <Picker.Item label="Calda de Chocolate" value="201" />
-                <Picker.Item label="Diskets" value="301" />
-                <Picker.Item label="Bombons" value="401" />            
-                <Picker.Item label="Brigadeiro" value="601" />
-                <Picker.Item label="Lacta" value="701" />
+                <Picker.Item label="Mirtilo" value="101" />
+                <Picker.Item label="Brigadeiro" value="201" />
+                
                 </Picker>
         </View>
         
-        <View>
+        <View style={{
+                flex: 1,
+                backgroundColor:'black',
+                alignItems:'flex-end',
+                justifyContent:'flex-end',
+                width:'100%',
+                height:'100%',
+                marginRight:10
+                }}>
                 <TouchableOpacity onPress={ () => { navigation.navigate("Seubolo") }}>
-                        <Text>Confirmar</Text>
+                        <Text style={{
+                                 borderRadius:10,
+                                 backgroundColor:'red', 
+                                 padding:15,
+                                 height:50,
+                                 width:120,
+                                 fontSize:18,
+                                 fontWeight: 'bold',                               
+                                 }}>Confirmar</Text>
                 </TouchableOpacity>
         </View>      
    

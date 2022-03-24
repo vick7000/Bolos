@@ -17,13 +17,13 @@ return (
                 onValueChange={(itemValue, itemIndex) => 
                     setSelectedLanguage(itemValue)
             }>
-            <Picker.Item label="Selecione sabor..." value="" />
+            <Picker.Item label="Selecione a cobertura..." value="" />
             <Picker.Item label="Oceano" value="101" />
             <Picker.Item label="Pink Cupid" value="201" />
             <Picker.Item label="Verão" value="301" />
-            <Picker.Item label="Leite Ninho" value="401" />            
-            <Picker.Item label="Brigadeiro" value="601" />
-            <Picker.Item label="Sensação" value="701" />
+            <Picker.Item label="Floresta" value="401" />            
+            <Picker.Item label="Ciasto" value="601" />
+            
         </Picker>
         </View>
         
