@@ -73,7 +73,7 @@
             <input type="checkbox" onchange="options2()" id="check4"/>
             <text>Boleto Bancário</text>
         </div>
-
+        
 
         <button id="vol" onclick="voltar()">Voltar</button>
         <button id="prox" class="pro" onclick="proximo()">Próximo</button>
@@ -82,9 +82,9 @@
     <div class="mcredito">
         <div class="content">
             <text>Nome do Titular do Cartão</text>
-            <input id="nome" maxlength="150"/>
+            <input  class="input" id="nome" maxlength="150"/>
             <text>Número do Cartão</text>
-            <input id="numero" maxlength="16"/>
+            <input  class="input" id="numero" maxlength="16"/>
             <div id="data">
                 <div id="d">
                     <div id="cvv">
@@ -132,7 +132,7 @@
    <div class="final">
        <h1>Seu pedido será aceito quando o pagamento for processado, <br/> obrigado pela compra :)</h1>
         
-       <div id="galleryContainer3">
+    <div id="galleryContainer3">
         <div id="leftView3"></div>
         <button id="navLeft3"><</button>
         <div class="info">
@@ -141,7 +141,19 @@
         </div>
         <div id="rightView3"></div>
         <button id="navRight3">></button>
+
+        <div class="extra">
+            <div id="chave" display="none">
+                <text>Chave Pix: <br/> 00. 123. 456/0001-10</text>
+            </div>
+            <div id="baixar" display="none">
+                <button>Baixar Boleto</button>
+            </div>
+        </div>
+
     </div>
+
+    
 
     <form action="../home/home.html"> 
         <button>Finalizar</button>

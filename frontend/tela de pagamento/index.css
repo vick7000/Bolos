@@ -700,4 +700,23 @@ h1 {
   
 #navRight, #navRight2, #navRight3 {
     right: 50px;
-}  
+} 
+
+.extra {
+    position: relative;
+    background-color: #7D5A5A;
+    width: 150px;
+    height: 80px;
+    color: #F1D1D1;
+    align-self: flex-end;
+    margin-left: -750px;
+}
+
+#baixar button{
+    width: 130px;
+    height: 60px;
+    background-color: #ffc6c6;
+    margin-top: 10px;
+    margin-left: 10px;
+    opacity: 1;
+}

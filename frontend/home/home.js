@@ -8,3 +8,8 @@ function carrinho() {
         compras.style.display = "none"
     })
 }
+
+
+useEffect(() => {
+    fetch('http://localhost:3000')
+})
