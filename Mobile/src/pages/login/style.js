@@ -8,15 +8,16 @@ export default StyleSheet.create({
         backgroundColor:'#FAF2F2',
         flex:1,
         alignItems:'center',
-        justifyContent:'space-around',
-        flexDirection: 'column',
+       justifyContent:'space-around',
+       flexDirection: 'column',
         margin:5,
-        marginTop: 5
+        marginTop: 5,
+        width:'100%',
+        height:'100%',
     },
 
     texttitle:{
-       // backgroundColor:'#FAF2F2',
-       // flex:1,
+      
         alignItems:'center',
         justifyContent:'center',
         flexDirection: 'column',
@@ -35,19 +36,20 @@ export default StyleSheet.create({
         flex:1,
         alignItems:'flex-end',
         marginTop:5,
-        paddingRight:10
+        paddingRight:10,
+        backgroundColor:'#FFF'
         
 
     },
         
    inputlogin:{  
-    width:300,     
+    width:320,     
     height:40,   
     borderColor:'#FFB6C1',
     borderBottomWidth:1,  
     marginBottom:12,    
     fontSize:16,
-   // backgroundColor:'white'    
+    backgroundColor:'#FAF2F2'    
    
 },
 
@@ -71,8 +73,7 @@ containerlabel: {
 },
 
 label: {
-    color:'#FF69B4',
-    //textAlign: 'right',
+    color:'#FF69B4',   
     margin: 5,
     marginTop: 15,
     padding: 5,
@@ -83,16 +84,14 @@ label: {
 },
 
 btnentrar: {
-   //flex:1,
+   
     color: '#FF69B4',
     textAlign: 'center',
     width: 150,
     height: 50,
-    backgroundColor:'pink',
-   // marginTop: 15,
+    backgroundColor:'pink',   
     margin: 15,
-    padding: 12,
- //  marginBottom: 4,
+    padding: 12, 
     borderRadius: 15,
     fontWeight: 'bold',
     fontSize:20,
