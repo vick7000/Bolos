@@ -36,7 +36,37 @@ img.addEventListener("click", () => {
 })
 
 function login (){
+    let data = JSON.stringify({
+        email: email.value,
+        senha: senha.value,
+    });
 
+
+    fetch("http://10.87.207.4:3000/usuario", {
+        "method": 'POST',
+        headers: {
+            "Content-Type": "application/json"
+        },
+        "body": data
+    })
+    .then(resp => { return resp.json() })
+    .then(data => {
+        if(data.length > 0) {
+            localStorage.setItem("userdata", JSON.stringify(data[0]));
+            window.location.href = '../home/home.html';
+        } else {
+            alert("Usuario ou senha invalidos");
+        }
+    })
+
+    /*fetch("http://10.87.207.4:3000/usuario")
+    .then(res => {
+        return res.json();
+    }).then(data => {
+        console.log(data)
+            
+        }
+    )*/
 }
 
 
@@ -44,3 +74,4 @@ function login (){
 function O (){
     window.location.href = "../usuario/index.html"
 }
+

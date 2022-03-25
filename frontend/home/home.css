@@ -4,16 +4,13 @@
 }
 
 .header {
-    background-image: linear-gradient(to top, #F1D1D1, #FAF2F2);
+    
     height: 180px;
     width: 100%;
-    display: grid;
-    /*flex-direction: row;*/
-    grid-template-columns: 250px 550px 400px 250px 200px 200px;
+    display: inline;
     font-size: larger;
     font-family: 'Pinky Cupid', regular;
-    border-bottom: solid #7D5A5A;
-    border-width: 5px;
+    
     min-width: 320px;
     max-width: 2000px;
     margin: 0;
@@ -37,21 +34,43 @@
 [class*="col-"] {
     float: left;
     padding: 15px;
-    border: 1px solid red;
   }
 
-  .row::after {
+.row::after {
   content: "";
   clear: both;
   display: table;
 }
 
+.row {
+    background-image: linear-gradient(to top, #F1D1D1, #FAF2F2);
+    border-bottom: solid #7D5A5A;
+    border-width: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   justify-content: center;
+}
+
+.row ul {
+   list-style-type: none;
+   
+   margin: 0;
+   padding: 0;
+}
+
+.row li {
+    padding: 40px;
+    padding-bottom: 100px;
+    display: inline;
+}
+
 .header a {
-    margin-left: 120px;
-    margin-top: 70px;
+    
+    margin-top: 10px;
     cursor: pointer;
     height: 20px;
-    width: 115px;
+    
 }
 
 .header img {
@@ -432,4 +451,427 @@ h4 {
     position: relative;
     margin-top: 730px;
     cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+
+
+
+.header {
+    background-image: linear-gradient(to top, #F1D1D1, #FAF2F2);
+    height: 130px;
+    width: 100%;
+}
+
+.col-3 
+
+.header ul {
+    display: none;
+}
+
+.submenu {
+    display: none;
+    height: 100%;
+    width: 50%;
+    background-image: linear-gradient(to top, #F1D1D1, #FAF2F2);
+    border-left: solid #7D5A5A;
+    border-width: 5px;
+}
+    
+.burger {
+    background-image: url("../assets/burger.png");
+    width: 100px;
+    height: 100px;
+}
+    
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    
+    [class*="col-"] {
+        float: left;
+        padding: 15px;
+      }
+    
+     
+    
+    
+    
+    @keyframes tonext {
+        50% {
+            left: 0;
+        }
+        95% {
+            left: 100%;
+        }
+        98% {
+            left: 100%;
+        }
+        99% {
+            left: 0;
+        }
+        
+    }
+    @keyframes tostart {
+        45% {
+            left: 0;
+        }
+        95% {
+            left: -300%;
+        }
+        98% {
+            left: -300;
+        }
+        
+        99% {
+            left: 0;
+        }
+    
+    }
+    
+    @keyframes snap {
+        95% {
+            scroll-snap-align: center;
+        }
+        97% {
+            scroll-snap-align: none;
+        }
+        99% {
+            scroll-snap-align: none;
+        }
+        100% {
+            scroll-snap-align: center;
+        }
+    }
+    
+    body {
+        min-width: 320px;
+        max-width: 2000px;
+        max-height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: 'Pinky Cupid', regular;
+        box-sizing: border-box;
+    }
+    
+    * {
+        box-sizing: border-box;
+        scrollbar-color: transparent transparent;
+        scrollbar-width: 0px;
+    }
+    
+    *::-webkit-scrollbar {
+        width: 0;
+    }
+    
+    *::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    
+    *::-webkit-scrollbar-thumb {
+        background: transparent;
+        border: none;
+    }
+    
+    * {
+        -ms-overflow-style: none;
+    }
+    
+    ol, li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .carroussel {
+        position: relative;
+        padding-top: 30%;
+        perspective: 50px;
+        width: 100%;
+    }
+    
+    
+    .lista_carrossel {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        overflow-x: scroll;
+        counter-reset: item;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        background-image: url("https://i.pinimg.com/originals/30/7b/24/307b24472063217e1c405f4bef0c0fb3.png");
+    }
+    
+    .slide {
+        position: relative;
+        flex: 0 0 100%;
+        width: 100%;
+        background-color: #f99;
+    }
+    
+    #slide1 {
+        background-image: url("https://img.elo7.com.br/product/zoom/1968F6D/bolos-decorados-bolos.jpg");
+        background-size: 100%;
+    }
+    
+    #slide2 {
+        background-image: url("https://carlosbakery.com.br/wp-content/uploads/2021/08/Bolo-star-wars-225x300.png");
+        background-size: 35% 100%;
+    }
+    
+    #slide3 {
+        background-image: url("https://d3cif2hu95s88v.cloudfront.net/live-site-2016/product-image/28012019/Kung-Fu-Panda-Cakes_2-600x600.jpg");
+        background-size: 35% 100%;
+    }
+    
+    .slide:nth-child(even) {
+        background-color: #99f;
+    }
+    
+    .slide:before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, 40%, 70px);
+        color: #fff;
+        font-size: 5em;
+    }
+    
+    .snapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        scroll-snap-align: center;
+    }
+    
+    @media (hover: hover) {
+        .snapper {
+            animation-name: tonext, snap;
+            animation-timing-function: ease;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        .slide:last-child .snapper {
+            animation-name: tostart, snap;
+        }
+    }
+    
+    @media (prefers-reduced-motion: reduce) {
+        .snapper {
+            animation-name: none;
+        }
+    }
+    
+    .carroussel:hover .snapper,
+    .carroussel:focus-within .snapper {
+        animation-name: none;
+    }
+    
+    .navigation {
+        right: 0;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        background-image: url("https://i.pinimg.com/originals/30/7b/24/307b24472063217e1c405f4bef0c0fb3.png");
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .carrossel_navigation,
+    .navigation_item {
+        display: inline-block;
+    }
+    
+    .c_button {
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        background-color: #333;
+        background-clip: content-box;
+        border: none;
+        border-radius: 50%;
+        font-size: 0;
+        transition: transform 0.1s;
+    }
+    
+    .carroussel::before,
+    .carroussel::after,
+    .carroussel_prev,
+    .carroussel_next {
+        position: absolute;
+        top: 0;
+        margin-top: 37.5%;
+        width: 4rem;
+        height: 4rem;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        font-size: 0;
+        outline: 0;
+    }
+    
+    .carroussel::before,
+    .carroussel_prev {
+        left: -1rem;
+    }
+    
+    .carroussel::after,
+    .carroussel_next {
+        right: -1rem;
+    }
+    
+    .bolos {
+        background-color: #FAF2F2;
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 450px 450px 450px 450px;
+        grid-template-rows: 250px 400px;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .bolos a {
+        width: 300px;
+    }
+    
+    .bolo {
+        position: relative;
+        width: 300px;
+        height: 220px;
+        display: block;
+        border-radius: 40px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .bolo img {
+        width: 300px;
+        height: 220px;
+        border-radius: 40px;
+    }
+    
+    .overlay {
+        width: 300px;
+        height: 220px;
+        border-radius: 40px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.6) ;
+        position: absolute;
+        text-align: center;
+    }
+    
+    .bolo:hover .overlay {
+        opacity: 1;
+    }
+    
+    text {
+        position: relative;
+        top: 45%;
+        font-size: 20px;
+        color: #FAF2F2;
+    }
+    
+    .footer {
+        background-image: url("https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX1167996.jpg");
+        height: 160px;
+        color: #F3E1E1;
+        display: grid;
+        grid-template-columns: 55% 600px;
+    }
+    
+    h4 {
+        margin: 0;
+        text-align: center;
+    }
+    
+    .social {
+        background-image: url("https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX1167996.jpg");
+        display: grid;
+        grid-template-columns: 60px 60px 60px;
+        justify-content: center;
+    }
+    
+    .social img {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+    
+    .copyright {
+        background-image: url("https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX1167996.jpg");
+        color: #F3E1E1;
+        text-align: center;
+    }
+    
+    .compras {
+        display: none;
+        overflow: auto;
+        position: fixed;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        background-color: rgb(0, 0, 0, .5);
+        width: 100%;
+        height: 100%;
+    }
+    
+    .content {
+        margin: auto;
+        align-self: start;
+        padding: 20px;
+        width: 40%;
+        height: 90%;
+        background-color: #F1D1D1;
+        border-radius: 20px;
+        border: 2px solid black;
+    }
+    
+    .content header {
+        font-size: 40px;
+        color: #7D5A5A;
+        border-bottom: 2px solid black;
+    }
+    
+    .content header img {
+        margin-left: 75%;
+        cursor: pointer;
+    }
+    
+    .content button {
+        background-color: #7D5A5A;
+        border: none;
+        border-radius: 20px;
+        font-family: 'Pinky Cupid', regular;
+        height: 40px;
+        width: 120px;
+        font-size: 15px;
+        position: relative;
+        margin-top: 730px;
+        cursor: pointer;
+    }
+
+
 }
