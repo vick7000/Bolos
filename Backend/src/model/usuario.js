@@ -21,7 +21,7 @@ class usuario extends Model {
 
                 complemento: {
                     type: DataTypes.STRING(150),
-                    allowNull: false,
+                    allowNull: true,
                 },
 
                 cep: {

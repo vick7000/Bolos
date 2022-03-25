@@ -22,11 +22,11 @@ const create = async (req, res) => {
 }
 
 const read = async (req, res) => {
-    const id = req.params.id;
-
     let filtro = {};
     
-    if(id != undefined) filtro = { where: { id: id }}
+    let id = req.params.id;
+
+    if(id != undefined) filtro = { where : { id: id }}
 
     const ret = await Usuario.findAll(filtro);
 
