@@ -1,10 +1,14 @@
 // tags
 var mod = document.querySelector(".modal");
-var img = document.querySelector(".x");
+var mod2 = document.querySelector(".modal2");
+var img = document.getElementById("x");
+var im = document.getElementById("aa");
 var div1 = document.querySelector(".pessoal");
 var div2 = document.querySelector(".endereco");
 var div3 = document.querySelector(".pagamentos");
 var cadastrar = document.getElementById("sign");
+var dele = document.getElementById("del");
+var excluir = document.getElementById("ex");
 
 // Cadastro
 var nome = document.getElementById("nome");
@@ -14,12 +18,6 @@ var rua = document.getElementById("rua");
 var bairro = document.getElementById("bairro");
 var cep = document.getElementById("cep");
 var complemento = document.getElementById("comp"); //nao obrigatório
-var nomeTitular = document.getElementById("titular");
-var numeroCartao = document.getElementById("numero");
-var dataEmissao = document.getElementById("emissao");
-var validade = document.getElementById("validade");
-var codigo = document.getElementById("cod");
-var pix = document.getElementById("pix");
 
 // Login
 var email = document.getElementById("email");
@@ -27,51 +25,96 @@ var senha = document.getElementById("psw");
 var logar = document.getElementById("btn");
 
 
+// Excluir
+var pass = document.getElementById("psw1");
+var confirm = document.getElementById("psw2");
+
+function conection(){
+    let data = JSON.stringify({
+        email: email.value,
+        senha: md5(senha.value)
+    });
+
+    const url = "http://localhost:3000/login";
+
+    fetch(url, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        "body" : data
+    })
+    .then(res => {return res.json()})
+    .then(data => {
+        if (data.length > 0) {
+            localStorage.setItem("userdata", JSON.stringify(data[0]));
+            window.location.href = "../home";
+        }else{
+            alert("Usuario ou senha incorretos")
+        }
+    });
+}
+
+
+
+function reg (){
+    let data = JSON.stringify({
+        email: email.value,
+        senha: senha.value,
+        });
+        fetch("http://localhost:3000/usuario", {
+            method: "POST",
+            headers: {
+            "Content-Type": "application/json",
+            },
+            body: data,
+        })
+            .then((resp) => {
+            return resp.json();
+            })
+            .then((data) => {
+                console.log(data)
+            if(data.id !== undefined) {
+                localStorage.setItem("userdata", JSON.stringify(data));
+                window.location.href = "../home";
+            }else {
+                alert("Falha ao cadastrar");
+            }
+        });
+}
+
+function tentando (){
+    logar.onclick = reg;
+}
+
+
 function caad(){
     mod.style.display = "block";
 
 }
-img.addEventListener("click", () => {
-    mod.style.display = "none"
+
+dele.addEventListener("click", () => {
+    mod2.style.display = "block";
 })
 
-function login (){
-    let data = JSON.stringify({
-        email: email.value,
-        senha: senha.value,
-    });
 
+excluir.addEventListener("click", () => {
+    if(psw1.innerHTML === psw2.innerHTML){
+        //estrutura para a exclusão
+    }
+})
 
-    fetch("http://10.87.207.4:3000/usuario", {
-        "method": 'POST',
-        headers: {
-            "Content-Type": "application/json"
-        },
-        "body": data
-    })
-    .then(resp => { return resp.json() })
-    .then(data => {
-        if(data.length > 0) {
-            localStorage.setItem("userdata", JSON.stringify(data[0]));
-            window.location.href = '../home/home.html';
-        } else {
-            alert("Usuario ou senha invalidos");
-        }
-    })
+img.addEventListener("click", () => {
+    mod.style.display = "none"
+    
+})
+im.addEventListener("click", () => {
+    mod2.style.display = "none"
+})
 
-    /*fetch("http://10.87.207.4:3000/usuario")
-    .then(res => {
-        return res.json();
-    }).then(data => {
-        console.log(data)
-            
-        }
-    )*/
-}
 
 
 
 function O (){
     window.location.href = "../usuario/index.html"
 }
-
