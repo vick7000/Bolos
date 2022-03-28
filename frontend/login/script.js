@@ -44,7 +44,7 @@ function conection() {
 
     });
 
-    const url = "http://localhost:3000/login";
+    const url = "http://10.87.207.4:5000/login";
 
     fetch(url, {
         method: "POST",
@@ -57,7 +57,7 @@ function conection() {
         .then(data => {
             if (data.length > 0) {
                 localStorage.setItem("userdata", JSON.stringify(data[0]));
-                window.location.href = "../home";
+                window.location.href = "../home/index.html";
             } else {
                 alert("Usuario ou senha incorretos")
             }
@@ -83,7 +83,7 @@ async function cadas () {
         pix: pix.value,
 
     });
-    await fetch("http://localhost:3000/usuario", {
+    await fetch("http://10.87.207.4:5000/usuario", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",

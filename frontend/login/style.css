@@ -15,6 +15,7 @@
 body{
     /* background: radial-gradient(#F3E1E1, #fff); */
     background-image: url("../assets/a_auto_x2.jpg");
+    background-size: auto;
     
 }
 
