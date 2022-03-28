@@ -38,6 +38,7 @@
                 </div>
     
                 <div class="endereco">
+                    <input type="tel" placeholder="Tel..." id="tel">
                     <input type="text" placeholder="Rua..." id="rua">
                     <input type="text" placeholder="Número..." id="num">
                     <input type="text" placeholder="Bairro..." id="bairro">
@@ -45,7 +46,17 @@
                     <input type="text" placeholder="Complemento (Opcional)..." id="comp">
                 </div>
 
-                <button type="button" id="sign" class="sss" onclick="cadastro()">Cadastrar</button>
+                <div class="pagamento">
+                    <h2>Forma de Pagamento</h2>
+                    <input type="text" placeholder="Nome Titular..." id="titular">
+                    <input type="text" placeholder="Numero..." id="number">
+                    <input type="text" placeholder="data_criacao..." id="dc">
+                    <input type="text" placeholder="validade..." id="val">
+                    <input type="text" placeholder="codigo..." id="codigo">
+                    <input type="text" placeholder="pix..." id="pixis">
+                </div>
+
+                <button type="button" id="sign" class="sss" onclick="cadas()">Cadastrar</button>
                 
                 </div>
             </div>
@@ -72,5 +83,6 @@
     </section>
 
 </body>
-<script src="script.js"></script>
+<script src="./script.js" ></script>
+<script src="../global/md5.js" ></script>
 </html>

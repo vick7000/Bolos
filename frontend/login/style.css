@@ -172,7 +172,7 @@ body{
 }
 
 
-.pessoal, .endereco{
+.pessoal, .endereco, .pagamento{
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -184,14 +184,14 @@ body{
     
 }
 
-.pessoal>h2, .endereco>h2{
+.pessoal>h2, .pagamento>h2{
     /* background-color: rgba(0, 0, 0, 0.781); */
     color: #F3E1E1;
 }
 
 
 
-.pessoal>input, .endereco>input{
+.pessoal>input, .endereco>input, .pagamento>input{
     width: 25vw;
     margin: 2px;
     display: grid;
@@ -204,7 +204,7 @@ body{
     font-size: 1.5rem;
 
 }
-.pessoal>input:hover:focus, .endereco>input:hover:focus{
+.pessoal>input:hover:focus, .endereco>input:hover:focus, .pagamento>input:hover:focus{
     color: rgb(199, 61, 61);
     text-decoration: none;
 

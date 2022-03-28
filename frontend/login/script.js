@@ -14,10 +14,18 @@ var excluir = document.getElementById("ex");
 var nome = document.getElementById("nome");
 var cadEmail = document.getElementById("cadEmail");
 var cadSenha = document.getElementById("senha");
+var tel = document.getElementById("tel");
 var rua = document.getElementById("rua");
+var num = document.getElementById("num");
 var bairro = document.getElementById("bairro");
 var cep = document.getElementById("cep");
 var complemento = document.getElementById("comp"); //nao obrigatório
+var nome_cartao = document.getElementById("titular");
+var numero = document.getElementById("number");
+var emissao = document.getElementById("dc");
+var validade = document.getElementById("val");
+var codigo = document.getElementById("codigo");
+var pix = document.getElementById("pixis"); //nao obrigatório
 
 // Login
 var email = document.getElementById("email");
@@ -29,10 +37,11 @@ var logar = document.getElementById("btn");
 var pass = document.getElementById("psw1");
 var confirm = document.getElementById("psw2");
 
-function conection(){
+function conection() {
     let data = JSON.stringify({
         email: email.value,
-        senha: md5(senha.value)
+        senha: md5(senha.value),
+
     });
 
     const url = "http://localhost:3000/login";
@@ -42,53 +51,64 @@ function conection(){
         headers: {
             "Content-Type": "application/json"
         },
-        "body" : data
+        "body": data
     })
-    .then(res => {return res.json()})
-    .then(data => {
-        if (data.length > 0) {
-            localStorage.setItem("userdata", JSON.stringify(data[0]));
-            window.location.href = "../home";
-        }else{
-            alert("Usuario ou senha incorretos")
-        }
-    });
-}
-
-
-
-function reg (){
-    let data = JSON.stringify({
-        email: email.value,
-        senha: senha.value,
-        });
-        fetch("http://localhost:3000/usuario", {
-            method: "POST",
-            headers: {
-            "Content-Type": "application/json",
-            },
-            body: data,
-        })
-            .then((resp) => {
-            return resp.json();
-            })
-            .then((data) => {
-                console.log(data)
-            if(data.id !== undefined) {
-                localStorage.setItem("userdata", JSON.stringify(data));
+        .then(res => { return res.json() })
+        .then(data => {
+            if (data.length > 0) {
+                localStorage.setItem("userdata", JSON.stringify(data[0]));
                 window.location.href = "../home";
-            }else {
-                alert("Falha ao cadastrar");
+            } else {
+                alert("Usuario ou senha incorretos")
             }
         });
 }
 
-function tentando (){
-    logar.onclick = reg;
+
+
+async function cadas () {
+    let data = JSON.stringify({
+        nome: nome.value,
+        email: cadEmail.value,
+        senha: md5(cadSenha.value),
+        telefone: tel.value,
+        endereco: rua.value + " " + num.value + " " + bairro.value,
+        cep: cep.value,
+        complemento: complemento.value,
+        nome_titular: nome_cartao.value,
+        numero: numero.value,
+        data_criacao: emissao.value,
+        validade: validade.value,
+        codigo: codigo.value,
+        pix: pix.value,
+
+    });
+    await fetch("http://localhost:3000/usuario", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: data,
+    })
+        .then((resp) => {
+            return resp.json();
+        })
+        .then((data) => {
+            console.log(data)
+
+            if (data.id !== undefined) {
+                localStorage.setItem("userdata", JSON.stringify(data));
+                window.location.href = "../home";
+
+            } else {
+                alert("Falha ao cadastrar");
+
+            }
+
+        });
 }
 
-
-function caad(){
+function caad() {
     mod.style.display = "block";
 
 }
@@ -99,14 +119,14 @@ dele.addEventListener("click", () => {
 
 
 excluir.addEventListener("click", () => {
-    if(psw1.innerHTML === psw2.innerHTML){
+    if (psw1.innerHTML === psw2.innerHTML) {
         //estrutura para a exclusão
     }
 })
 
 img.addEventListener("click", () => {
     mod.style.display = "none"
-    
+
 })
 im.addEventListener("click", () => {
     mod2.style.display = "none"
@@ -115,6 +135,6 @@ im.addEventListener("click", () => {
 
 
 
-function O (){
+function O() {
     window.location.href = "../usuario/index.html"
 }
