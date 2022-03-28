@@ -18,7 +18,7 @@ na div fim esta os cards 3 e 4*/
     display: flex;
     justify-content: space-between;
 }
-
+/* 1,2,3,4 botao*/
 .card1,.card2, .card4, .card3 {
     width: 220px;
     height: 200px;

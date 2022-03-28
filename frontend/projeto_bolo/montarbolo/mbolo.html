@@ -6,46 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monte seu bolo</title>
     <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+        model-viewer{
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
     <div class="containers-top">
         <div class="card1">  
            <div class="titulo">
-            <p>Massa do bolo</p> 
+            <p>Escolha o formato do seu Bolo!</p> 
            </div>     
-             <div class="number">          
-                <h1>1</h1>       
-             </div>
         </div>
         <div class="card2">
-           <div class="titulo">
-            <p>Formas</p> 
-           </div> 
-           <div class="number">
-            <h1>2</h1>
-           </div>  
+            <div class="titulo">
+                <p>Escolha o recheio do seu Bolo!</p> 
+            </div> 
         </div>
     </div>
     <div class="containers-center">
+        
         <div class="card5">
-
+            <model-viewer src="assets/formato/bolocilindro.glb" camera-controls auto-rotate ar ios-src="assets/formato/bolocilindro.glb"></model-viewer>
         </div>
     </div>
     <div class="containers-fim">
         <div class="card4">
            <div class="titulo">
-            <p>Cobertura</p>
+                <p>Escolha a cobertura do seu Bolo!</p>
            </div>
-            <div class="number">
-                <h1>3</h1>
-            </div>
         </div>
         <div class="card3">
             <div class="titulo">
-                <p>Adicionais</p>
-            </div>
-            <div class="number">
-                <h1>4</h1>
+                <p>Escolha sua decoração!</p>
             </div>
         </div>
     </div>
