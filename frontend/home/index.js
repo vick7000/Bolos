@@ -3,38 +3,52 @@ var fechar = document.querySelector(".fechar");
 var body = document.querySelector(".body");
 var header = document.querySelector(".header");
 var ul = document.querySelector(".ul")
+var body = document.querySelector(".body");
 var username = JSON.parse(localStorage.getItem("userdata"));
 
 
 function carrinho() { 
     compras.style.display = "flex"
+    body.style.overflow = "hidden"
 
     fechar.addEventListener("click", () => {
         compras.style.display = "none"
+        body.style.overflow = ""
     })
 }
 
-/*function mobile() {
-    if(body.style.width <= "1024px") {
-        let burger = document.createElement("div")
-        burger.setAttribute("class", "burger")
+function submenu() {
+    let submenu = document.querySelector(".submenu");
+    let fech = document.getElementById("fech");
+    let fundo = document.querySelector(".fundo");
 
-        header.appendChld(burger)
-    }
-}*/
+    submenu.style.display = "block";
+    fundo.style.display = "block";
+    body.style.overflow = "hidden"
 
+    fech.addEventListener("click", () => {
+        submenu.style.display = "none";
+        fundo.style.display = "none";
+        body.style.overflow = ""
+    })
+    
+}
 
 function verificarLogin() {
     let user = document.getElementById("user");
     let login = document.getElementById("login"); 
     let sair = document.getElementById("sair");
-    let carrinho = document.getElementById("carrinho")
+    let carrinho = document.getElementById("carrinho");
+    let carrmob = document.querySelector(".carrmob");
+    let sair2 = document.querySelector(".sair2");
 
     if(localStorage.getItem("userdata") != null) {
         user.style.display = "block"
         login.style.display = "none";
         sair.style.display = "block"
         carrinho.style.display = "block"
+        carrmob.style.display = "block"
+        sair2.style.display = "block"
 
         user.innerHTML = username.nome;
         user.setAttribute('href', '../usuario/index.html');
@@ -43,6 +57,8 @@ function verificarLogin() {
         login.style.display = "flex";
         sair.style.display = "none"
         carrinho.style.display = "none"
+        carrmob.style.display = "none"
+        sair2.style.display = "none"
     }
 
 }

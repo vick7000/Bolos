@@ -37,20 +37,26 @@
         </div>
 
         <header class="header">
-            <img src="../assets/logo.png"/>
+            <img src="../assets/logo.png" id="logomob"/>
+            <img src="../assets/burger.png" id="burger" onclick="submenu()"/>
         </header>
 
+<div class="fundo">
     <div class="submenu" >
-        <div class="col-3" >
+        <div class="col-3 menu2" >
+            <img src="../assets/cancelar.png" class="fechar" id="fech"/>
             <ul>
                 <li><a href="../catalogo/index.html">Catalogo</a></li>
                 <li><a href="../projeto_bolo/montarbolo/mbolo.html">Monte seu Bolo</a></li>
-                <li><img src="../assets/logo.png"/></li>
-                <li><a href="../login/index.html">Entre</a></li>
-                <li><a>Usúario</a></li>
+                <li id="login"><a href="../login/index.html">Login</a></li>
+                <li><a id="user"></a></li>
+                <li onclick="sair()" id="sair" class="sair2"><a>Sair</a></li>
+                <li id="li"><img id="carrinho" class="carrmob" src="../assets/carrinho.png" onclick="carrinho()"/></li>
             </ul>
         </div>
     </div>
+</div>
+    
 
 
         <section class="carroussel">
@@ -90,79 +96,96 @@
         
 
     <div class="bolos">
-        <a  href="../catalogo/index.html">
+        
         <div class="bolo">
             <img src="https://www.donaantoniabolos.com.br/bolo-especial/1a.jpg"/>
-            <div class="overlay">
-                <text>Bolos de Chocolate</text>
-            </div>
+            <a  href="../catalogo/index.html">
+                <div class="overlay">
+                    <text>Bolos de Chocolate</text>
+                </div>
+            </a>
+            
         </div>
-        </a>
         
-        <a  href="../catalogo/index.html">
+        
+        
         <div class="bolo">
             <img src="https://cdn.shopify.com/s/files/1/2016/0763/products/Bolo_KitKat_e08fd633-7b8f-4eda-88dd-aa4058cd7473_250x250@2x.png?v=1563291915"/>
-            <div class="overlay">
-                <text>Bolos Gourmet</text>
-            </div>
+            <a  href="../catalogo/index.html">
+                <div class="overlay">
+                    <text>Bolos Gourmet</text>
+                </div>
+            </a>
         </div>
-        </a>
+        
 
-        <a  href="../catalogo/index.html">
+        
         <div class="bolo">
             <img src="https://s2.glbimg.com/XRjm903UqqU9KXKIj11OUj90LDg=/0x0:1920x1080/984x0/smart/filters:strip_icc()/s.glbimg.com/po/rc/media/2014/03/20/14_52_49_670_BOLO_02_B.jpg"/>
-            <div class="overlay">
-                <text>Bolos de Casamento</text>
-            </div>
+            <a  href="../catalogo/index.html">
+                <div class="overlay">
+                    <text>Bolos de Casamento</text>
+                </div>
+            </a>
         </div>
-        </a>
+        
 
-        <a  href="../catalogo/index.html">
+        
         <div class="bolo">
             <img src="https://img.itdg.com.br/tdg/images/blog/uploads/2019/04/pao-de-lo.jpg"/>
-            <div class="overlay">
-                <text>Bolos Açúcarados</text>
-            </div>
+            <a  href="../catalogo/index.html">
+                <div class="overlay">
+                    <text>Bolos Açúcarados</text>
+                </div>
+            </a>
         </div>
-        </a>
     </div>
 
+
     <div class="bolos" id="bolos2">
-        <a  href="../catalogo/index.html">
+        
             <div class="bolo">
                 <img src="https://img.elo7.com.br/product/main/361F03D/arquivo-de-corte-topo-de-bolo-feliz-aniversario-flores-arquivo-de-corte-topo-de-bolo-feliz-aniversar.jpg"/>
-                <div class="overlay">
-                    <text>Bolos de Aniversário</text>
-                </div>
+                <a  href="../catalogo/index.html">
+                    <div class="overlay">
+                        <text>Bolos de Aniversário</text>
+                    </div>
+                </a>
             </div>
-            </a>
+            
     
-            <a  href="../catalogo/index.html">
+            
             <div class="bolo">
                 <img src="https://img.itdg.com.br/tdg/images/recipes/000/074/231/324775/324775_original.jpg"/>
-                <div class="overlay">
-                    <text>Bolos Salgados</text>
-                </div>
+                <a  href="../catalogo/index.html">
+                    <div class="overlay">
+                        <text>Bolos Salgados</text>
+                    </div>
+                </a>
             </div>
-            </a>
+            
                 
-            <a  href="../catalogo/index.html">
+            
             <div class="bolo">
                 <img src="https://i.ytimg.com/vi/ukXdVZ4DmRw/maxresdefault.jpg"/>
-                <div class="overlay">
-                    <text>Bolos Simples</text>
-                </div>
+                <a  href="../catalogo/index.html">
+                    <div class="overlay">
+                        <text>Bolos Simples</text>
+                    </div>
+                </a>
             </div>
-            </a>
+            
     
-            <a  href="../catalogo/index.html">
+            
             <div class="bolo">
                 <img src="https://www.comidaereceitas.com.br/wp-content/uploads/2020/08/bolo_guirlanda.jpg"/>
-                <div class="overlay">
-                    <text>Bolos de Frutas</text>
-                </div>
+                <a  href="../catalogo/index.html">
+                    <div class="overlay">
+                        <text>Bolos de Frutas</text>
+                    </div>
+                </a>
             </div>
-            </a>
+            
     </div>
 
     <div class="foot">
@@ -184,16 +207,17 @@
             <text>Telefone: (19)3867-7683</text>
             <text>Email: contatociasto@hotmail.com</text>
         </div>
-     <div class="social">
-         <img src="https://i.pinimg.com/originals/be/03/d2/be03d2bf56ec3a0c99152567f57df002.png"/>
-         <img src="https://i.pinimg.com/originals/1e/f3/e6/1ef3e6e05706ece71fe73f4c5935f615.png"/>
-         <img src="https://cdn-icons-png.flaticon.com/128/2111/2111580.png"/>
-     </div>
-     <div class="copyright">Copyright © 2022-Todos os direitos reservados. Ciasto®</div>
+
+        
     </div>
     
-
-
+    <div class="social">
+        <img src="https://i.pinimg.com/originals/be/03/d2/be03d2bf56ec3a0c99152567f57df002.png"/>
+        <img src="https://i.pinimg.com/originals/1e/f3/e6/1ef3e6e05706ece71fe73f4c5935f615.png"/>
+        <img src="https://cdn-icons-png.flaticon.com/128/2111/2111580.png"/>
+    </div>
+    <div class="copyright">Copyright © 2022-Todos os direitos reservados. Ciasto®</div>
+    
 
 </body>
 <script src="index.js"></script>

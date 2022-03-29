@@ -39,6 +39,7 @@
     border-bottom: solid #7D5A5A;
     border-width: 5px;
     height: 200px;
+    
 }
 
 .menu ul {
@@ -49,15 +50,17 @@
    flex-direction: row;
    justify-content: space-between;
    font-size: 30px;
+   
 }
 
-.submenu ul {
+.submenu  {
     display: none;
 }
 
 .menu li {
     display: inline;
     color: #7D5A5A;
+    
 }
 
 #li {
@@ -70,6 +73,8 @@
     margin-right: 5%;
     cursor: pointer;
     height: 20px;
+    text-decoration: none;
+    color: #7D5A5A;
 }
 
 
@@ -341,6 +346,7 @@ ol, li {
 
 .bolos a {
     width: 300px;
+    height: 220px;
 }
 
 .bolo {
@@ -391,6 +397,8 @@ text {
     background-image: url("https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX1167996.jpg");
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer {
@@ -404,13 +412,16 @@ text {
 .footer2 {
     color: #F3E1E1;
     margin-left: auto;
-    margin-right: 0;
+    margin-top: -3%;
     display: flex;
     flex-direction: column;
-    font-size: 15px;
 }
 
 .footer text {
+    font-size: 15px;
+}
+
+.footer2 text {
     font-size: 15px;
 }
 
@@ -426,6 +437,7 @@ text {
     width: 50px;
     height: 50px;
     cursor: pointer;
+    margin: 5px;
 }
 
 .copyright {
@@ -501,40 +513,70 @@ text {
     width: 100%;
     margin: 0;
     padding: 0;
-    border-bottom: 2px solid #7D5A5A;
-    align-items: center;
-    justify-content: center;
+    border-bottom: 5px solid #7D5A5A;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.header img {
+#logomob {
     width: 150px;
     height: 100%;
-    align-self: center;
 }
 
-.col-3 {
+#burger {
+    width: 80px;
+    height: 90px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.fundo {
     display: none;
+    overflow: auto;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    
 }
 
 .submenu {
     display: none;
     height: 100%;
-    width: 50%;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    right: 0;
     background-image: linear-gradient(to top, #F1D1D1, #FAF2F2);
     border-left: solid #7D5A5A;
     border-width: 5px;
+    font-size: 20px;
 }
     
-.submenu ul {
-    display: none;
+.submenu div {
+    width: 300px;   
 }
 
-.burger {
-    background-image: url("../assets/burger.png");
-    width: 100px;
-    height: 100px;
+.submenu div ul li a{
+    margin-bottom: 40px;
+    text-decoration: none;
+    color: #7D5A5A;
 }
-    
+
+.submenu div ul li {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.submenu div ul li img {
+    width: 70px;
+    height: 70px;
+}
+
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
@@ -797,7 +839,8 @@ text {
     }
     
     .bolos a {
-        width: 140px;
+        width: 170px;
+        height: 150px;
     }
 
     .bolo {
@@ -836,8 +879,7 @@ text {
     .bolo:hover .overlay {
         opacity: 1;
     }
-    
-    
+      
     text {
         position: relative;
         top: 45%;
@@ -849,20 +891,33 @@ text {
         background-image: url("https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX1167996.jpg");
         height: 100%;
         width: 100%;
+        display: flex;
+        flex-direction: column;
     }
     
     .footer {
         color: #F3E1E1;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
         border: none;
+    }
+    
+    .footer2 {
+        color: #F3E1E1;
+        margin-left: auto;
+        margin-top: -3%;
+        display: flex;
+        flex-direction: column;
     }
     
     .footer text {
         font-size: 15px;
     }
     
+    .footer2 text {
+        font-size: 15px;
+    }
     .social {
         background-image: url("https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX1167996.jpg");
         display: flex;
@@ -952,7 +1007,8 @@ text {
     }
     
     .bolos a {
-        width: 300px;
+        width: 210px;
+        height: 170px;
     }
 
     .bolo {
@@ -992,10 +1048,6 @@ text {
     .bolo:hover .overlay {
         opacity: 1;
     }
-
-    .footer text {
-        font-size: 12px;
-    }
 }
 
 @media (min-width: 790px) and (max-width: 840px) {
@@ -1012,7 +1064,8 @@ text {
     }
     
     .bolos a {
-        width: 300px;
+        width: 150px;
+        height: 120px;
     }
 
     .bolo {
@@ -1068,7 +1121,8 @@ text {
     }
     
     .bolos a {
-        width: 300px;
+        width: 120px;
+        height: 90px;
     }
 
     .bolo {
@@ -1108,6 +1162,38 @@ text {
     .bolo:hover .overlay {
         opacity: 1;
     }
+
+    .foot {
+        background-image: url("https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX1167996.jpg");
+        height: 128px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .footer {
+        color: #F3E1E1;
+        display: flex;
+        height: 60px;
+    }
+    
+    .footer2 {
+        color: #F3E1E1;
+        margin-left: auto;
+        display: flex;
+        margin-top: -10%;
+    }
+    
+    .footer text {
+        font-size: 13px;
+        width: 350px;
+        
+    }
+    
+    .footer2 text {
+        font-size: 13px;
+    }
 }
 
 @media (min-width: 160px) and (max-width: 540px){
@@ -1124,7 +1210,8 @@ text {
     }
     
     .bolos a {
-        width: 300px;
+        width: 220px;
+        height: 180px;
     }
 
     .bolo {
@@ -1166,5 +1253,39 @@ text {
     }
     .footer text {
         font-size: 11px;
+    }
+
+    .foot {
+        background-image: url("https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX1167996.jpg");
+        height: 128px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border: none;
+    }
+    
+    .footer {
+        color: #F3E1E1;
+        display: flex;
+        height: 60px;
+        width: 170px;
+        margin-top: -10%;
+    }
+    
+    .footer2 {
+        color: #F3E1E1;
+        margin-left: auto;
+        display: flex;
+        margin-top: -40%;
+        width: 150px;
+    }
+    
+    .footer text {
+        font-size: 14px;
+    }
+    
+    .footer2 text {
+        font-size: 14px;
     }
 }
