@@ -14,25 +14,15 @@ function carrinho() {
     })
 }
 
-function mobile() {
+/*function mobile() {
     if(body.style.width <= "1024px") {
         let burger = document.createElement("div")
         burger.setAttribute("class", "burger")
 
         header.appendChld(burger)
     }
-}
+}*/
 
-/*
-fetch("http://10.87.207.4:5000/login")
-    .then(res => {
-        return res.json();
-    }).then(data => {
-        if() {
-            
-        }
-    })
-*/
 
 function verificarLogin() {
     let user = document.getElementById("user");
@@ -49,4 +39,9 @@ function verificarLogin() {
         login.style.display = "flex";
     }
 
+}
+
+function sair() {
+    localStorage.clear();
+    window.location.href = "../login/index.html"
 }

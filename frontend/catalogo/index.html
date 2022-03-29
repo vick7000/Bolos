@@ -7,15 +7,26 @@
     <link rel="stylesheet" href="style.css">
     <title>Catalogo</title>
 </head>
-<body onload="load()">
+<body onload="load()" onload="verificarLogin()">
     <header class="lista">
-                <a>Catalogo</a>
-                <a>Home</a>
+                <a href="../home/index.html">Home</a>
+                <a href="../projeto_bolo/montarbolo/mbolo.html">Monte seu Bolo</a>
                 <img id="logo" src="../assets/logo.png"/>
-                <a>Monte seu Bolo</a>
-                <a>Login</a>
-        </div>
+                <a id="login" href="../login/index.html">Login</a>
+                <a id="user"></a>
+                <img id="carrinho" src="../assets/carrinho.png" onclick="carrinho()"/>
     </header>
+
+    <div class="compras">
+        <div class="comp">
+            <header>
+                <a>Carrinho</a>
+                <img src="../assets/cancelar.png" class="fechar"/>
+            </header>
+        </div>
+    </div>
+
+
     <section class="bloco1">
         <div class="cad modal">
             <div class="modal-content">
