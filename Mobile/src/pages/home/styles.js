@@ -5,7 +5,7 @@ export default StyleSheet.create({
    
     containerProps:{
         flex:1,
-        backgroundColor:'pink',
+        backgroundColor:'#FAF2F2',
         height: '100%',
         width: '100%',
         margin:0,
@@ -15,7 +15,7 @@ export default StyleSheet.create({
    
     carouselItemContainer:{
         flex:1,
-        backgroundColor:'pink',
+        backgroundColor:'#FAF2F2',
         height: 400,
       //  width: 300,
         margin:5,
@@ -27,7 +27,7 @@ export default StyleSheet.create({
     titleCarousel: {
         fontSize: 21,
         fontWeight: 'bold',
-        color: 'white'
+        color: 'gray'
 
     },
     imageCarousel: {
@@ -40,7 +40,7 @@ export default StyleSheet.create({
 
     viewmbolo:{
         flex: 1,
-        backgroundColor:'pink',
+        backgroundColor:'#FAF2F2',
         flexDirection:'row',
         alignItems: 'center',
         justifyContent: 'space-around',
@@ -54,7 +54,8 @@ export default StyleSheet.create({
     montabolo:{
         flex: 1,       
         alignItems: 'center',              
-        backgroundColor:'#7D5A5A', 
+        backgroundColor:'#FAF2F2', 
+       //backgroundColor:'#F6CED8',
         height:150,
         width:150, 
         margin:5,
@@ -68,7 +69,7 @@ export default StyleSheet.create({
         height:150,
         width:150, 
         borderRadius:20,
-        backgroundColor:'#7D5A5A',        
+        backgroundColor:'#FAF2F2',        
         margin:5
     },
 

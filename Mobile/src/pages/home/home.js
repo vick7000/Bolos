@@ -7,17 +7,17 @@ import style from './styles';
 
 const carouselItens =[
     {
-        title: 'Bolo1',
+        title: 'Bolo Alpes Suiços Zero Açucar',
         image:
             'https://raw.githubusercontent.com/vick7000/Bolos/master/frontend/assets/01.png',
     },
     {
-        title: 'Bolo2',
+        title: 'Bolo Chocotrufas com Morango',
         image:
-            'https://raw.githubusercontent.com/vick7000/Bolos/master/frontend/assets/02.png',
+            'https://raw.githubusercontent.com/vick7000/Bolos/master/frontend/assets/Chocotrufas%20com%20Morangos.png',
     },
     {
-        title: 'Bolo3',
+        title: 'Bolo Alpino',
         image:
             'https://raw.githubusercontent.com/vick7000/Bolos/master/frontend/assets/03.png',
     },

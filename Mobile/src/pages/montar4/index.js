@@ -23,7 +23,7 @@ return (
                    color:'white',
                    fontSize:20,
                    fontWeight: 'bold',
-                 }}> Escolha sua decoração!</Text>
+                 }}> Escolha sua confeitaria</Text>
         </View>
         
         <View style={{
