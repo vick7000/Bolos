@@ -14,13 +14,13 @@
         <div class="row">
             <div class="col-12 menu">
                 <ul class="ul">
-                    <li><a href="../catalogo/index.html">Catalogo</a></li>
-                     <li><a href="../projeto_bolo/montarbolo/mbolo.html">Monte seu Bolo</a></li>
-                    <li><img src="../assets/logo.png"/></li>
+                    <li id="li"><a href="../catalogo/index.html">Catalogo</a></li>
+                    <li id="li"><a href="../projeto_bolo/montarbolo/mbolo.html">Monte seu Bolo</a></li>
+                    <li ><img src="../assets/logo.png" id="logo"/></li>
                     <li id="login"><a href="../login/index.html">Login</a></li>
-                    <li  class="nome"><a id="user"></a></li>
-                    <li><img id="carrinho" src="../assets/carrinho.png" onclick="carrinho()"/></li>
-                    <li onclick="sair()"><a>Sair</a></li>
+                    <li><a id="user"></a></li>
+                    <li id="li"><img id="carrinho" src="../assets/carrinho.png" onclick="carrinho()"/></li>
+                    <li onclick="sair()" id="sair"><a>Sair</a></li>
                 </ul>
             </div>
             
@@ -32,6 +32,7 @@
                     <a>Carrinho</a>
                     <img src="../assets/cancelar.png" class="fechar"/>
                 </header>
+                <button id="carrb">Finalizar Compra</button>
             </div>
         </div>
 
@@ -89,7 +90,7 @@
         
 
     <div class="bolos">
-        <!--<a  href="../catalogo/index.html">
+        <a  href="../catalogo/index.html">
         <div class="bolo">
             <img src="https://www.donaantoniabolos.com.br/bolo-especial/1a.jpg"/>
             <div class="overlay">
@@ -124,66 +125,76 @@
             </div>
         </div>
         </a>
-
-        <a  href="../catalogo/index.html">
-        <div class="bolo">
-            <img src="https://img.elo7.com.br/product/main/361F03D/arquivo-de-corte-topo-de-bolo-feliz-aniversario-flores-arquivo-de-corte-topo-de-bolo-feliz-aniversar.jpg"/>
-            <div class="overlay">
-                <text>Bolos de Aniversário</text>
-            </div>
-        </div>
-        </a>
-
-        <a  href="../catalogo/index.html">
-        <div class="bolo">
-            <img src="https://img.itdg.com.br/tdg/images/recipes/000/074/231/324775/324775_original.jpg"/>
-            <div class="overlay">
-                <text>Bolos Salgados</text>
-            </div>
-        </div>
-        </a>
-            
-        <a  href="../catalogo/index.html">
-        <div class="bolo">
-            <img src="https://i.ytimg.com/vi/ukXdVZ4DmRw/maxresdefault.jpg"/>
-            <div class="overlay">
-                <text>Bolos Simples</text>
-            </div>
-        </div>
-        </a>
-
-        <a  href="../catalogo/index.html">
-        <div class="bolo">
-            <img src="https://www.comidaereceitas.com.br/wp-content/uploads/2020/08/bolo_guirlanda.jpg"/>
-            <div class="overlay">
-                <text>Bolos de Frutas</text>
-            </div>
-        </div>
-        </a>-->
     </div>
 
-    <div class="footer">
-           <!-- <h4>
-                Horário de Atendimento:
-                9:00 às 18:00 - 
-                Segunda à Sábado,
-                horário de Brasília
-            </h4>
-            <h4>
-                Endereço: 
-                Rua Cândido Bueno, 842 A - 
-                Centro - Jaguariúna-SP - 
-                CEP : 13910-033
-            </h4>
-            <h4>Telefone: (19)3867-7683</h4>
-            <h4>Email: contatociasto@hotmail.com</h4>
+    <div class="bolos" id="bolos2">
+        <a  href="../catalogo/index.html">
+            <div class="bolo">
+                <img src="https://img.elo7.com.br/product/main/361F03D/arquivo-de-corte-topo-de-bolo-feliz-aniversario-flores-arquivo-de-corte-topo-de-bolo-feliz-aniversar.jpg"/>
+                <div class="overlay">
+                    <text>Bolos de Aniversário</text>
+                </div>
+            </div>
+            </a>
+    
+            <a  href="../catalogo/index.html">
+            <div class="bolo">
+                <img src="https://img.itdg.com.br/tdg/images/recipes/000/074/231/324775/324775_original.jpg"/>
+                <div class="overlay">
+                    <text>Bolos Salgados</text>
+                </div>
+            </div>
+            </a>
+                
+            <a  href="../catalogo/index.html">
+            <div class="bolo">
+                <img src="https://i.ytimg.com/vi/ukXdVZ4DmRw/maxresdefault.jpg"/>
+                <div class="overlay">
+                    <text>Bolos Simples</text>
+                </div>
+            </div>
+            </a>
+    
+            <a  href="../catalogo/index.html">
+            <div class="bolo">
+                <img src="https://www.comidaereceitas.com.br/wp-content/uploads/2020/08/bolo_guirlanda.jpg"/>
+                <div class="overlay">
+                    <text>Bolos de Frutas</text>
+                </div>
+            </div>
+            </a>
     </div>
-    <div class="social">
-        <img src="https://i.pinimg.com/originals/be/03/d2/be03d2bf56ec3a0c99152567f57df002.png"/>
-        <img src="https://i.pinimg.com/originals/1e/f3/e6/1ef3e6e05706ece71fe73f4c5935f615.png"/>
-        <img src="https://cdn-icons-png.flaticon.com/128/2111/2111580.png"/>-->
+
+    <div class="foot">
+        <div class="footer">
+            <text>
+                 Horário de Atendimento:
+                 9:00 às 18:00 - 
+                 Segunda à Sábado,
+                 horário de Brasília
+             </text>
+             <text>
+                 Endereço: 
+                 Rua Cândido Bueno, 842 A - 
+                 Centro - Jaguariúna-SP - 
+                 CEP : 13910-033
+             </text>
+        </div>
+        <div  class="footer2">
+            <text>Telefone: (19)3867-7683</text>
+            <text>Email: contatociasto@hotmail.com</text>
+        </div>
+     <div class="social">
+         <img src="https://i.pinimg.com/originals/be/03/d2/be03d2bf56ec3a0c99152567f57df002.png"/>
+         <img src="https://i.pinimg.com/originals/1e/f3/e6/1ef3e6e05706ece71fe73f4c5935f615.png"/>
+         <img src="https://cdn-icons-png.flaticon.com/128/2111/2111580.png"/>
+     </div>
+     <div class="copyright">Copyright © 2022-Todos os direitos reservados. Ciasto®</div>
     </div>
-    <div class="copyright">Copyright © 2022-Todos os direitos reservados. Ciasto®</div>
+    
+
+
+
 </body>
 <script src="index.js"></script>
 <script src="../global/md5.js"></script>

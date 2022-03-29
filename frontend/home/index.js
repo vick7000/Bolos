@@ -27,21 +27,27 @@ function carrinho() {
 function verificarLogin() {
     let user = document.getElementById("user");
     let login = document.getElementById("login"); 
+    let sair = document.getElementById("sair");
+    let carrinho = document.getElementById("carrinho")
 
     if(localStorage.getItem("userdata") != null) {
         user.style.display = "block"
         login.style.display = "none";
+        sair.style.display = "block"
+        carrinho.style.display = "block"
 
         user.innerHTML = username.nome;
         user.setAttribute('href', '../usuario/index.html');
     } else {
         user.style.display = "none"
         login.style.display = "flex";
+        sair.style.display = "none"
+        carrinho.style.display = "none"
     }
 
 }
 
 function sair() {
     localStorage.clear();
-    window.location.href = "../login/index.html"
+    window.location.href = "../home/index.html"
 }

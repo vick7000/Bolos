@@ -3,7 +3,7 @@
     src: url(../assets/Pinky-Cupid.otf);
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1025px) and (max-width: 8000px) {
 
 
 .header {
@@ -38,16 +38,17 @@
     background-image: linear-gradient(to top, #F1D1D1, #FAF2F2);
     border-bottom: solid #7D5A5A;
     border-width: 5px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-   justify-content: center;
+    height: 200px;
 }
 
 .menu ul {
    list-style-type: none;
    margin: 0;
    padding: 0;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   font-size: 30px;
 }
 
 .submenu ul {
@@ -55,9 +56,13 @@
 }
 
 .menu li {
-    margin-bottom: 7px;
-    color: #ffffff;
     display: inline;
+    color: #7D5A5A;
+}
+
+#li {
+    margin-top: 50px;
+    white-space: nowrap;
 }
 
 .row a {
@@ -65,26 +70,36 @@
     margin-right: 5%;
     cursor: pointer;
     height: 20px;
-    
 }
 
-.row img {
-    align-self: center;
+
+#logo {
     height: 200px;
     width: 250px;
+    margin-bottom: 90px;
+}
+
+#login {
+    margin-top: 50px;
 }
 
 #user {
     display: none;
+    margin-top: 50px;
+    white-space: nowrap;
+}
+
+#sair {
+    display: none;
 }
 
 #carrinho {
-    margin-top: 40px;
     width: 80px;
     height: 80px;
     margin-left: 60px;
     cursor: pointer;
 }
+
 
 @keyframes tonext {
     50% {
@@ -134,9 +149,6 @@
 }
 
 body {
-    min-width: 320px;
-    max-width: 2000px;
-    max-height: 100%;
     margin: 0;
     padding: 0;
     font-family: 'Pinky Cupid', regular;
@@ -319,11 +331,10 @@ ol, li {
     background-color: #FAF2F2;
     height: 100%;
     width: 100%;
-    display: grid;
-    grid-template-columns: 450px 450px 450px 450px;
-    grid-template-rows: 250px 400px;
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     margin: 0;
     padding: 0;
 }
@@ -341,6 +352,8 @@ ol, li {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .bolo img {
@@ -374,24 +387,39 @@ text {
     color: #FAF2F2;
 }
 
-.footer {
+.foot {
     background-image: url("https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX1167996.jpg");
-    height: 160px;
-    color: #F3E1E1;
-    display: grid;
-    grid-template-columns: 55% 600px;
+    height: 100%;
+    width: 100%;
 }
 
-h4 {
-    margin: 0;
-    text-align: center;
+.footer {
+    color: #F3E1E1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: none;
+}
+
+.footer2 {
+    color: #F3E1E1;
+    margin-left: auto;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+.footer text {
+    font-size: 15px;
 }
 
 .social {
     background-image: url("https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX1167996.jpg");
-    display: grid;
-    grid-template-columns: 60px 60px 60px;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
+    border: none;
 }
 
 .social img {
@@ -427,17 +455,22 @@ h4 {
     background-color: #F1D1D1;
     border-radius: 20px;
     border: 2px solid black;
+    
 }
 
 .content header {
     font-size: 40px;
     color: #7D5A5A;
     border-bottom: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .content header img {
-    margin-left: 75%;
     cursor: pointer;
+    width: 40px;
+    height: 40px;
 }
 
 .content button {
@@ -448,10 +481,12 @@ h4 {
     height: 40px;
     width: 120px;
     font-size: 15px;
-    position: relative;
-    margin-top: 730px;
-    cursor: pointer;
+    position: absolute;
+    bottom: 7%;
+    cursor: pointer;  
 }
+
+
 
 }
 @media (max-width: 1024px) {
@@ -517,10 +552,6 @@ h4 {
         float: left;
         padding: 15px;
       }
-    
-     
-    
-    
     
     @keyframes tonext {
         50% {
@@ -757,39 +788,40 @@ h4 {
         background-color: #FAF2F2;
         height: 100%;
         width: 100%;
-        display: grid;
-        grid-template-columns: 450px 450px 450px 450px;
-        grid-template-rows: 250px 400px;
+        display: flex;
+        flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
         margin: 0;
         padding: 0;
     }
     
     .bolos a {
-        width: 300px;
+        width: 140px;
     }
-    
+
     .bolo {
         position: relative;
-        width: 300px;
-        height: 220px;
+        width: 170px;
+        height: 150px;
         display: block;
         border-radius: 40px;
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
-    
+
     .bolo img {
-        width: 300px;
-        height: 220px;
+        width: 170px;
+        height: 150px;
         border-radius: 40px;
     }
-    
+
     .overlay {
-        width: 300px;
-        height: 220px;
+        width: 170px;
+        height: 150px;
         border-radius: 40px;
         top: 0;
         bottom: 0;
@@ -805,6 +837,7 @@ h4 {
         opacity: 1;
     }
     
+    
     text {
         position: relative;
         top: 45%;
@@ -812,24 +845,30 @@ h4 {
         color: #FAF2F2;
     }
     
-    .footer {
+    .foot {
         background-image: url("https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX1167996.jpg");
-        height: 160px;
-        color: #F3E1E1;
-        display: grid;
-        grid-template-columns: 55% 600px;
+        height: 100%;
+        width: 100%;
     }
     
-    h4 {
-        margin: 0;
-        text-align: center;
+    .footer {
+        color: #F3E1E1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border: none;
+    }
+    
+    .footer text {
+        font-size: 15px;
     }
     
     .social {
         background-image: url("https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX1167996.jpg");
-        display: grid;
-        grid-template-columns: 60px 60px 60px;
+        display: flex;
+        flex-direction: row;
         justify-content: center;
+        border: none;
     }
     
     .social img {
@@ -860,22 +899,26 @@ h4 {
         margin: auto;
         align-self: start;
         padding: 20px;
-        width: 40%;
-        height: 90%;
+        width: 70%;
+        height: 60%;
         background-color: #F1D1D1;
         border-radius: 20px;
         border: 2px solid black;
     }
     
     .content header {
-        font-size: 40px;
+        font-size: 25px;
         color: #7D5A5A;
         border-bottom: 2px solid black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
     
     .content header img {
-        margin-left: 75%;
         cursor: pointer;
+        width: 25px;
+        height: 25px;
     }
     
     .content button {
@@ -883,13 +926,245 @@ h4 {
         border: none;
         border-radius: 20px;
         font-family: 'Pinky Cupid', regular;
-        height: 40px;
-        width: 120px;
-        font-size: 15px;
-        position: relative;
-        margin-top: 730px;
-        cursor: pointer;
+        height: 30px;
+        width: 110px;
+        font-size: 13px;
+        position: absolute;
+        bottom: 22%;
+        cursor: pointer;  
     }
 
 
+}
+
+@media (min-width: 1024px) and (max-width: 1225px) {
+
+    .bolos {
+        background-color: #FAF2F2;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .bolos a {
+        width: 300px;
+    }
+
+    .bolo {
+        position: relative;
+        width: 210px;
+        height: 170px;
+        display: block;
+        border-radius: 40px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+    }
+
+    .bolo img {
+        width: 210px;
+        height: 170px;
+        border-radius: 40px;
+    }
+
+    .overlay {
+        width: 210px;
+        height: 170px;
+        border-radius: 40px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.6) ;
+        position: absolute;
+        text-align: center;
+    }
+    
+    .bolo:hover .overlay {
+        opacity: 1;
+    }
+
+    .footer text {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 790px) and (max-width: 840px) {
+    .bolos {
+        background-color: #FAF2F2;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .bolos a {
+        width: 300px;
+    }
+
+    .bolo {
+        position: relative;
+        width: 150px;
+        height: 120px;
+        display: block;
+        border-radius: 40px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+    }
+
+    .bolo img {
+        width: 150px;
+        height: 120px;
+        border-radius: 40px;
+    }
+
+    .overlay {
+        width: 150px;
+        height: 120px;
+        border-radius: 40px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.6) ;
+        position: absolute;
+        text-align: center;
+    }
+    
+    .bolo:hover .overlay {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 541px) and (max-width: 789px) {
+    .bolos {
+        background-color: #FAF2F2;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .bolos a {
+        width: 300px;
+    }
+
+    .bolo {
+        position: relative;
+        width: 120px;
+        height: 90px;
+        display: block;
+        border-radius: 40px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 10px;
+    }
+
+    .bolo img {
+        width: 120px;
+        height: 90px;
+        border-radius: 40px;
+    }
+
+    .overlay {
+        width: 120px;
+        height: 90px;
+        border-radius: 40px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.6) ;
+        position: absolute;
+        text-align: center;
+    }
+    
+    .bolo:hover .overlay {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 160px) and (max-width: 540px){
+    .bolos {
+        background-color: #FAF2F2;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .bolos a {
+        width: 300px;
+    }
+
+    .bolo {
+        position: relative;
+        width: 220px;
+        height: 180px;
+        display: block;
+        border-radius: 40px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+    }
+
+    .bolo img {
+        width: 220px;
+        height: 180px;
+        border-radius: 40px;
+    }
+
+    .overlay {
+        width: 220px;
+        height: 180px;
+        border-radius: 40px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.6) ;
+        position: absolute;
+        text-align: center;
+    }
+    
+    .bolo:hover .overlay {
+        opacity: 1;
+    }
+    .footer text {
+        font-size: 11px;
+    }
 }
