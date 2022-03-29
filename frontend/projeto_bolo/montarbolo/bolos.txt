@@ -1,0 +1,42 @@
+
+Escolha o formato do seu Bolo!
+Formas 1 R$ 15.00
+-formato cilindro
+-formato retangulo
+Confirmar
+
+Escolha o recheio do seu Bolo!
+Recheio 2 R$ 25.00
+-recheio de limão formato cilindro
+-recheio de chocolate formato cilindro
+-recheio de morango formato cilindro
+-recheio de baunilha formato cilindro
+-recheio de abacaxi formato cilindro
+======================================
+-recheio de limão formato retangulo
+-recheio de chocolate formato retangulo
+-recheio de morango formato retangulo
+-recheio de baunilha formato retangulo
+-recheio de abacaxi formato retangulo
+
+Escolha a cobertura do seu Bolo!
+Cobertura 3 R$ 35.00
+-cobertura pink cupid formato cilindro
+-cobertura oceano neon formato cilindro
+-cobertura verão formato cilindro
+-cobertura floresta formato cilindro
+-cobertura ciasto formato cilindro 
+======================================
+-cobertura pink cupid formato retangulo
+-cobertura oceano neon formato retangulo
+-cobertura verão formato retangulo
+-cobertura floresta formato retangulo
+-cobertura ciasto formato retangulo 
+
+Escolha sua decoração!
+Adicionais 4 R$ 45.00
+-enfeite de morango cilindro
+-enfeite de mirtilo cilindro
+==============================
+-enfeite de morango retangulo
+-enfeite de mirtilo retangulo 

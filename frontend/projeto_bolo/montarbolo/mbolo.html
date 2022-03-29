@@ -31,8 +31,20 @@
     <div class="containers-center">
         
         <div class="card5">
-            <model-viewer src="assets/formato/bolocilindro.glb" camera-controls auto-rotate ar ios-src="assets/formato/bolocilindro.glb"></model-viewer>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+            <select style="margin: 0 5% 0 13%;" class="border-box-contact" name="service" id="service" required>
+            <div class="card6"><option value="0" disabled selected>Escolha o formato do seu Bolo!</option>
+            </div>
+                <option value="1">Bolo redondo</option>
+                <option value="2">Bolo quadrado</option>
+            </select>
+            <br />
+            <p>
+                <span class="valor" id="valor" style="display:flex; position:relative; justify-content:center; margin-top: 5%; margin-bottom:0%; font-weight: bolder; font-size: 15px;"></span>
+            </p>
         </div>
+
     </div>
     <div class="containers-fim">
         <div class="card4">
@@ -46,6 +58,6 @@
             </div>
         </div>
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>
