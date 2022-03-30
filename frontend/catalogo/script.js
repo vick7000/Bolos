@@ -2,6 +2,8 @@ var modal = document.querySelector(".modal")
 var img = document.querySelector(".x");
 var compras = document.querySelector(".compras");
 var fechar = document.querySelector(".fechar");
+var body = document.querySelector(".body");
+var username = JSON.parse(localStorage.getItem("userdata"));
 
 function load(){
     let pagina = document.querySelector(".bloco1");
@@ -96,29 +98,6 @@ function load(){
     clonePagina2.appendChild(item07) 
     console.log(clonePagina)
 
-
-}
-
-function modales() {
-    modal.style.display = "block"
-}
-
-img.addEventListener("click", () => {
-    modal.style.display = "none"
-})
-
-
-const root = document.documentElement;
-const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
-const marqueeContent = document.querySelector("ul.content");
-
-root.style.setProperty("--marquee-elements", marqueeContent.children.length);
-
-for(let i=0; i<marqueeElementsDisplayed; i++) {
-    marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
-}
-
-function verificarLogin() {
     let user = document.getElementById("user");
     let login = document.getElementById("login"); 
 
@@ -134,6 +113,29 @@ function verificarLogin() {
     }
 
 }
+
+function modales() {
+    modal.style.display = "block"
+    body.style.overflow = "hidden"
+}
+
+img.addEventListener("click", () => {
+    modal.style.display = "none"
+    body.style.overflow = ""
+})
+
+
+const root = document.documentElement;
+const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
+const marqueeContent = document.querySelector("ul.content");
+
+root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+
+for(let i=0; i<marqueeElementsDisplayed; i++) {
+    marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+}
+
+
 
 function carrinho() { 
     compras.style.display = "flex"
