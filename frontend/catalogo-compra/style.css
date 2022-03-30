@@ -427,3 +427,8 @@ html{
     margin-top: 730px;
     cursor: pointer;
 }
+
+.prod {
+    background-color: rgb(255, 255, 255);
+    height: 400px;
+}

@@ -114,6 +114,52 @@ function load(){
 
 }
 
+function compra() {
+    var tit = document.querySelector(".tit");
+    var bolll = document.getElementById("bolll");
+    let produto = document.createElement("div");
+    
+    let comp = document.querySelector(".comp");
+    
+    if(localStorage.getItem("userdata") != null) {
+
+        fetch("http://10.87.207.4/itens", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            "body": data
+        })
+        .then(res => { return res.json()})
+        .then(data => {
+            if(data.length > 0) {
+                localStorage.setItem("userdata", JSON.stringify(data[0]));
+            }
+        })
+
+       /* localStorage.setItem("", JSON.stringify);
+        localStorage.setItem("bolll", JSON.stringify);
+
+        console.log(bolll)
+
+        localStorage.getItem("bolll", JSON.stringify)
+
+        console.log(tit)
+        produto.innerHTML = tit
+        produto.innerHTML = bolll.value
+        produto.setAttribute("class", "prod")
+        comp.appendChild(produto)*/
+        const titulo = JSON.parse(localStorage.getItem("userdata"));
+        console.log(titulo)
+    } else {
+        alert("Faça Login para Realizar Compras")
+    }
+
+    
+}
+
+
+
 function modales() {
     modal.style.display = "block"
     body.style.overflow = "hidden"
