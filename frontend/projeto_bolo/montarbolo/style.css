@@ -55,6 +55,12 @@ na div fim esta os cards 3 e 4*/
     -o-border-radius: 10px;
 }
 
+.card6 {
+    width: 954px;
+    display: flex;
+    align-items: center;
+}
+
 h1{
     font-size: 100px;
     font-family: 'Pinky Cupid';
@@ -78,5 +84,5 @@ p {
     margin: 5px;
     align-items: center;
     justify-content: center;
-    display: block;
+    
 }

@@ -128,3 +128,32 @@ body{
     cursor: pointer;
     
 }
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .row {
+      background-image: linear-gradient(to top, #F1D1D1, #FAF2F2);
+      border-bottom: solid #7D5A5A;
+      border-width: 5px;
+      height: 200px;
+      
+  }
+
+  .row a {
+    margin-left: 5%;
+    margin-right: 5%;
+    cursor: pointer;
+    height: 20px;
+    text-decoration: none;
+    color: #7D5A5A;
+}
+
+.row {
+    display: none;
+}
+
+.col-12 {width: 100%;}
