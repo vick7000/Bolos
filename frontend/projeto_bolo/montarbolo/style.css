@@ -78,5 +78,5 @@ p {
     margin: 5px;
     align-items: center;
     justify-content: center;
-    
+    display: block;
 }
