@@ -9,39 +9,35 @@ export default function MountFour({ navigation }) {
 const [selectedLanguage, setSelectedLanguage] = useState();
 
 return (
-<ScrollView>
-        <View style={{
-                backgroundColor:'blue',
-                flex:1,
-                width:'100%',
-                height:'100%',
-                alignItems:'center',
-                justifyContent:'center',                          
-             
+<ScrollView
+        style={{flex:1,width:'100%',backgroundColor:'#FAF2F2', height:'100%'}}>
+        <View style={{ 
+                  backgroundColor:'#FAF2F2',
+                  flex:1, 
+                  width:'80%', 
+                  height:'50%',
+                  alignItens:'center',
+                  justifyContent:'center',
+                  marginTop:'15%',
+                  margin:50,
+                  borderBottomWidth:1,
+                  borderColor:'#FFB6C1',                
                 }}>
             <Text style={{
-                   color:'white',
-                   fontSize:20,
-                   fontWeight: 'bold',
-                 }}> Escolha sua confeitaria</Text>
-        </View>
-        
-        <View style={{
-                flex:1,
-                backgroundColor:'yellow',
-                alignItems:'center',
-                justifyContent:'center',
-                width:'100%',
-                height:'100%',
-                        }}>
-                <Picker
-                        selectedValue={selectedLanguage}
-                        style={{
-                                backgroundColor:'gray',
-                                height:'10%',
-                                width:'70%',
-                                borderRadius:10,
+                           fontSize:22, 
+                           fontWeight:'bold',
+                           alignSelf: 'center',
+                           color:'#FF69B4',                     
+                        }}>  Escolha sua confeitaria!</Text>
+        </View>               
+         <Picker
+                 style={{                     
+                         margin: '15%',                                
+                         marginTop:'20%',
+                         borderBottomWidth:1,
+                         borderBottomColor:'#FF69B4',
                         }}
+                        selectedValue={selectedLanguage}                      
                         onValueChange={(itemValue, itemIndex) => 
                         setSelectedLanguage(itemValue)
                 }>
@@ -49,32 +45,37 @@ return (
                 <Picker.Item label="Mirtilo" value="101" />
                 <Picker.Item label="Brigadeiro" value="201" />
                 
-                </Picker>
-        </View>
+        </Picker>
+       
         
-        <View style={{
-                flex: 1,
-                backgroundColor:'black',
-                alignItems:'flex-end',
-                justifyContent:'flex-end',
-                width:'100%',
-                height:'100%',
-                marginRight:10
-                }}>
-                <TouchableOpacity onPress={ () => { navigation.navigate("Seubolo") }}>
-                        <Text style={{
-                                 borderRadius:10,
-                                 backgroundColor:'red', 
-                                 padding:15,
-                                 height:50,
-                                 width:120,
-                                 fontSize:18,
-                                 fontWeight: 'bold',                               
-                                 }}>Confirmar</Text>
+        <View style={{ 
+                      flex:1,
+                      backgroundColor:'#FAF2F2',
+                      width:'100%',
+                      height:'100%',                                                                                      
+                      alignItems: 'flex-end',
+                      justifyContent:'flex-end', 
+                      marginTop:'30%'                 
+                     }}>
+                <TouchableOpacity  style={{                                        
+                                        width:'30%',
+                                        height:'100%',   
+                                        padding:10, 
+                                        marginRight:10,
+                                        borderRadius:10,
+                                        borderWidth:1,
+                                        borderColor: '#FF1493',
+                                        backgroundColor:'pink',                                      
+                                     }}
+                        onPress={ () => { navigation.navigate("Seubolo") }}>
+                <Text style={{ 
+                                fontSize:20,
+                                fontWeight: 'bold',
+                                color:'#FF69B4'                                
+                            }}> Confirmar</Text>
                 </TouchableOpacity>
-        </View>      
-   
-  
+        </View>     
+     
 </ScrollView> 
 );
 }

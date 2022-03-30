@@ -27,11 +27,11 @@ function LogoTitle(props) {
   return (
     <View 
     style={{ flex:1,flexDirection:'row', alignItems: 'center',
-    justifyContent:'space-around', padding:2 }}>
+    justifyContent:'space-around', padding:2,}}>
 
       <TouchableOpacity
                 onPress={ () => navigation.navigate('Catalogo')}>
-                <Text>Catálogo</Text>
+                <Text style={{color: '#4F4F4F'}}>Catálogo</Text>
       </TouchableOpacity>
 
       <Image
@@ -40,13 +40,13 @@ function LogoTitle(props) {
       />
       <TouchableOpacity
                 onPress={ () => navigation.navigate('Login')}>
-                <Text>Entre</Text>
+                <Text style={{color: '#4F4F4F'}}>Entre</Text>
       </TouchableOpacity>
       
       <TouchableOpacity
                 onPress={ () => navigation.navigate('Car')}>
       <Image
-        style={{ width: 50, height: 50,  }}
+        style={{ width: 30, height: 30,  }}
         source={require('../../assets/carcomp.png')}
       />    
       </TouchableOpacity>  

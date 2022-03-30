@@ -3,7 +3,8 @@ import { StyleSheet} from 'react-native';
 
 export default StyleSheet.create({ 
    
-    containerProps:{
+    containerProps:
+    {
         flex:1,
         backgroundColor:'#FAF2F2',
         height: '100%',
@@ -13,7 +14,8 @@ export default StyleSheet.create({
         justifyContent:'center'
     },
    
-    carouselItemContainer:{
+    carouselItemContainer:
+    {
         flex:1,
         backgroundColor:'#FAF2F2',
         height: 400,
@@ -24,13 +26,15 @@ export default StyleSheet.create({
         borderRadius:50
     },
    
-    titleCarousel: {
+    titleCarousel: 
+    {
         fontSize: 21,
         fontWeight: 'bold',
         color: 'gray'
 
     },
-    imageCarousel: {
+    imageCarousel: 
+    {
         width:'100%',
         height: 200,
         borderRadius:10,
@@ -38,7 +42,8 @@ export default StyleSheet.create({
 
     },
 
-    viewmbolo:{
+    viewmbolo:
+    {
         flex: 1,
         backgroundColor:'#FAF2F2',
         flexDirection:'row',
@@ -51,7 +56,8 @@ export default StyleSheet.create({
     },
 
 
-    montabolo:{
+    montabolo:
+    {
         flex: 1,       
         alignItems: 'center',              
         backgroundColor:'#FAF2F2', 
@@ -63,7 +69,8 @@ export default StyleSheet.create({
      
     },
 
-    imgbolo:{
+    imgbolo:
+    {
         flex: 1,       
         alignItems: 'center',
         height:150,

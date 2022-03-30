@@ -10,7 +10,8 @@ export default function Login({ navigation }) {
   const [hidePass, setHidePass] = useState(true);
 
 return (
-  <ScrollView>
+  <ScrollView 
+  style={{flex:1,width:'100%',backgroundColor:'#FAF2F2', height:'100%'}}>
     <KeyboardAvoidingView
       behavior='padding'
       
@@ -29,7 +30,7 @@ return (
          <View style={{ 
                 flexDirection: 'row',
                 width:'90%',
-                
+              //  backgroundColor:'red',
                 borderRadius:5, 
                 height:50,
                 alignItems: 'center',
@@ -38,12 +39,12 @@ return (
             <TextInput 
                       //value={senha} onChange={setSenha} 
                       style={{                        
-                        width:'85%',
+                        width:'80%',
                         heigth:50,
                         padding:8,
                         fontSize:18,
                         borderColor:'#FFB6C1',
-                        borderBottomWidth:1,  
+                        borderBottomWidth:2,  
                       }} 
                       placeholder='Digite sua senha...'
                       value={input}
@@ -54,9 +55,11 @@ return (
             <TouchableOpacity 
               style={{ 
                     width:'15%',
-                    height:50,
+                    height:45,
                     justifyContent:'center',
                     alignItems:'center',
+                    borderBottomWidth:2, 
+                    borderColor:'#FFB6C1',
                     
                     }} 
                     onPress={ () => setHidePass(!hidePass) }>
@@ -71,12 +74,26 @@ return (
 
         <View style={style.btncss}>      
           <TouchableOpacity onPress={ () => { navigation.navigate("Cadastro") }}>
-                    <Text style={style.btnentrar}>Entrar</Text>
+                    <Text style={{
+                                    color: '#FF69B4',
+                                    padding: 12, 
+                                    fontWeight: 'bold',
+                                    fontSize:20,
+                                    textAlign: 'center',
+                                }}>Entrar</Text>
           </TouchableOpacity>
         </View>
     
             <View style={style.containercadastrese}>
-              <Text>Não tem uma conta?</Text>
+              <Text
+                  style={{ 
+                    fontSize:15,
+                    fontWeight: 'bold',
+                    color:'gray',                                            
+                }}
+              >Não tem uma conta?
+
+              </Text>
                 <TouchableOpacity onPress={ () => navigation.navigate('Cadastro')}>
                           <Text  style={style.cadastrase}>Cadastre-se!</Text>
                 </TouchableOpacity>
