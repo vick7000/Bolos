@@ -40,7 +40,7 @@ return (
                       //value={senha} onChange={setSenha} 
                       style={{                        
                         width:'80%',
-                        heigth:50,
+                        height:45,
                         padding:8,
                         fontSize:18,
                         borderColor:'#FFB6C1',

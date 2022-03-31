@@ -7,8 +7,10 @@ export default function Catalogo ({navigation}) {
 
     return (
         <ScrollView style={{backgroundColor:'#FAF2F2'}}>
-            <View style={{marginBottom:5}}>
-                <Text style={{alignSelf:'center'}}> Confira alguns dos nossos sabores de bolo no nosso catálogo</Text>            
+            <View style={style.viewtitle}>
+                <Text style={{alignSelf:'center',fontSize:18,fontWeight:'bold',color:'gray'}}>
+				Confira alguns dos nossos 
+				sabores de bolo no nosso catálogo abaixo:</Text>            
             </View>  
 
             <View style={{marginBottom:5}}>
@@ -88,7 +90,20 @@ export default function Catalogo ({navigation}) {
 						<Text style={style.textos}> Bolo Areado</Text>
 				    </TouchableOpacity>              
           </View>
-         
+		  <View style={{flexDirection: 'row',alignItems: 'center',justifyContent:'center'}}>
+		  <View style={style.rodape}>				    				   
+					   	<Text style={{fontSize:15,fontWeight: 'bold',color:'gray',borderBottomWidth:1}}>
+							    Não achou o que te agrada?</Text>
+				                
+          </View>
+		  <View style={style.viewbtnrodape}>
+				    <TouchableOpacity onPress={ () => { navigation.navigate("Mountone") }}>				   
+					   	<Text style={{fontSize:18,fontWeight: 'bold',color:'#FF69B4'}}> 
+						  Monte seu bolo!
+						   </Text>
+				    </TouchableOpacity>              
+          </View>
+		  </View>
         </ScrollView>
     );
 }

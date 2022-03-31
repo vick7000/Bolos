@@ -4,56 +4,68 @@ import { StyleSheet} from 'react-native';
 export default StyleSheet.create({ 
     
     
-    containerlogin:{
+    containerlogin:
+    {
         flex:1,
-        backgroundColor:'blue',
+        backgroundColor:'#FAF2F2',
         width:'100%',
         height:'100%',
-        paddingStart:'5%'
+        marginTop:'20%',
+       // marginBottom:'22%',
+        alignItems:'flex-start',
+        justifyContent:'center',
+        margin:'5%',
     },
 
-    criarlogin:{
+    criarlogin:
+    {
         flex:1,
-        backgroundColor:'green',
+        backgroundColor:'#FAF2F2',
         alignItems:'center',
         justifyContent:'center',
         width:'100%',
         height:'100%',
-     //   marginBottom:12,
+        marginTop:'12%',
        
     },
 
-    viewproximo:{
+    viewproximo:
+    {
         flex:2,
         alignItems:'flex-end',
         justifyContent:'flex-end',
-        backgroundColor:'gray',
+        backgroundColor:'#FAF2F2',
         width:'100%',
         height:'100%',
+        marginTop:'10%',
     },
 
-    txts: {
+    txts: 
+    {
         color:'#808080',
         fontSize: 15,
         fontWeight: 'bold',
-        margin:5
+        margin:5,        
 
     },
 
-    btns: {
+    btns: 
+    {
         alignItems:'center',
     },
         
-   inputlogin:{   
-    width:300,     
-    height:40,   
-    borderColor:'#FFB6C1',
-    borderBottomWidth:1,  
-    marginBottom:12,    
-    fontSize:16
+   inputlogin:
+   {   
+        width:'80%',     
+        height:40,   
+        borderColor:'#FFB6C1',
+        borderBottomWidth:1,  
+        marginBottom:12,    
+        fontSize:16
    
-},
-btnproximo: {
+    },
+btnproximo: 
+    {
     
     color: 'white',
     textAlign: 'center',

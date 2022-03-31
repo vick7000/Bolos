@@ -41,7 +41,7 @@ export default function Home ({navigation}) {
           <View style={style.containerProps}>
               <Carousel 
                 layout={'tinder'}
-                layoutCardOffset={'3'}
+                layoutCardOffset={3}
                 data={carouselItens}
                 sliderWidth={300}
                 itemWidth={300}

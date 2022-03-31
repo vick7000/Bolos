@@ -86,6 +86,7 @@ export default function Routes() {
 
       <Stack.Screen name="Cad2" component={Cad2} 
         options={{
+          title: 'Cadastro' ,
           headerStyle: {
             backgroundColor: '#F3E1E1'
         }, 
