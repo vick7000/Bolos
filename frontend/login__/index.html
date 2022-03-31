@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../login/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <div class="lista">
+            <ul>
+                <li>Catalogo</li>
+                <li>Home</li>
+                <li>LOGO</li>
+                <li>Monte seu Bolo</li>
+                <li>Usuario</li>
+            </ul>
+        </div>
+    </header>
+    <section class="comando">
+        <div class="info">
+            <h1>Entre na sua conta</h1>
+            <!-- <button onclick="O()">UP</button> -->
+            <h3>Não tem conta? <a href="#" onclick="caad()" id="link" >Cadastre-se</a></h3>
+        </div>
+
+        <div class="cad modal">
+            <div class="modal-content">
+                <img src="../assets/cancelar.png" alt="" id="x">
+                <form class="pessoal">
+                    <h2>Dados Pessoais</h2>
+
+                    <input type="text" placeholder="Nome Completo..." id="nome">
+                    <input type="email" placeholder="Email..." id="cadEmail">
+                    <input type="password" placeholder="Senha..." id="senha">
+                </form>
+    
+                <form action='' class="endereco">
+                    <input type="tel" placeholder="Tel..." id="tel">
+                    <input type="text" placeholder="Rua..." id="rua">
+                    <input type="text" placeholder="Número..." id="num">
+                    <input type="text" placeholder="Bairro..." id="bairro">
+                    <input type="text" placeholder="CEP..." id="cep">
+                    <input type="text" placeholder="Complemento (Opcional)..." id="comp">
+                </form>
+
+                <form class="pagamento">
+                    <h2>Pagamento</h2>
+                    <input type="text" placeholder="Nome Titular..." id="titular">
+                    <input type="text" placeholder="Numero..." id="number">
+                    <input type="text" placeholder="data_criacao..." id="dc">
+                    <input type="text" placeholder="validade..." id="val">
+                    <input type="text" placeholder="codigo..." id="codigo">
+                    <input type="text" placeholder="pix..." id="pixis">
+                </form>
+
+                <button type="button" id="sign" class="sss" onclick="cadas()">Cadastrar</button>
+                
+                </div>
+            </div>
+
+        </div>
+
+        <form class="dados">
+            <input type="email" placeholder="Email..." id="email">
+            <input type="password" placeholder="Senha..." id="psw">
+            <button type="button" id="btn" onclick="conection()">Entrar</button>
+            
+
+        </form>
+
+    </section>
+
+</body>
+<script src="./script.js" ></script>
+<script src="../global/md5.js" ></script>
+</html>
