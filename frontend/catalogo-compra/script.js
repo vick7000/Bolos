@@ -3,6 +3,8 @@ var img = document.querySelector(".x");
 var compras = document.querySelector(".compras");
 var fechar = document.querySelector(".fechar");
 var body = document.querySelector(".body");
+var tit = document.querySelector(".tit");
+localStorage.setItem("tit", JSON.stringify);
 var username = JSON.parse(localStorage.getItem("userdata"));
 
 function load(){
@@ -115,15 +117,15 @@ function load(){
 }
 
 function compra() {
-    var tit = document.querySelector(".tit");
+    
     var bolll = document.getElementById("bolll");
     let produto = document.createElement("div");
     
     let comp = document.querySelector(".comp");
     
-    if(localStorage.getItem("userdata") != null) {
+    if(localStorage.getItem("userdata") != null || localStorage.getItem("userdata") == null) {
 
-        fetch("http://10.87.207.4/itens", {
+        /*fetch("http://10.87.207.4/itens", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -135,10 +137,13 @@ function compra() {
             if(data.length > 0) {
                 localStorage.setItem("userdata", JSON.stringify(data[0]));
             }
-        })
-
-       /* localStorage.setItem("", JSON.stringify);
-        localStorage.setItem("bolll", JSON.stringify);
+            
+        })*/
+       let titulo = localStorage.getItem("tit", JSON.stringify);
+        
+        console.log(titulo)
+        
+       /* localStorage.setItem("bolll", JSON.stringify);
 
         console.log(bolll)
 
@@ -148,12 +153,12 @@ function compra() {
         produto.innerHTML = tit
         produto.innerHTML = bolll.value
         produto.setAttribute("class", "prod")
-        comp.appendChild(produto)*/
-        const titulo = JSON.parse(localStorage.getItem("userdata"));
-        console.log(titulo)
-    } else {
+        comp.appendChild(produto)
+        
+        console.log(titulo)*/
+    } /*else {
         alert("Faça Login para Realizar Compras")
-    }
+    }*/
 
     
 }
