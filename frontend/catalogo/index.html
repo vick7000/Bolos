@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Catalogo</title>
+</head>
+
+<body onload="load()">
+    <div class="lista">
+        <header class="title">
+            <img id="men" src="../assets/cardapio.png" onclick="show()">
+            <img id="logo" src="../assets/logo.png" />
+        </header>
+
+    </div>
+    <div class="menu modal2">
+        <span >
+            <img class="a"  src="../assets/cancel.png" alt="Fechar">
+        </span>
+    
+        <ul>
+            <li><a href="../home/index.html">Home</a></li>
+            <li><a id="login" href="../login/index.html">Login</a></li>
+            <li><a href="../usuario/index.html">Usuario</a></li>
+            <li><a href="../projeto_bolo/montarbolo/mbolo.html">Monte seu Bolo</a></li>
+            
+            <li><a id="user"></a></li>
+            <li><a onclick="logout()">Sair</a></li>
+        </ul>
+    </div>
+
+    <section class="bloco1">
+        <div class="cad modal">
+
+            <div class="modal-content">
+                <img src="../assets/cancelar.png" alt="" class="x">
+                <img src="../assets/11.png" id="socorro">
+                <div class="info">
+                    <h1 class="tt">Delícia Leite II</h1>
+                    <p class="par">
+                        Bolo de massa branca, recheio de mousse branca com leite em pó, cobertura de mousse branca,
+                        raspas de chocolate branco, leite em pó e cerejas (decorativas).
+                    </p>
+
+                    <button type="button" id="bot"> Comprar </button>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="barra">
+            <input id="buscar" onkeyup="busque()" type="text" name="buscar" placeholder="Procure seu bolo..">
+
+        </div>-->
+        <div class="item1">
+            <div class="card">
+                <img src="" alt="" srcset="" class="bolo" onclick="modales()">
+                <h1 class="jil" id="name1">Sodiê</h1>
+            </div>
+            <div class="card">
+                <img src="../assets/11.png" alt="" srcset="" class="bolo" onclick="modales()">
+                <h1 class="jil" id="name2">Sodiê</h1>
+            </div>
+
+        </div>
+
+        <div class="marquee">
+            <ul class="content" onclick="modales()">
+                <li><img src="../assets/02.png" /></li>
+                <li><img src="../assets/04.png" /></li>
+                <li><img src="../assets/06.png" /></li>
+                <li><img src="../assets/08.png" /></li>
+                <li><img src="../assets/10.png" /></li>
+                <li><img src="../assets/12.png" /></li>
+                <li><img src="../assets/14.png" /></li>
+                <li><img src="../assets/16.png" /></li>
+                <li><img src="../assets/18.png" /></li>
+            </ul>
+        </div>
+
+        <div class="item3">
+            <div class="imm4">
+                <img src="../assets/13.png" alt="" srcset="" id="cake" onclick="modales()">
+                <h1 id="name3">Sodiê</h1>
+            </div>
+            <div class="imm4">
+                <img src="../assets/15.png" alt="" srcset="" id="cake" onclick="modales()">
+                <h1 id="name4">Sodiê</h1>
+            </div>
+            <div class="imm4">
+                <img src="../assets/17.png" alt="" srcset="" id="cake" onclick="modales()">
+                <h1 id="name5">Sodiê</h1>
+            </div>
+        </div>
+
+        <div class="item4">
+            <div class="imm4">
+                <img src="../assets/19.png" alt="" srcset="" id="cake" onclick="modales()">
+                <h1 class="jil" id="name6">AAAAAA</h1>
+            </div>
+            <div class="imm4">
+                <img src="../assets/21.png" alt="" srcset="" id="cake" onclick="modales()">
+                <h1 class="jil" id="name6">Sodiê</h1>
+            </div>
+            <div class="imm4">
+                <img src="../assets/23.png" alt="" srcset="" id="cake" onclick="modales()">
+                <h1 class="jil" id="name7">Sodiê</h1>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+<script src="./script.js"></script>
+
+</html>
