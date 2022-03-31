@@ -19,7 +19,72 @@ body{
     
 }
 
-.lista{
+#logo {
+    height: 200px;
+    width: 250px;
+    margin-top: 30px;
+}
+
+#li {
+    margin-top: 50px;
+    white-space: nowrap;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .row {
+      background-image: linear-gradient(to top, #F1D1D1, #FAF2F2);
+      border-bottom: solid #7D5A5A;
+      border-width: 5px;
+      height: 200px;
+      
+  }
+
+  .row a {
+    margin-left: 5%;
+    margin-right: 5%;
+    cursor: pointer;
+    height: 20px;
+    text-decoration: none;
+    color: #7D5A5A;
+}
+
+  .row {
+    display: none;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 30px;
+    
+ }
+
+.submenu div ul li a{
+    margin-bottom: 40px;
+    text-decoration: none;
+    color: #7D5A5A;
+}
+
+.submenu div ul li {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.submenu div ul li img {
+    width: 70px;
+    height: 70px;
+}
+
+.row{
     display: flex;
     width: 100vw;
     height: 17vh;
@@ -34,11 +99,11 @@ body{
     border: 1px solid #000;
 }
 
-.lista>ul{
+.row>ul{
     margin-right: 40px;
 }
 
-.lista>ul>li {
+.row>ul>li {
     display: inline-block;
     margin-left: 80px;
 }
@@ -285,7 +350,7 @@ body{
 }
 
 @media(max-width: 1366px){
-    .lista{
+    .row{
         font-size: 300%;
     }
 
@@ -296,7 +361,7 @@ body{
 }
 
 @media(max-width: 1034px){
-    .lista{
+    .row{
         font-size: 210%;
         flex-direction: row;
     }
@@ -316,11 +381,11 @@ body{
 }
 
 @media (max-width: 670px){
-    .lista>ul>li{
+    .row>ul>li{
         margin-left: 10px;
 
     }
-    .lista>ul{
+    .row>ul{
         margin: 0;
     }
 
@@ -335,7 +400,7 @@ body{
         background-size: center;
     }
     
-    .lista{
+    .row{
         height: 20vw;
         font-size: 1.14em;
         flex-wrap: wrap;
@@ -343,11 +408,11 @@ body{
         padding: 0;
     }
 
-    .lista>ul{
+    .row>ul{
         margin-right: 10px;
     }
     
-    .lista>ul>li{
+    .row>ul>li{
         margin-left: 10px;
         
     }
