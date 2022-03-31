@@ -2,12 +2,15 @@ const express = require('express');
 
 const route = express.Router();
 
-const UsuarioController = require('./src/controller/UsuarioController');
-const PedidoController = require('./src/controller/PedidoController');
-const EntregadorController = require('./src/controller/EntregadorController');
-const ItemController = require('./src/controller/ItemController');
+
 const ConfeiteiroController = require('./src/controller/ConfeiteiroController');
+const EntregadorController = require('./src/controller/EntregadorController');
+const UsuarioController = require('./src/controller/UsuarioController');
 const ConfigController = require('./src/controller/ConfigController');
+const PedidoController = require('./src/controller/PedidoController');
+const ItemController = require('./src/controller/ItemController');
+const BoloController = require('./src/controller/BoloController');
+
 
 route.post('/usuario', UsuarioController.create);
 route.get('/usuario', UsuarioController.read);
@@ -46,6 +49,12 @@ route.get('/config', ConfigController.read);
 route.get('/config/:id', ConfigController.read);
 route.put('/config/:id', ConfigController.update);
 route.delete('/config/:id', ConfigController.remove);
+
+route.post('/bolo', BoloController.create);
+route.get('/bolo', BoloController.read);
+route.get('/bolo/:id', BoloController.read);
+route.put('/bolo/:id', BoloController.update);
+route.delete('/bolo/:id', BoloController.remove);
 
 
 module.exports = route;

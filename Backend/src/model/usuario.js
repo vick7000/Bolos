@@ -25,7 +25,7 @@ class usuario extends Model {
                 },
 
                 cep: {
-                    type: DataTypes.STRING(9),
+                    type: DataTypes.STRING(15),
                     allowNull: false,
                 },
 
@@ -48,32 +48,32 @@ class usuario extends Model {
 
                 nome_titular: {
                     type: DataTypes.STRING(150),
-                    allowNull: false,
+                    allowNull: true,
                 },
 
                 numero:{
                     type: DataTypes.STRING(150),
-                    allowNull: false,
+                    allowNull: true,
                 },
 
                 data_criacao:{
                     type: DataTypes.STRING(150),
-                    allowNull: false,
+                    allowNull: true,
                 },
 
                 validade:{
                     type: DataTypes.STRING(150),
-                    allowNull: false,
+                    allowNull: true,
                 },
 
                 codigo:{
                     type: DataTypes.INTEGER,
-                    allowNull: false,
+                    allowNull: true,
                 },
 
                 pix:{
                     type: DataTypes.STRING(500),
-                    allowNull: false,
+                    allowNull: true,
                 }
 
 

@@ -12,10 +12,17 @@ class pedido extends Model {
                     type: DataTypes.STRING(150),
                     allowNull: false,
                 },
-
+                id_bolo: {
+                    type: DataTypes.INTEGER,
+                    allowNull: true,
+                    references: {
+                        model: 'bolos',
+                        key: 'id',
+                    }
+                },
                 id_item: {
                     type: DataTypes.INTEGER,
-                    allowNull: false,
+                    allowNull: true,
                     references: {
                         model: 'itens',
                         key: 'id',
@@ -58,10 +65,14 @@ class pedido extends Model {
     }
 
     static associate(models) {
+        pedido.belongsTo(models.confeiteiro, {foreignKey: 'id_confeiteiro'});
+        pedido.belongsTo(models.entregador, {foreignKey: 'id_entregador'});
         pedido.belongsTo(models.usuario, {foreignKey: 'id_usuario'});
         pedido.belongsTo(models.item, {foreignKey: 'id_item'});
-        pedido.belongsTo(models.entregador, {foreignKey: 'id_entregador'});
-        pedido.belongsTo(models.confeiteiro, {foreignKey: 'id_confeiteiro'});
+        pedido.belongsTo(models.bolo, {foreignKey: 'id_bolo'});
+
+        
+        
     }
 }
 

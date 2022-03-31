@@ -1,8 +1,11 @@
 const Pedido = require('../model/pedido');
-const Item = require('../model/item');
-const Usuario = require('../model/usuario');
+
+
 const Confeiteiro = require('../model/confeiteiro');
 const Entregador = require('../model/entregador');
+const Usuario = require('../model/usuario');
+const Bolo = require('../model/bolo');
+const Item = require('../model/item');
 
 
 const create = async (req, res) => {
@@ -26,9 +29,11 @@ const read = async (req, res) => {
     }
     filtro.include = [
         {model: Usuario, attributes: {exclude: ['senha']}},
-        {model: Item},
         {model: Confeiteiro},
-        {model: Entregador}
+        {model: Entregador},
+        {model: Bolo},
+        {model: Item},
+
     ];
 
     if(id_pedido !== undefined){

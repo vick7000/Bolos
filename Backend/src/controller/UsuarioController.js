@@ -10,7 +10,9 @@ const create = async (req, res) => {
 
         delete ret.dataValues.senha;
     }catch(err) {
+        console.log(err.parent.code);
         if(err.parent.code == 'ER_DUP_ENTRY') {
+            
             ret = {
                 msg: 'Email já cadastrado'
             }
