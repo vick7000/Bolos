@@ -1,0 +1,197 @@
+var modal = document.querySelector(".modal")
+var img = document.querySelector(".x");
+var compras = document.querySelector(".compras");
+var fechar = document.querySelector(".fechar");
+var body = document.querySelector(".body");
+var tit = document.querySelector(".tit");
+localStorage.setItem("tit", JSON.stringify);
+var username = JSON.parse(localStorage.getItem("userdata"));
+
+function load(){
+    let pagina = document.querySelector(".bloco1");
+    let clonePagina = pagina.cloneNode(true);
+    let clonePagina2 = pagina.cloneNode(true);
+    clonePagina.id = "copiaBloco";
+    clonePagina2.id = "copiaBloco2";
+
+    // clonePagina
+    let item1 = document.createElement("div")
+    let item2 = document.createElement("div")
+    let card1 = document.createElement("div")
+    let card2 = document.createElement("div")
+    let parg1 = document.createElement("h1")
+    let parg2 = document.createElement("h1")
+
+    // clonePagina2
+    let item06 = document.createElement("div")
+    let item07 = document.createElement("div")
+    let card3 = document.createElement("div")
+    let card4 = document.createElement("div")
+    let parg3 = document.createElement("h1")
+    let parg4 = document.createElement("h1")
+
+
+    
+    // clonePagina
+    let img1 = document.createElement("img");
+    img1.className = "bolo"
+    img1.src = "../assets/01.png"
+    parg1.className = "jil"
+    parg1.innerHTML = "Bolo de alguma coisa"
+    card1.className = "card"
+    item1.className = "item1"
+
+
+    let img2 = document.createElement("img");
+    img2.className = "bolo"
+    img2.src = "../assets/03.png"
+    item2.className = "item11"
+    card2.className = "card"
+    parg2.className = "jil"
+    parg2.innerHTML = "Bolo de alguma coisa"
+
+    // clonePagina2
+    let img01 = document.createElement("img");
+    img01.className = "bolo1"
+    img01.src = "../assets/05.png"
+    item06.className = "item1"
+    card3.className = "card"
+    parg3.className = "jil"
+    parg3.innerHTML = "Bolo de alguma coisa"
+
+    let img02 = document.createElement("img");
+    img02.className = "bolo1"
+    img02.src = "../assets/07.png"
+    item07.className = "item11"
+    card4.className = "card"
+    parg4.className = "jil"
+    parg4.innerHTML = "Bolo de alguma coisa"
+
+    
+    document.body.appendChild(clonePagina);
+    document.body.appendChild(clonePagina2);
+    //ClonePagina
+    card1.appendChild(img1)
+    card1.appendChild(parg1)
+    console.log(card1)
+    
+    // card1.appendChild(parg1)
+    card2.appendChild(img2)
+    card2.appendChild(parg2)
+
+    item1.appendChild(card1);
+    item2.appendChild(card2);
+    
+    //ClonePagina2
+    card3.appendChild(img01)
+    card3.appendChild(parg3)
+    
+    card4.appendChild(img02)
+    card4.appendChild(parg4)
+    console.log(card4)
+
+    item06.appendChild(card3);
+    item07.appendChild(card4);
+
+    clonePagina.appendChild(item1)
+    clonePagina.appendChild(item2)
+
+    clonePagina2.appendChild(item06) 
+    clonePagina2.appendChild(item07) 
+    console.log(clonePagina)
+
+    let user = document.getElementById("user");
+    let login = document.getElementById("login"); 
+
+    if(localStorage.getItem("userdata") != null) {
+        user.style.display = "block"
+        login.style.display = "none";
+
+        user.innerHTML = username.nome;
+        user.setAttribute('href', '../usuario/index.html');
+    } else {
+        user.style.display = "none"
+        login.style.display = "flex";
+    }
+
+}
+
+function compra() {
+    
+    var bolll = document.getElementById("bolll");
+    let produto = document.createElement("div");
+    
+    let comp = document.querySelector(".comp");
+    
+    if(localStorage.getItem("userdata") != null || localStorage.getItem("userdata") == null) {
+
+        /*fetch("http://10.87.207.4/itens", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            "body": data
+        })
+        .then(res => { return res.json()})
+        .then(data => {
+            if(data.length > 0) {
+                localStorage.setItem("userdata", JSON.stringify(data[0]));
+            }
+            
+        })*/
+       let titulo = localStorage.getItem("tit", JSON.stringify);
+        
+        console.log(titulo)
+        
+       /* localStorage.setItem("bolll", JSON.stringify);
+
+        console.log(bolll)
+
+        localStorage.getItem("bolll", JSON.stringify)
+
+        console.log(tit)
+        produto.innerHTML = tit
+        produto.innerHTML = bolll.value
+        produto.setAttribute("class", "prod")
+        comp.appendChild(produto)
+        
+        console.log(titulo)*/
+    } /*else {
+        alert("Faça Login para Realizar Compras")
+    }*/
+
+    
+}
+
+
+
+function modales() {
+    modal.style.display = "block"
+    body.style.overflow = "hidden"
+}
+
+img.addEventListener("click", () => {
+    modal.style.display = "none"
+    body.style.overflow = ""
+})
+
+
+const root = document.documentElement;
+const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
+const marqueeContent = document.querySelector("ul.content");
+
+root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+
+for(let i=0; i<marqueeElementsDisplayed; i++) {
+    marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+}
+
+
+
+function carrinho() { 
+    compras.style.display = "flex"
+
+    fechar.addEventListener("click", () => {
+        compras.style.display = "none"
+    })
+}

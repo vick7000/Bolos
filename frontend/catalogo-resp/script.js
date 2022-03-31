@@ -1,9 +1,19 @@
 var modal = document.querySelector(".modal")
+var menu = document.querySelector(".menu")
 var img = document.querySelector(".x");
-var compras = document.querySelector(".compras");
-var fechar = document.querySelector(".fechar");
+var img1 = document.querySelector(".a");
 
 function load(){
+    // if(localStorage.getItem("userdata") != null) {
+    //     user.style.display = "block"
+    //     login.style.display = "none";
+    
+    //     user.innerHTML = username.nome;
+    //     user.setAttribute('href', '../usuario/index.html');
+    // } else {
+    //     user.style.display = "none"
+    //     login.style.display = "block";
+    // }
     let pagina = document.querySelector(".bloco1");
     let clonePagina = pagina.cloneNode(true);
     let clonePagina2 = pagina.cloneNode(true);
@@ -64,8 +74,8 @@ function load(){
     parg4.innerHTML = "Bolo de alguma coisa"
 
     
-    document.body.appendChild(clonePagina);
-    document.body.appendChild(clonePagina2);
+    // document.body.appendChild(clonePagina);
+    // document.body.appendChild(clonePagina2);
     //ClonePagina
     card1.appendChild(img1)
     card1.appendChild(parg1)
@@ -99,6 +109,8 @@ function load(){
 
 }
 
+
+
 function modales() {
     modal.style.display = "block"
 }
@@ -106,6 +118,19 @@ function modales() {
 img.addEventListener("click", () => {
     modal.style.display = "none"
 })
+
+
+function show() {
+    menu.style.display = "block";
+}
+
+
+img1.addEventListener("click", () => {
+    menu.style.display = "none"
+})
+
+
+
 
 
 const root = document.documentElement;
@@ -118,27 +143,23 @@ for(let i=0; i<marqueeElementsDisplayed; i++) {
     marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
 }
 
-function verificarLogin() {
-    let user = document.getElementById("user");
-    let login = document.getElementById("login"); 
 
-    if(localStorage.getItem("userdata") != null) {
-        user.style.display = "block"
-        login.style.display = "none";
+// function busque() {
+//     let input = document.getElementById('buscar').value.toLowerCase();
+//     //let x = document.querySelector('.content');
 
-        user.innerHTML = username.nome;
-        user.setAttribute('href', '../usuario/index.html');
-    } else {
-        user.style.display = "none"
-        login.style.display = "flex";
-    }
+//     if(input == "sodie"){
+//         window.scroll(0, 50);
+//     }else if(input == "AAAAAA"){
+//         window.scroll(0, 200);
+//     }
 
-}
-
-function carrinho() { 
-    compras.style.display = "flex"
-
-    fechar.addEventListener("click", () => {
-        compras.style.display = "none"
-    })
-}
+//     // for (i = 0; i < x.length; i++) { 
+//     //     if (!x[i].innerHTML.toLowerCase().includes(input)) {
+//     //         x[i].parent.href="#socorro";
+//     //     }
+//     //     else {
+//     //         x[i].style.display="list-item";                 
+//     //     }
+//     // }
+// }
