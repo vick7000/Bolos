@@ -221,18 +221,18 @@ ol, li {
 }
 
 #slide1 {
-    background-image: url("https://img.elo7.com.br/product/zoom/1968F6D/bolos-decorados-bolos.jpg");
+    background-image: url("https://images.aws.nestle.recipes/original/8fee36bf950557ff9f896b9104f36907_bolo-vulcao-brigadeiro-receitas-nestle.jpg");
     background-size: 100%;
 }
 
 #slide2 {
-    background-image: url("https://carlosbakery.com.br/wp-content/uploads/2021/08/Bolo-star-wars-225x300.png");
-    background-size: 35% 100%;
+    background-image: url("https://images.aws.nestle.recipes/original/d43d461bee8902fa7d645e6b5810ff99_bolo-chocolate-morango-sem-lactose-receitas-nestle.jpg");
+    background-size: 100%;
 }
 
 #slide3 {
-    background-image: url("https://d3cif2hu95s88v.cloudfront.net/live-site-2016/product-image/28012019/Kung-Fu-Panda-Cakes_2-600x600.jpg");
-    background-size: 35% 100%;
+    background-image: url("https://assets.unileversolutions.com/recipes-v2/211617.jpg");
+    background-size: 100%;
 }
 
 .slide:nth-child(even) {
@@ -412,7 +412,7 @@ text {
 .footer2 {
     color: #F3E1E1;
     margin-left: auto;
-    margin-top: -3%;
+    margin-top: -2%;
     display: flex;
     flex-direction: column;
 }
@@ -713,18 +713,18 @@ text {
     }
     
     #slide1 {
-        background-image: url("https://img.elo7.com.br/product/zoom/1968F6D/bolos-decorados-bolos.jpg");
+        background-image: url("https://images.aws.nestle.recipes/original/8fee36bf950557ff9f896b9104f36907_bolo-vulcao-brigadeiro-receitas-nestle.jpg");
         background-size: 100%;
     }
     
     #slide2 {
-        background-image: url("https://carlosbakery.com.br/wp-content/uploads/2021/08/Bolo-star-wars-225x300.png");
-        background-size: 35% 100%;
+        background-image: url("https://images.aws.nestle.recipes/original/d43d461bee8902fa7d645e6b5810ff99_bolo-chocolate-morango-sem-lactose-receitas-nestle.jpg");
+        background-size: 100%;
     }
     
     #slide3 {
-        background-image: url("https://d3cif2hu95s88v.cloudfront.net/live-site-2016/product-image/28012019/Kung-Fu-Panda-Cakes_2-600x600.jpg");
-        background-size: 35% 100%;
+        background-image: url("https://assets.unileversolutions.com/recipes-v2/211617.jpg");
+        background-size: 100%;
     }
     
     .slide:nth-child(even) {
