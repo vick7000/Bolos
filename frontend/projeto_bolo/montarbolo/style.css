@@ -30,7 +30,7 @@ na div fim esta os cards 3 e 4*/
     border-radius: 15px;
     justify-content: space-around;
     flex-direction: column;
-   
+    border: 5px solid #7D5A5A;
 }
 /* a div onde tem  a div do card do meio */
 .containers-center {
@@ -53,6 +53,7 @@ na div fim esta os cards 3 e 4*/
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    border: 5px solid #7D5A5A;
 }
 
 .card6 {
