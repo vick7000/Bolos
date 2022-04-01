@@ -73,7 +73,7 @@ return (
       </View>    
 
         <View style={style.btncss}>      
-          <TouchableOpacity onPress={ () => { navigation.navigate("Cadastro") }}>
+          <TouchableOpacity onPress={ () => { navigation.navigate("Home") }}>
                     <Text style={{
                                     color: '#FF69B4',
                                     padding: 12, 

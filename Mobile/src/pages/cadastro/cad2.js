@@ -68,7 +68,7 @@ return (
         </View>
        
         <View style={style.viewproximo}>
-                <TouchableOpacity onPress={ () => { navigation.navigate("Cadastro") }}>
+                <TouchableOpacity onPress={ () => { navigation.navigate("Home") }}>
                         <Text style={style.btnproximo}>Confirmar</Text>
                 </TouchableOpacity>
          </View>   

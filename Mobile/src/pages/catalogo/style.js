@@ -3,15 +3,45 @@ import { StyleSheet} from 'react-native';
 
 export default StyleSheet.create({ 
 
-ofert:{
+ofert:
+{
     flex: 1,
-    width:300,
-    height:200,
+    width:350,
+    height:350,
     margin: 20,
     borderRadius:15,
     alignSelf:'center',
     marginBottom:10,
-    marginTop:'5%'
+    marginTop:'5%',
+    //backgroundColor:'blue',
+},
+telaCatalogo:
+{
+    //backgroundColor:'white',
+   // alignItems:'center',
+    justifyContent:'space-between',
+    flexDirection:'column',
+
+},
+catalogo:
+{
+    flex:1,
+    width:'100%',
+    height:'100%',
+    alignItems:'center',
+    justifyContent:'space-around',
+    flexDirection:'column',
+   // backgroundColor:'red',
+},
+catalogoColum:
+{
+    flex:1,
+    width:'100%',
+    height:'100%',
+    alignItems:'center',
+    justifyContent:'space-between',
+    flexDirection:'column',
+   // backgroundColor:'red',
 },
 textos:{
     alignSelf: 'center',

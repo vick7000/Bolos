@@ -3,6 +3,9 @@ import { View, TextInput, Text, TouchableOpacity,ScrollView} from 'react-native'
 
 import {Picker} from '@react-native-picker/picker';
 
+//import ModelView from "react-native-3d-model-view";
+
+
 //import style from './style';
 
 export default function Mountone({ navigation }) {
@@ -61,6 +64,10 @@ return (
                       justifyContent:'flex-end', 
                       marginTop:'25%'                 
                      }}>
+
+
+
+
             <TouchableOpacity style={{                                        
                                         width:'30%',
                                         height:'100%',   
