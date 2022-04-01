@@ -11,34 +11,26 @@ var bot = document.getElementById("bot");
 
 
 function getBase64Image(img) {
-    var canvas = document.createElement("canvas");
-    canvas.width = img.width;
-    canvas.height = img.height;
 
-    var ctx = canvas.getContext("2d");
-    ctx.drawImage(img, 0, 0);
-
-    var dataURL = canvas.toDataURL("image/png");
-
-    return dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
 }
 
 function load(){
 
-    // fetch("http://10.87.207.4:5000/bolo")
-    fetch("http://localhost:5000/bolo")
+    fetch("http://10.87.207.4:5000/bolo")
+    // fetch("http://localhost:5000/bolo")
     
     .then(res => { return res.json() })
     .then(data => {
-        
-        // let imagem = document.querySelectorAll('.img')
-        // let nome = document.querySelectorAll('.nome')
+  
         data.forEach((item, index) => {
-            var foto = item.img
+            teste(item);
+            // var foto = item.img
             
-            image64 = foto;
-            imgData = getBase64Image(image64);
-            localStorage.setItem("imgData", imgData);
+            // image64 = foto;
+            // imgData = getBase64Image(image64);
+            // localStorage.setItem("imgData", imgData);
+
+
             // localStorage.setItem("imagem", JSON.stringify(data[0]));
             // localStorage.setItem("nome1", JSON.stringify(data[0]));
 
@@ -48,6 +40,35 @@ function load(){
         })
     })
     
+    function teste(obj){
+        
+        let lista = document.querySelector(".item1");
+
+        
+        let card = document.querySelector(".card").cloneNode(true);
+        let img = card.querySelector("img");
+      
+        img.src = obj.img
+       
+
+        card.appendChild(img);
+       
+        lista.appendChild(card);
+    }
+    let produto = document.createElement("div");
+    let imagemDoBolo = document.createElement("img");
+    let compri = document.querySelector(".compri");
+    imagemDoBolo.src = localStorage.getItem("imgData");
+  
+    imagemDoBolo.style.width = "200px";
+    imagemDoBolo.style.height = "200px";
+
+    produto.setAttribute("class", "prod")
+    produto.appendChild(imagemDoBolo);
+    
+    compri.appendChild(produto)
+    
+    //document.getElementById("carrinho").appendChild(imagemDoBolo)
     // if(localStorage.getItem("userdata") != null) {
     //     user.style.display = "block"
     //     login.style.display = "none";
@@ -70,20 +91,16 @@ function load(){
     
 }
 
-function compra(data) {
+function compra() {
     
+    let linkImagem = document.getElementById("socorro").src;
     
+    localStorage.setItem("imgData", linkImagem);
     
-    let produto = document.createElement("div");
-    produto.setAttribute("class", "prod")
+}
 
-    var dataImage = localStorage.getItem('imgData');
-    boli = document.querySelector('.prod');
-    boli.src = "data:image/png;base64," + dataImage;
-
-
-    comp.appendChild(produto)
-    
+function finalizar() {
+    window.location.href = "../tela de pagamento/index.html";
 }
 
 function modales() {

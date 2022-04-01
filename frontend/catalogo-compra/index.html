@@ -6,49 +6,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../assets/logo.png" />
     <title>Catalogo</title>
 </head>
 
-<body onload="load()">
-    <div class="lista">
-        <header class="title">
-            <img id="men" src="../assets/cardapio.png" onclick="show()">
-            <img id="logo" src="../assets/logo.png" />
-        </header>
+<body onload="load()" class="body">
+    <div class="row">
+        <div class="col-12 menu">
+            <ul class="ul">
+                <li id="li"><a href="../home/index.html">Home</a></li>
+                <li id="li" class="il"><a href="../projeto_bolo/montarbolo/bolo.html">Monte seu Bolo</a></li>
+                <li ><img src="../assets/logo.png" id="logo"/></li>
+                <li id="login"><a href="../login/index.html">Login</a></li>
+                <!-- <li><a id="user"></a></li> -->
+                <li id="li"><img id="carrinho" src="../assets/carrinho.png" onclick="carrinho()"/></li>
+                <li onclick="sair()" id="sair"><a>Sair</a></li>
+            </ul>
+        </div>
 
     </div>
-    <div class="menu modal2">
-        <span >
-            <img class="a"  src="../assets/cancel.png" alt="Fechar">
-        </span>
-    
-        <ul>
-            <li><a href="../home/index.html">Home</a></li>
-            <li><a id="login" href="../login/index.html">Login</a></li>
-            <li><a href="../usuario/index.html">Usuario</a></li>
-            <li><a href="../projeto_bolo/montarbolo/mbolo.html">Monte seu Bolo</a></li>
-            <li><img id="carrinho" src="../assets/carrinho.png" onclick="carrinho()"/></li>
-            <li><a id="user"></a></li>
-            <li><a onclick="logout()">Sair</a></li>
-        </ul>
+
+    <div class="compras">
+        <div class="content">
+            <header>
+                <a>Carrinho</a>
+                <img src="../assets/cancelar.png" class="fechar"/>
+            </header>
+            <button id="carrb">Finalizar Compra</button>
+        </div>
     </div>
+
+    <header class="header">
+        <img src="../assets/logo.png" id="logomob"/>
+        <img src="../assets/burger.png" id="burger" onclick="submenu()"/>
+    </header>
+    <div class="fundo">
+        <div class="submenu" >
+            <div class="col-3 menu2" >
+                <img src="../assets/cancelar.png" class="fechar" id="fech"/>
+                <ul>
+                    <li><a href="../catalogo/index.html">Catalogo</a></li>
+                    <li><a href="../projeto_bolo/montarbolo/mbolo.html">Monte seu Bolo</a></li>
+                    <li id="login2"><a href="../login/index.html">Login</a></li>
+                    <li><a id="user2"></a></li>
+                    <li onclick="sair()" id="sair" class="sair2"><a>Sair</a></li>
+                    <li id="li"><img id="carrinho" class="carrmob" src="../assets/carrinho.png" onclick="carrinho()"/></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="cad modal">
+        <div class="modal-content">
+            <img src="../assets/cancelar.png" alt="" id="zz">
+            <img src="../assets/11.png" id="socorro">
+            <div class="info">
+                <img src="../assets/11.png" alt="" id="sss">
+                <h2 class="texto" >Bolo de massa red velvet, recheios de Leite Moça®, mousse de cream cheese, cobertura de mousse branca, Leite Moça®, massa red velvet e cerejas decorativas.</h2>
+            </div>
+            <button id="bot" onclick="compra()">Peça agora</button>
+        </div>
 
     <section class="bloco1">
-        <div class="cad modal">
-
-            <div class="modal-content">
-                <img src="../assets/cancelar.png" alt="" class="x">
-                <img src="../assets/11.png" id="socorro">
-                <div class="info">
-                    <h1 class="tt">Delícia Leite II</h1>
-                    <p class="par">
-                        Bolo de massa branca, recheio de mousse branca com leite em pó, cobertura de mousse branca,
-                        raspas de chocolate branco, leite em pó e cerejas (decorativas).
-                    </p>
-
-                    <button type="button" id="bot" onclick="compra()"> Comprar </button>
-                <</div>
-            </div>
+        
         </div>
         <!-- <div class="barra">
             <input id="buscar" onkeyup="busque()" type="text" name="buscar" placeholder="Procure seu bolo..">
@@ -56,12 +76,12 @@
         </div>-->
         <div class="item1">
             <div class="card">
-                <img src="" alt="" srcset="" class="bolo" onclick="modales()">
-                <h1 class="jil" id="name1">Sodiê</h1>
+                <img src="../assets/01.png" alt="" srcset="" id="bolo" class="bolo" onclick="modales()">
+                <h1 class="jil" id="name1">Alpes Zero Açúcar</h1>
             </div>
             <div class="card">
                 <img src="../assets/11.png" alt="" srcset="" class="bolo" onclick="modales()">
-                <h1 class="jil" id="name2">Sodiê</h1>
+                <h1 class="jil" id="name2">delicia Lite II</h1>
             </div>
 
         </div>
@@ -82,31 +102,31 @@
 
         <div class="item3">
             <div class="imm4">
-                <img src="../assets/13.png" alt="" srcset="" id="cake" onclick="modales()">
-                <h1 id="name3">Sodiê</h1>
+                <img src="../assets/13.png" alt="" srcset="" id="cake" class="bolo" onclick="modales()">
+                <h1 id="name3">Ganache de Limão</h1>
             </div>
             <div class="imm4">
                 <img src="../assets/15.png" alt="" srcset="" id="cake" onclick="modales()">
-                <h1 id="name4">Sodiê</h1>
+                <h1 id="name4">Chocotrufas com Morangos</h1>
             </div>
             <div class="imm4">
                 <img src="../assets/17.png" alt="" srcset="" id="cake" onclick="modales()">
-                <h1 id="name5">Sodiê</h1>
+                <h1 id="name5">Alpes Suínos</h1
             </div>
         </div>
 
         <div class="item4">
             <div class="imm4">
                 <img src="../assets/19.png" alt="" srcset="" id="cake" onclick="modales()">
-                <h1 class="jil" id="name6">AAAAAA</h1>
+                <h1 class="jil" id="name6">Trufado</h1>
             </div>
             <div class="imm4">
-                <img src="../assets/21.png" alt="" srcset="" id="cake" onclick="modales()">
-                <h1 class="jil" id="name6">Sodiê</h1>
+                <img src="../assets/21.png" alt="" srcset="" id="cake" class="bolo" onclick="modales()">
+                <h1 class="jil" id="name7">Trufado Preto e Branco</h1>
             </div>
             <div class="imm4">
-                <img src="../assets/23.png" alt="" srcset="" id="cake" onclick="modales()">
-                <h1 class="jil" id="name7">Sodiê</h1>
+                <img src="../assets/23.png" alt="" srcset="" id="cake" class="bolo" onclick="modales()">
+                <h1 class="jil" id="name8">Aerado II</h1>
             </div>
         </div>
     </section>

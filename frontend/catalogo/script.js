@@ -61,36 +61,46 @@ function load(){
 
     let username = JSON.parse(localStorage.getItem("userdata"));
 
-    if(username !== undefined){
-        login.innerHTML = username.nome;
-        login.setAttribute('href', '../usuario/index.html');
-    }else{
+    // if(username !== undefined){
+    //     login.innerHTML = username.nome;
+    //     login.setAttribute('href', '../usuario/index.html');
+    // }else{
 
-    }
+    // }
     
-    fetch("http://localhost:5000/bolo")
+    fetch("http://10.87.207.4:5000/bolo")
     
     .then(res => { return res.json() })
     .then(data => {
         console.log(data);
-        console.log(data[1].img)
-        imagem2.src = data[1].img;
-        nome2.innerHTML = data[1].nome;
+        // console.log(data.img)
+        // imagem2.src = data[1].img;
+        // nome2.innerHTML = data[1].nome;
 
         data.forEach(e => {
             // console.log(e.img)
-            let section = document.querySelector(".bloco1")
-            let item1 = document.querySelector(".item1")
-            let item3 = document.querySelector(".item3")
-            let img = item1.querySelector("img")
-            let imm4 = item3.querySelector("img")
-            let h1 = section.querySelector("h1")
+            // let section = body.querySelector(".bloco1")
+            // let item1 = document.querySelector(".item1")
+            // let item3 = document.querySelector(".item3")
+            // let item4 = document.querySelector(".item4")
+            // let img = item1.querySelector("img")
+            // let imm4 = item3.querySelector("img")
+            // let h1 = section.querySelector("h1")
+            // let card = document.querySelector(".card")
 
-            console.log(e.nome)
+            // console.log(e.nome)
             
-            img.src = e.img;
-            imm4.src = e.img;
-            h1.innerHTML = e.nome;
+            // img.src = e.img;
+            // imm4.src = e.img;
+            // h1.innerHTML = e.nome;
+
+            
+            // card.appendChild(h1);
+            // card.appendChild(img);
+            // item1.appendChild(card);
+            // section.appendChild(item1)
+            
+   
 
         })
 
@@ -107,7 +117,7 @@ function load(){
 
 
     
-    document.body.appendChild(clonePagina);
+    // document.body.appendChild(clonePagina);
     // document.body.appendChild(clonePagina2);
 
 

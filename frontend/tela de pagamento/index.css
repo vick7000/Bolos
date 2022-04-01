@@ -536,9 +536,9 @@ h1 {
     margin-left: 5px;
     margin-right: 10px;
     z-index: 1;
-    transition: all 1s;
+    transition: all 1s; 
 }
-  
+
 .info:hover {
     transform: scale(1.2);
     transition: all 1s;   
