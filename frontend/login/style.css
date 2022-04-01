@@ -15,7 +15,6 @@
 body{
     /* background: radial-gradient(#F3E1E1, #fff); */
     background-image: url("../assets/a_auto_x2.jpg");
-    background-size: auto;
     
 }
 
@@ -25,26 +24,22 @@ body{
     margin-top: 30px;
 }
 
-#li {
-    margin-top: 50px;
-    white-space: nowrap;
-}
 
 .row::after {
     content: "";
     clear: both;
     display: table;
-  }
-  
-  .row {
-      background-image: linear-gradient(to top, #F1D1D1, #FAF2F2);
-      border-bottom: solid #7D5A5A;
-      border-width: 5px;
-      height: 200px;
-      
-  }
+}
 
-  .row a {
+.row {
+    background-image: linear-gradient(to top, #F1D1D1, #FAF2F2);
+    border-bottom: solid #7D5A5A;
+    border-width: 5px;
+    height: 200px;
+    
+}
+
+.row a {
     margin-left: 5%;
     margin-right: 5%;
     cursor: pointer;
@@ -53,7 +48,7 @@ body{
     color: #7D5A5A;
 }
 
-  .row {
+.row {
     display: none;
 }
 
@@ -67,46 +62,6 @@ body{
     font-size: 30px;
     
  }
-
-.submenu div ul li a{
-    margin-bottom: 40px;
-    text-decoration: none;
-    color: #7D5A5A;
-}
-
-.submenu div ul li {
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-.submenu div ul li img {
-    width: 70px;
-    height: 70px;
-}
-
-.row{
-    display: flex;
-    width: 100vw;
-    height: 17vh;
-    padding-top: 20px;
-    flex-direction: column;
-    justify-content: space-around;
-    font-family: cupid;
-    font-size: 4.5em;
-    text-align: center;
-    align-items: center;
-    background-color: #F1D1D1;
-    border: 1px solid #000;
-}
-
-.row>ul{
-    margin-right: 40px;
-}
-
-.row>ul>li {
-    display: inline-block;
-    margin-left: 80px;
-}
 
 
 .comando {
@@ -146,15 +101,6 @@ body{
     
 }
 
-.modal2{
-    display: none;
-    position: fixed;
-    z-index: 1;
-    transition: 0.5s;
-    
-}
-
-
 .cad{
     /* display: flex;
     justify-content: space-around;
@@ -172,17 +118,6 @@ body{
     background-color: rgba(0,0,0,0.4);
 }
 
-.del{    
-    transition: 2s;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%; 
-    overflow: auto;
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4);
-}
 
 .modal-content{
     display: flex;
@@ -201,38 +136,6 @@ body{
     transition: 0.5s;
 }
 
-.modal-content2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-self: center;
-    text-align: center;
-    background-image: url(../assets/aa.jpg);
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    box-shadow: 5px 1px 5px 1px;
-    width: 80%;
-    border: 1px solid #000;
-    border-radius: 20px;
-    transition: 0.5s;
-}
-
-.modal-content2>input{
-    width: 25vw;
-    margin: 2px;
-    margin-top: 10px;
-    display: grid;
-    align-items: center;
-    align-self: center;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #000;
-    color: black;
-    font-size: 2rem;
-}
-
-
 #texto{
     margin-bottom: 1rem;
 }
@@ -250,9 +153,10 @@ body{
     
 }
 
-.pessoal>h2, .pagamento>h2{
+.pessoal>h2, .pagamento>h2, .endereco>h2{
     /* background-color: rgba(0, 0, 0, 0.781); */
     color: #F3E1E1;
+
 }
 
 
@@ -312,7 +216,7 @@ body{
 
 }
 
-.dados>button, .modal-content2>button{
+.dados>button{
     display: block;
     justify-content: space-around;
     align-self: center;
@@ -330,7 +234,7 @@ body{
 }
 
 
-.dados>button:hover, .modal-content2>button:hover{
+.dados>button:hover{
     background-color: #000000;
     color: #F1D1D1;
     font-size: 0.8em;
@@ -350,7 +254,7 @@ body{
 }
 
 @media(max-width: 1366px){
-    .row{
+    .lista{
         font-size: 300%;
     }
 
@@ -361,7 +265,7 @@ body{
 }
 
 @media(max-width: 1034px){
-    .row{
+    .lista{
         font-size: 210%;
         flex-direction: row;
     }
@@ -381,11 +285,11 @@ body{
 }
 
 @media (max-width: 670px){
-    .row>ul>li{
+    .lista>ul>li{
         margin-left: 10px;
 
     }
-    .row>ul{
+    .lista>ul{
         margin: 0;
     }
 
@@ -400,7 +304,7 @@ body{
         background-size: center;
     }
     
-    .row{
+    .lista{
         height: 20vw;
         font-size: 1.14em;
         flex-wrap: wrap;
@@ -408,11 +312,11 @@ body{
         padding: 0;
     }
 
-    .row>ul{
+    .lista>ul{
         margin-right: 10px;
     }
     
-    .row>ul>li{
+    .lista>ul>li{
         margin-left: 10px;
         
     }

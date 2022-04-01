@@ -1,6 +1,6 @@
 @font-face {
     font-family: cupid;
-    src: url(/docs/Pinky\ Cupid.otf);
+    src: url(/frontend/docs/Pinky\ Cupid.otf);
     
 }
 
@@ -8,6 +8,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: cupid;
     
     
 }
@@ -18,10 +19,9 @@ body{
 }
 
 .lista{
-    display: flex;
-    width: 100vw;
+    width: 100%;
     height: 17vh;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     flex-direction: column;
     justify-content: space-around;
     font-family: cupid;
@@ -32,16 +32,20 @@ body{
     border: 1px solid #000;
 }
 
+.lista>ul{
+    margin-right: 20px;
+}
+
 .lista>ul>li {
     display: inline-block;
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
 
 .maain {
-    width: 90vw;
+    width: 50%;
     text-align: center;
-    margin: 5vw auto;
+    margin: 1vw auto;
     padding: 1vw;
     font-size: 2em;
     background-color: rgba(0, 0, 0, 0.678);
@@ -51,7 +55,8 @@ body{
 .dados{
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     align-self: top;
     align-items: top;
     text-align: center;
@@ -61,31 +66,29 @@ body{
     padding: 1vw;
 }
 
-.dados>h3>a{
+
+h2{
     text-decoration: none;
     color: #F3E1E1;
+    font-size: 2rem;
 }
 
-.dados>h3>a:hover{
-    color: #f3e1e18a;
-}
-
-.pessoal, .endereco, .pagamentos::hover,
-.pessoal, .endereco, .pagamentos::focus{
-    color: #000;
+h3{
     text-decoration: none;
-    cursor: pointer;
-    
+    color: #000000;
 }
 
-.pessoal, .endereco, .pagamentos{
+
+
+.pessoal, .endereco, .pagamento, .mm{ 
     display: flex;
     flex-direction: column;
     padding: 10px;
     font-size: 2.2rem;
 }
 
-.pessoal>input, .endereco>input, .pagamentos>input{
+
+.pessoal>input, .endereco>input, .pagamento>input, .mm>button:hover{
     width: 25vw;
     margin: 2px;
     display: grid;
@@ -96,15 +99,16 @@ body{
     border: 1px solid #000;
     font-size: 1.5rem;
 }
-.pessoal>input, .endereco>input, .pagamentos>input:focus,
-.pessoal>input, .endereco>input, .pagamentos>input:hover{
-    color: rgb(95, 95, 95);
+.mm>input:focus, .mm>input:focus,
+.pessoal>input:focus, .endereco>input:focus,
+.pessoal>input:focus, .endereco>input:focus,
+.pagamento>input:focus, .pagamento>input:hover{
+    color: rgb(177, 37, 37);
     text-decoration: none;
-    cursor: pointer;
 
 }
 
-#sign{
+#sign, #del, #sair{
     display: block;
     justify-content: space-around;
     align-self: center;
@@ -112,7 +116,7 @@ body{
     text-align: center;
     width: 10vw;
     height: 2.5vw;
-    margin-top: 100px;
+    margin-top: 10px;
     background-color: #000;
     color: #F3E1E1;
     font-size: 0.7em;
@@ -121,7 +125,7 @@ body{
     transition: 0.5s;
 }
 
-#sign:hover{
+#sign:hover, #del:hover, #sair:hover{
     background-color: #F1D1D1;
     color: #000000;
     border: 1px solid #000000;
@@ -129,128 +133,96 @@ body{
     
 }
 
-#logo {
-    height: 200px;
-    width: 250px;
-    margin-top: 20px;
-}
-
-#li {
-    margin-top: 50px;
-    white-space: nowrap;
-}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  .row {
-      background-image: linear-gradient(to top, #F1D1D1, #FAF2F2);
-      border-bottom: solid #7D5A5A;
-      border-width: 5px;
-      height: 200px;
-      
-  }
-
-  .row a {
-    margin-left: 5%;
-    margin-right: 5%;
-    cursor: pointer;
-    height: 20px;
-    text-decoration: none;
-    color: #7D5A5A;
-}
-
-  .row {
+.modal2{
     display: none;
-}
-
-.menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 30px;
+    position: fixed;
+    z-index: 1;
+    transition: 0.5s;
     
- }
-
-.submenu div ul li a{
-    margin-bottom: 40px;
-    text-decoration: none;
-    color: #7D5A5A;
 }
 
-.submenu div ul li {
-    margin-top: 40px;
-    margin-bottom: 40px;
+
+.del{    
+    transition: 2s;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
 }
 
-.submenu div ul li img {
-    width: 70px;
-    height: 70px;
-}
-
-.row{
+.mm{
     display: flex;
-    width: 100vw;
-    height: 17vh;
-    padding-top: 20px;
     flex-direction: column;
-    justify-content: space-around;
-    font-family: cupid;
-    font-size: 4.5em;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    background-image: url(../assets/aa.jpg);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    box-shadow: 5px 1px 5px 1px;
+    width: 80%;
+    border: 1px solid #000;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.mm>input{
+    width: 25vw;
+    margin: 2px;
+    margin-top: 10px;
+    display: grid;
+    align-items: center;
+    align-self: center;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    color: black;
+    font-size: 2rem;
+}
+
+.dados{
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     align-items: center;
-    background-color: #F1D1D1;
-    border: 1px solid #000;
+    align-self: center;
+    padding-left: 25vw;
+
 }
 
-.row>ul{
-    margin-right: 40px;
+
+
+.dados>input{
+    width: 20vw;
+    height: 3vw;
+    margin: 2px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid #F3E1E1;
+    font-size: 1em;
 }
 
-.row>ul>li {
-    display: inline-block;
-    margin-left: 80px;
-}
-@media(max-width: 411px){
-    body {
-        background-size: 100vw;
-        background-size: center;
+@media(max-width:1366px){
+    .lista>ul>li{
+        font-size: 55%;
     }
-
-    .row{
-        height: 20vw;
-        font-size: 1.14em;
-        flex-wrap: wrap;
-        margin: 0;
-        padding: 0;
+    
+    .pessoal, .endereco{
+        font-size: 80%;
     }
-
-    .row>ul{
-        margin-right: 10px;
-    }
-
-    .row>ul>li{
-        margin-left: 10px;
-        
+    
+    .pessoal>input, .endereco>input{
+        font-size: 70%;
     }
 }
 
-@media (max-width: 670px){
-    .row>ul>li{
-        margin-left: 10px;
-
-    }
-    .row>ul{
-        margin: 0;
-    }
-
-    .dados{
-        font-size: 1em;
-    }
+@media(max-width:980px){
+    
 }

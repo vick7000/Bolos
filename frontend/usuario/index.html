@@ -4,58 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../global/checkLogin.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Usuario</title>
-    <link rel="shortcut icon" href="../assets/logo.png">
 </head>
 <body>
     <header>
-        <div class="row">
-            <div class="col-12 menu"></div>
-            <ul class="ul">
-                <li><a href="../home/index.html"><img src="../assets/logo.png" id="logo"/></a></li>
+        <div class="lista">
+            <ul>
+                <li>Catalogo</li>
+                <li>Home</li>
+                <li>LOGO</li>
+                <li>Monte seu Bolo</li>
+                <li>Login</li>
             </ul>
         </div>
     </header>
     <section class="maain">
+        <div class="del modal2">
+            <div>
+                <form action="" class="mm">
+                    <img src="../assets/cancelar.png" alt="" id="aa">
+                    <h3 id="texto">Se deseja deletar sua conta onde todas as suas informações sejam apagadas e não poderam ser restauradas depois. Coloque sua senha no campo abaixo duas vezes para a confirmação.</h3>
+
+                    <input type="password" placeholder="Senha..." id="psw1">
+                    <input type="password" placeholder="Confirme sua senha..." id="psw2">
+                    <button type="button" id="ex" class="sss">Deletar</button>
+
+                </form>
+            </div>
+        </div>
         <div class="dados">
-            <div class="pessoal">
+            <form class="pessoal">
                 <h2>Dados Pessoais</h2>
 
                 <input type="text" placeholder="Nome Completo..." id="nome">
-                <input type="email" placeholder="Email..." id="cadEmail">
+                <input type="email" placeholder="Email..." id="email">
                 <input type="password" placeholder="Senha..." id="senha">
-            </div>
+            </form>
 
             
-            <div class="endereco">
+            <form class="endereco">
                 <h2>Endereço</h2>
+                <input type="tel" placeholder="Tel..." id="tel">
                 <input type="text" placeholder="Rua..." id="rua">
+                <input type="text" placeholder="Número..." id="num">
                 <input type="text" placeholder="Bairro..." id="bairro">
                 <input type="text" placeholder="CEP..." id="cep">
                 <input type="text" placeholder="Complemento (Opcional)..." id="comp">
-                <button type="button" id="sign" onclick="alterando()">Alterar</button>
-            </div>
-
-            <div class="pagamentos">
-                <h2>Cartao de débito/crédito</h2>
-
-                <input type="text" placeholder="Nome Titular..." id="titular">
-                <input type="number" placeholder="Número do cartão..." id="numero">
-                <input type="text" placeholder="Data de emissão..." id="emissao">
-                <input type="text" placeholder="Data de validade..." id="validade">
-                <input type="number" placeholder="Código de segurança..." id="cod">
-
-                <h2>PIX</h2>
-
-                <input type="text" placeholder="PIX..." id="pix">
-
                 
-            </div>
+            </form>
+
+            <form class="pagamento">
+                <h2>Cartão de crédito</h2>
+                <input type="text" placeholder="Nome Titular..." id="titular">
+                <input type="text" placeholder="Numero..." id="number">
+                <input type="text" placeholder="data_criacao..." id="dc">
+                <input type="text" placeholder="validade..." id="val">
+                <input type="text" placeholder="codigo..." id="codigo">
+                <h2>PIX</h2>
+                <input type="text" placeholder="pix..." id="pixis">
+            </form>
+            <button type="button" id="sign" onclick="alterando()">Alterar</button>
+            <button type="button" id="del" class="sss">Deletar conta</button>
+            <button type="button" id="sair" class="sss" onclick="sair()">Sair?</button>
             
         </div>
         
     </section>
 </body>
 <script src="script.js"></script>
+<script src="../global/functions.js"></script>
+<script src="../global/md5.js"></script>
 </html>

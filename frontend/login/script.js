@@ -1,14 +1,11 @@
 // tags
 var mod = document.querySelector(".modal");
-var mod2 = document.querySelector(".modal2");
 var img = document.getElementById("x");
-var im = document.getElementById("aa");
 var div1 = document.querySelector(".pessoal");
 var div2 = document.querySelector(".endereco");
 var div3 = document.querySelector(".pagamentos");
 var cadastrar = document.getElementById("sign");
-var dele = document.getElementById("del");
-var excluir = document.getElementById("ex");
+
 
 // Cadastro
 var nome = document.getElementById("nome");
@@ -33,9 +30,7 @@ var senha = document.getElementById("psw");
 var logar = document.getElementById("btn");
 
 
-// Excluir
-var pass = document.getElementById("psw1");
-var confirm = document.getElementById("psw2");
+
 
 function conection() {
     let data = JSON.stringify({
@@ -44,7 +39,7 @@ function conection() {
 
     });
 
-    const url = "http://10.87.207.4:5000/login";
+    const url = "http://localhost:5000/login";
 
     fetch(url, {
         method: "POST",
@@ -56,8 +51,8 @@ function conection() {
         .then(res => { return res.json() })
         .then(data => {
             if (data.length > 0) {
-                localStorage.setItem("userdata", JSON.stringify(data[0]));
-                window.location.href = "../home/index.html";
+                localStorage.setItem("userdata", JSON.stringify(data));
+                window.location.href = "../usuario";
             } else {
                 alert("Usuario ou senha incorretos")
             }
@@ -83,58 +78,68 @@ async function cadas () {
         pix: pix.value,
 
     });
-    await fetch("http://10.87.207.4:5000/usuario", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: data,
-    })
-        .then((resp) => {
-            return resp.json();
+    try{
+        await fetch("http://localhost:5000/usuario", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
         })
-        .then((data) => {
-            console.log(data)
+        window.location.href = "../usuario";
 
-            if (data.id !== undefined) {
-                localStorage.setItem("userdata", JSON.stringify(data));
-                window.location.href = "../home";
+    }catch(e){
+        console.log(e)
+    }
 
-            } else {
-                alert("Falha ao cadastrar");
-
-            }
-
-        });
 }
+
+// function del (){
+//     const id = id;
+
+//     fetch("http://localhost:5000/usuario", {
+//         method: "DELETE",
+//         headers: {
+//             "Content-Type" : "application/json",
+//         },
+
+//         }
+//     )
+
+
+// }
+// .then((resp) => {
+//     return resp.json();
+// })
+// .then((data) => {
+//     console.log(data)
+//     console.log(user.id)
+//     if (data.id !== undefined) {
+//         let user = data[0]
+//         localStorage.setItem("id", user.id)
+        
+//         localStorage.setItem("userdata", JSON.stringify(data));
+        
+
+//     } else {
+//         alert("Falha ao cadastrar");
+
+//     }
+
+// });
 
 function caad() {
     mod.style.display = "block";
 
 }
 
-dele.addEventListener("click", () => {
-    mod2.style.display = "block";
-})
-
-
-excluir.addEventListener("click", () => {
-    if (psw1.innerHTML === psw2.innerHTML) {
-        //estrutura para a exclusão
-    }
-})
-
 img.addEventListener("click", () => {
     mod.style.display = "none"
 
 })
-im.addEventListener("click", () => {
-    mod2.style.display = "none"
-})
-
 
 
 
 function O() {
-    window.location.href = "../usuario/index.html"
+    window.location.href = "../usuario"
 }
