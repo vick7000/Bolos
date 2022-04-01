@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monte seu bolo</title>
+    <link rel="shortcut icon" href="../assets/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+        model-viewer{
+            width: 510px;
+            height: 510px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="containers-top">
+        <div class="card1">  
+           <div class="titulo">
+            <p><a href="../../../home/index.html">Voltar para Home</a></p> 
+           </div>     
+        </div>
+        <div class="card2">
+            <div class="titulo">
+                <p>Um bolo quentinho é melhor do que muita gente.</p> 
+            </div> 
+        </div>
+    </div>
+    <div class="containers-center">
+        
+        <div class="card5">
+            <p><a href="../aabolo.html"><img src="./assets/left-arrow-circle-regular-60.png" id="seta"/></a></p> 
+            <div class="card6">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+            <select style="margin: 0 5% 0 13%;" class="border-box-contact" name="service" id="service" required>
+            <option value="0" disabled selected>Escolha confeite do bolo!</option>
+                <option value="23">Enfeite de mirtilo</option>
+                <option value="24">Enfeite de brigadeiro</option>
+            </select>
+        </div>
+            <p>
+                <span class="valor" id="valor" style="display:flex; position:relative; justify-content:center; margin-top: 5%; margin-bottom:0%; font-weight: bolder; font-size: 15px;"></span>
+            </p>
+        </div>
+
+    </div>
+    <div class="containers-fim">
+        <div class="card4">
+           <div class="titulo">
+                <p>Não há um dia ruim que resista a um bolo gostoso!</p>
+           </div>
+        </div>
+        <div class="card3">
+            <div class="titulo">
+                <p>O amor é doce! Sirva-se a vontade.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

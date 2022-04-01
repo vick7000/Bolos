@@ -28,24 +28,24 @@ $('#service').on('change', function() {
     } else if (value == 2.5) {
       $('#valor').html('<model-viewer src="assets/recheio/boloretangulo abacaxi.glb" camera-controls auto-rotate ar ios-src="assets/recheio/boloretangulo abacaxi.glb"/> <p><a href="./bbbolo.html">Escolher cobertura</a></p>')
     } else if (value == 1.11) {
-      $('#valor').html('<model-viewer src="assets/cobertura/bolocilindro  cobertura neon rosa.glb" camera-controls auto-rotate ar ios-src="assets/cobertura/bolocilindro  cobertura neon rosa.glb"/> <p><a href="./aaabolo.html">Ecolher confeite do bolo</a></p>')
+      $('#valor').html('<model-viewer src="assets/cobertura/bolocilindro  cobertura neon rosa.glb" camera-controls auto-rotate ar ios-src="assets/cobertura/bolocilindro  cobertura neon rosa.glb"/> <p><a href="./bolo detalhes/r.html">Ecolher confeite do bolo</a></p>')
     } else if (value == 1.21) {
-      $('#valor').html('<model-viewer src="assets/cobertura/bolocilindro cobertura neon AZUL.glb" camera-controls auto-rotate ar ios-src="assets/cobertura/bolocilindro cobertura neon AZUL.glb"/> <p><a href="./aaabolo.html">Ecolher confeite do bolo</a></p>')
+      $('#valor').html('<model-viewer src="assets/cobertura/bolocilindro cobertura neon AZUL.glb" camera-controls auto-rotate ar ios-src="assets/cobertura/bolocilindro cobertura neon AZUL.glb"/> <p><a href="./bolo detalhes/rr.html">Ecolher confeite do bolo</a></p>')
     } else if (value == 1.31) {
-      $('#valor').html('<model-viewer src="assets/cobertura/bolocilindro cobertura verao.glb" camera-controls auto-rotate ar ios-src="assets/cobertura/bolocilindro cobertura verao.glb"/> <p><a href="./aaabolo.html">Ecolher confeite do bolo</a></p>')
+      $('#valor').html('<model-viewer src="assets/cobertura/bolocilindro cobertura verao.glb" camera-controls auto-rotate ar ios-src="assets/cobertura/bolocilindro cobertura verao.glb"/> <p><a href="./bolo detalhes/rrr.html">Ecolher confeite do bolo</a></p>')
     } else if (value == 1.41) {
-      $('#valor').html('<model-viewer src="assets/cobertura/bolocilindro cobertura floresta.glb" camera-controls auto-rotate ar ios-src="assets/cobertura/bolocilindro cobertura floresta.glb"/> <p><a href="./aaabolo.html">Ecolher confeite do bolo</a></p>')
+      $('#valor').html('<model-viewer src="assets/cobertura/bolocilindro cobertura floresta.glb" camera-controls auto-rotate ar ios-src="assets/cobertura/bolocilindro cobertura floresta.glb"/> <p><a href="./bolo detalhes/rrrr.html">Ecolher confeite do bolo</a></p>')
     } else if (value == 1.51) {
-      $('#valor').html('<model-viewer src="assets/cobertura/bolocilindro cobertura Ciasto.glb" camera-controls auto-rotate ar ios-src="assets/cobertura/boloretangulo ciasto.glb"/> <p><a href="./aaabolo.html">Ecolher confeite do bolo</a></p>')
+      $('#valor').html('<model-viewer src="assets/cobertura/bolocilindro cobertura Ciasto.glb" camera-controls auto-rotate ar ios-src="assets/cobertura/boloretangulo ciasto.glb"/> <p><a href="./bolo detalhes/rrrrr.html">Ecolher confeite do bolo</a></p>')
     } else if (value == 2.11) {
-      $('#valor').html('<model-viewer src="assets/cobertura/boloretangulo cobertura neon ROSA.glb" camera-controls auto-rotate ar ios-src="assets/cobertura/boloretangulo cobertura neon ROSA.glb"/> <p><a href="./bbbbolo.html">Ecolher confeite do bolo</a></p>')
+      $('#valor').html('<model-viewer src="assets/cobertura/boloretangulo cobertura neon ROSA.glb" camera-controls auto-rotate ar ios-src="assets/cobertura/boloretangulo cobertura neon ROSA.glb"/> <p><a href="./bolo detalhes/1q.html">Ecolher confeite do bolo</a></p>')
     } else if (value == 2.21) {
-      $('#valor').html('<model-viewer src="assets/cobertura/boloretangulo cobertura neon azul.glb" camera-controls auto-rotate ar ios-src="assets/cobertura/boloretangulo cobertura neon azul.glb"/> <p><a href="./bbbbolo.html">Ecolher confeite do bolo</a></p>')
+      $('#valor').html('<model-viewer src="assets/cobertura/boloretangulo cobertura neon azul.glb" camera-controls auto-rotate ar ios-src="assets/cobertura/boloretangulo cobertura neon azul.glb"/> <p><a href="./bolo detalhes/2q.html">Ecolher confeite do bolo</a></p>')
     } else if (value == 2.31) {
-      $('#valor').html('<model-viewer src="assets/cobertura/bolocilindro cobertura verao.glb" camera-controls auto-rotate ar ios-src="assets/cobertura/bolocilindro cobertura verao.glb"/> <p><a href="./bbbbolo.html">Ecolher confeite do bolo</a></p>')
+      $('#valor').html('<model-viewer src="assets/cobertura/boloretangulo cobertura verao.glb" camera-controls auto-rotate ar ios-src="assets/cobertura/boloretangulo cobertura verao.glb"/> <p><a href="./bolo detalhes/3q.html">Ecolher confeite do bolo</a></p>')
     } else if (value == 2.41) {
-      $('#valor').html('<model-viewer src="assets/cobertura/bolocilindro cobertura floresta.glb" camera-controls auto-rotate ar ios-src="assets/cobertura/bolocilindro cobertura floresta.glb"/> <p><a href="./bbbbolo.html">Ecolher confeite do bolo</a></p>')
+      $('#valor').html('<model-viewer src="assets/cobertura/boloretangulo cobertura floresta.glb" camera-controls auto-rotate ar ios-src="assets/cobertura/boloretangulo cobertura floresta.glb"/> <p><a href="./bolo detalhes/4q.html">Ecolher confeite do bolo</a></p>')
     } else if (value == 2.51) {
-      $('#valor').html('<model-viewer src="assets/cobertura/boloretangulo ciasto.glb" camera-controls auto-rotate ar ios-src="assets/cobertura/boloretangulo ciasto.glb"/> <p><a href="./bbbbolo.html">Ecolher confeite do bolo</a></p>')
+      $('#valor').html('<model-viewer src="assets/cobertura/boloretangulo ciasto.glb" camera-controls auto-rotate ar ios-src="assets/cobertura/boloretangulo ciasto.glb"/> <p><a href="./bolo detalhes/5q.html">Ecolher confeite do bolo</a></p>')
     }
     })
