@@ -29,8 +29,6 @@ html{
     height: 25vh;
     background-image: linear-gradient(to bottom, #f1d1d1a3, #f3e1e197);
     border: 1px solid #000;
-    
-
 }
 
 .title{
@@ -43,18 +41,23 @@ html{
 
 #men{
     margin-left: 2%;
-    width: 3%;
 }
 
 #logo {
-    margin-left: 0%;
+    /* margin-left: 0%;
     margin-right: 41vw;
     height: 300px;
-    cursor: pointer;  
+    cursor: pointer;   */
 }
 
 .header {
     display: none;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .row {
@@ -62,7 +65,6 @@ html{
     border-bottom: solid #7D5A5A;
     border-width: 5px;
     height: 200px;
-    
 }
 
 .menu ul {
@@ -71,7 +73,6 @@ html{
     flex-direction: row;
     justify-content: space-evenly;
     font-size: 2.7rem;
-
 }
 
 .submenu  {
@@ -97,11 +98,29 @@ html{
     color: #7D5A5A;
 }
 
+#logo {
+    height: 200px;
+    width: 250px;
+}
+
+#login {
+    margin-top: 50px;
+}
+
+#user {
+    display: none;
+    margin-top: 50px;
+    white-space: nowrap;
+}
+
+#sair {
+    display: none;
+}
+
 #carrinho {
-    margin-top: 5px;
     width: 80px;
     height: 80px;
-    margin-left: 120px;
+    margin-left: 60px;
     cursor: pointer;
 }
 
@@ -126,7 +145,6 @@ html{
     background-color: #F1D1D1;
     border-radius: 20px;
     border: 2px solid black;
-    
 }
 
 .content header {
@@ -157,87 +175,9 @@ html{
     cursor: pointer;  
 }
 
-/* .comp {
-    margin: auto;
-    align-self: start;
-    padding: 20px;
-    width: 40%;
-    height: 90%;
-    background-color: #F1D1D1;
-    border-radius: 20px;
-    border: 2px solid black;
+#men{
+    width: 3%;
 }
-
-.comp header {
-    font-size: 40px;
-    color: #7D5A5A;
-    border-bottom: 2px solid black;
-}
-
-.comp header img {
-    margin-left: 75%;
-    cursor: pointer;
-}
-
-.comp button {
-    background-color: #7D5A5A;
-    border: none;
-    border-radius: 20px;
-    font-family: 'Pinky Cupid', regular;
-    height: 40px;
-    width: 120px;
-    font-size: 15px;
-    position: relative;
-    margin-top: 730px;
-    cursor: pointer;
-} */
-
-.prod {
-    align-self: center;
-    margin-top: 50px;
-    background-color: #FAF2F2;
-    height: 150px;
-    width: 80%;
-    border-radius: 40px;
-    border: solid #7D5A5A;
-    border-width: 3px;
-}
-
-/* .menu{
-    top: 0;
-    left: -0vw;
-    width: 40vw;
-    height: 100vh;
-    background-color:#f1d1d1b6;
-} */
-
-a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 3rem;
-}
-
-.a{
-    width: 3vw; 
-}
-
-/* .menu > ul {
-    margin-top: 1rem;
-    list-style: none;
-    
-}
-
-.menu > ul > li {
-    margin: 10px;
-}
-
-.menu > span {
-    position: absolute;
-    right: 0%;
-    top: 0px;
-    margin: 10px ;
-} */
 
 .lista{
     font-size: 30px;
@@ -260,8 +200,43 @@ a {
     align-items: top;
     padding: 10px;
     transition: 2s;
-
 }
+
+/* .menu{
+    top: 0;
+    left: -0vw;
+    width: 40vw;
+    height: 100vh;
+    background-color:#f1d1d1b6;
+} */
+
+/* a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 3rem;
+} */
+
+
+
+/* .menu > ul {
+    margin-top: 1rem;
+    list-style: none;
+    
+}
+
+.menu > ul > li {
+    margin: 10px;
+}
+
+.menu > span {
+    position: absolute;
+    right: 0%;
+    top: 0px;
+    margin: 10px ;
+} */
+
+
 
 .modal-content{
     display: flex;
@@ -465,6 +440,8 @@ a {
     background-image: linear-gradient(to left, #faf2f2c7 0%, transparent 100%);
 }
 
+
+
 .carrousel {
     list-style: none;
     height: 100%;
@@ -476,23 +453,12 @@ a {
     animation-play-state: paused;
 }
 
-/* .content {
-    list-style: none;
-    height: 100%;
-    display: flex;
-    animation: scrolling var(--marquee-animation-duration) linear infinite;
-}
-
-.content:hover {
-    animation-play-state: paused;
-} */
-
 @keyframes scrolling {
     0% { transform: translateX(0); }
     100% { transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements))); }
 }
 
-.content li {
+.carrousel li {
     width: 100vw;
     /* height: 95%; */
     top: 0;
@@ -506,7 +472,7 @@ a {
     white-space: nowrap;
 }
 
-.content li img {
+.carrousel li img {
     width: 100vw;
     border: none;
     cursor: pointer;
@@ -584,14 +550,6 @@ a {
 }
 
 
-/* .modal2{
-    display: none;
-    position: fixed;
-    z-index: 2;
-    
-} */
-
-
 @media(max-width: 1366px){
 
 
@@ -621,7 +579,6 @@ a {
     
     #men{
         margin-left: 2%;
-        width: 5%;
     }
     #logo {
         /* margin-left: 0%;
@@ -631,6 +588,10 @@ a {
          */
     }
     
+    #men{
+        width: 5%;
+    }
+
     .lista{
         font-size: 30px;
         display: flex;
@@ -641,43 +602,6 @@ a {
         cursor: pointer;
         margin-left: 20px;
     }
-
-    /* .menu{
-        top: 0;
-        left: -0vw;
-        width: 40vw;
-        height: 100vh;
-        background-color:#f1d1d1b6;
-    }
-    
-    a {
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
-        font-size: 1.5rem;
-    }
-    
-    .menu > ul {
-        margin-top: 1rem;
-        list-style: none;
-        
-    }
-    
-    .menu > ul > li {
-        margin: 10px;
-    }
-    
-    .menu > span {
-        position: absolute;
-        right: 0%;
-        top: 0px;
-        margin: 10px ;
-    }
-    
-    #men{
-        width: 5%;
-    } */
-
 
     .cad{
         width: 50vw;
@@ -903,7 +827,7 @@ a {
         100% { transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements))); }
     }
     
-    .content li {
+    .carrousel li {
         width: 100vw;
         /* height: 95%; */
         top: 0;
@@ -917,7 +841,7 @@ a {
         white-space: nowrap;
     }
     
-    .content li img {
+    .carrousel li img {
         width: 100vw;
         border: none;
         cursor: pointer;
@@ -1097,7 +1021,7 @@ a {
         right: 4.4vw
     }
 
-    .content>ul>li>img {
+    .carrousel>ul>li>img {
         width: 50px;
         border: none;
         cursor: pointer;
@@ -1218,7 +1142,7 @@ a {
 
     .marquee:before, .marquee:after {
         width: 10rem;
-        height: 7rem;
+        height: 6.5rem;
 
     }
     
