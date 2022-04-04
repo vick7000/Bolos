@@ -10,22 +10,37 @@ body {
     background-color: #F1D1D1;
 }
 
-.checkout {
-    position: relative;
+.checkin {
+    display: flex;
+    width: 100%;
+    height: 121px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkout {    
     background-color: #F3E1E1;
-    width: 45%;
-    left: 30%;
-    margin-top: 4.6%;
+    width: 850px;
+    height: 120px;
     border-bottom: solid #7D5A5A;
     border-width: 5px;
     display: grid;
-    align-items: flex-end;
 }
 
 ol {
     list-style: none;
-    display: grid;
-    grid-template-columns: 240px 240px 240px 240px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    margin-right: 30px;
+}
+
+.letras li {
+    display: flex;
+    width: 40px;
+    justify-content: center;
 }
 
 .bolinhas li {
@@ -54,13 +69,20 @@ ol {
     background-color: #FAF2F2;
 }
 
+.boli {
+    display: flex;
+    height: 561px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
 .bolo {
     position: relative;
     display: flex;
-    left: 30%;
     background-color: #F3E1E1;
-    width: 45%;
-    height: 580px;
+    width: 850px;
+    height: 560px;
     color: #7D5A5A;
 }
 
@@ -94,38 +116,79 @@ h1 {
     height: 20px;
 }
 
+.pagimento {
+    display: none;
+    width: 100%;
+    height: 585px;
+    align-items: center;
+    justify-content: center;
+}
+
 .pagamento {
     display: none;
     position: relative; 
-    left: 30%;
     background-color: #F3E1E1;
-    width: 45%;
+    width: 850px;
     height: 580px;
     color: #7D5A5A;
-    grid-template-rows:  250px 300px 900px;
-    grid-template-columns: 400px 400px 500px;
+    justify-content: space-between;
+
 }
 
-.pagamento div {
-    background-color: #FAF2F2;
-    height: 50px;
+.pagamento h1 {
+    white-space: nowrap;
+}
+
+.cartoes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-left: -450px;
+    margin-right: 60px;
+    height: 400px;
     width: 300px;
-    margin-top: 20%;
-    text-align: center;
+    justify-content: space-around;
+}
+
+/*quando quebra
+    bolo: 329px
+    pagamento: 674px
+    confirmacao: 354px
+    final: 345px;
+*/
+
+.outro {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    height: 400px;
+    width: 300px;
+    justify-content: space-around;
 }
 
 #pag {
-    margin-top: 190px;
-    margin-left: -320px;
+    background-color: #FAF2F2;
+    height: 50px;
+    width: 300px;
+    text-align: center;
 }
 
 #pag2 {
-    margin-left: 80px;
+    background-color: #FAF2F2;
+    height: 50px;
+    width: 300px;
+    text-align: center;
 }
 
-.pagamento button {
+.botis {
     display: flex;
-    width: 150px;
+    height: 70px;
+    align-self: flex-end;
+}
+
+.botis button {
+    display: flex;
+    min-width: 150px;
     height: 50px;
     justify-content: center;
     align-items: center;
@@ -136,18 +199,16 @@ h1 {
     color: #FAF2F2;
     font-family: 'Pinky Cupid', regular;
     font-size: 20px;
+    
 }
 
 #vol {
+    position: absolute;
     margin-bottom: 20px;
-    margin-left: -700px;
-    align-self: flex-end;
+    left: 20px;
 }
 
-#vol2 {
-    margin-bottom: 10px;
-    align-self: flex-end;
-}
+
 
 #cartao_d,  #cartao_c  {
     display: none;
@@ -157,6 +218,7 @@ h1 {
     color: #7D5A5A;
     overflow: auto;
     margin-top: 5px;
+    border: none;
 }
 
 #cartao_d button, #cartao_c button {
@@ -165,6 +227,7 @@ h1 {
     background-color: rgb(255, 255, 255, 0.5);
     color: #7D5A5A;
     margin-left: 0;
+    border: none;
 }
 
 .mcredito {
@@ -342,6 +405,17 @@ h1 {
     padding: 0;
 }
 
+.botaozinho {
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+}
+
+#vol2 {
+    margin-bottom: 10px;
+    align-self: flex-end;
+}
+
 #prox {
     align-self: flex-end;
 }
@@ -352,16 +426,21 @@ h1 {
     margin-top: -17%;
 }
 
+.confirm {
+    display: none;
+    width: 100%;
+    height: 561px;
+    justify-content: center;
+    align-items: center;
+}
+
 .confirmacao {
     display: none;
     position: relative;
-    left: 30%;
     background-color: #F3E1E1;
-    width: 45%;
-    height: 580px;
+    width: 850px;
+    height: 560px;
     color: #7D5A5A;
-    grid-template-rows: 80px 80px 80px 80px 80px;
-    grid-template-columns: 400px 400px;
 }
 
 .confirmacao button {
@@ -386,27 +465,29 @@ h1 {
     white-space: nowrap;
 }
 
+.fim {
+    display: none;
+    width: 100%;
+    height: 561px;
+    justify-content: center;
+    align-items: center;
+}
+
 .final {
     display: none;
     position: relative;
-    left: 30%;
     background-color: #F3E1E1;
-    width: 45%;
-    height: 580px;
+    width: 850px;
+    height: 560px;
     color: #7D5A5A;
 }
 
 .final form {
     display: flex;
     align-self: flex-end;
-    
     margin-left: -180px;
     margin-right: -90px;
     margin-bottom: 20px;
-    
-   
-    
-    
 }
 
 .final button {
@@ -422,10 +503,6 @@ h1 {
     color: #FAF2F2;
     
     font-size: 20px;
-}
-
-.final h1 {
-    white-space: nowrap;
 }
 
 #toggleContainer label { 
@@ -536,9 +613,9 @@ h1 {
     margin-left: 5px;
     margin-right: 10px;
     z-index: 1;
-    transition: all 1s; 
+    transition: all 1s;
 }
-
+  
 .info:hover {
     transform: scale(1.2);
     transition: all 1s;   
@@ -719,4 +796,8 @@ h1 {
     margin-top: 10px;
     margin-left: 10px;
     opacity: 1;
+}
+
+@media(max-width: 674px) {
+
 }

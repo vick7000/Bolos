@@ -9,74 +9,90 @@
     <link rel="shortcut icon" href="../assets/logo.png">
 </head>
 <body>
-    <div class="checkout">
-        <ol class="bolinhas">
-            <li id="b1">1</li>
-            <li id="b2">2</li>
-            <li id="b3">3</li>
-            <li id="b4">4</li>
-        </ol>
-        <ol>
-            <li>Bolo</li>
-            <li>Pagamento</li>
-            <li>Confirmação</li>
-            <li>fim</li>
-        </ol>
+    <div class="checkin">
+        <div class="checkout">
+            <ol class="bolinhas">
+                <li id="b1">1</li>
+                <li id="b2">2</li>
+                <li id="b3">3</li>
+                <li id="b4">4</li>
+            </ol>
+            <ol class="letras">
+                <li>Bolo</li>
+                <li>Pagamento</li>
+                <li>Confirmação</li>
+                <li>fim</li>
+            </ol>
+        </div>
     </div>
-    <div class="bolo">
-        <h1 id="h11">Seu pedido está correto?</h1>
-
     
-            <div id="galleryContainer">
-                <!-- <div id="leftView"></div>
-                <button id="navLeft" class="navBtns"><</button> -->
-                <div class="info">
-                    <div id="mainView"></div>
-                    <div id="texto"></div>
-                </div>
-                <!-- <div id="rightView"></div>
-                <button id="navRight" class="navBtns">></button> -->
-            </div>
-
-        <button id="prox" onclick="proximo()">Sim</button>
-        <button>Não</button>
-
+    <div class="boli">
+        <div class="bolo">
+            <h1 id="h11">Seu pedido está correto?</h1>
+    
+                <!-- <div id="galleryContainer">
+                    <div id="leftView"></div>
+                    <button id="navLeft" class="navBtns"><</button>
+                    <div class="info">
+                        <div id="mainView"></div>
+                        <div id="texto"></div>
+                    </div>
+                    <div id="rightView"></div>
+                    <button id="navRight" class="navBtns">></button>
+                </div> -->
+    
+            <button id="prox" onclick="proximo()">Sim</button>
+            <button>Não</button>
+        </div>
     </div>
+    
 
-    <div class="pagamento" id="pagamento"  visibility="hidden">
-        <h1>Selecione uma forma de pagamento</h1>
+    <div class="pagimento">
+        <div class="pagamento" id="pagamento"  visibility="hidden">
+            <h1>Selecione uma forma de pagamento</h1>
+    
+            <div class="cartoes">
+                <div id="pag">
+                    <input type="checkbox" onchange="options(this)" id="check"/>
+                    <text>Cartão de Débito</text>
+                    <div id="cartao_d">
+                        <button id="bd" onclick="adicionar()">+</button>
+                    </div>
+                </div>
 
-        <div id="pag">
-            <input type="checkbox" onchange="options(this)" id="check"/>
-            <text>Cartão de Débito</text>
-            <div id="cartao_d">
-                <button id="bd" onclick="adicionar()">+</button>
+                <div id="pag2">
+                    <input type="checkbox" onchange="options2()" id="check3"/>
+                    <text>Pix</text>
+                </div>
             </div>
-        </div>
+            
+    
+            
+            
+    
+            <div class="outro">
+                <div id="pag">
+                    <input type="checkbox" onchange="options(this)" id="check2"/>
+                    <text>Cartão de Crédito</text>
+                    <div id="cartao_c">
+                        <button id="bc" onclick="adicionar()">+</button>
+                    </div>
+                </div>
 
-
-        <div id="pag">
-            <input type="checkbox" onchange="options(this)" id="check2"/>
-            <text>Cartão de Crédito</text>
-            <div id="cartao_c">
-                <button id="bc" onclick="adicionar()">+</button>
+                <div id="pag2" >
+                    <input type="checkbox" onchange="options2()" id="check4"/>
+                    <text>Boleto Bancário</text>
+                </div>
             </div>
-        </div>
-
-
-        <div id="pag2">
-            <input type="checkbox" onchange="options2()" id="check3"/>
-            <text>Pix</text>
-        </div>
-
-        <div id="pag2" >
-            <input type="checkbox" onchange="options2()" id="check4"/>
-            <text>Boleto Bancário</text>
+            
+            <div class="botis">
+                <button id="vol" onclick="voltar()">Voltar</button>
+                <button id="prox" class="pro" onclick="proximo()">Próximo</button>
+            </div>
+            
         </div>
         
-
-        <button id="vol" onclick="voltar()">Voltar</button>
-        <button id="prox" class="pro" onclick="proximo()">Próximo</button>
+        
     </div>
     
     <div class="mcredito">
@@ -112,55 +128,60 @@
         </div>
     </div>
         
-    <div class="confirmacao">
-        <h1>Está tudo correto?</h1>
-
-        <div id="galleryContainer2">
-            <!-- <div id="leftView2"></div>
-            <button id="navLeft2"><</button> -->
-            <div class="info">
-                <div id="mainView2"></div>
-                <div id="texto2"></div>
-            </div>
-            <!-- <div id="rightView2"></div>
-            <button id="navRight2">></button> -->
-        </div>
-
-        <button id="vol2" onclick="voltar()">Não</button>
-        <button id="prox" onclick="proximo()">Sim</button>
-    </div>
-   <div class="final">
-       <h1>Seu pedido será aceito quando o pagamento for processado, <br/> obrigado pela compra :)</h1>
-        
-    <div id="galleryContainer3">
-        <!-- <div id="leftView3"></div>
-        <button id="navLeft3"><</button> -->
-        <div class="info">
-            <div id="mainView3"></div>
-            <div id="texto3"></div>
-        </div>
-        <!-- <div id="rightView3"></div>
-        <button id="navRight3">></button> -->
-
-        <div class="extra">
-            <div id="chave" display="none">
-                <text>Chave Pix: <br/> (19)999620278</text>
-            </div>
-            <!-- <div id="baixar" display="none">
-                <button>Baixar Boleto</button>
+    <div class="confirm">
+        <div class="confirmacao">
+            <h1>Está tudo correto?</h1>
+    
+            <!-- <div id="galleryContainer2">
+                <div id="leftView2"></div>
+                <button id="navLeft2"></button>
+                <div class="info">
+                    <div id="mainView2"></div>
+                    <div id="texto2"></div>
+                </div>
+                <div id="rightView2"></div>
+                <button id="navRight2">></button>
             </div> -->
+    
+            <div class="botaozinho">
+                <button id="vol2" onclick="voltar()">Não</button>
+                <button id="prox" onclick="proximo()">Sim</button>
+            </div>
+            
         </div>
-
     </div>
-
     
 
-    <form action="../home/home.html"> 
-        <button>Finalizar</button>
-    </form>
-
-    
-    </div>
+<div class="fim">
+    <div class="final">
+        <h1>Seu pedido será aceito quando o pagamento for processado, <br/> obrigado pela compra :)</h1>
+         
+         <!-- <div id="galleryContainer3">
+             <div id="leftView3"></div>
+             <button id="navLeft3"><</button>
+             <div class="info">
+                 <div id="mainView3"></div>
+                 <div id="texto3"></div>
+             </div>
+             <div id="rightView3"></div>
+             <button id="navRight3">></button>
+         </div> -->
+ 
+         <!-- <div class="extra">
+             <div id="chave" display="none">
+                 <text>Chave Pix: <br/> 00. 123. 456/0001-10</text>
+             </div>
+             <div id="baixar" display="none">
+                 <button>Baixar Boleto</button>
+             </div>
+         </div>
+ 
+         <form action="../home"> 
+             <button>Finalizar</button>
+         </form> -->
+     </div>
+</div>
+  
 </body>
 <script src="index.js"></script>
 </html>

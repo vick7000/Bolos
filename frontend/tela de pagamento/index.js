@@ -3,8 +3,12 @@ var vol = document.getElementById("vol");
 
 const pro = document.querySelector(".pro");
 const bolo = document.querySelector(".bolo");
+var boli = document.querySelector(".boli");
 var pagamento = document.querySelector(".pagamento");
+var pagimento = document.querySelector(".pagimento");
 const confirmacao = document.querySelector(".confirmacao");
+var confirm = document.querySelector(".confirm");
+var fim = document.querySelector(".fim");
 const final = document.querySelector(".final");
 var check = document.getElementById("check");
 var check2 = document.getElementById("check2");
@@ -25,6 +29,8 @@ function proximo() {
         
         bolo.visibility = "visible";
         bolo.style.display = "flex";
+        boli.visibility = "visible";
+        boli.style.display = "flex";
 
 
     } else if(check3.checked == true && check4.checked == true) {
@@ -48,10 +54,14 @@ function proximo() {
 
         bolo.visibility = "hidden";
         bolo.style.display = "none";
+        boli.visibility = "hidden";
+        boli.style.display = "none";
     
         pagamento.visibility = "visible";
-        pagamento.style.display = "grid";
-        pro.vibility = "hidden";
+        pagamento.style.display = "flex";
+        pagimento.visibility = "visible";
+        pagimento.style.display = "flex";
+        pro.visibility = "hidden";
         pro.style.display = "none";
         
        
@@ -62,9 +72,13 @@ function proximo() {
 
         pagamento.visibility = "hidden";
         pagamento.style.display = "none";
+        pagimento.visibility = "hidden";
+        pagimento.style.display = "none";
 
         confirmacao.visibility = "visible";
         confirmacao.style.display = "flex";
+        confirm.visibility = "visible";
+        confirm.style.display = "flex";
 
         b3.style.backgroundColor = "#7D5A5A";
 
@@ -76,9 +90,13 @@ function proximo() {
 
         confirmacao.visibility = "hidden";
         confirmacao.style.display = "none";
+        confirm.visibility = "hidden";
+        confirm.style.display = "none";
 
         final.visibility = "visible";
         final.style.display = "flex";
+        fim.visibility = "visible";
+        fim.style.display = "flex";
 
         b4.style.backgroundColor = "#7D5A5A";
     }
@@ -96,9 +114,13 @@ function voltar() {
         
         bolo.visibility = "visible";
         bolo.style.display = "flex";
+        boli.visibility = "visible";
+        boli.style.display = "flex";
 
         pagamento.visibility = "hidden";
         pagamento.style.display = "none";
+        pagimento.visibility = "hidden";
+        pagimento.style.display = "none";
 
         b2.style.backgroundColor = "#FAF2F2";
     }else if(atual == 2) {
@@ -365,74 +387,85 @@ function toggleState3() {
 }
 
 let imgObject = [
-  "../assets/11.png",
+  "https://cdn.folhape.com.br/img/pc/1100/1/dn_arquivo/2021/10/0910sa2120.jpg",
+  "../assets/pedido.png",
+  "https://www.oetker.com.br/Recipe/Recipes/oetker.com.br/br-pt/baking/image-thumb__70184__RecipeDetailsLightBox/bolo-com-recheio-de-leite-em-po.jpg",
+  "https://media.gazetadopovo.com.br/2022/03/01091229/bento-cake-960x540.jpeg",
+  "https://www.tuacasa.com.br/wp-content/uploads/2020/11/bolo-aniversario-masculino-00.png",
+  "https://i.pinimg.com/736x/56/28/e1/5628e1fd77a1b57ee06676e5d6a55bb5.jpg",
+  "https://www.confeitariaxv.com.br/wp-content/uploads/sites/251/2016/07/IMG_3014.png",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfEQ2okUDfIyArfcJj3PghqyBCn6eQgU2EGQ&usqp=CAU",
+  "https://img.elo7.com.br/product/zoom/2B5B92B/bolos-decorados-chocolate.jpg",
+  "https://coolinary.com.br/wp-content/uploads/2020/09/Bolo-ilha-gelatina-8.jpg",
 ];
 
   let textObject =[
     {
-      forma: 'Delicia Leite II',
+      forma: 'redondo',
+      recheio: 'Chocolate',
+      cobertura: 'Chocolate',
+      valor: 'R$ 5,50',
+    },
+    {
+      forma: 'quadrado',
+      recheio: 'Morango',
+      cobertura: 'Caramelo',
+      valor: 'R$ 15,50',
+    },
+    {
+      forma: 'pirâmide',
+      recheio: 'Prestigio',
+      cobertura: 'coco ralado',
+      valor: 'R$ 20,00',
+    },
+    {
+      forma: 'tubo',
+      recheio: 'Macarrão',
+      cobertura: 'Tomate',
       valor: 'R$ 10,90',
     },
-    // {
-    //   forma: 'quadrado',
-    //   recheio: 'Morango',
-    //   cobertura: 'Caramelo',
-    //   valor: 'R$ 15,50',
-    // },
-    // {
-    //   forma: 'pirâmide',
-    //   recheio: 'Prestigio',
-    //   cobertura: 'coco ralado',
-    //   valor: 'R$ 20,00',
-    // },
-    // {
-    //   forma: 'tubo',
-    //   recheio: 'Macarrão',
-    //   cobertura: 'Tomate',
-    //   valor: 'R$ 10,90',
-    // },
-    // {
-    //   forma: 'redondo',
-    //   recheio: 'Chocolate',
-    //   cobertura: 'Chocolate',
-    //   valor: 'R$ 5,50',
-    // },
-    // {
-    //   forma: 'redondo',
-    //   recheio: 'Chocolate',
-    //   cobertura: 'Chocolate',
-    //   valor: 'R$ 5,50',
-    // },
-    // {
-    //   forma: 'redondo',
-    //   recheio: 'Chocolate',
-    //   cobertura: 'Chocolate',
-    //   valor: 'R$ 5,50',
-    // },
-    // {
-    //   forma: 'redondo',
-    //   recheio: 'Chocolate',
-    //   cobertura: 'Chocolate',
-    //   valor: 'R$ 5,50',
-    // },
-    // {
-    //   forma: 'redondo',
-    //   recheio: 'Chocolate',
-    //   cobertura: 'Chocolate',
-    //   valor: 'R$ 5,50',
-    // },
-    // {
-    //   forma: 'redondo',
-    //   recheio: 'Chocolate',
-    //   cobertura: 'Chocolate',
-    //   valor: 'R$ 5,50',
-    // },
-    // {
-    //   forma: 'redondo',
-    //   recheio: 'Chocolate',
-    //   cobertura: 'Chocolate',
-    //   valor: 'R$ 5,50',
-    // },
+    {
+      forma: 'redondo',
+      recheio: 'Chocolate',
+      cobertura: 'Chocolate',
+      valor: 'R$ 5,50',
+    },
+    {
+      forma: 'redondo',
+      recheio: 'Chocolate',
+      cobertura: 'Chocolate',
+      valor: 'R$ 5,50',
+    },
+    {
+      forma: 'redondo',
+      recheio: 'Chocolate',
+      cobertura: 'Chocolate',
+      valor: 'R$ 5,50',
+    },
+    {
+      forma: 'redondo',
+      recheio: 'Chocolate',
+      cobertura: 'Chocolate',
+      valor: 'R$ 5,50',
+    },
+    {
+      forma: 'redondo',
+      recheio: 'Chocolate',
+      cobertura: 'Chocolate',
+      valor: 'R$ 5,50',
+    },
+    {
+      forma: 'redondo',
+      recheio: 'Chocolate',
+      cobertura: 'Chocolate',
+      valor: 'R$ 5,50',
+    },
+    {
+      forma: 'redondo',
+      recheio: 'Chocolate',
+      cobertura: 'Chocolate',
+      valor: 'R$ 5,50',
+    },
   ]
     
 let mainImg = 0;
@@ -451,42 +484,41 @@ function loadGallery() {
   mainView.style.background = "url(" + imgObject[mainImg] + ")";
   mainView2.style.background = "url(" + imgObject[mainImg] + ")";
   mainView3.style.background = "url(" + imgObject[mainImg] + ")";
-  mainView.style.backgroundSize = "330px";
-  mainView2.style.backgroundSize = "330px";
-  mainView3.style.backgroundSize = "cover";
-  document.getElementById("texto").innerHTML = "Nome : " + textObject[mainText].forma + "<br>" + "<br>" + "Preço : " + textObject[mainText].valor;
+  document.getElementById("texto").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor;
   console.log("teste")
   if (check.checked == true) {
 
-    document.getElementById("texto2").innerHTML = "Nome : " + textObject[mainText].forma + "<br>" + "<br>" + "Preço : " + textObject[mainText].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Cartão de Débito";
-    document.getElementById("texto3").innerHTML = "Nome : " + textObject[mainText].forma + "<br>" + "<br>" + "Preço : " + textObject[mainText].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Cartão de Débito";
+    document.getElementById("texto2").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Cartão de Débito";
+    document.getElementById("texto3").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Cartão de Débito";
   
     extra.style.display = "none";
     chave.style.display = "none";
     baixar.style.display = "none";
   } else if(check2.checked == true) {
 
-    document.getElementById("texto2").innerHTML = "Nome : " + textObject[mainText].forma + "<br>" + "<br>" + "Preço : " + textObject[mainText].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Cartão de Crédito";
-    document.getElementById("texto3").innerHTML = "Nome : " + textObject[mainText].forma + "<br>" + "<br>" + "Preço : " + textObject[mainText].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Cartão de Crédito";
+    document.getElementById("texto2").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Cartão de Crédito";
+    document.getElementById("texto3").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Cartão de Crédito";
   
     extra.style.display = "none";
     chave.style.display = "none";
     baixar.style.display = "none";
   } else if (check3.checked == true) {
-    document.getElementById("texto2").innerHTML = "Nome : " + textObject[mainText].forma + "<br>" + "<br>" + "Preço : " + textObject[mainText].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Pix";
-    document.getElementById("texto3").innerHTML = "Nome : " + textObject[mainText].forma + "<br>" + "<br>" + "Preço : " + textObject[mainText].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Pix";
+    document.getElementById("texto2").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Pix";
+    document.getElementById("texto3").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Pix";
   
     chave.style.display = "flex";
     baixar.style.display = "none";
   } else if(check4.checked == true) {
-    document.getElementById("texto2").innerHTML = "Nome : " + textObject[mainText].forma + "<br>" + "<br>" + "Preço : " + textObject[mainText].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Boleto Bancário";
-    document.getElementById("texto3").innerHTML = "Nome : " + textObject[mainText].forma + "<br>" + "<br>" + "Preço : " + textObject[mainText].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Boleto Bancário";
+    document.getElementById("texto2").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Boleto Bancário";
+    document.getElementById("texto3").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Boleto Bancário";
  
     chave.style.display = "none";
    baixar.style.display = "flex";
   }
   
- 
+  mainView.style.backgroundSize = "cover";
+  mainView2.style.backgroundSize = "cover";
+  mainView3.style.backgroundSize = "cover";
 
 
   let leftView = document.getElementById("leftView");
@@ -511,53 +543,53 @@ function loadGallery() {
   
 };
 
-// function scrollRight() {
-//   prevText = mainText;
-//   mainText = nextText;
+function scrollRight() {
+  prevText = mainText;
+  mainText = nextText;
 
-//   prevImg = mainImg;
-//   mainImg = nextImg;
-//   if (nextImg >= (imgObject.length -1)) {
-//     nextImg = 0;
-//     nextText = 0;
-//   } else {
-//     nextImg++;
-//     nextText ++;
-//   }; 
-//   loadGallery();
-// };
+  prevImg = mainImg;
+  mainImg = nextImg;
+  if (nextImg >= (imgObject.length -1)) {
+    nextImg = 0;
+    nextText = 0;
+  } else {
+    nextImg++;
+    nextText ++;
+  }; 
+  loadGallery();
+};
 
-// function scrollLeft() {
-//   nextText = mainText;
-//   mainText = prevText;
+function scrollLeft() {
+  nextText = mainText;
+  mainText = prevText;
 
-//   nextImg = mainImg;
-//   mainImg = prevImg;
+  nextImg = mainImg;
+  mainImg = prevImg;
    
-//   if (prevImg === 0 && prevText === 0) {
-//     prevImg = imgObject.length - 1;
-//     prevText = textObject.length - 1;
+  if (prevImg === 0 && prevText === 0) {
+    prevImg = imgObject.length - 1;
+    prevText = textObject.length - 1;
     
-//   } else {
-//     prevImg--;
-//     prevText--;
-//   };
-//   loadGallery();
-// };
+  } else {
+    prevImg--;
+    prevText--;
+  };
+  loadGallery();
+};
 
-// document.getElementById("navRight").addEventListener("click", scrollRight);
-// document.getElementById("navLeft").addEventListener("click", scrollLeft);
-// document.getElementById("navRight2").addEventListener("click", scrollRight);
-// document.getElementById("navLeft2").addEventListener("click", scrollLeft);
-// document.getElementById("navRight3").addEventListener("click", scrollRight);
-// document.getElementById("navLeft3").addEventListener("click", scrollLeft);
+document.getElementById("navRight").addEventListener("click", scrollRight);
+document.getElementById("navLeft").addEventListener("click", scrollLeft);
+document.getElementById("navRight2").addEventListener("click", scrollRight);
+document.getElementById("navLeft2").addEventListener("click", scrollLeft);
+document.getElementById("navRight3").addEventListener("click", scrollRight);
+document.getElementById("navLeft3").addEventListener("click", scrollLeft);
 
-// document.addEventListener('keyup',function(e){
-//     if (e.keyCode === 37) {
-//     scrollLeft();
-//   } else if(e.keyCode === 39) {
-//     scrollRight();
-//   }
-// });
+document.addEventListener('keyup',function(e){
+    if (e.keyCode === 37) {
+    scrollLeft();
+  } else if(e.keyCode === 39) {
+    scrollRight();
+  }
+});
 
 loadGallery();
