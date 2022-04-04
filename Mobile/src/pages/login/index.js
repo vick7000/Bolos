@@ -1,13 +1,46 @@
 import React, { useState } from 'react';
 
-import { View, TextInput, Text, TouchableOpacity,ScrollView, KeyboardAvoidingView} from 'react-native';
+import { View, TextInput, Text, TouchableOpacity,ScrollView, KeyboardAvoidingView, ToastAndroid} from 'react-native';
 import {Ionicons} from '@expo/vector-icons';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import md5 from 'md5';
 
 import style from './style';
 
 export default function Login({ navigation }) {
-  const [input, setInput] = useState('');
+  const [email, setEmail] = useState('');
+  const [senha, setSenha] = useState('');
   const [hidePass, setHidePass] = useState(true);
+
+//   useEffect(async () => {
+//     if(await AsyncStorage.getItem('userdata') !== null) {
+//         navigation.navigate('Home');
+//     }
+// }, [])
+
+  const autenticar = () => {
+    let usuario = {
+        email: email,
+        senha: md5(senha),
+    }
+
+  fetch('http://10.87.207.4:5000/login', {
+    "method": "POST",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": JSON.parse(usuario),
+  })
+  .then(resp => { return resp.json() })
+        .then(async data => {
+            if(data.length > 0) {
+                await AsyncStorage.setItem('userdata', JSON.stringify(data[0]));
+                navigation.navigate('Home');
+            }else {
+                ToastAndroid.show('Email ou Senha Invalidos', ToastAndroid.SHORT);
+            }
+        })
+    }
 
 return (
   <ScrollView 
@@ -24,7 +57,13 @@ return (
           <Text style={style.label}>Email:</Text> 
           <TextInput
                     //value={email} onChange={setEmail} 
-                    style={style.inputlogin} placeholder='Digite seu email...' ></TextInput>
+                    style={style.inputlogin} 
+                    placeholder='Digite seu email...'
+                    value={email}
+                    onChange={setEmail}
+                    >
+
+                    </TextInput>
         
           <Text style={style.label}>Senha:</Text>
          <View style={{ 
@@ -47,8 +86,8 @@ return (
                         borderBottomWidth:2,  
                       }} 
                       placeholder='Digite sua senha...'
-                      value={input}
-                      onChangeText={ (texto) => setInput(texto) }
+                      value={senha}
+                      onChangeText={setSenha}
                       secureTextEntry={hidePass}
                       >                    
             </TextInput>
@@ -73,7 +112,10 @@ return (
       </View>    
 
         <View style={style.btncss}>      
-          <TouchableOpacity onPress={ () => { navigation.navigate("Home") }}>
+          <TouchableOpacity 
+          
+          onPress={() => { autenticar()  
+          console.log(autenticar)}}>
                     <Text style={{
                                     color: '#FF69B4',
                                     padding: 12, 

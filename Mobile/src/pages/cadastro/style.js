@@ -100,6 +100,13 @@ btncartao: {
     borderWidth:1,
     borderColor: '#FF1493'
     
-},
-
+},  
+  error: {
+   
+    fontSize: 14,
+    marginTop: 8,   
+    color:'red'
+    
+  },
+  
 });
