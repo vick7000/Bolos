@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monte seu bolo</title>
-    <link rel="shortcut icon" href="../montarbolo/assets/logo.png">
+    <title>Ciasto - Monte seu bolo</title>
+    <link rel="shortcut icon" href="../assets/logosite.png">
     <link rel="stylesheet" href="style.css">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <style>
@@ -16,19 +16,22 @@
         }
     </style>
 </head>
-<body>
-    
+<body class="body" onload="verificarLogin()">
+    <div class="row">
+        <div class="col-12 menu">
+            <ul class="ul">
+                <li id="li"><a href="../../home/index.html">Home</a></li>
+                <li id="li" class="il"><a href="../../catalogo/index.html">Catalogo</a></li>
+                <li ><img src="../assets/logo.png" id="logo"/></li>
+                <li id="login"><a href="../../login/index.html">Login</a></li>
+                <!-- <li><a id="user"></a></li> -->
+                <li id="li"><img id="carrinho" src="../assets/carrinho.png" onclick="carrinho()"/></li>
+                <li onclick="sair()" id="sair"><a>Sair</a></li>
+            </ul>
+        </div>
+    </div>
+
     <div class="containers-top">
-        <div class="card1">  
-           <div class="titulo">
-            <p><a href="../../home/index.html">Voltar para Home</a></p> 
-           </div>     
-        </div>
-        <div class="card2">
-            <div class="titulo">
-                <p>Bolo e Amor, duas combinações perfeitas!</p> 
-            </div> 
-        </div>
     </div>
     <div class="containers-center">
         
@@ -49,16 +52,7 @@
 
     </div>
     <div class="containers-fim">
-        <div class="card4">
-           <div class="titulo">
-                <p>Bolo é uma arte, comê-lo faz parte.</p>
-           </div>
-        </div>
-        <div class="card3">
-            <div class="titulo">
-                <p>Bolo: A essência da sua festa!</p>
-            </div>
-        </div>
+
     </div>
     <script src="script.js"></script>
 </body>
