@@ -49,7 +49,8 @@
 
     <div class="pagimento">
         <div class="pagamento" id="pagamento"  visibility="hidden">
-            <h1>Selecione uma forma de pagamento</h1>
+            <h1 id="h112">Selecione uma forma de pagamento</h1>
+            <h1 id="h111">Selecione uma forma <br/> de pagamento</h1>
     
             <div class="cartoes">
                 <div id="pag">
@@ -85,6 +86,37 @@
                 </div>
             </div>
             
+
+
+            <div class="opcaoMob">
+                <div id="pag">
+                    <input type="checkbox" onchange="options(this)" id="check"/>
+                    <text>Cartão de Débito</text>
+                    <div id="cartao_d">
+                        <button id="bd" onclick="adicionar()">+</button>
+                    </div>
+                </div>
+
+                <div id="pag">
+                    <input type="checkbox" onchange="options(this)" id="check2"/>
+                    <text>Cartão de Crédito</text>
+                    <div id="cartao_c">
+                        <button id="bc" onclick="adicionar()">+</button>
+                    </div>
+                </div>
+
+                <div id="pag2">
+                    <input type="checkbox" onchange="options2()" id="check3"/>
+                    <text>Pix</text>
+                </div>
+
+                <div id="pag2" >
+                    <input type="checkbox" onchange="options2()" id="check4"/>
+                    <text>Boleto Bancário</text>
+                </div>
+            </div>
+
+
             <div class="botis">
                 <button id="vol" onclick="voltar()">Voltar</button>
                 <button id="prox" class="pro" onclick="proximo()">Próximo</button>

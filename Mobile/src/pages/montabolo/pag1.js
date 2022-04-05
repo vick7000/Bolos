@@ -23,7 +23,7 @@ export default function Seubolo ({navigation}) {
 
                 <View style={style.montabolo}>
                     
-                    <TouchableOpacity> 
+                    <TouchableOpacity onPress={ () => { navigation.navigate("Confirm")}}> 
                         <Text style={{fontSize:18,fontWeight:'bold', color:'white',marginTop:'25%'}}>Finalizar e</Text>
                         <Text style={{fontSize:18,fontWeight:'bold', color:'white'}}>ir pra pagamento</Text>
                     </TouchableOpacity>                                   
