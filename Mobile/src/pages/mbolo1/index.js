@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, TextInput, Text, TouchableOpacity,ScrollView} from 'react-native';
+import { View, TextInput, Text, TouchableOpacity,ScrollView, Alert} from 'react-native';
 
 import {Picker} from '@react-native-picker/picker';
 
@@ -78,7 +78,13 @@ return (
                                         borderColor: '#FF1493',
                                         backgroundColor:'pink',                                      
                                      }}
-                        onPress={ () => { navigation.navigate("MountTwo") }}>
+                        onPress={ () => { 
+                            if(selectedLanguage)
+                            navigation.navigate("MountTwo") 
+                            else{
+                                Alert.alert('Escolha formato de seu Bolo')
+                            }
+                        }}>
                <Text style={{ 
                                 fontSize:22,
                                 fontWeight: 'bold',

@@ -12,24 +12,25 @@ export default function Login({ navigation }) {
   const [senha, setSenha] = useState('');
   const [hidePass, setHidePass] = useState(true);
 
-//   useEffect(async () => {
-//     if(await AsyncStorage.getItem('userdata') !== null) {
-//         navigation.navigate('Home');
-//     }
-// }, [])
+//    useEffect(async () => {
+//      if(await AsyncStorage.getItem('userdata') !== null) {
+//          navigation.navigate('Home');
+//      }
+//  }, [])
 
   const autenticar = () => {
     let usuario = {
         email: email,
         senha: md5(senha),
     }
+    console.log(autenticar)
 
   fetch('http://10.87.207.4:5000/login', {
     "method": "POST",
     "headers": {
       "Content-Type": "application/json"
     },
-    "body": JSON.parse(usuario),
+    "body": JSON.stringify(usuario),
   })
   .then(resp => { return resp.json() })
         .then(async data => {
@@ -60,9 +61,8 @@ return (
                     style={style.inputlogin} 
                     placeholder='Digite seu email...'
                     value={email}
-                    onChange={setEmail}
+                    onChangeText={setEmail}
                     >
-
                     </TextInput>
         
           <Text style={style.label}>Senha:</Text>
@@ -114,8 +114,9 @@ return (
         <View style={style.btncss}>      
           <TouchableOpacity 
           
-          onPress={() => { autenticar()  
-          console.log(autenticar)}}>
+          onPress={() => {
+             autenticar()  
+              }}>
                     <Text style={{
                                     color: '#FF69B4',
                                     padding: 12, 

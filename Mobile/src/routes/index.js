@@ -115,6 +115,7 @@ export default function Routes() {
 
       <Stack.Screen name="Confirm" component={Confirm} 
         options={{
+          title: 'Escolha forma de Pagamento',
           headerStyle: {
             backgroundColor: '#F3E1E1'
         }, 
@@ -122,6 +123,7 @@ export default function Routes() {
 
       <Stack.Screen name="Seubolo" component={Seubolo} 
               options={{
+                title: 'Finalizar Pedido',
                 headerStyle: {
                   backgroundColor: '#F3E1E1'
               }, 
