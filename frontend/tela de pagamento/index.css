@@ -91,7 +91,7 @@ ol {
     width: 120px;
     height: 50px;
     align-self: flex-end;
-    margin-left: -180px;
+    margin-left: -170px;
     margin-right: -90px;
     margin-bottom: 20px;
     justify-content: center;
@@ -551,7 +551,7 @@ h1 {
 }
   
 #galleryContainer {
-    margin-top: 12%;
+    margin-top: 10%;
     height: 400px;
     width: 800px;
     margin-left: -270px;
@@ -800,4 +800,104 @@ h1 {
 
 @media(max-width: 674px) {
 
+}
+
+@media(max-width: 815px) {
+    #galleryContainer {
+        margin-top: 10%;
+        height: 400px;
+        width: 700px;
+        margin-left: -270px;
+        background: transparent;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media(min-width: 720px) and (max-width: 765px) {
+
+    .bolo button {
+        display: flex;
+        width: 120px;
+        height: 50px;
+        align-self: flex-end;
+        margin-left: -60px;
+        margin-right: -190px;
+        margin-bottom: 20px;
+        justify-content: center;
+        align-items: center;
+        background-color: #7D5A5A;
+        border: none;
+        border-radius: 40px;
+        cursor: pointer;
+        color: #FAF2F2;
+        font-family: 'Pinky Cupid', regular;
+        font-size: 20px;
+    }
+
+    #galleryContainer {
+        margin-top: 10%;
+        height: 400px;
+        width: 600px;
+        margin-left: -270px;
+        background: transparent;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #mainView, #mainView2, #mainView3{
+        height: 200px;
+        width: 280px;
+        background-color: #F1D1D1;
+        margin-left: 5px;
+        margin-right: 10px;
+        z-index: 1;
+        transition: all 1s;
+    }
+
+    #texto {
+        display: flex;
+        padding: 40px;
+        width: 200px;
+        height: 120px;
+        justify-content: center;
+        align-items: center;
+        background-color: #7D5A5A;
+        margin-left: 5px;
+        margin-right: 10px;
+        z-index: 1;
+        transition: all 1s;
+        color: #F1D1D1;
+    }
+
+    #rightView, #rightView2, #rightView3{
+        height: 200px;
+        width: 130px;
+        opacity: 0.5;
+        border-radius: 5px;
+        transform: skewy(-5deg);
+        transform-origin: top left;
+        background-color: #eb9100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s;
+    }
+
+    #leftView, #leftView2, #leftView3 {
+        top: 80%;
+        height: 200px;
+        width: 130px;
+        opacity: 0.5;
+        border-radius: 5px;
+        transform: skewy(5deg);
+        transform-origin: top right;
+        background-color: #eb9100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s;  
+    }
+
+    
 }
