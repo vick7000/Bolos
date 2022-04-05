@@ -482,8 +482,8 @@ function loadGallery() {
   let mainView2 = document.getElementById("mainView2");
   let mainView3 = document.getElementById("mainView3");
   mainView.style.background = "url(" + imgObject[mainImg] + ")";
-  mainView2.style.background = "url(" + imgObject[mainImg] + ")";
-  mainView3.style.background = "url(" + imgObject[mainImg] + ")";
+  // mainView2.style.background = "url(" + imgObject[mainImg] + ")";
+  // mainView3.style.background = "url(" + imgObject[mainImg] + ")";
   document.getElementById("texto").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor;
   console.log("teste")
   if (check.checked == true) {
@@ -517,8 +517,8 @@ function loadGallery() {
   }
   
   mainView.style.backgroundSize = "cover";
-  mainView2.style.backgroundSize = "cover";
-  mainView3.style.backgroundSize = "cover";
+  // mainView2.style.backgroundSize = "cover";
+  // mainView3.style.backgroundSize = "cover";
 
 
   let leftView = document.getElementById("leftView");
@@ -579,10 +579,10 @@ function scrollLeft() {
 
 document.getElementById("navRight").addEventListener("click", scrollRight);
 document.getElementById("navLeft").addEventListener("click", scrollLeft);
-document.getElementById("navRight2").addEventListener("click", scrollRight);
-document.getElementById("navLeft2").addEventListener("click", scrollLeft);
-document.getElementById("navRight3").addEventListener("click", scrollRight);
-document.getElementById("navLeft3").addEventListener("click", scrollLeft);
+// document.getElementById("navRight2").addEventListener("click", scrollRight);
+// document.getElementById("navLeft2").addEventListener("click", scrollLeft);
+// document.getElementById("navRight3").addEventListener("click", scrollRight);
+// document.getElementById("navLeft3").addEventListener("click", scrollLeft);
 
 document.addEventListener('keyup',function(e){
     if (e.keyCode === 37) {
