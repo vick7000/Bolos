@@ -27,8 +27,8 @@ export default StyleSheet.create({
         flex: 1,       
         alignItems: 'center',              
         backgroundColor:'green', 
-        height:150,
-        width:150, 
+        height:100,
+        width:100, 
         margin:5,
         borderRadius:20
      
@@ -37,8 +37,8 @@ export default StyleSheet.create({
     imgbolo:{
         flex: 1,       
         alignItems: 'center',
-        height:150,
-        width:150, 
+        height:100,
+        width:100, 
         borderRadius:20,
         backgroundColor:'red',        
         margin:5

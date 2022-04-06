@@ -9,14 +9,14 @@ export default function Seubolo ({navigation}) {
         <ScrollView style={{flex:1,width:'100%',backgroundColor:'#FAF2F2', height:'100%'}
     }>
             <View style={style.slides}>
-                <Text style={{fontSize:18,fontWeight:'bold', color:'gray',padding:3}}>Agora só finalizar e seu bolo irá para cozinha!!!</Text>
+                <Text style={{fontSize:18,fontWeight:'bold', color:'gray',padding:3}}>Agora só finalizar o pedido e seu bolo irá para cozinha!!!</Text>
             </View>
         <View style={style.viewmbolo}>                
 
                 <View style={style.imgbolo}>
                     
                     <TouchableOpacity onPress={ () => { navigation.navigate("Home") }}> 
-                        <Text style={{fontSize:30,fontWeight:'bold', color:'white',padding:3,marginTop:'25%'}}>Cancelar</Text>
+                        <Text style={{fontSize:30,fontWeight:'bold', color:'white',padding:3,marginTop:'12%'}}>Cancelar</Text>
                     </TouchableOpacity>
                 
                 </View>
@@ -24,7 +24,7 @@ export default function Seubolo ({navigation}) {
                 <View style={style.montabolo}>
                     
                     <TouchableOpacity onPress={ () => { navigation.navigate("Confirm")}}> 
-                        <Text style={{fontSize:18,fontWeight:'bold', color:'white',marginTop:'25%'}}>Finalizar e</Text>
+                        <Text style={{fontSize:18,fontWeight:'bold', color:'white',marginTop:'12%'}}>Finalizar e</Text>
                         <Text style={{fontSize:18,fontWeight:'bold', color:'white'}}>ir pra pagamento</Text>
                     </TouchableOpacity>                                   
               
