@@ -14,6 +14,10 @@ var check = document.getElementById("check");
 var check2 = document.getElementById("check2");
 var check3 = document.getElementById("check3");
 var check4 = document.getElementById("check4");
+var check5 = document.getElementById("check5");
+var check6 = document.getElementById("check6");
+var check7 = document.getElementById("check7");
+var check8 = document.getElementById("check8");
 
 var chave = document.getElementById("chave");
 var baixar = document.getElementById("baixar");
@@ -150,6 +154,8 @@ function options(e) {
 
     var cartaod = document.getElementById("cartao_d");
     var cartaoc = document.getElementById("cartao_c");
+    var cartaod2 = document.getElementById("cartao_d2");
+    var cartaoc2 = document.getElementById("cartao_c2");
     
     if(check.checked == true) {
         cartaod.visibility = "visible";
@@ -160,6 +166,15 @@ function options(e) {
         cartaod.style.display = "none";
     }
 
+    if(check5.checked == true) {
+        cartaod2.visibility = "visible";
+        cartaod2.style.display = "grid";
+
+    } else {
+        cartaod2.visibility = "hidden";
+        cartaod2.style.display = "none";
+    }
+
     if(check2.checked == true) { 
         cartaoc.visibility = "visible";
         cartaoc.style.display = "grid";
@@ -168,13 +183,24 @@ function options(e) {
         cartaoc.style.display = "none";
     }
 
+    if(check6.checked == true) { 
+        cartaoc2.visibility = "visible";
+        cartaoc2.style.display = "grid";
+    } else {
+        cartaoc2.visibility = "hidden";
+        cartaoc2.style.display = "none";
+    }
+
 }
 
 function adicionar() {
     let mcredito = document.querySelector(".mcredito");
+    let menuCartao = document.querySelector(".menuCartao");
 
+    menuCartao.visibility = "visible";
+    menuCartao.style.display = "block";
     mcredito.visibility = "visible";
-    mcredito.style.display = "flex";
+    mcredito.style.display = "block";
 }
 
 function cancelar() {
@@ -186,13 +212,13 @@ function cancelar() {
 
 function options2() {
 
-    if(check3.checked == true || check4.checked == true) {
+    if(check3.checked == true || check4.checked == true || check7.checked == true || check8.checked == true) {
         pro.visibility = "visible";
         pro.style.display = "grid";
 
         vol.visibility = "hidden";
         vol.style.display = "none";
-    } else if (check3.checked == false || check4.checked == false) {
+    } else if (check3.checked == false || check4.checked == false || check7.checked == false || check8.checked == false) {
         pro.visibility = "hidden";
         pro.style.display = "none";
 
@@ -513,7 +539,7 @@ function loadGallery() {
     document.getElementById("texto3").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Boleto Bancário";
  
     chave.style.display = "none";
-   baixar.style.display = "flex";
+    baixar.style.display = "flex";
   }
   
   mainView.style.backgroundSize = "cover";
@@ -524,22 +550,22 @@ function loadGallery() {
   let leftView = document.getElementById("leftView");
   leftView.style.background = "url(" + imgObject[prevImg] +")";
   leftView.style.backgroundSize = "cover";
-  let leftView2 = document.getElementById("leftView2");
-  leftView2.style.background = "url(" + imgObject[prevImg] +")";
-  leftView2.style.backgroundSize = "cover";
-  let leftView3 = document.getElementById("leftView3");
-  leftView3.style.background = "url(" + imgObject[prevImg] +")";
-  leftView3.style.backgroundSize = "cover"
+  // let leftView2 = document.getElementById("leftView2");
+  // leftView2.style.background = "url(" + imgObject[prevImg] +")";
+  // leftView2.style.backgroundSize = "cover";
+  // let leftView3 = document.getElementById("leftView3");
+  // leftView3.style.background = "url(" + imgObject[prevImg] +")";
+  // leftView3.style.backgroundSize = "cover"
   
   let rightView = document.getElementById("rightView");
   rightView.style.background = "url(" + imgObject[nextImg] +")";
   rightView.style.backgroundSize = "cover";
-  let rightView2 = document.getElementById("rightView2");
-  rightView2.style.background = "url(" + imgObject[nextImg] +")";
-  rightView2.style.backgroundSize = "cover";
-  let rightView3 = document.getElementById("rightView3");
-  rightView3.style.background = "url(" + imgObject[nextImg] +")";
-  rightView3.style.backgroundSize = "cover";
+  // let rightView2 = document.getElementById("rightView2");
+  // rightView2.style.background = "url(" + imgObject[nextImg] +")";
+  // rightView2.style.backgroundSize = "cover";
+  // let rightView3 = document.getElementById("rightView3");
+  // rightView3.style.background = "url(" + imgObject[nextImg] +")";
+  // rightView3.style.backgroundSize = "cover";
   
 };
 
