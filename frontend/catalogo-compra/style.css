@@ -114,10 +114,12 @@ html{
 }
 
 #sair {
+    cursor: pointer;
     display: none;
 }
 
 #carrinho {
+    display: none;
     width: 80px;
     height: 80px;
     margin-left: 60px;
@@ -177,6 +179,14 @@ html{
 
 #men{
     width: 3%;
+}
+
+.prod {
+    margin-top: 20px;
+    border-radius: 20px;
+    border: solid #7D5A5A;
+    border-width: 5px;
+    background-color: #FAF2F2;
 }
 
 .lista{

@@ -23,6 +23,8 @@ var header = document.querySelector(".header");
 var compras = document.querySelector(".compras");
 var fechar = document.querySelector(".fechar");
 
+var username = JSON.parse(localStorage.getItem("userdata"));
+
 function carrinho() { 
     compras.style.display = "flex"
     body.style.overflow = "hidden"
@@ -50,7 +52,40 @@ function submenu() {
 }
 
 function load(){
-    let username = JSON.parse(localStorage.getItem("userdata"));
+    
+    let user = document.getElementById("user");
+    let login = document.getElementById("login");
+    let user2 = document.getElementById("user2");
+    let login2 = document.getElementById("login2"); 
+    let sair = document.getElementById("sair");
+    let carrinho = document.getElementById("carrinho");
+    let carrmob = document.querySelector(".carrmob");
+    let sair2 = document.querySelector(".sair2");
+
+    if(localStorage.getItem("userdata") != null) {
+        user.style.display = "block";
+        login.style.display = "none";
+        user2.style.display = "block";
+        login2.style.display = "none";
+        sair.style.display = "block";
+        carrinho.style.display = "block";
+        carrmob.style.display = "block";
+        sair2.style.display = "block";
+
+        user.innerHTML = username.nome;
+        user.setAttribute('href', '../usuario/index.html');
+        user2.innerHTML = username.nome;
+        user2.setAttribute('href', '../usuario/index.html');
+    } else {
+        user.style.display = "none";
+        login.style.display = "flex";
+        user.style.display = "none";
+        login.style.display = "flex";
+        sair.style.display = "none";
+        carrinho.style.display = "none";
+        carrmob.style.display = "none";
+        sair2.style.display = "none";
+    }
 
     fetch("http://10.87.207.4:5000/bolo")
     // fetch("http://localhost:5000/bolo")
@@ -83,27 +118,20 @@ function load(){
 
         
         let card = document.querySelector(".card").cloneNode(true);
+        let jil = document.querySelector(".jil").cloneNode(true);
         let img = card.querySelector("img");
+        let inf = jil.querySelector("h1");
       
         img.src = obj.img
-       
+        inf.src= obj.text 
 
         card.appendChild(img);
+        jil.appendChild(inf);
        
         lista.appendChild(card);
+        lista.appendChild(jil);
     }
-    let produto = document.createElement("div");
-    let imagemDoBolo = document.createElement("img");
-    let content = document.querySelector(".content");
-    imagemDoBolo.src = localStorage.getItem("imgData");
-  
-    imagemDoBolo.style.width = "200px";
-    imagemDoBolo.style.height = "200px";
-
-    produto.setAttribute("class", "prod")
-    produto.appendChild(imagemDoBolo);
     
-    content.appendChild(produto)
     
     //document.getElementById("carrinho").appendChild(imagemDoBolo)
     // if(localStorage.getItem("userdata") != null) {
@@ -129,11 +157,28 @@ function load(){
 }
 
 function compra() {
+    let produto = document.createElement("div");
+    let imagemDoBolo = document.createElement("img");
+    let infoDoBolo = document.createElement("text");
+    let content = document.querySelector(".content");
+    imagemDoBolo.src = localStorage.getItem("imgData");
+    infoDoBolo.src = localStorage.getItem("textData");
+  
+    infoDoBolo.style.fontSize = "20px";
+    imagemDoBolo.style.width = "200px";
+    imagemDoBolo.style.height = "200px";
+
+    produto.setAttribute("class", "prod")
+    produto.appendChild(infoDoBolo);
+    produto.appendChild(imagemDoBolo);
     
-    let linkImagem = document.getElementById("socorro").src;
+    content.appendChild(produto)
+    
+    let linkImagem = document.getElementById("sss").src;
+    let linkTexto = document.getElementById("ddd").src;
     
     localStorage.setItem("imgData", linkImagem);
-    
+    localStorage.setItem("textData", linkTexto);
 }
 
 function finalizar() {
@@ -160,7 +205,10 @@ for(let i=0; i<marqueeElementsDisplayed; i++) {
     marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
 }
 
-
+function sair() {
+    localStorage.clear();
+    window.location.href = "../home/index.html"
+}
 
 // function busque() {
 //     let input = document.getElementById('buscar').value.toLowerCase();

@@ -1,6 +1,7 @@
 let prox = document.getElementById("#prox");
 var vol = document.getElementById("vol");
 
+
 const pro = document.querySelector(".pro");
 const bolo = document.querySelector(".bolo");
 var boli = document.querySelector(".boli");
@@ -380,6 +381,7 @@ function AdicionarCartao() {
 
   
 function toggleState3() {
+  
   let galleryView = document.getElementById("galleryView");
   let galleryView2 = document.getElementById("galleryView2")
   let tilesView = document.getElementById("tilesView")
@@ -411,10 +413,11 @@ function toggleState3() {
     }
   };
 }
+var pedidos = localStorage.getItem("imgData");
 
 let imgObject = [
   "https://cdn.folhape.com.br/img/pc/1100/1/dn_arquivo/2021/10/0910sa2120.jpg",
-  "../assets/pedido.png",
+  //  pedidos,
   "https://www.oetker.com.br/Recipe/Recipes/oetker.com.br/br-pt/baking/image-thumb__70184__RecipeDetailsLightBox/bolo-com-recheio-de-leite-em-po.jpg",
   "https://media.gazetadopovo.com.br/2022/03/01091229/bento-cake-960x540.jpeg",
   "https://www.tuacasa.com.br/wp-content/uploads/2020/11/bolo-aniversario-masculino-00.png",
@@ -508,14 +511,14 @@ function loadGallery() {
   let mainView2 = document.getElementById("mainView2");
   let mainView3 = document.getElementById("mainView3");
   mainView.style.background = "url(" + imgObject[mainImg] + ")";
-  // mainView2.style.background = "url(" + imgObject[mainImg] + ")";
+  mainView2.style.background = "url(" + imgObject[mainImg] + ")";
   // mainView3.style.background = "url(" + imgObject[mainImg] + ")";
   document.getElementById("texto").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor;
   console.log("teste")
   if (check.checked == true) {
 
     document.getElementById("texto2").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Cartão de Débito";
-    document.getElementById("texto3").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Cartão de Débito";
+    // document.getElementById("texto3").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Cartão de Débito";
   
     extra.style.display = "none";
     chave.style.display = "none";
@@ -523,36 +526,36 @@ function loadGallery() {
   } else if(check2.checked == true) {
 
     document.getElementById("texto2").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Cartão de Crédito";
-    document.getElementById("texto3").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Cartão de Crédito";
+    // document.getElementById("texto3").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Cartão de Crédito";
   
     extra.style.display = "none";
     chave.style.display = "none";
     baixar.style.display = "none";
   } else if (check3.checked == true) {
     document.getElementById("texto2").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Pix";
-    document.getElementById("texto3").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Pix";
+    // document.getElementById("texto3").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Pix";
   
-    chave.style.display = "flex";
-    baixar.style.display = "none";
+    // chave.style.display = "flex";
+    // baixar.style.display = "none";
   } else if(check4.checked == true) {
     document.getElementById("texto2").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Boleto Bancário";
-    document.getElementById("texto3").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Boleto Bancário";
+    // document.getElementById("texto3").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Boleto Bancário";
  
     chave.style.display = "none";
     baixar.style.display = "flex";
   }
   
   mainView.style.backgroundSize = "cover";
-  // mainView2.style.backgroundSize = "cover";
+  mainView2.style.backgroundSize = "cover";
   // mainView3.style.backgroundSize = "cover";
 
 
   let leftView = document.getElementById("leftView");
   leftView.style.background = "url(" + imgObject[prevImg] +")";
   leftView.style.backgroundSize = "cover";
-  // let leftView2 = document.getElementById("leftView2");
-  // leftView2.style.background = "url(" + imgObject[prevImg] +")";
-  // leftView2.style.backgroundSize = "cover";
+  let leftView2 = document.getElementById("leftView2");
+  leftView2.style.background = "url(" + imgObject[prevImg] +")";
+  leftView2.style.backgroundSize = "cover";
   // let leftView3 = document.getElementById("leftView3");
   // leftView3.style.background = "url(" + imgObject[prevImg] +")";
   // leftView3.style.backgroundSize = "cover"
@@ -560,9 +563,9 @@ function loadGallery() {
   let rightView = document.getElementById("rightView");
   rightView.style.background = "url(" + imgObject[nextImg] +")";
   rightView.style.backgroundSize = "cover";
-  // let rightView2 = document.getElementById("rightView2");
-  // rightView2.style.background = "url(" + imgObject[nextImg] +")";
-  // rightView2.style.backgroundSize = "cover";
+  let rightView2 = document.getElementById("rightView2");
+  rightView2.style.background = "url(" + imgObject[nextImg] +")";
+  rightView2.style.backgroundSize = "cover";
   // let rightView3 = document.getElementById("rightView3");
   // rightView3.style.background = "url(" + imgObject[nextImg] +")";
   // rightView3.style.backgroundSize = "cover";
@@ -605,8 +608,8 @@ function scrollLeft() {
 
 document.getElementById("navRight").addEventListener("click", scrollRight);
 document.getElementById("navLeft").addEventListener("click", scrollLeft);
-// document.getElementById("navRight2").addEventListener("click", scrollRight);
-// document.getElementById("navLeft2").addEventListener("click", scrollLeft);
+document.getElementById("navRight2").addEventListener("click", scrollRight);
+document.getElementById("navLeft2").addEventListener("click", scrollLeft);
 // document.getElementById("navRight3").addEventListener("click", scrollRight);
 // document.getElementById("navLeft3").addEventListener("click", scrollLeft);
 
