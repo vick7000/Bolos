@@ -4,9 +4,9 @@ $('#service').on('change', function() {
       .val()
   
     if (value == 1) {
-      $('#valor').html('<model-viewer src="assets/formato/bolocilindro.glb" camera-controls auto-rotate ar ios-src="assets/formato/bolocilindro.glb" /> <p><a href="./abolo.html">Escolher recheio</a></p> ')
+      $('#valor').html('<model-viewer src="assets/formato/bolocilindro.glb" camera-controls auto-rotate ar ios-src="assets/formato/bolocilindro.glb" /> <p><a href="./abolo.html">Escolher recheio<img src="./png/bxs-cylinder.png" width="50" height="60"/><img src="./png/bxs-layer-plus.png" width="50" height="60"/><img src="./png/bx-cake.png" width="50" height="60"/></a></p></a></p> ')
     } else if (value == 2) {
-      $('#valor').html('<model-viewer src="assets/formato/boloretangulo.glb" camera-controls auto-rotate ar ios-src="assets/formato/boloretangulo.glb"/> <p><a href="./bbolo.html">Escolher recheio</a></p>')
+      $('#valor').html('<model-viewer src="assets/formato/boloretangulo.glb" camera-controls auto-rotate ar ios-src="assets/formato/boloretangulo.glb"/> <p><a href="./bbolo.html">Escolher recheio<img src="./png/bxs-cuboid.png" width="50" height="60"/><img src="./png/bxs-layer-plus.png" width="50" height="60"/><img src="./png/bx-cake.png" width="50" height="60"/></a></p>')
     } else if (value == 1.1) {
       $('#valor').html('<model-viewer src="assets/recheio/bolocilindro limao.glb" camera-controls auto-rotate ar ios-src="assets/recheio/bolocilindro limao.glb"/> <p><a href="./aabolo.html">Escolher cobertura</a></p>')
     } else if (value == 1.2) {
