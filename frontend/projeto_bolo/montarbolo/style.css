@@ -1,16 +1,15 @@
+@font-face {
+    font-family: 'Pinky Cupid';
+    src: url(../../assets/Pinky-Cupid.otf);
+    
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     z-index: 0;
 }
-@font-face {
-    font-family: 'Pinky Cupid';
-    src: url(../assets/Pinky-Cupid.otf);
-}
-/* divs onde estao os cards  
-na div top esta os cards 1 e 2 
-na div fim esta os cards 3 e 4*/
 
 /* a div onde tem  a div do card do meio */
 .containers-center {
@@ -20,6 +19,8 @@ na div fim esta os cards 3 e 4*/
     display: flex;
     justify-content: center;
     z-index: 1;
+    
+
 }
 
 /* aqui está o card do meio*/
@@ -36,6 +37,7 @@ na div fim esta os cards 3 e 4*/
     -ms-border-radius: 12px;
     -o-border-radius: 12px;
     z-index: 1;
+    font-family: 'Pinky Cupid';
 }
 
 .testeee{
@@ -43,9 +45,10 @@ na div fim esta os cards 3 e 4*/
 }
 
 .card6 {
-    width: 954px;
+    width: 1954px;
     display: flex;
     align-items: center;
+    font-family: 'Pinky Cupid';
 }
 
 h1{
@@ -81,6 +84,7 @@ p {
 }
 
 .row {
+    font-family: 'Pinky Cupid';
     background-image: linear-gradient(to top, #F1D1D1, #FAF2F2);
     border-bottom: solid #7D5A5A;
     border-width: 5px;
@@ -254,9 +258,5 @@ p {
             -moz-transform:rotate(0deg);
             -ms-transform:rotate(0deg);
             -o-transform:rotate(0deg);
-}
     }
-
-    @media only screen and (max-device-width: 900px) {
-        /* .menu { width:100%; } */
-        }
+}

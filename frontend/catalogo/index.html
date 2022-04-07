@@ -10,21 +10,23 @@
     <title>Ciasto - Catalogo</title>
 </head>
 
-<body onload="load()" class="body">
+<body class="body" onload="verificarLogin()">
+    
     <div class="row">
         <div class="col-12 menu">
             <ul class="ul">
                 <li id="li"><a href="../home/index.html">Home</a></li>
-                <li id="li" class="il"><a href="../projeto_bolo/montarbolo/bolo.html">Monte seu Bolo</a></li>
+                <li id="li"><a href="../projeto_bolo/montarbolo/bolo.html">Monte seu Bolo</a></li>
                 <li ><img src="../assets/logo.png" id="logo"/></li>
                 <li id="login"><a href="../login/index.html">Login</a></li>
-                <!-- <li><a id="user"></a></li> -->
+                <li><a id="user"></a></li>
                 <li id="li"><img id="carrinho" src="../assets/carrinho.png" onclick="carrinho()"/></li>
                 <li onclick="sair()" id="sair"><a>Sair</a></li>
             </ul>
         </div>
         
     </div>
+    
     <div class="compras">
         <div class="content">
             <header>
@@ -39,6 +41,23 @@
         <img src="../assets/logo.png" id="logomob"/>
         <img src="../assets/burger.png" id="burger" onclick="submenu()"/>
     </header>
+
+    <div class="fundo">
+        <div class="submenu" >
+            <div class="col-3 menu2" >
+                <img src="../assets/cancelar.png" class="fechar" id="fech"/>
+                <ul>
+                    <li><a href="../home/index.html">Home</a></li>
+                    <li><a href="../projeto_bolo/montarbolo/mbolo.html">Monte seu Bolo</a></li>
+                    <li id="login2"><a href="../login/index.html">Login</a></li>
+                    <li><a id="user2"></a></li>
+                    <li onclick="sair()" id="sair" class="sair2"><a>Sair</a></li>
+                    <li id="li"><img id="carrinho" class="carrmob" src="../assets/carrinho.png" onclick="carrinho()"/></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
     <div class="fundo">
         <div class="submenu" >
             <div class="col-3 menu2" >
