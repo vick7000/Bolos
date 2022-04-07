@@ -24,8 +24,8 @@ const read = async (req, res) => {
 
     if(id !== undefined) filtro = {where: {id: id}};
 
-    filtro.include = { 
-        exclude: ['id_pedido']
+    filtro.attributes = { 
+        exclude: ['id_usuario', 'id_confeiteiro', 'id_entregador', 'id_bolo', 'id_item']
     }
     filtro.include = [
         {model: Usuario, attributes: {exclude: ['senha']}},
@@ -37,7 +37,7 @@ const read = async (req, res) => {
     ];
 
     if(id_pedido !== undefined){
-        filtro.include[0].where = {id: id_perfil}
+        filtro.include[0].where = {id: id_pedido}
     }
 
     const ret = await Pedido.findAll(filtro);

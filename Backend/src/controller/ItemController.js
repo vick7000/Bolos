@@ -19,7 +19,7 @@ const read = async (req, res) => {
 
     if(id !== undefined) filtro = {where: {id: id}};
 
-    filtro.include = {
+    filtro.attributes = {
         exclude: ['id_config']
     }
 

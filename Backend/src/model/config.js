@@ -4,14 +4,23 @@ class config extends Model {
     static init(datacon) {
         super.init(
             {
-                tipo: {
+                Forma: {
                     type: DataTypes.STRING,
                     allowNull: false,
                 },
-                descricao: {
+                Recheio: {
                     type: DataTypes.STRING,
                     allowNull: false,
-                }                               
+                },
+                Cobertura: {
+                    type: DataTypes.STRING,
+                    allowNull: false,
+                },
+                Confeite: {
+                    type: DataTypes.STRING,
+                    allowNull: false,
+                },                             
+
             },
             {
                 sequelize: datacon,

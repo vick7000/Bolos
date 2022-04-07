@@ -16,10 +16,6 @@ class item extends Model {
                     type: DataTypes.INTEGER,
                     allowNull: false,
                 },
-                custo_unidade: {
-                    type: DataTypes.FLOAT(5,2),
-                    allowNull: false,
-                }
                     
             },
             {
