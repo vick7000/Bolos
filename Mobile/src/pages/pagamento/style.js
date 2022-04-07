@@ -19,18 +19,33 @@ export default StyleSheet.create({
     fontSize:16   
    
 },
-btnentrar: {
+inputcvc:{   
+    width:60,     
+    height:40,   
+    borderColor:'#FFB6C1',
+    borderBottomWidth:1,  
+    marginBottom:12,    
+    fontSize:16 ,
+    alignItems:'center',
+   // marginStart:50,
+},
+
+btnentrar: {  
     alignItems:'center',
     justifyContent:'center',
     color: 'white',
     textAlign: 'center',
-    width: 80,
-    height: 30,
-    backgroundColor:'pink',
-    marginTop: 15,
+    padding:3,
+    backgroundColor:'green',    
     margin: 8,
-    padding: 2,
-    paddingTop: 4,
-    borderRadius: 8
+    borderRadius: 8,
+    width:200,
+    height:50,
+    fontSize:18,
+    fontWeight:'bold',
+    marginTop:30, 
+    
+    
+    
 }
 });

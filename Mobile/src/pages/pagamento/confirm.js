@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, TextInput, Image, Text, TouchableOpacity,ScrollView} from 'react-native';
+import { View, TextInput, Image, Text, TouchableOpacity,ScrollView, Alert} from 'react-native';
 
 
 import style from './style';
@@ -155,7 +155,11 @@ export default function Confirm({ navigation }) {
             borderColor:'gray'
             }}>
 
-            <TouchableOpacity  onPress={ () => { navigation.navigate("Cartao") }}>
+            <TouchableOpacity  onPress={ () => 
+                                
+             { navigation.navigate("Home") 
+                Alert.alert('Seu pedido foi para cozinha e dentro de minutos poderá retirar na loja')
+             }}>
                 <Text style={{
                     alignSelf:'center', 
                     color:'gray', 
