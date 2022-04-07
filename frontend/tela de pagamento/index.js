@@ -196,10 +196,10 @@ function options(e) {
 
 function adicionar() {
     let mcredito = document.querySelector(".mcredito");
-    let menuCartao = document.querySelector(".menuCartao");
+    // let menuCartao = document.querySelector(".menuCartao");
 
-    menuCartao.visibility = "visible";
-    menuCartao.style.display = "block";
+    // menuCartao.visibility = "visible";
+    // menuCartao.style.display = "flex";
     mcredito.visibility = "visible";
     mcredito.style.display = "block";
 }

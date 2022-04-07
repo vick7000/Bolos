@@ -235,35 +235,29 @@ h1 {
     border: none;
 }
 
-.menuCartao {
+/* .menuCartao {
     display: none;
-    top: 0;
-    position: fixed;
-    z-index: 2;
     height: auto;
     width: 100%;
-    
-}
+    align-items: center;
+    justify-content: center;
+} */
 
 .mcredito {
     background-color: rgb(241, 209, 209, .6);
-    align-self: start;
-    
-    padding-left: 230px;
-    
+    margin-top: -583px;
+    margin-left: 535px;
+    position: relative;
     display: none;
-    
     width: 850px;
     height: 100%;
     inset: 0px 0px 0px auto;
-    
-    
 }
 
 .content {
     flex-direction: column;
     box-shadow: rgb(125 90 90) -50px 0 50px -50px   ;
-    height: 579px;
+    height: 580px;
     width: 50%;
     display: flex;
     position: relative;
@@ -1747,5 +1741,2256 @@ h1 {
 
     #leftView, #leftView2, #leftView3 {
         display: none;  
+    }
+}
+
+@media(min-width: 1905px) and (max-width: 1915px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 530px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1895px) and (max-width: 1904px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 525px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1885px) and (max-width: 1894px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 520px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1875px) and (max-width: 1884px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 515px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1865px) and (max-width: 1874px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 510px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1855px) and (max-width: 1864px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 505px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1845px) and (max-width: 1854px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 500px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1835px) and (max-width: 1844px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 495px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1825px) and (max-width: 1834px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 490px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1815px) and (max-width: 1824px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 485px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1805px) and (max-width: 1814px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 480px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1795px) and (max-width: 1804px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 475px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1785px) and (max-width: 1794px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 470px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1775px) and (max-width: 1784px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 465px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1765px) and (max-width: 1774px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 460px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1755px) and (max-width: 1764px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 455px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1745px) and (max-width: 1754px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 450px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1735px) and (max-width: 1744px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 445px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1725px) and (max-width: 1734px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 440px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1715px) and (max-width: 1724px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 435px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1705px) and (max-width: 1714px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 430px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1695px) and (max-width: 1704px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 425px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1685px) and (max-width: 1694px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 420px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1675px) and (max-width: 1684px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 415px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1665px) and (max-width: 1674px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 410px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1655px) and (max-width: 1664px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 405px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1645px) and (max-width: 1654px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 400px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1635px) and (max-width: 1644px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 395px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1625px) and (max-width: 1634px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 390px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1615px) and (max-width: 1624px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 385px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1605px) and (max-width: 1614px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 380px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1595px) and (max-width: 1604px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 375px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1585px) and (max-width: 1594px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 370px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1575px) and (max-width: 1584px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 365px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1565px) and (max-width: 1574px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 360px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1555px) and (max-width: 1564px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 355px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1545px) and (max-width: 1554px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 350px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1535px) and (max-width: 1544px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 345px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1525px) and (max-width: 1534px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 340px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1515px) and (max-width: 1524px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 335px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1505px) and (max-width: 1514px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 330px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1495px) and (max-width: 1504px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 325px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1485px) and (max-width: 1494px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 320px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1475px) and (max-width: 1484px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 315px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1465px) and (max-width: 1474px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 310px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1455px) and (max-width: 1464px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 305px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1445px) and (max-width: 1454px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 300px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1435px) and (max-width: 1444px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 295px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1425px) and (max-width: 1434px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 290px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1415px) and (max-width: 1424px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 285px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1405px) and (max-width: 1414px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 280px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1395px) and (max-width: 1404px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 275px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1385px) and (max-width: 1394px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 270px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1375px) and (max-width: 1384px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 265px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1365px) and (max-width: 1374px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 260px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1355px) and (max-width: 1364px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 255px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1345px) and (max-width: 1354px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 250px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1335px) and (max-width: 1344px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 245px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1325px) and (max-width: 1334px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 240px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1315px) and (max-width: 1324px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 235px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1305px) and (max-width: 1314px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 230px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1295px) and (max-width: 1304px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 225px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1285px) and (max-width: 1294px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 220px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1275px) and (max-width: 1284px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 215px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1265px) and (max-width: 1274px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 210px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1255px) and (max-width: 1264px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 205px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1245px) and (max-width: 1254px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 200px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1235px) and (max-width: 1244px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 195px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1225px) and (max-width: 1234px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 190px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1215px) and (max-width: 1224px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 185px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1205px) and (max-width: 1214px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 180px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1195px) and (max-width: 1204px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 175px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1185px) and (max-width: 1194px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 170px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1175px) and (max-width: 1184px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 165px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1165px) and (max-width: 1174px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 160px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1155px) and (max-width: 1164px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 155px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1145px) and (max-width: 1154px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 150px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1135px) and (max-width: 1144px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 145px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1125px) and (max-width: 1134px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 140px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1115px) and (max-width: 1124px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 135px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1105px) and (max-width: 1114px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 130px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1095px) and (max-width: 1104px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 125px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1085px) and (max-width: 1094px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 120px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1075px) and (max-width: 1084px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 115px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1065px) and (max-width: 1074px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 110px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1055px) and (max-width: 1064px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 105px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1045px) and (max-width: 1054px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 100px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1035px) and (max-width: 1044px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 95px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1025px) and (max-width: 1034px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 90px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1015px) and (max-width: 1024px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 85px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 1005px) and (max-width: 1014px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 80px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 995px) and (max-width: 1004px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 75px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 985px) and (max-width: 994px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 70px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 975px) and (max-width: 984px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 65px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 965px) and (max-width: 974px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 60px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 955px) and (max-width: 964px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 55px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 945px) and (max-width: 954px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 50px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 935px) and (max-width: 944px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 45px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 925px) and (max-width: 934px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 40px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 915px) and (max-width: 924px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 35px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 905px) and (max-width: 914px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 30px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 895px) and (max-width: 904px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 25px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 885px) and (max-width: 894px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 20px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 875px) and (max-width: 884px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 15px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 865px) and (max-width: 874px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 10px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 855px) and (max-width: 864px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 5px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media(min-width: 845px) and (max-width: 854px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 0px;
+        position: relative;
+        display: none;
+        width: 850px;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+}
+
+@media (min-width: 520px) and (max-width: 844px) {
+    
+
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -583px;
+        margin-left: 0px;
+        margin-right: 0px;
+        position: relative;
+        display: none;
+        width: 100%;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+
+    .content {
+        flex-direction: column;
+        box-shadow: rgb(125 90 90) -50px 0 50px -50px   ;
+        height: 580px;
+        width: 350px;
+        display: flex;
+        position: relative;
+        background-color: #FAF2F2;
+        margin-left: 0px;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 519px) {
+    
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -500px;
+        margin-left: 0px;
+        margin-right: 0px;
+        position: relative;
+        display: none;
+        width: 100%;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+
+    .content {
+        flex-direction: column;
+        box-shadow: rgb(125 90 90) -50px 0 50px -50px   ;
+        height: 500px;
+        width: 100%;
+        display: flex;
+        position: relative;
+        background-color: #FAF2F2;
+        margin-left: 0px;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 485px) and (max-width: 499px) {
+    
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -495px;
+        margin-left: 0px;
+        margin-right: 0px;
+        position: relative;
+        display: none;
+        width: 100%;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+
+    .content {
+        flex-direction: column;
+        box-shadow: rgb(125 90 90) -50px 0 50px -50px   ;
+        height: 500px;
+        width: 100%;
+        display: flex;
+        position: relative;
+        background-color: #FAF2F2;
+        margin-left: 0px;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 475px) and (max-width: 484px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -490px;
+        margin-left: 0px;
+        margin-right: 0px;
+        position: relative;
+        display: none;
+        width: 100%;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+
+    .content {
+        flex-direction: column;
+        box-shadow: rgb(125 90 90) -50px 0 50px -50px   ;
+        height: 500px;
+        width: 100%;
+        display: flex;
+        position: relative;
+        background-color: #FAF2F2;
+        margin-left: 0px;
+        justify-content: space-around;
+    }
+}
+
+@media(min-width: 465px) and (max-width: 474px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -485px;
+        margin-left: 0px;
+        margin-right: 0px;
+        position: relative;
+        display: none;
+        width: 100%;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+
+    .content {
+        flex-direction: column;
+        box-shadow: rgb(125 90 90) -50px 0 50px -50px   ;
+        height: 500px;
+        width: 100%;
+        display: flex;
+        position: relative;
+        background-color: #FAF2F2;
+        margin-left: 0px;
+        justify-content: space-around;
+    }
+}
+
+@media(min-width: 450px) and (max-width: 464px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -480px;
+        margin-left: 0px;
+        margin-right: 0px;
+        position: relative;
+        display: none;
+        width: 100%;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+
+    .content {
+        flex-direction: column;
+        box-shadow: rgb(125 90 90) -50px 0 50px -50px   ;
+        height: 500px;
+        width: 100%;
+        display: flex;
+        position: relative;
+        background-color: #FAF2F2;
+        margin-left: 0px;
+        justify-content: space-around;
+    }
+}
+
+@media(min-width: 440px) and (max-width: 449px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -475px;
+        margin-left: 0px;
+        margin-right: 0px;
+        position: relative;
+        display: none;
+        width: 100%;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+
+    .content {
+        flex-direction: column;
+        box-shadow: rgb(125 90 90) -50px 0 50px -50px   ;
+        height: 500px;
+        width: 100%;
+        display: flex;
+        position: relative;
+        background-color: #FAF2F2;
+        margin-left: 0px;
+        justify-content: space-around;
+    }
+}
+
+@media(min-width: 425px) and (max-width: 439px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -470px;
+        margin-left: 0px;
+        margin-right: 0px;
+        position: relative;
+        display: none;
+        width: 100%;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+
+    .content {
+        flex-direction: column;
+        box-shadow: rgb(125 90 90) -50px 0 50px -50px   ;
+        height: 500px;
+        width: 100%;
+        display: flex;
+        position: relative;
+        background-color: #FAF2F2;
+        margin-left: 0px;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 415px) and (max-width: 424px) {
+    
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -465px;
+        margin-left: 0px;
+        margin-right: 0px;
+        position: relative;
+        display: none;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+
+    .content {
+        flex-direction: column;
+        box-shadow: rgb(125 90 90) -50px 0 50px -50px   ;
+        height: 465px;
+        width: 310px;
+        display: flex;
+        position: relative;
+        background-color: #FAF2F2;
+        margin-left: 0px;
+        justify-content: space-around;
+    }
+
+    #cv {
+        width: 60%;
+        margin-left: 20px;
+        margin-right: 5px;
+    }
+
+    #dat {
+        display: flex;
+        flex-direction: row;
+        margin-left: 2%;
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: row;
+        box-shadow: none;
+        width: 100%;
+    }
+    
+    .botoes button{
+        background-color: #7D5A5A;
+        border-radius: 40px;
+        cursor: pointer;
+        color: #FAF2F2;
+        font-family: 'Pinky Cupid', regular;
+        width: 120px;
+        height: 50px;
+        align-self: flex-end;
+        font-size: 20px;
+        border: none;
+        top: -60%;
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 414px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -460px;
+        margin-left: 0px;
+        margin-right: 0px;
+        position: relative;
+        display: none;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+
+    .content {
+        flex-direction: column;
+        box-shadow: rgb(125 90 90) -50px 0 50px -50px   ;
+        height: 460px;
+        width: 280px;
+        display: flex;
+        position: relative;
+        background-color: #FAF2F2;
+        margin-left: 0px;
+        justify-content: space-around;
+    }
+
+    #cv {
+        width: 60%;
+        margin-left: 20px;
+        margin-right: 5px;
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: row;
+        box-shadow: none;
+        width: 100%;
+    }
+
+    .botoes button{
+        background-color: #7D5A5A;
+        border-radius: 40px;
+        cursor: pointer;
+        color: #FAF2F2;
+        font-family: 'Pinky Cupid', regular;
+        width: 120px;
+        height: 50px;
+        align-self: flex-end;
+        font-size: 20px;
+        border: none;
+        top: -60%;
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+}
+
+@media (min-width: 389px) and (max-width: 399px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -455px;
+        margin-left: 0px;
+        margin-right: 0px;
+        position: relative;
+        display: none;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+
+    .content {
+        flex-direction: column;
+        box-shadow: rgb(125 90 90) -50px 0 50px -50px   ;
+        height: 455px;
+        width: 280px;
+        display: flex;
+        position: relative;
+        background-color: #FAF2F2;
+        margin-left: 0px;
+        justify-content: space-around;
+    }
+
+    #cv {
+        width: 60%;
+        margin-left: 20px;
+        margin-right: 5px;
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: row;
+        box-shadow: none;
+        width: 100%;
+    }
+
+    .botoes button{
+        background-color: #7D5A5A;
+        border-radius: 40px;
+        cursor: pointer;
+        color: #FAF2F2;
+        font-family: 'Pinky Cupid', regular;
+        width: 120px;
+        height: 50px;
+        align-self: flex-end;
+        font-size: 20px;
+        border: none;
+        top: -60%;
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+}
+
+@media(min-width: 380px) and (max-width: 388px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -450px;
+        margin-left: 0px;
+        margin-right: 0px;
+        position: relative;
+        display: none;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+
+    .content {
+        flex-direction: column;
+        box-shadow: rgb(125 90 90) -50px 0 50px -50px   ;
+        height: 450px;
+        width: 280px;
+        display: flex;
+        position: relative;
+        background-color: #FAF2F2;
+        margin-left: 0px;
+        justify-content: space-around;
+    }
+
+    #cv {
+        width: 60%;
+        margin-left: 20px;
+        margin-right: 5px;
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: row;
+        box-shadow: none;
+        width: 100%;
+    }
+
+    .botoes button{
+        background-color: #7D5A5A;
+        border-radius: 40px;
+        cursor: pointer;
+        color: #FAF2F2;
+        font-family: 'Pinky Cupid', regular;
+        width: 120px;
+        height: 50px;
+        align-self: flex-end;
+        font-size: 20px;
+        border: none;
+        top: -60%;
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+}
+
+@media (min-width: 365px) and (max-width: 379px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -445px;
+        margin-left: 0px;
+        margin-right: 0px;
+        position: relative;
+        display: none;
+        width: 70%;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+
+    .content {
+        flex-direction: column;
+        box-shadow: rgb(125 90 90) -50px 0 50px -50px   ;
+        height: 445px;
+        width: 100%;
+        display: flex;
+        position: relative;
+        background-color: #FAF2F2;
+        margin-left: 0px;
+        justify-content: space-around;
+    }
+
+    #cv {
+        width: 60%;
+        margin-left: 20px;
+        margin-right: 5px;
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: row;
+        box-shadow: none;
+        width: 100%;
+    }
+
+    .botoes button{
+        background-color: #7D5A5A;
+        border-radius: 40px;
+        cursor: pointer;
+        color: #FAF2F2;
+        font-family: 'Pinky Cupid', regular;
+        width: 120px;
+        height: 50px;
+        align-self: flex-end;
+        font-size: 20px;
+        border: none;
+        top: -60%;
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+}
+
+@media(min-width: 350px) and (max-width: 364px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -440px;
+        margin-left: 0px;
+        margin-right: 0px;
+        position: relative;
+        display: none;
+        width: 70%;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+
+    .content {
+        flex-direction: column;
+        box-shadow: rgb(125 90 90) -50px 0 50px -50px   ;
+        height: 440px;
+        width: 100%;
+        display: flex;
+        position: relative;
+        background-color: #FAF2F2;
+        margin-left: 0px;
+        justify-content: space-around;
+    }
+
+    #cv {
+        width: 60%;
+        margin-left: 20px;
+        margin-right: 5px;
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: row;
+        box-shadow: none;
+        width: 100%;
+    }
+
+    .botoes button{
+        background-color: #7D5A5A;
+        border-radius: 40px;
+        cursor: pointer;
+        color: #FAF2F2;
+        font-family: 'Pinky Cupid', regular;
+        width: 120px;
+        height: 50px;
+        align-self: flex-end;
+        font-size: 20px;
+        border: none;
+        top: -60%;
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+}
+
+@media (min-width: 335px) and (max-width: 349px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -434px;
+        margin-left: 0px;
+        margin-right: 0px;
+        position: relative;
+        display: none;
+        width: 70%;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+
+    .content {
+        flex-direction: column;
+        box-shadow: rgb(125 90 90) -50px 0 50px -50px   ;
+        height: 435px;
+        width: 100%;
+        display: flex;
+        position: relative;
+        background-color: #FAF2F2;
+        margin-left: 0px;
+        justify-content: space-around;
+    }
+
+    #cv {
+        width: 60%;
+        margin-left: 20px;
+        margin-right: 5px;
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: row;
+        box-shadow: none;
+        width: 100%;
+    }
+
+    .botoes button{
+        background-color: #7D5A5A;
+        border-radius: 40px;
+        cursor: pointer;
+        color: #FAF2F2;
+        font-family: 'Pinky Cupid', regular;
+        width: 120px;
+        height: 50px;
+        align-self: flex-end;
+        font-size: 20px;
+        border: none;
+        top: -60%;
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+}
+
+@media (min-width: 325px) and (max-width: 334px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -430px;
+        margin-left: 0px;
+        margin-right: 0px;
+        position: relative;
+        display: none;
+        width: 65%;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+
+    .content {
+        flex-direction: column;
+        box-shadow: rgb(125 90 90) -50px 0 50px -50px   ;
+        height: 430px;
+        width: 100%;
+        display: flex;
+        position: relative;
+        background-color: #FAF2F2;
+        margin-left: 0px;
+        justify-content: space-around;
+    }
+
+    #cv {
+        width: 40px;
+        margin-left: 20px;
+        margin-right: 5px;
+    }
+
+    #mes,  #ano{
+        width: 40px;
+    }
+
+    #barra {
+        margin-top: 15px;
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: row;
+        box-shadow: none;
+        width: 100%;
+    }
+
+    .botoes button{
+        background-color: #7D5A5A;
+        border-radius: 40px;
+        cursor: pointer;
+        color: #FAF2F2;
+        font-family: 'Pinky Cupid', regular;
+        width: 100px;
+        height: 50px;
+        align-self: flex-end;
+        font-size: 15px;
+        border: none;
+        top: -60%;
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 324px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -425px;
+        margin-left: 0px;
+        margin-right: 0px;
+        position: relative;
+        display: none;
+        width: 65%;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+
+    .content {
+        flex-direction: column;
+        box-shadow: rgb(125 90 90) -50px 0 50px -50px   ;
+        height: 425px;
+        width: 100%;
+        display: flex;
+        position: relative;
+        background-color: #FAF2F2;
+        margin-left: 0px;
+        justify-content: space-around;
+    }
+
+    #cv {
+        width: 35px;
+        margin-left: 20px;
+        margin-right: 5px;
+    }
+
+    #mes,  #ano{
+        width: 35px;
+    }
+
+    #barra {
+        margin-top: 15px;
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: row;
+        box-shadow: none;
+        width: 100%;
+    }
+
+    .botoes button{
+        background-color: #7D5A5A;
+        border-radius: 40px;
+        cursor: pointer;
+        color: #FAF2F2;
+        font-family: 'Pinky Cupid', regular;
+        width: 100px;
+        height: 50px;
+        align-self: flex-end;
+        font-size: 15px;
+        border: none;
+        top: -60%;
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+}
+
+@media (min-width: 290px) and (max-width: 299px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -420px;
+        margin-left: 0px;
+        margin-right: 0px;
+        position: relative;
+        display: none;
+        width: 65%;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+
+    .content {
+        flex-direction: column;
+        box-shadow: rgb(125 90 90) -50px 0 50px -50px   ;
+        height: 420px;
+        width: 100%;
+        display: flex;
+        position: relative;
+        background-color: #FAF2F2;
+        margin-left: 0px;
+        justify-content: space-around;
+    }
+
+    #cv {
+        width: 35px;
+        margin-left: 20px;
+        margin-right: 5px;
+    }
+
+    #mes,  #ano{
+        width: 35px;
+    }
+
+    #barra {
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: row;
+        box-shadow: none;
+        width: 100%;
+    }
+
+    .botoes button{
+        background-color: #7D5A5A;
+        border-radius: 40px;
+        cursor: pointer;
+        color: #FAF2F2;
+        font-family: 'Pinky Cupid', regular;
+        width: 100px;
+        height: 50px;
+        align-self: flex-end;
+        font-size: 15px;
+        border: none;
+        top: -60%;
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+}
+
+@media (max-width: 289px) {
+    .mcredito {
+        background-color: rgb(241, 209, 209, .6);
+        margin-top: -415px;
+        margin-left: 0px;
+        margin-right: 0px;
+        position: relative;
+        display: none;
+        width: 65%;
+        height: 100%;
+        inset: 0px 0px 0px auto;
+    }
+
+    .content {
+        flex-direction: column;
+        box-shadow: rgb(125 90 90) -50px 0 50px -50px   ;
+        height: 415px;
+        width: 100%;
+        display: flex;
+        position: relative;
+        background-color: #FAF2F2;
+        margin-left: 0px;
+        justify-content: space-around;
+    }
+
+    #cv {
+        width: 30px;
+        margin-left: 20px;
+        margin-right: 5px;
+    }
+
+    #mes,  #ano{
+        width: 30px;
+    }
+
+    #barra {
+        margin-top: 15px;
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .botoes {
+        display: flex;
+        flex-direction: row;
+        box-shadow: none;
+        width: 100%;
+    }
+
+    .botoes button{
+        background-color: #7D5A5A;
+        border-radius: 40px;
+        cursor: pointer;
+        color: #FAF2F2;
+        font-family: 'Pinky Cupid', regular;
+        width: 100px;
+        height: 50px;
+        align-self: flex-end;
+        font-size: 15px;
+        border: none;
+        top: -60%;
+        margin-right: 7%;
+        margin-left: 7%;
     }
 }
