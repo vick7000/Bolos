@@ -47,14 +47,6 @@ class pedido extends Model {
                     }
                 },
 
-                id_entregador: {
-                    type: DataTypes.INTEGER,
-                    allowNull: false,
-                    references: {
-                        model: 'entregadores',
-                        key: 'id',
-                    }
-                },
             },
             {
                 sequelize: datacon,
@@ -66,7 +58,6 @@ class pedido extends Model {
 
     static associate(models) {
         pedido.belongsTo(models.confeiteiro, {foreignKey: 'id_confeiteiro'});
-        pedido.belongsTo(models.entregador, {foreignKey: 'id_entregador'});
         pedido.belongsTo(models.usuario, {foreignKey: 'id_usuario'});
         pedido.belongsTo(models.item, {foreignKey: 'id_item'});
         pedido.belongsTo(models.bolo, {foreignKey: 'id_bolo'});

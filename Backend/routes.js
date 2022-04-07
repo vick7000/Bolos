@@ -4,7 +4,6 @@ const route = express.Router();
 
 
 const ConfeiteiroController = require('./src/controller/ConfeiteiroController');
-const EntregadorController = require('./src/controller/EntregadorController');
 const UsuarioController = require('./src/controller/UsuarioController');
 const ConfigController = require('./src/controller/ConfigController');
 const PedidoController = require('./src/controller/PedidoController');
@@ -25,12 +24,6 @@ route.get('/pedido', PedidoController.read);
 route.get('/pedido/:id', PedidoController.read);
 route.put('/pedido/:id', PedidoController.update);
 route.delete('/pedido/:id', PedidoController.remove);
-
-route.post('/entregador', EntregadorController.create);
-route.get('/entregador', EntregadorController.read);
-route.get('/entregador/:id', EntregadorController.read);
-route.put('/entregador/:id', EntregadorController.update);
-route.delete('/entregador/:id', EntregadorController.remove);
 
 route.post('/item', ItemController.create);
 route.get('/item', ItemController.read);

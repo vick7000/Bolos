@@ -2,7 +2,6 @@ require('dotenv').config();
 const { Sequelize } = require('sequelize');
 
 const confeiteiro = require('../model/confeiteiro');
-const entregador = require('../model/entregador');
 const usuario = require('../model/usuario');
 const config = require('../model/config');
 const pedido = require('../model/pedido');
@@ -22,7 +21,6 @@ const sequelize = new Sequelize(process.env.DATABASE, process.env.USER, '', {
 
 const sync = () => {
     confeiteiro.init(sequelize);
-    entregador.init(sequelize);
     usuario.init(sequelize);
     pedido.init(sequelize);
     config.init(sequelize);
@@ -30,7 +28,6 @@ const sync = () => {
     item.init(sequelize);
 
     confeiteiro.associate(sequelize.models);
-    entregador.associate(sequelize.models);
     usuario.associate(sequelize.models);
     config.associate(sequelize.models);
     pedido.associate(sequelize.models);
