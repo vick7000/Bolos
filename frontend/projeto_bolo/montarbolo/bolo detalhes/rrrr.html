@@ -16,22 +16,25 @@
         }
     </style>
 </head>
-<body>
-    
-    <div class="containers-top">
-        <div class="card1">  
-           <div class="titulo">
-            <p><a href="../../../home/index.html">Voltar para Home</a></p> 
-           </div>     
-        </div>
-        <div class="card2">
-            <div class="titulo">
-                <p>O bolo favorito de uma pessoa diz muito sobre ela.</p> 
-            </div> 
+<body class="body" onload="verificarLogin()">
+    <div class="row">
+        <div class="col-12 menu">
+            <ul class="ul">
+                <li id="li"><a href="../../home/index.html">Home</a></li>
+                <li id="li" class="il"><a href="../../catalogo/index.html">Catalogo</a></li>
+                <li ><img src="../assets/logo.png" id="logo"/></li>
+                <li id="login"><a href="../../login/index.html">Login</a></li>
+                <!-- <li><a id="user"></a></li> -->
+                <li id="li"><img id="carrinho" src="../assets/carrinho.png" onclick="carrinho()"/></li>
+                <li onclick="sair()" id="sair"><a>Sair</a></li>
+            </ul>
         </div>
     </div>
+    
     <div class="containers-center">
-        
+        <div class="main--div">
+            <div class="center--div"></div>
+        </div>
         <div class="card5">
             <p><a href="../aabolo.html"><img src="./assets/left-arrow-circle-regular-60.png" id="seta"/></a></p> 
             <div class="card6">
@@ -47,18 +50,8 @@
                 <span class="valor" id="valor" style="display:flex; position:relative; justify-content:center; margin-top: 5%; margin-bottom:0%; font-weight: bolder; font-size: 15px;"><a>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ </a></span>
             </p>
         </div>
-
-    </div>
-    <div class="containers-fim">
-        <div class="card4">
-           <div class="titulo">
-                <p>Sempre deixe uma reserva no estômago para um pedaço de bolo.</p>
-           </div>
-        </div>
-        <div class="card3">
-            <div class="titulo">
-                <p>Não há hora nem lugar quando se trata de comer um bom bolo.</p>
-            </div>
+    <div class="main--div2">
+            <div class="center--div2"></div>
         </div>
     </div>
     <script src="script.js"></script>
