@@ -214,7 +214,7 @@ ol, li {
 
 #slide1 {
     background-image: url("https://images.aws.nestle.recipes/original/8fee36bf950557ff9f896b9104f36907_bolo-vulcao-brigadeiro-receitas-nestle.jpg");
-    background-size: 70%;
+    background-size: 100%;
 }
 
 #slide2 {
@@ -1062,7 +1062,7 @@ text {
 
     .bolo {
         position: relative;
-        width: 150px;
+        width: 450px;
         height: 120px;
         display: block;
         border-radius: 40px;
