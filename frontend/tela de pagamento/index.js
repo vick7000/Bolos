@@ -9,6 +9,7 @@ var pagamento = document.querySelector(".pagamento");
 var pagimento = document.querySelector(".pagimento");
 const confirmacao = document.querySelector(".confirmacao");
 var confirm = document.querySelector(".confirm");
+var opcaoMob = document.querySelector(".opcaoMob");
 var fim = document.querySelector(".fim");
 const final = document.querySelector(".final");
 var check = document.getElementById("check");
@@ -275,8 +276,26 @@ function AdicionarCartao() {
         
             mcredito.visibility = "hidden";
             mcredito.style.display = "none";
+        } else if (check5.checked == true && check6.checked == false && check7.checked == false && check8.checked == false) {
+            let cartao3 = document.getElementById("cartao_d2");
+            cartao3.appendChild(salvo)
 
+            salvo.appendChild(inf1);
+            salvo.appendChild(inf2);
+            salvo.appendChild(logo);
 
+            mcredito.visibility = "hidden";
+            mcredito.style.display = "none";
+          } else if (check5.checked == false && check6.checked == true && check7.checked == false && check8.checked == false) {
+            let cartao4 = document.getElementById("cartao_c2");
+            cartao4.appendChild(salvo)
+
+            salvo.appendChild(inf1);
+            salvo.appendChild(inf2);
+            salvo.appendChild(logo);
+
+            mcredito.visibility = "hidden";
+            mcredito.style.display = "none";
         } else {
             alert("Desmarque uma das opções")
         }
@@ -294,6 +313,7 @@ function AdicionarCartao() {
         salvo.style.display = "inline";
         salvo.style.marginTop = 0;
 
+       
 
         let block = document.createElement("div");
         let cancel = document.createElement("button");
@@ -306,7 +326,7 @@ function AdicionarCartao() {
         pagamento.appendChild(cancel);
 
              
-        if(check2.checked == true && check.checked == false) {
+        if(check2.checked == true && check.checked == false && check5.checked == false && check6.checked == false) {
 
             cartao_c.style.backgroundColor = "transparent";
             cartao_c.style.overflow = "hidden";
@@ -314,16 +334,16 @@ function AdicionarCartao() {
             bc.visibility = "hidden"
             bc.style.display = "none";
 
-          block.visibility = "visible"
-          block.style.display = "flex"
+            block.visibility = "visible"
+            block.style.display = "flex"
 
             pro.visibility = "visible";
-            pro.style.display = "grid";
+            pro.style.display = "flex";
 
             vol.visibility = "hidden";
             vol.style.display = "none";
 
-        } else if(check.checked == true && check2.checked == false) {
+        } else if(check.checked == true && check2.checked == false && check5.checked == false && check6.checked == false) {
             
             cartao_d.style.backgroundColor = "transparent";
             cartao_d.style.overflow = "hidden";
@@ -335,11 +355,42 @@ function AdicionarCartao() {
             salvo.style.display = "inline";
             
             pro.visibility = "visible";
-            pro.style.display = "grid";
+            pro.style.display = "flex";
 
             vol.visibility = "hidden";
             vol.style.display = "none";
 
+        } else if(check.checked == false && check2.checked == false && check5.checked == true && check6.checked == false) {
+          
+          cartao_d2.style.backgroundColor = "transparent";
+          cartao_d2.style.overflow = "hidden";
+          
+          bd.visibility = "hidden"
+          bd.style.display = "none";
+
+          salvo.visibble = true;
+          salvo.style.display = "inline";
+          
+          pro.visibility = "visible";
+          pro.style.display = "flex";
+
+          vol.visibility = "hidden";
+          vol.style.display = "none";
+        }else if(check.checked == false && check2.checked == false && check5.checked == false && check6.checked == true) {
+            cartao_c2.style.backgroundColor = "transparent";
+            cartao_c2.style.overflow = "hidden";
+            
+            bc.visibility = "hidden"
+            bc.style.display = "none";
+
+            block.visibility = "visible"
+            block.style.display = "flex"
+
+            pro.visibility = "visible";
+            pro.style.display = "flex";
+
+            vol.visibility = "hidden";
+            vol.style.display = "none";
         } else if(check.checked == true && check2.checked == true){
             alert("Desmarque uma das opções")
             block.remove();
@@ -350,6 +401,8 @@ function AdicionarCartao() {
         document.getElementById("cancel").addEventListener('click', event =>{
         
            salvo.style.marginTop = "10px";
+
+          
 
            block.remove();
         
@@ -515,7 +568,7 @@ function loadGallery() {
   // mainView3.style.background = "url(" + imgObject[mainImg] + ")";
   document.getElementById("texto").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor;
   console.log("teste")
-  if (check.checked == true) {
+  if (check.checked == true || check5.checked == true) {
 
     document.getElementById("texto2").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Cartão de Débito";
     // document.getElementById("texto3").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Cartão de Débito";
@@ -523,7 +576,7 @@ function loadGallery() {
     extra.style.display = "none";
     chave.style.display = "none";
     baixar.style.display = "none";
-  } else if(check2.checked == true) {
+  } else if(check2.checked == true || check6.checked == true) {
 
     document.getElementById("texto2").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Cartão de Crédito";
     // document.getElementById("texto3").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Cartão de Crédito";
@@ -531,13 +584,13 @@ function loadGallery() {
     extra.style.display = "none";
     chave.style.display = "none";
     baixar.style.display = "none";
-  } else if (check3.checked == true) {
+  } else if (check3.checked == true || check7.checked == true) {
     document.getElementById("texto2").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Pix";
     // document.getElementById("texto3").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Pix";
   
     // chave.style.display = "flex";
     // baixar.style.display = "none";
-  } else if(check4.checked == true) {
+  } else if(check4.checked == true || check8.checked == true) {
     document.getElementById("texto2").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Boleto Bancário";
     // document.getElementById("texto3").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Boleto Bancário";
  
