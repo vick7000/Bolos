@@ -69,7 +69,7 @@ return (
                                      }}
                         onPress={ () => { 
                                 if(selectedLanguage)
-                                navigation.navigate("Seubolo")
+                                navigation.navigate("Seubolo",{selectedLanguage})
                                 else{
                                         Alert.alert('Escolha confeitaria de seu Bolo')
                                 } 

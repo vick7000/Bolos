@@ -86,7 +86,32 @@ viewbtnrodape:
     alignItems:'center',
     justifyContent: 'center',
     borderRadius:15,
-    //alignItems:'flex-end',
+    //alignItems:'flex-end',    
+},
+viewcompra:
+{
+    alignItems:'center',
+    justifyContent: 'center',
+
+},
+
+btncompra: 
+{
+    backgroundColor:'green',
+    marginTop:10,
+    width:100,
+    height:40,
+    borderRadius:10,
+    padding:2,
+    margin:1,
+    alignItems:'center',
+    justifyContent: 'center',
+},
+txtcompra:
+{
+    fontSize:16,
+    fontWeight: 'bold',
+    color:'white',
     
 }
 

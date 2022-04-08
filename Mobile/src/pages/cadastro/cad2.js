@@ -5,10 +5,13 @@ import {Ionicons} from '@expo/vector-icons';
 import {Controller, useForm} from 'react-hook-form'
 
 import style from './style';
+import md5 from 'md5';
 
 
 
 export default function Cad2({ navigation }) {
+
+  const [cadastrando, setCadastrando] = useState(false);
 
        // const [input, setInput] = useState('');
         const [hidePass, setHidePass] = useState(true);
@@ -21,6 +24,35 @@ export default function Cad2({ navigation }) {
               const onSubmit = (data) => {
                 console.log(data)
               }
+
+              const habilitarCadastro = () => {
+                setCadastrando(true);
+            }
+
+      const cadastrar = () => { 
+        let usuario = {
+            email: email,
+            senha: md5(senha),            
+        }
+
+        fetch('http://10.87.207.4:5000/login', {
+          method: 'POST',
+          headers: {
+            "Content-Type":"application/json"
+          },
+          body: JSON.stringify(usuario),
+        })
+        .then(resp => { return resp.json(); })
+        .then(async data => {
+            if(data.id === underfined) {
+              ToastAndroid.show('Falha ao cadastrar', ToastAndroid.SHORT);
+              setCadastrando(false);
+            }else {
+              await AsyncStorage.setItem('userdata', JSON.stringify(data));
+              navigation.navigate('Home');
+            }
+        });
+      }
 
 
 
@@ -178,9 +210,9 @@ return (
                         disabled={!isValid}
                          activeOpacity={0.7}
                         //style={style.button}
-                        onPress={handleSubmit(onSubmit)
-                        
-                        }>
+                        onPress={()=> { if(!cadastrando) autenticar();else cadastrar();
+                          handleSubmit(onSubmit)                        
+                        }}>
                         <Text style={style.btnproximo}>Confirmar</Text>
                 </TouchableOpacity>
          </View>   

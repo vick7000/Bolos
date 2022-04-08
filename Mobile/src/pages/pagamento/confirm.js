@@ -4,7 +4,7 @@ import { View, TextInput, Image, Text, TouchableOpacity,ScrollView, Alert} from 
 
 import style from './style';
 
-export default function Confirm({ navigation }) {
+export default function Confirm({ navigation, route }) {
 
 
 
@@ -20,6 +20,7 @@ export default function Confirm({ navigation }) {
             }}>Agora só escolher a sua forma de pagamento
              para o pedido ser processado.
              </Text>
+             <Text style={{color:'black'}}>{route.params?.selectedLanguage}</Text>
                         
         </View>
         <View 

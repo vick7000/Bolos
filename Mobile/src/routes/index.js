@@ -27,7 +27,7 @@ function LogoTitle(props) {
   return (
     <View 
     style={{ flex:1,flexDirection:'row', alignItems: 'center',
-    justifyContent:'space-around', padding:2,}}>
+    justifyContent:'space-between', margin:5, marginRight:100 }}>
 
       <TouchableOpacity
                 onPress={ () => navigation.navigate('Catalogo')}>
@@ -35,18 +35,19 @@ function LogoTitle(props) {
       </TouchableOpacity>
 
       <Image
-        style={{ width: 70, height: 70 }}
+        style={{ width: 40, height: 40 }}
         source={require('../../assets/logohome.png')}
       />
       <TouchableOpacity
-                onPress={ () => navigation.navigate('Login')}>
-                <Text style={{color: '#4F4F4F'}}>Entre</Text>
+                onPress={ () => navigation.navigate('Login')                        
+                }>
+                <Text style={{color: '#4F4F4F'}}>Sair</Text>
       </TouchableOpacity>
       
       <TouchableOpacity
                 onPress={ () => navigation.navigate('Car')}>
       <Image
-        style={{ width: 30, height: 30,  }}
+        style={{ width: 30, height: 30,}}
         source={require('../../assets/carcomp.png')}
       />    
       </TouchableOpacity>  
@@ -58,6 +59,13 @@ export default function Routes() {
   return (
    
     <Stack.Navigator>
+      <Stack.Screen name="Login" component={Login} 
+        options={{
+          headerStyle: {
+            backgroundColor: '#F3E1E1'
+        }, 
+          headerTintColor: '#FF69B4'}}/>
+
       <Stack.Screen
        name="Home" 
        component={Home} 
@@ -77,13 +85,7 @@ export default function Routes() {
       }, 
         headerTintColor: '#FF69B4'}}/>
 
-      <Stack.Screen name="Login" component={Login} 
-        options={{
-          headerStyle: {
-            backgroundColor: '#F3E1E1'
-        }, 
-          headerTintColor: '#FF69B4'}}/>
-
+      
       <Stack.Screen name="Cad2" component={Cad2} 
         options={{
           title: 'Cadastro' ,
