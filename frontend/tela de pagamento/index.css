@@ -1175,6 +1175,8 @@ h1 {
 }
 
 @media(max-width: 605px) {
+    /* (min-width: 540px) and */
+
     #galleryContainer2 {
         margin-top: 12%;
         height: 390px;
@@ -1198,7 +1200,7 @@ h1 {
         color: #FAF2F2;
         justify-content: center;
         align-items: center;
-        margin-left: 100px;
+        margin-left: -10px; 
         margin-top: 250px;
         font-family: 'Pinky Cupid', regular;
         font-size: 20px;
@@ -1214,17 +1216,32 @@ h1 {
     }
 
     #navLeft2 {
-        margin-left: -200px; 
+        margin-left: -600px; 
+        /* margin-right: 600px; */
     }
 
     #mainView2 {
         height: 200px;
         width: 260px;
         background-color: #F1D1D1;
-        margin-left: 2px;
         margin-right: 2px;
         z-index: 1;
         transition: all 1s;
+    }
+
+    #texto2 {
+        display: flex;
+        padding: 40px;
+        width: 180px;
+        height: 140px;
+        justify-content: center;
+        align-items: center;
+        background-color: #7D5A5A;
+        margin-left: 5px;
+        margin-right: 10px;
+        z-index: 1;
+        transition: all 1s;
+        color: #F1D1D1;
     }
 
     .info2 {
@@ -1235,6 +1252,12 @@ h1 {
         border-radius: 20px;
     }
     
+}
+
+@media(max-width: 514px) {
+    #navRight2 {
+        margin-left: 200px;
+    }
 }
 
 @media(max-width: 820px) {
