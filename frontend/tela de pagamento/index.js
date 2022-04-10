@@ -134,12 +134,21 @@ function voltar() {
 
         bolo.visibility = "hidden";
         bolo.style.display = "none";
+        boli.visibility = "hidden";
+        boli.style.display = "none";
         
         confirmacao.visibility = "hidden";
         confirmacao.style.display = "none";
     
         pagamento.visibility = "visible";
-        pagamento.style.display = "grid";
+        pagamento.style.display = "flex";
+        pagimento.visibility = "visible";
+        pagimento.style.display = "flex";
+
+        confirmacao.visibility = "hidden";
+        confirmacao.style.display = "none";
+        confirm.visibility = "hidden";
+        confirm.style.display = "none";
         
         b3.style.backgroundColor = "#FAF2F2";
         
@@ -149,6 +158,8 @@ function voltar() {
 
         confirmacao.visibility = "visible";
         confirmacao.style.display = "flex";
+        confirm.visibility = "visible";
+        confirm.style.display = "flex";
     }
 }
 
@@ -594,8 +605,8 @@ function loadGallery() {
     document.getElementById("texto2").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Boleto Bancário";
     // document.getElementById("texto3").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Boleto Bancário";
  
-    chave.style.display = "none";
-    baixar.style.display = "flex";
+    // chave.style.display = "none";
+    // baixar.style.display = "flex";
   }
   
   mainView.style.backgroundSize = "cover";
