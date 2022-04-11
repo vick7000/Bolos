@@ -8,8 +8,15 @@
     <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="../assets/logosite.png">
     <!--<script src="../global/checkLogin.js"></script> -->
+    <style>
+        #img{
+            width: 580px;
+            height: 580px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
-<body class="body" onload="verificarLogin()">
+<body class="body" onload="verificarLogin()" >
     
         <div class="row">
             <div class="col-12 menu">
@@ -18,8 +25,8 @@
                     <li id="li"><a href="../projeto_bolo/montarbolo/bolo.html">Monte seu Bolo</a></li>
                     <li ><img src="../assets/logo.png" id="logo"/></li>
                     <li id="login"><a href="../login/index.html">Login</a></li>
-                    <li><a id="user"></a></li>
-                    <li id="li"><img id="carrinho" src="../assets/carrinho.png" onclick="carrinho()"/></li>
+                    <li ><a id="user"></a></li>
+                    <li id="li"  onclick="logando()"><img id="carrinho" src="../assets/carrinho.png" onclick="carrinho()" onclick="init()"/></li>
                     <li onclick="sair()" id="sair"><a>Sair</a></li>
                 </ul>
             </div>
@@ -32,13 +39,31 @@
                     <a>Carrinho</a>
                     <img src="../assets/cancelar.png" class="fechar"/>
                 </header>
-                <button id="carrb">Finalizar Compra</button>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <div class="informe">
+                    <h2>Seus bolos</h2>
+                    <img id="tente" src="" alt="" class="print">
+                    <!-- <button id="bt" value="10">Seus Bolos</button>
+                    <model-viewer id="img" src="../projeto_bolo/montarbolo/bolo detalhes/assets/enfeite/boloretangulo floresta mirtilo.glb" camera-controls auto-rotate ar ios-src=camera-controls auto-rotate ar ios-src="../projeto_bolo/montarbolo/bolo detalhes/assets/enfeite/boloretangulo floresta mirtilo.glb"/>
+                    
+                    <model-viewer id="img" src="assets/enfeite/boloretangulo rosa mirtilo.glb" camera-controls auto-rotate ar ios-src="assets/enfeite/boloretangulo rosa brigadeiro.glb"/> 
+                    <p>
+                        <span class="valor" id="valor" style="display:flex; position:relative; justify-content:center; margin-top: 5%; margin-bottom:0%; font-weight: bolder; font-size: 15px;"><a>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ </a></span>
+
+                    </p>
+                    style="margin: 0 5% 0 13%;" class="border-box-contact" name="service" id="service" required
+                    -->
+                </div>
+                
+                <button id="botao">Finalizar Compra</button>
+                
             </div>
         </div>
 
         <header class="header">
             <img src="../assets/logo.png" id="logomob"/>
             <img src="../assets/burger.png" id="burger" onclick="submenu()"/>
+            <!-- <img src="../projeto_bolo/montarbolo/bolo detalhes/assets/enfeite/boloretangulo floresta mirtilo.glb" id="burger" onclick="submenu()"/> -->
         </header>
 
         <div class="fundo">
@@ -47,7 +72,7 @@
                     <img src="../assets/cancelar.png" class="fechar" id="fech"/>
                     <ul>
                         <li><a href="../catalogo/index.html">Catalogo</a></li>
-                        <li><a href="../projeto_bolo/montarbolo/bolo.html">Monte seu Bolo</a></li>
+                        <li><a href="../projeto_bolo/montarbolo/mbolo.html">Monte seu Bolo</a></li>
                         <li id="login2"><a href="../login/index.html">Login</a></li>
                         <li><a id="user2"></a></li>
                         <li onclick="sair()" id="sair" class="sair2"><a>Sair</a></li>
@@ -191,17 +216,17 @@
     <div class="foot">
         <div class="footer">
             <text>
-                 Horário de Atendimento:
-                 9:00 às 18:00 - 
-                 Segunda à Sábado,
-                 horário de Brasília
-             </text>
-             <text>
-                 Endereço: 
-                 Rua Cândido Bueno, 842 A - 
-                 Centro - Jaguariúna-SP - 
-                 CEP : 13910-033
-             </text>
+                Horário de Atendimento:
+                9:00 às 18:00 - 
+                Segunda à Sábado,
+                horário de Brasília
+            </text>
+            <text>
+                Endereço: 
+                Rua Cândido Bueno, 842 A - 
+                Centro - Jaguariúna-SP - 
+                CEP : 13910-033
+            </text>
         </div>
         <div  class="footer2">
             <text>Telefone: (19)3867-7683</text>

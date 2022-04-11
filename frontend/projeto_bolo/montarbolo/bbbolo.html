@@ -8,6 +8,13 @@
     <link rel="shortcut icon" href="../assets/logosite.png">
     <link rel="stylesheet" href="style.css">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+        model-viewer{
+            width: 580px;
+            height: 580px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body class="body" onload="verificarLogin()">
     <div class="row">
@@ -17,7 +24,7 @@
                 <li id="li" class="il"><a href="../../catalogo/index.html">Catalogo</a></li>
                 <li ><img src="../assets/logo.png" id="logo"/></li>
                 <li id="login"><a href="../../login/index.html">Login</a></li>
-                <!-- <li><a id="user"></a></li> -->
+                <li><a id="user"></a></li>
                 <li id="li"><img id="carrinho" src="../assets/carrinho.png" onclick="carrinho()"/></li>
                 <li onclick="sair()" id="sair"><a>Sair</a></li>
             </ul>
@@ -29,12 +36,12 @@
             <div class="center--div"></div>
         </div>
         <div class="card5">
-            <p><a href="./bbolo.html"><img src="./assets/left-arrow-circle-regular-60.png" class="setaa" id="seta"/></a></p> 
+            <p><a href="./bbolo.html"><img src="./assets/left-arrow-circle-regular-60.png" id="seta"/></a></p> 
             <div class="card6">
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-            <select style="margin: 0 5% 0 13%;" class="testeee" name="service" id="service" required>
-            <option value="0" disabled selected>Qual cobertura?</option>
+            <select style="margin: 0 5% 0 13%;" class="border-box-contact" name="service" id="service" required>
+            <option value="0" disabled selected>Escolha a cobertura do seu Bolo!</option>
                 <option value="2.11">pink cupid</option>
                 <option value="2.21">oceano neon</option>
                 <option value="2.31">verão</option>

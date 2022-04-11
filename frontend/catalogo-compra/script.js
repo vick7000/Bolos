@@ -229,3 +229,36 @@ function sair() {
 //     //     }
 //     // }
 // }
+
+// for (let i = 0; i < data.length; i++){
+            
+//     let card = document.querySelector(".info");
+//     let h2 = card.querySelector(".texto");
+//     let img = card.querySelector("#sss");
+//     h2.innerHTML = data[4].descricao;
+//     img.src = data[4].img
+
+//     imagem1.src = data[0].img;
+//     imagem2.src = data[1].img;
+//     imagem3.src = data[2].img;
+//     imagem4.src = data[3].img;
+//     imagem5.src = data[4].img;
+//     imagem6.src = data[5].img;
+//     imagem7.src = data[6].img;
+//     imagem8.src = data[7].img;
+
+//     nome1.innerHTML = data[0].nome;
+//     nome2.innerHTML = data[1].nome;
+//     nome3.innerHTML = data[2].nome;
+//     nome4.innerHTML = data[3].nome;
+//     nome5.innerHTML = data[4].nome;
+//     nome6.innerHTML = data[5].nome;
+//     nome7.innerHTML = data[6].nome;
+//     nome8.innerHTML = data[7].nome;
+
+//     localStorage.setItem("usercake", JSON.stringify(data))
+//     botao.addEventListener("click", () => {
+//         window.location.href = "../tela de pagamento"
+//     })
+
+// }

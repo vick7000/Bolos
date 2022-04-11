@@ -1,13 +1,73 @@
+
 var compras = document.querySelector(".compras");
+var bolos = document.querySelector(".informe");
 var fechar = document.querySelector(".fechar");
 var body = document.querySelector(".body");
 var header = document.querySelector(".header");
 var ul = document.querySelector(".ul")
 var body = document.querySelector(".body");
+var btn = document.querySelector("#botao")
+
 var username = JSON.parse(localStorage.getItem("userdata"));
+var montado = JSON.parse(localStorage.getItem("userConfig"));
 
+console.log(username)
+function logando(){
+    console.log("asdasdad")
+    
 
-function carrinho() { 
+    let data = {
+        id_config : montado[0].id,
+        custo : 123.20
+    }
+
+    if(data.id > 2 && data.id_config == montado[0].id) {
+        console.log("ja cadastrado")
+        // {}
+        
+    }else {
+        fetch("http://localhost:5000/item", {
+        method : "POST",
+        headers : {
+            "Content-Type": "application/json"
+        },
+        "body": JSON.stringify(data)
+    })
+    .then((res) => {return res.json()})
+    .then((data) => {
+        console.log(data);
+
+        if(data =! null){
+            localStorage.setItem("userItem", JSON.stringify(data));
+            console.log("FOI")
+            btn.addEventListener("click", () => {
+                
+                window.location.href = "../tela de pagamento"
+            })
+        }else{
+            console.log("nao cadastrado")
+        }
+    })
+    }
+
+}
+
+if(montado[0].id == 54){
+    let imagem = document.getElementById("tente")
+    imagem.src = "../assets/bolo.png"
+}
+else if(montado[0].id == 9){
+    let im1 = document.createElement("img")
+    im1.src = "../assets/boloCilindroRosaBrig.png"
+    bolos.appendChild(im1)
+}
+else if(montado[0].id == 4){
+    let im1 = document.createElement("img")
+    im1.src = "../assets/boloCFM.png"
+    bolos.appendChild(im1)
+}
+
+function carrinho() {
     compras.style.display = "flex"
     body.style.overflow = "hidden"
 
@@ -15,7 +75,10 @@ function carrinho() {
         compras.style.display = "none"
         body.style.overflow = ""
     })
+
 }
+
+
 
 function submenu() {
     let submenu = document.querySelector(".submenu");
@@ -44,7 +107,7 @@ function verificarLogin() {
     let carrmob = document.querySelector(".carrmob");
     let sair2 = document.querySelector(".sair2");
 
-    if(localStorage.getItem("userdata") != null) {
+    if(username != null) {
         user.style.display = "block";
         login.style.display = "none";
         user2.style.display = "block";
@@ -54,9 +117,9 @@ function verificarLogin() {
         carrmob.style.display = "block";
         sair2.style.display = "block";
 
-        user.innerHTML = username.nome;
+        user.innerHTML = username[0].nome;
         user.setAttribute('href', '../usuario/index.html');
-        user2.innerHTML = username.nome;
+        user2.innerHTML = username[0].nome;
         user2.setAttribute('href', '../usuario/index.html');
     } else {
         user.style.display = "none";

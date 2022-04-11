@@ -6,58 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="../assets/logosite.png" />
+    <link rel="shortcut icon" href="../assets/logosite.png">
     <title>Ciasto - Catalogo</title>
 </head>
 
-<body class="body" onload="verificarLogin()">
-    
+<body onload="load()" class="body">
     <div class="row">
         <div class="col-12 menu">
             <ul class="ul">
                 <li id="li"><a href="../home/index.html">Home</a></li>
-                <li id="li"><a href="../projeto_bolo/montarbolo/bolo.html">Monte seu Bolo</a></li>
+                <li id="li" class="il"><a href="../projeto_bolo/montarbolo/bolo.html">Monte seu Bolo</a></li>
                 <li ><img src="../assets/logo.png" id="logo"/></li>
                 <li id="login"><a href="../login/index.html">Login</a></li>
-                <li><a id="user"></a></li>
+                <li ><a id="user"></a></li>
                 <li id="li"><img id="carrinho" src="../assets/carrinho.png" onclick="carrinho()"/></li>
                 <li onclick="sair()" id="sair"><a>Sair</a></li>
             </ul>
         </div>
         
     </div>
-    
     <div class="compras">
         <div class="content">
             <header>
                 <a>Carrinho</a>
                 <img src="../assets/cancelar.png" class="fechar"/>
             </header>
+            <div class="informe">
+                <h2>Seus bolos</h2>
+                <img id="tente" src="" alt="" class="print">
+
+            </div>
             <button id="carrb">Finalizar Compra</button>
         </div>
     </div>
-
     <header class="header">
         <img src="../assets/logo.png" id="logomob"/>
         <img src="../assets/burger.png" id="burger" onclick="submenu()"/>
     </header>
-
-    <div class="fundo">
-        <div class="submenu" >
-            <div class="col-3 menu2" >
-                <img src="../assets/cancelar.png" class="fechar" id="fech"/>
-                <ul>
-                    <li><a href="../home/index.html">Home</a></li>
-                    <li><a href="../projeto_bolo/montarbolo/mbolo.html">Monte seu Bolo</a></li>
-                    <li id="login2"><a href="../login/index.html">Login</a></li>
-                    <li><a id="user2"></a></li>
-                    <li onclick="sair()" id="sair" class="sair2"><a>Sair</a></li>
-                    <li id="li"><img id="carrinho" class="carrmob" src="../assets/carrinho.png" onclick="carrinho()"/></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    
     <div class="fundo">
         <div class="submenu" >
             <div class="col-3 menu2" >
@@ -80,7 +65,7 @@
             <div class="modal-content">
                 <img src="../assets/cancelar.png" alt="" id="zz">
                 <div class="info">
-                    <img src="../assets/11.png" alt="" id="sss">
+                    <img src="../assets/z.png" alt="Red Velvet" id="sss">
                     <h2 class="texto" >Bolo de massa red velvet, recheios de Leite Moça®, mousse de cream cheese, cobertura de mousse branca, Leite Moça®, massa red velvet e cerejas decorativas.</h2>
                 </div>
                 <button id="bot">Peça agora</button>
@@ -88,16 +73,17 @@
             </div>
         </div>
 
+
     <section class="bloco1">
 
         <div class="item1">
             <div class="card">
-                <img src="../assets/01.png" alt="" srcset="" id="bolo" class="bolo" onclick="modales()">
+                <img src="../assets/01.png" alt="" srcset="" id="bolo" class="bolo1" onclick="modales()">
                 <h1 class="jil" id="name1">Alpes Zero Açúcar</h1>
             </div>
             <div class="card">
-                <img src="../assets/11.png" alt="" srcset="" id="" class="bolo" onclick="modales()">
-                <h1 class="jil" id="name2">Delicia Leite II</h1>
+                <img src="../assets/49.png" alt="" srcset="" id="aa" class="bolo2" onclick="modales()">
+                <h1 class="jil" id="name2">Bolo de nescau</h1>
             </div>
 
         </div>
@@ -118,30 +104,30 @@
 
         <div class="item3">
             <div class="imm4">
-                <img src="../assets/13.png" alt="" srcset="" id="cake" class="bolo" onclick="modales()">
+                <img src="../assets/13.png" alt="" srcset="" id="cake" class="bolo3" onclick="modales()">
                 <h1 id="name3">Ganache de Limão</h1>
             </div>
             <div class="imm4">
-                <img src="../assets/15.png" alt="" srcset="" id="cake" class="bolo" onclick="modales()">
+                <img src="../assets/15.png" alt="" srcset="" id="cake" class="bolo4" onclick="modales()">
                 <h1 id="name4">Chocotrufas com Morangos</h1>
             </div>
             <div class="imm4">
-                <img src="../assets/17.png" alt="" srcset="" id="cake" class="bolo" onclick="modales()">
+                <img src="../assets/17.png" alt="" srcset="" id="cake" class="bolo5" onclick="modales()">
                 <h1 id="name5">Alpes Suínos</h1>
             </div>
         </div>
 
         <div class="item4">
             <div class="imm4">
-                <img src="../assets/19.png" alt="" srcset="" id="cake" class="bolo" onclick="modales()">
+                <img src="../assets/19.png" alt="" srcset="" id="cake" class="bolo6" onclick="modales()">
                 <h1 class="jil" id="name6">Trufado</h1>
             </div>
             <div class="imm4">
-                <img src="../assets/21.png" alt="" srcset="" id="cake" class="bolo" onclick="modales()">
+                <img src="../assets/21.png" alt="" srcset="" id="cake" class="bolo7" onclick="modales()">
                 <h1 class="jil" id="name7">Trufado Preto e Branco</h1>
             </div>
             <div class="imm4">
-                <img src="../assets/23.png" alt="" srcset="" id="cake" class="bolo" onclick="modales()">
+                <img src="../assets/23.png" alt="" srcset="" id="cake" class="bolo8" onclick="modales()">
                 <h1 class="jil" id="name8">Aerado II</h1>
             </div>
         </div>
@@ -149,6 +135,6 @@
 
 
 </body>
-<script src="./script.js"></script>
+<script src="script.js"></script>
 
 </html>

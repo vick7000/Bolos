@@ -17,12 +17,12 @@
 [class*="col-"] {
     float: left;
     padding: 15px;
-  }
+}
 
 .row::after {
-  content: "";
-  clear: both;
-  display: table;
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .row {
@@ -34,15 +34,22 @@
 }
 
 .menu ul {
-   list-style-type: none;
-   margin: 0;
-   padding: 0;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   font-size: 30px;
-   
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 30px;
+    
 }
+/* 
+model-viewer{
+    width: 580px;
+    height: 580px;
+    margin: 0 auto;
+    z-index: 3;
+} */
 
 .submenu  {
     display: none;
@@ -55,7 +62,6 @@
 }
 
 #li {
-    margin-left: 70px;
     margin-top: 50px;
     white-space: nowrap;
 }
@@ -490,6 +496,10 @@ text {
     cursor: pointer;  
 }
 
+.informe{
+    overflow-y: scroll;
+}
+
 
 
 }
@@ -871,7 +881,7 @@ text {
     .bolo:hover .overlay {
         opacity: 1;
     }
-      
+    
     text {
         position: relative;
         top: 45%;
@@ -1062,7 +1072,7 @@ text {
 
     .bolo {
         position: relative;
-        width: 450px;
+        width: 150px;
         height: 120px;
         display: block;
         border-radius: 40px;

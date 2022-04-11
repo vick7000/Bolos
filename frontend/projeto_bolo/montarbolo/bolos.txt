@@ -39,3 +39,708 @@ Adicionais 4 R$ 45.00
 ==============================
 q-enfeite de bombom retangulo
 1q-enfeite de mirtilo retangulo 
+
+=============================
+
+[
+	{
+		"id": 1,
+		"Forma": "Redondo",
+		"Recheio": "Limão",
+		"Cobertura": "Verão",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 2,
+		"Forma": "Redondo",
+		"Recheio": "Limão",
+		"Cobertura": "Verão",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 3,
+		"Forma": "Redondo",
+		"Recheio": "Limão",
+		"Cobertura": "Floresta",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 4,
+		"Forma": "Redondo",
+		"Recheio": "Limão",
+		"Cobertura": "Floresta",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 5,
+		"Forma": "Redondo",
+		"Recheio": "Limão",
+		"Cobertura": "Ciasto",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 6,
+		"Forma": "Redondo",
+		"Recheio": "Limão",
+		"Cobertura": "Ciasto",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 7,
+		"Forma": "Redondo",
+		"Recheio": "Limão",
+		"Cobertura": "Oceano Neon",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 8,
+		"Forma": "Redondo",
+		"Recheio": "Limão",
+		"Cobertura": "Oceano Neon",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 9,
+		"Forma": "Redondo",
+		"Recheio": "Limão",
+		"Cobertura": "Pink Cupid",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 10,
+		"Forma": "Redondo",
+		"Recheio": "Limão",
+		"Cobertura": "Pink Cupid",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 11,
+		"Forma": "Redondo",
+		"Recheio": "Chocolate",
+		"Cobertura": "Verão",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 12,
+		"Forma": "Redondo",
+		"Recheio": "Chocolate",
+		"Cobertura": "Verão",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 13,
+		"Forma": "Redondo",
+		"Recheio": "Chocolate",
+		"Cobertura": "Floresta",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 14,
+		"Forma": "Redondo",
+		"Recheio": "Chocolate",
+		"Cobertura": "Floresta",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 15,
+		"Forma": "Redondo",
+		"Recheio": "Chocolate",
+		"Cobertura": "Ciasto",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 16,
+		"Forma": "Redondo",
+		"Recheio": "Chocolate",
+		"Cobertura": "Ciasto",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 17,
+		"Forma": "Redondo",
+		"Recheio": "Chocolate",
+		"Cobertura": "Oceano Neon",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 18,
+		"Forma": "Redondo",
+		"Recheio": "Chocolate",
+		"Cobertura": "Oceano Neon",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 19,
+		"Forma": "Redondo",
+		"Recheio": "Chocolate",
+		"Cobertura": "Pink Cupid",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 20,
+		"Forma": "Redondo",
+		"Recheio": "Chocolate",
+		"Cobertura": "Pink Cupid",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 21,
+		"Forma": "Redondo",
+		"Recheio": "Morango",
+		"Cobertura": "Verão",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 22,
+		"Forma": "Redondo",
+		"Recheio": "Morango",
+		"Cobertura": "Verão",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 23,
+		"Forma": "Redondo",
+		"Recheio": "Morango",
+		"Cobertura": "Floresta",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 24,
+		"Forma": "Redondo",
+		"Recheio": "Morango",
+		"Cobertura": "Floresta",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 25,
+		"Forma": "Redondo",
+		"Recheio": "Morango",
+		"Cobertura": "Ciasto",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 26,
+		"Forma": "Redondo",
+		"Recheio": "Morango",
+		"Cobertura": "Ciasto",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 27,
+		"Forma": "Redondo",
+		"Recheio": "Morango",
+		"Cobertura": "Oceano Neon",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 28,
+		"Forma": "Redondo",
+		"Recheio": "Morango",
+		"Cobertura": "Oceano Neon",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 29,
+		"Forma": "Redondo",
+		"Recheio": "Morango",
+		"Cobertura": "Pink Cupid",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 30,
+		"Forma": "Redondo",
+		"Recheio": "Morango",
+		"Cobertura": "Pink Cupid",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 31,
+		"Forma": "Redondo",
+		"Recheio": "Abacaxi",
+		"Cobertura": "Verão",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 32,
+		"Forma": "Redondo",
+		"Recheio": "Abacaxi",
+		"Cobertura": "Verão",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 33,
+		"Forma": "Redondo",
+		"Recheio": "Abacaxi",
+		"Cobertura": "Floresta",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 34,
+		"Forma": "Redondo",
+		"Recheio": "Abacaxi",
+		"Cobertura": "Floresta",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 35,
+		"Forma": "Redondo",
+		"Recheio": "Abacaxi",
+		"Cobertura": "Ciasto",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 36,
+		"Forma": "Redondo",
+		"Recheio": "Abacaxi",
+		"Cobertura": "Ciasto",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 37,
+		"Forma": "Redondo",
+		"Recheio": "Abacaxi",
+		"Cobertura": "Oceano Neon",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 38,
+		"Forma": "Redondo",
+		"Recheio": "Abacaxi",
+		"Cobertura": "Oceano Neon",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 39,
+		"Forma": "Redondo",
+		"Recheio": "Abacaxi",
+		"Cobertura": "Pink Cupid",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 40,
+		"Forma": "Redondo",
+		"Recheio": "Abacaxi",
+		"Cobertura": "Pink Cupid",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 41,
+		"Forma": "Redondo",
+		"Recheio": "Baunilha",
+		"Cobertura": "Verão",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 42,
+		"Forma": "Redondo",
+		"Recheio": "Baunilha",
+		"Cobertura": "Verão",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 43,
+		"Forma": "Redondo",
+		"Recheio": "Baunilha",
+		"Cobertura": "Floresta",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 44,
+		"Forma": "Redondo",
+		"Recheio": "Baunilha",
+		"Cobertura": "Floresta",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 45,
+		"Forma": "Redondo",
+		"Recheio": "Baunilha",
+		"Cobertura": "Ciasto",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 46,
+		"Forma": "Redondo",
+		"Recheio": "Baunilha",
+		"Cobertura": "Ciasto",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 47,
+		"Forma": "Redondo",
+		"Recheio": "Baunilha",
+		"Cobertura": "Oceano Neon",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 48,
+		"Forma": "Redondo",
+		"Recheio": "Baunilha",
+		"Cobertura": "Oceano Neon",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 49,
+		"Forma": "Redondo",
+		"Recheio": "Baunilha",
+		"Cobertura": "Pink Cupid",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 50,
+		"Forma": "Redondo",
+		"Recheio": "Baunilha",
+		"Cobertura": "Pink Cupid",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 51,
+		"Forma": "Retangulo",
+		"Recheio": "Limão",
+		"Cobertura": "Verão",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 52,
+		"Forma": "Retangulo",
+		"Recheio": "Limão",
+		"Cobertura": "Verão",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 53,
+		"Forma": "Retangulo",
+		"Recheio": "Limão",
+		"Cobertura": "Floresta",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 54,
+		"Forma": "Retangulo",
+		"Recheio": "Limão",
+		"Cobertura": "Floresta",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 55,
+		"Forma": "Retangulo",
+		"Recheio": "Limão",
+		"Cobertura": "Ciasto",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 56,
+		"Forma": "Retangulo",
+		"Recheio": "Limão",
+		"Cobertura": "Ciasto",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 57,
+		"Forma": "Retangulo",
+		"Recheio": "Limão",
+		"Cobertura": "Oceano Neon",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 58,
+		"Forma": "Retangulo",
+		"Recheio": "Limão",
+		"Cobertura": "Oceano Neon",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 59,
+		"Forma": "Retangulo",
+		"Recheio": "Limão",
+		"Cobertura": "Pink Cupid",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 60,
+		"Forma": "Retangulo",
+		"Recheio": "Limão",
+		"Cobertura": "Pink Cupid",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 61,
+		"Forma": "Retangulo",
+		"Recheio": "Chocolate",
+		"Cobertura": "Verão",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 62,
+		"Forma": "Retangulo",
+		"Recheio": "Chocolate",
+		"Cobertura": "Verão",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 63,
+		"Forma": "Retangulo",
+		"Recheio": "Chocolate",
+		"Cobertura": "Floresta",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 64,
+		"Forma": "Retangulo",
+		"Recheio": "Chocolate",
+		"Cobertura": "Floresta",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 65,
+		"Forma": "Retangulo",
+		"Recheio": "Chocolate",
+		"Cobertura": "Ciasto",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 66,
+		"Forma": "Retangulo",
+		"Recheio": "Chocolate",
+		"Cobertura": "Ciasto",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 67,
+		"Forma": "Retangulo",
+		"Recheio": "Chocolate",
+		"Cobertura": "Oceano Neon",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 68,
+		"Forma": "Retangulo",
+		"Recheio": "Chocolate",
+		"Cobertura": "Oceano Neon",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 69,
+		"Forma": "Retangulo",
+		"Recheio": "Chocolate",
+		"Cobertura": "Pink Cupid",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 70,
+		"Forma": "Retangulo",
+		"Recheio": "Chocolate",
+		"Cobertura": "Pink Cupid",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 71,
+		"Forma": "Retangulo",
+		"Recheio": "Morango",
+		"Cobertura": "Verão",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 72,
+		"Forma": "Retangulo",
+		"Recheio": "Morango",
+		"Cobertura": "Verão",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 73,
+		"Forma": "Retangulo",
+		"Recheio": "Morango",
+		"Cobertura": "Floresta",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 74,
+		"Forma": "Retangulo",
+		"Recheio": "Morango",
+		"Cobertura": "Floresta",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 75,
+		"Forma": "Retangulo",
+		"Recheio": "Morango",
+		"Cobertura": "Ciasto",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 76,
+		"Forma": "Retangulo",
+		"Recheio": "Morango",
+		"Cobertura": "Ciasto",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 77,
+		"Forma": "Retangulo",
+		"Recheio": "Morango",
+		"Cobertura": "Oceano Neon",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 78,
+		"Forma": "Retangulo",
+		"Recheio": "Morango",
+		"Cobertura": "Oceano Neon",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 79,
+		"Forma": "Retangulo",
+		"Recheio": "Morango",
+		"Cobertura": "Pink Cupid",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 80,
+		"Forma": "Retangulo",
+		"Recheio": "Morango",
+		"Cobertura": "Pink Cupid",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 81,
+		"Forma": "Retangulo",
+		"Recheio": "Abacaxi",
+		"Cobertura": "Verão",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 82,
+		"Forma": "Retangulo",
+		"Recheio": "Abacaxi",
+		"Cobertura": "Verão",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 83,
+		"Forma": "Retangulo",
+		"Recheio": "Abacaxi",
+		"Cobertura": "Floresta",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 84,
+		"Forma": "Retangulo",
+		"Recheio": "Abacaxi",
+		"Cobertura": "Floresta",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 85,
+		"Forma": "Retangulo",
+		"Recheio": "Abacaxi",
+		"Cobertura": "Ciasto",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 86,
+		"Forma": "Retangulo",
+		"Recheio": "Abacaxi",
+		"Cobertura": "Ciasto",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 87,
+		"Forma": "Retangulo",
+		"Recheio": "Abacaxi",
+		"Cobertura": "Oceano Neon",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 88,
+		"Forma": "Retangulo",
+		"Recheio": "Abacaxi",
+		"Cobertura": "Oceano Neon",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 89,
+		"Forma": "Retangulo",
+		"Recheio": "Abacaxi",
+		"Cobertura": "Pink Cupid",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 90,
+		"Forma": "Retangulo",
+		"Recheio": "Abacaxi",
+		"Cobertura": "Pink Cupid",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 91,
+		"Forma": "Retangulo",
+		"Recheio": "Baunilha",
+		"Cobertura": "Verão",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 92,
+		"Forma": "Retangulo",
+		"Recheio": "Baunilha",
+		"Cobertura": "Verão",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 93,
+		"Forma": "Retangulo",
+		"Recheio": "Baunilha",
+		"Cobertura": "Floresta",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 94,
+		"Forma": "Retangulo",
+		"Recheio": "Baunilha",
+		"Cobertura": "Floresta",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 95,
+		"Forma": "Retangulo",
+		"Recheio": "Baunilha",
+		"Cobertura": "Ciasto",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 96,
+		"Forma": "Retangulo",
+		"Recheio": "Baunilha",
+		"Cobertura": "Ciasto",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 97,
+		"Forma": "Retangulo",
+		"Recheio": "Baunilha",
+		"Cobertura": "Oceano Neon",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 98,
+		"Forma": "Retangulo",
+		"Recheio": "Baunilha",
+		"Cobertura": "Oceano Neon",
+		"Confeite": "Mirtilo"
+	}
+	{
+		"id": 99,
+		"Forma": "Retangulo",
+		"Recheio": "Baunilha",
+		"Cobertura": "Pink Cupid",
+		"Confeite": "Brigadeiro"
+	}
+	{
+		"id": 100,
+		"Forma": "Retangulo",
+		"Recheio": "Baunilha",
+		"Cobertura": "Pink Cupid",
+		"Confeite": "Mirtilo"
+	}
+]

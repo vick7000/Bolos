@@ -10,13 +10,14 @@
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <style>
         model-viewer{
-            width: 780px;
+            width: 580px;
             height: 580px;
             margin: 0 auto;
         }
     </style>
 </head>
 <body class="body" onload="verificarLogin()">
+
     <div class="row">
         <div class="col-12 menu">
             <ul class="ul">
@@ -24,17 +25,14 @@
                 <li id="li" class="il"><a href="../../catalogo/index.html">Catalogo</a></li>
                 <li ><img src="../assets/logo.png" id="logo"/></li>
                 <li id="login"><a href="../../login/index.html">Login</a></li>
-                <!-- <li><a id="user"></a></li> -->
+                <li><a id="user"></a></li>
                 <li id="li"><img id="carrinho" src="../assets/carrinho.png" onclick="carrinho()"/></li>
                 <li onclick="sair()" id="sair"><a>Sair</a></li>
             </ul>
         </div>
     </div>
-    
     <div class="containers-center">
-        <div class="main--div">
-            <div class="center--div"></div>
-        </div>
+        
         <div class="card5">
             <p><a href="../aabolo.html"><img src="./assets/left-arrow-circle-regular-60.png" id="seta"/></a></p> 
             <div class="card6">
@@ -44,9 +42,6 @@
             <option value="0" disabled selected>Escolha confeite do bolo!</option>
                 <option value="29">Enfeite de mirtilo</option>
                 <option value="30">Enfeite de brigadeiro</option>
-
-
-
             </select>
         </div>
             <p>
@@ -56,7 +51,9 @@
         <div class="main--div2">
             <div class="center--div2"></div>
         </div>
+        
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>

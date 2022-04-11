@@ -29,6 +29,8 @@ html{
     height: 25vh;
     background-image: linear-gradient(to bottom, #f1d1d1a3, #f3e1e197);
     border: 1px solid #000;
+    
+
 }
 
 .title{
@@ -42,7 +44,6 @@ html{
 #men{
     margin-left: 2%;
 }
-
 #logo {
     /* margin-left: 0%;
     margin-right: 41vw;
@@ -75,6 +76,7 @@ html{
     border-bottom: solid #7D5A5A;
     border-width: 5px;
     height: 200px;
+    
 }
 
 .menu ul {
@@ -201,7 +203,7 @@ html{
 }
 
 
-.lista>a {
+a {
     cursor: pointer;
     margin-left: 20px;
 }
@@ -214,7 +216,7 @@ html{
     align-self: top;
     align-items: top;
     padding: 10px;
-    transition: 2s;
+    transition: 0.2s;
 
 }
 
@@ -325,8 +327,7 @@ html{
     justify-content: space-evenly;
     /* grid-area: item1; */
     width: 100%;
-    /* padding-bottom: 100vw*/
-     margin-top: 120px;  
+    margin-top: 150px;
 }
 
 .card{
@@ -341,20 +342,19 @@ html{
     border: 1px solid #000000;
     background-color: #FAF2F2; 
     box-shadow: 0 0 10px 0px;
-
 }
 
 .bolo{
     padding-top: 0.5rem;
 }
 
-.bolo, .bolo1{
+.bolo1, .bolo2{
     width: 18vw;
     cursor: pointer;
 }
 
-.bolo:hover, .bolo1:hover{
-    transition: 0.5s;
+.bolo1:hover, .bolo2:hover{
+    transition: 0.2s;
     width: 20vw;
 }
 
@@ -517,7 +517,7 @@ html{
 }
 
 #cake:hover{
-    transition: 1s;
+    transition: 0.2s;
     width: 22vw;
 }
 
@@ -530,6 +530,10 @@ html{
     /* background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.4); */
     
+}
+
+#tente{
+    width: 25vw;
 }
 
 
@@ -1144,4 +1148,3 @@ html{
 @media(max-width:300px){
 
 }
-
