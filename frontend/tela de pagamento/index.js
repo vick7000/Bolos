@@ -29,423 +29,423 @@ var atual = 1;
 
 function proximo() {
 
-  if (atual <= 4) atual++;
+    if(atual <= 4) atual++;
 
-  if (atual == 1) {
-
-    bolo.visibility = "visible";
-    bolo.style.display = "flex";
-    boli.visibility = "visible";
-    boli.style.display = "flex";
-
-
-  } else if (check3.checked == true && check4.checked == true) {
-    alert("Desmarque uma das opções")
-    atual--
-  } else if (check2.checked == true && check3.checked == true) {
-    alert("Desmarque uma das opções")
-    atual--
-  } else if (check.checked == true && check4.checked == true) {
-    alert("Desmarque uma das opções")
-    atual--
-  } else if (check.checked == true && check3.checked == true) {
-    alert("Desmarque uma das opções")
-    atual--
-  } else if (check2.checked == true && check4.checked == true) {
-    alert("Desmarque uma das opções")
-    atual--
-  } else if (atual == 2) {
-
-    let b2 = document.getElementById("b2");
-
-    bolo.visibility = "hidden";
-    bolo.style.display = "none";
-    boli.visibility = "hidden";
-    boli.style.display = "none";
-
-    pagamento.visibility = "visible";
-    pagamento.style.display = "flex";
-    pagimento.visibility = "visible";
-    pagimento.style.display = "flex";
-    pro.visibility = "hidden";
-    pro.style.display = "none";
+    if(atual == 1) {
+        
+        bolo.visibility = "visible";
+        bolo.style.display = "flex";
+        boli.visibility = "visible";
+        boli.style.display = "flex";
 
 
-    b2.style.backgroundColor = "#7D5A5A";
+    } else if(check3.checked == true && check4.checked == true) {
+        alert("Desmarque uma das opções")
+        atual--
+    } else if(check2.checked == true && check3.checked == true){
+        alert("Desmarque uma das opções")
+        atual--
+    } else if(check.checked == true && check4.checked == true) {
+        alert("Desmarque uma das opções")
+        atual--
+    } else if(check.checked == true && check3.checked == true) {
+        alert("Desmarque uma das opções") 
+        atual--
+    } else if(check2.checked == true && check4.checked == true) {
+        alert("Desmarque uma das opções") 
+        atual--
+    } else if(atual == 2) {
+        
+        let b2 = document.getElementById("b2");
 
-  } else if (atual == 3) {
-    let b3 = document.getElementById("b3");
+        bolo.visibility = "hidden";
+        bolo.style.display = "none";
+        boli.visibility = "hidden";
+        boli.style.display = "none";
+    
+        pagamento.visibility = "visible";
+        pagamento.style.display = "flex";
+        pagimento.visibility = "visible";
+        pagimento.style.display = "flex";
+        pro.visibility = "hidden";
+        pro.style.display = "none";
+        
+       
+        b2.style.backgroundColor = "#7D5A5A";
 
-    pagamento.visibility = "hidden";
-    pagamento.style.display = "none";
-    pagimento.visibility = "hidden";
-    pagimento.style.display = "none";
+    }else if(atual == 3) {
+        let b3 = document.getElementById("b3");
 
-    confirmacao.visibility = "visible";
-    confirmacao.style.display = "flex";
-    confirm.visibility = "visible";
-    confirm.style.display = "flex";
+        pagamento.visibility = "hidden";
+        pagamento.style.display = "none";
+        pagimento.visibility = "hidden";
+        pagimento.style.display = "none";
 
-    b3.style.backgroundColor = "#7D5A5A";
+        confirmacao.visibility = "visible";
+        confirmacao.style.display = "flex";
+        confirm.visibility = "visible";
+        confirm.style.display = "flex";
 
+        b3.style.backgroundColor = "#7D5A5A";
 
-    loadGallery();
+        
+        loadGallery();
 
-  } else if (atual == 4) {
-    let b4 = document.getElementById("b4");
+    } else if (atual == 4){
+        let b4 = document.getElementById("b4");
 
-    confirmacao.visibility = "hidden";
-    confirmacao.style.display = "none";
-    confirm.visibility = "hidden";
-    confirm.style.display = "none";
+        confirmacao.visibility = "hidden";
+        confirmacao.style.display = "none";
+        confirm.visibility = "hidden";
+        confirm.style.display = "none";
 
-    final.visibility = "visible";
-    final.style.display = "flex";
-    fim.visibility = "visible";
-    fim.style.display = "flex";
+        final.visibility = "visible";
+        final.style.display = "flex";
+        fim.visibility = "visible";
+        fim.style.display = "flex";
 
-    b4.style.backgroundColor = "#7D5A5A";
-  }
-
+        b4.style.backgroundColor = "#7D5A5A";
+    }
+    
 }
 
 function voltar() {
-  if (atual >= 2) atual--;
+    if(atual >= 2) atual--;
 
-  console.log(atual);
+    console.log(atual);
 
-  if (atual == 1) {
+    if(atual == 1) {
+        
+        let b2 = document.getElementById("b2");
+        
+        bolo.visibility = "visible";
+        bolo.style.display = "flex";
+        boli.visibility = "visible";
+        boli.style.display = "flex";
 
-    let b2 = document.getElementById("b2");
+        pagamento.visibility = "hidden";
+        pagamento.style.display = "none";
+        pagimento.visibility = "hidden";
+        pagimento.style.display = "none";
 
-    bolo.visibility = "visible";
-    bolo.style.display = "flex";
-    boli.visibility = "visible";
-    boli.style.display = "flex";
+        b2.style.backgroundColor = "#FAF2F2";
+    }else if(atual == 2) {
+        let b3 = document.getElementById("b3");
 
-    pagamento.visibility = "hidden";
-    pagamento.style.display = "none";
-    pagimento.visibility = "hidden";
-    pagimento.style.display = "none";
+        bolo.visibility = "hidden";
+        bolo.style.display = "none";
+        boli.visibility = "hidden";
+        boli.style.display = "none";
+        
+        confirmacao.visibility = "hidden";
+        confirmacao.style.display = "none";
+    
+        pagamento.visibility = "visible";
+        pagamento.style.display = "flex";
+        pagimento.visibility = "visible";
+        pagimento.style.display = "flex";
 
-    b2.style.backgroundColor = "#FAF2F2";
-  } else if (atual == 2) {
-    let b3 = document.getElementById("b3");
+        confirmacao.visibility = "hidden";
+        confirmacao.style.display = "none";
+        confirm.visibility = "hidden";
+        confirm.style.display = "none";
+        
+        b3.style.backgroundColor = "#FAF2F2";
+        
+    }else if(atual == 3) {
+        pagamento.visibility = "hidden";
+        pagamento.style.display = "none";
 
-    bolo.visibility = "hidden";
-    bolo.style.display = "none";
-    boli.visibility = "hidden";
-    boli.style.display = "none";
-
-    confirmacao.visibility = "hidden";
-    confirmacao.style.display = "none";
-
-    pagamento.visibility = "visible";
-    pagamento.style.display = "flex";
-    pagimento.visibility = "visible";
-    pagimento.style.display = "flex";
-
-    confirmacao.visibility = "hidden";
-    confirmacao.style.display = "none";
-    confirm.visibility = "hidden";
-    confirm.style.display = "none";
-
-    b3.style.backgroundColor = "#FAF2F2";
-
-  } else if (atual == 3) {
-    pagamento.visibility = "hidden";
-    pagamento.style.display = "none";
-
-    confirmacao.visibility = "visible";
-    confirmacao.style.display = "flex";
-    confirm.visibility = "visible";
-    confirm.style.display = "flex";
-  }
+        confirmacao.visibility = "visible";
+        confirmacao.style.display = "flex";
+        confirm.visibility = "visible";
+        confirm.style.display = "flex";
+    }
 }
 
 function options(e) {
 
-  var cartaod = document.getElementById("cartao_d");
-  var cartaoc = document.getElementById("cartao_c");
-  var cartaod2 = document.getElementById("cartao_d2");
-  var cartaoc2 = document.getElementById("cartao_c2");
+    var cartaod = document.getElementById("cartao_d");
+    var cartaoc = document.getElementById("cartao_c");
+    var cartaod2 = document.getElementById("cartao_d2");
+    var cartaoc2 = document.getElementById("cartao_c2");
+    
+    if(check.checked == true) {
+        cartaod.visibility = "visible";
+        cartaod.style.display = "grid";
 
-  if (check.checked == true) {
-    cartaod.visibility = "visible";
-    cartaod.style.display = "grid";
+    } else {
+        cartaod.visibility = "hidden";
+        cartaod.style.display = "none";
+    }
 
-  } else {
-    cartaod.visibility = "hidden";
-    cartaod.style.display = "none";
-  }
+    if(check5.checked == true) {
+        cartaod2.visibility = "visible";
+        cartaod2.style.display = "grid";
 
-  if (check5.checked == true) {
-    cartaod2.visibility = "visible";
-    cartaod2.style.display = "grid";
+    } else {
+        cartaod2.visibility = "hidden";
+        cartaod2.style.display = "none";
+    }
 
-  } else {
-    cartaod2.visibility = "hidden";
-    cartaod2.style.display = "none";
-  }
+    if(check2.checked == true) { 
+        cartaoc.visibility = "visible";
+        cartaoc.style.display = "grid";
+    } else {
+        cartaoc.visibility = "hidden";
+        cartaoc.style.display = "none";
+    }
 
-  if (check2.checked == true) {
-    cartaoc.visibility = "visible";
-    cartaoc.style.display = "grid";
-  } else {
-    cartaoc.visibility = "hidden";
-    cartaoc.style.display = "none";
-  }
-
-  if (check6.checked == true) {
-    cartaoc2.visibility = "visible";
-    cartaoc2.style.display = "grid";
-  } else {
-    cartaoc2.visibility = "hidden";
-    cartaoc2.style.display = "none";
-  }
+    if(check6.checked == true) { 
+        cartaoc2.visibility = "visible";
+        cartaoc2.style.display = "grid";
+    } else {
+        cartaoc2.visibility = "hidden";
+        cartaoc2.style.display = "none";
+    }
 
 }
 
 function adicionar() {
-  let mcredito = document.querySelector(".mcredito");
-  // let menuCartao = document.querySelector(".menuCartao");
+    let mcredito = document.querySelector(".mcredito");
+    // let menuCartao = document.querySelector(".menuCartao");
 
-  // menuCartao.visibility = "visible";
-  // menuCartao.style.display = "flex";
-  mcredito.visibility = "visible";
-  mcredito.style.display = "block";
+    // menuCartao.visibility = "visible";
+    // menuCartao.style.display = "flex";
+    mcredito.visibility = "visible";
+    mcredito.style.display = "block";
 }
 
 function cancelar() {
-  let mcredito = document.querySelector(".mcredito");
+    let mcredito = document.querySelector(".mcredito");
 
-  mcredito.visibility = "hidden";
-  mcredito.style.display = "none";
+    mcredito.visibility = "hidden";
+    mcredito.style.display = "none";
 }
 
 function options2() {
 
-  if (check3.checked == true || check4.checked == true || check7.checked == true || check8.checked == true) {
-    pro.visibility = "visible";
-    pro.style.display = "grid";
+    if(check3.checked == true || check4.checked == true || check7.checked == true || check8.checked == true) {
+        pro.visibility = "visible";
+        pro.style.display = "grid";
 
-    vol.visibility = "hidden";
-    vol.style.display = "none";
-  } else if (check3.checked == false || check4.checked == false || check7.checked == false || check8.checked == false) {
-    pro.visibility = "hidden";
-    pro.style.display = "none";
+        vol.visibility = "hidden";
+        vol.style.display = "none";
+    } else if (check3.checked == false || check4.checked == false || check7.checked == false || check8.checked == false) {
+        pro.visibility = "hidden";
+        pro.style.display = "none";
 
-    vol.visibility = "visible";
-    vol.style.display = "grid";
-  }
+        vol.visibility = "visible";
+        vol.style.display = "grid";
+    } 
 
 }
 
 
 function AdicionarCartao() {
-  let salvo = document.createElement("div");
-  let inf1 = document.createElement("span");
-  let inf2 = document.createElement("span");
-  let logo = document.createElement("span");
-  let mcredito = document.querySelector(".mcredito");
+    let salvo = document.createElement("div");
+    let inf1 = document.createElement("span");
+    let inf2 = document.createElement("span");
+    let logo = document.createElement("span");
+    let mcredito = document.querySelector(".mcredito");
+    
+
+    let nome = document.getElementById("nome").value;
+    let numero = document.getElementById("numero").value;
+    let mes = document.getElementById("mes").value;
+    let ano = document.getElementById("ano").value;
+
+    salvo.setAttribute("class", "salvo");
+    salvo.setAttribute("id", "salvo");
+    inf1.setAttribute("id", "inf1");
+    inf2.setAttribute("id", "inf2");
+    logo.setAttribute("id", "logo");
+    
+
+    inf1.innerHTML = nome
+    inf2.innerHTML = numero + " " + mes + "/" + ano
+    logo.innerHTML = " "
 
 
-  let nome = document.getElementById("nome").value;
-  let numero = document.getElementById("numero").value;
-  let mes = document.getElementById("mes").value;
-  let ano = document.getElementById("ano").value;
+        if(check2.checked == true && check.checked == false && check3.checked == false && check4.checked == false) {
+            let cartao = document.getElementById("cartao_c");
+            cartao.appendChild(salvo)
+        
+            salvo.appendChild(inf1);
+            salvo.appendChild(inf2);
+            salvo.appendChild(logo);
+        
+            mcredito.visibility = "hidden";
+            mcredito.style.display = "none";
+        } else if(check2.checked == false && check.checked == true && check3.checked == false && check4.checked == false){
+            let cartao2 = document.getElementById("cartao_d");
+            cartao2.appendChild(salvo)
+        
+            salvo.appendChild(inf1);
+            salvo.appendChild(inf2);
+            salvo.appendChild(logo);
+        
+            mcredito.visibility = "hidden";
+            mcredito.style.display = "none";
+        } else if (check5.checked == true && check6.checked == false && check7.checked == false && check8.checked == false) {
+            let cartao3 = document.getElementById("cartao_d2");
+            cartao3.appendChild(salvo)
 
-  salvo.setAttribute("class", "salvo");
-  salvo.setAttribute("id", "salvo");
-  inf1.setAttribute("id", "inf1");
-  inf2.setAttribute("id", "inf2");
-  logo.setAttribute("id", "logo");
+            salvo.appendChild(inf1);
+            salvo.appendChild(inf2);
+            salvo.appendChild(logo);
 
+            mcredito.visibility = "hidden";
+            mcredito.style.display = "none";
+          } else if (check5.checked == false && check6.checked == true && check7.checked == false && check8.checked == false) {
+            let cartao4 = document.getElementById("cartao_c2");
+            cartao4.appendChild(salvo)
 
-  inf1.innerHTML = nome
-  inf2.innerHTML = numero + " " + mes + "/" + ano
-  logo.innerHTML = " "
+            salvo.appendChild(inf1);
+            salvo.appendChild(inf2);
+            salvo.appendChild(logo);
 
+            mcredito.visibility = "hidden";
+            mcredito.style.display = "none";
+        } else {
+            alert("Desmarque uma das opções")
+        }
 
-  if (check2.checked == true && check.checked == false && check3.checked == false && check4.checked == false) {
-    let cartao = document.getElementById("cartao_c");
-    cartao.appendChild(salvo)
-
-    salvo.appendChild(inf1);
-    salvo.appendChild(inf2);
-    salvo.appendChild(logo);
-
-    mcredito.visibility = "hidden";
-    mcredito.style.display = "none";
-  } else if (check2.checked == false && check.checked == true && check3.checked == false && check4.checked == false) {
-    let cartao2 = document.getElementById("cartao_d");
-    cartao2.appendChild(salvo)
-
-    salvo.appendChild(inf1);
-    salvo.appendChild(inf2);
-    salvo.appendChild(logo);
-
-    mcredito.visibility = "hidden";
-    mcredito.style.display = "none";
-  } else if (check5.checked == true && check6.checked == false && check7.checked == false && check8.checked == false) {
-    let cartao3 = document.getElementById("cartao_d2");
-    cartao3.appendChild(salvo)
-
-    salvo.appendChild(inf1);
-    salvo.appendChild(inf2);
-    salvo.appendChild(logo);
-
-    mcredito.visibility = "hidden";
-    mcredito.style.display = "none";
-  } else if (check5.checked == false && check6.checked == true && check7.checked == false && check8.checked == false) {
-    let cartao4 = document.getElementById("cartao_c2");
-    cartao4.appendChild(salvo)
-
-    salvo.appendChild(inf1);
-    salvo.appendChild(inf2);
-    salvo.appendChild(logo);
-
-    mcredito.visibility = "hidden";
-    mcredito.style.display = "none";
-  } else {
-    alert("Desmarque uma das opções")
-  }
-
-  document.querySelectorAll(".salvo").forEach(item => {
-
-
+   document.querySelectorAll(".salvo").forEach(item => {
+    
+    
     let bc = document.getElementById("bc");
     let bd = document.getElementById("bd");
-
-
+    
+    
     item.addEventListener('click', event => {
 
-      salvo.visibility = "visible";
-      salvo.style.display = "inline";
-      salvo.style.marginTop = 0;
-
-
-
-      let block = document.createElement("div");
-      let cancel = document.createElement("button");
-
-      cancel.setAttribute("id", "cancel");
-      cancel.textContent = "Cancelar";
-      block.setAttribute("id", "block");
-
-      pagamento.appendChild(block);
-      pagamento.appendChild(cancel);
-
-
-      if (check2.checked == true && check.checked == false && check5.checked == false && check6.checked == false) {
-
-        cartao_c.style.backgroundColor = "transparent";
-        cartao_c.style.overflow = "hidden";
-
-        bc.visibility = "hidden"
-        bc.style.display = "none";
-
-        block.visibility = "visible"
-        block.style.display = "flex"
-
-        pro.visibility = "visible";
-        pro.style.display = "flex";
-
-        vol.visibility = "hidden";
-        vol.style.display = "none";
-
-      } else if (check.checked == true && check2.checked == false && check5.checked == false && check6.checked == false) {
-
-        cartao_d.style.backgroundColor = "transparent";
-        cartao_d.style.overflow = "hidden";
-
-        bd.visibility = "hidden"
-        bd.style.display = "none";
-
-        salvo.visibble = true;
+        salvo.visibility = "visible";
         salvo.style.display = "inline";
+        salvo.style.marginTop = 0;
 
-        pro.visibility = "visible";
-        pro.style.display = "flex";
+       
 
-        vol.visibility = "hidden";
-        vol.style.display = "none";
+        let block = document.createElement("div");
+        let cancel = document.createElement("button");
 
-      } else if (check.checked == false && check2.checked == false && check5.checked == true && check6.checked == false) {
+        cancel.setAttribute("id", "cancel");
+        cancel.textContent = "Cancelar";
+        block.setAttribute("id", "block");
 
-        cartao_d2.style.backgroundColor = "transparent";
-        cartao_d2.style.overflow = "hidden";
+        pagamento.appendChild(block);
+        pagamento.appendChild(cancel);
 
-        bd.visibility = "hidden"
-        bd.style.display = "none";
+             
+        if(check2.checked == true && check.checked == false && check5.checked == false && check6.checked == false) {
 
-        salvo.visibble = true;
-        salvo.style.display = "inline";
+            cartao_c.style.backgroundColor = "transparent";
+            cartao_c.style.overflow = "hidden";
+            
+            bc.visibility = "hidden"
+            bc.style.display = "none";
 
-        pro.visibility = "visible";
-        pro.style.display = "flex";
+            block.visibility = "visible"
+            block.style.display = "flex"
 
-        vol.visibility = "hidden";
-        vol.style.display = "none";
-      } else if (check.checked == false && check2.checked == false && check5.checked == false && check6.checked == true) {
-        cartao_c2.style.backgroundColor = "transparent";
-        cartao_c2.style.overflow = "hidden";
+            pro.visibility = "visible";
+            pro.style.display = "flex";
 
-        bc.visibility = "hidden"
-        bc.style.display = "none";
+            vol.visibility = "hidden";
+            vol.style.display = "none";
 
-        block.visibility = "visible"
-        block.style.display = "flex"
+        } else if(check.checked == true && check2.checked == false && check5.checked == false && check6.checked == false) {
+            
+            cartao_d.style.backgroundColor = "transparent";
+            cartao_d.style.overflow = "hidden";
+            
+            bd.visibility = "hidden"
+            bd.style.display = "none";
 
-        pro.visibility = "visible";
-        pro.style.display = "flex";
+            salvo.visibble = true;
+            salvo.style.display = "inline";
+            
+            pro.visibility = "visible";
+            pro.style.display = "flex";
 
-        vol.visibility = "hidden";
-        vol.style.display = "none";
-      } else if (check.checked == true && check2.checked == true) {
-        alert("Desmarque uma das opções")
-        block.remove();
-        cancel.remove();
-        salvo.style.marginTop = "10px";
-      }
+            vol.visibility = "hidden";
+            vol.style.display = "none";
 
-      document.getElementById("cancel").addEventListener('click', event => {
+        } else if(check.checked == false && check2.checked == false && check5.checked == true && check6.checked == false) {
+          
+          cartao_d2.style.backgroundColor = "transparent";
+          cartao_d2.style.overflow = "hidden";
+          
+          bd.visibility = "hidden"
+          bd.style.display = "none";
 
-        salvo.style.marginTop = "10px";
+          salvo.visibble = true;
+          salvo.style.display = "inline";
+          
+          pro.visibility = "visible";
+          pro.style.display = "flex";
 
+          vol.visibility = "hidden";
+          vol.style.display = "none";
+        }else if(check.checked == false && check2.checked == false && check5.checked == false && check6.checked == true) {
+            cartao_c2.style.backgroundColor = "transparent";
+            cartao_c2.style.overflow = "hidden";
+            
+            bc.visibility = "hidden"
+            bc.style.display = "none";
 
+            block.visibility = "visible"
+            block.style.display = "flex"
 
-        block.remove();
+            pro.visibility = "visible";
+            pro.style.display = "flex";
 
-        cartao_c.style.backgroundColor = "#FAF2F2";
-        cartao_c.style.overflow = "auto";
+            vol.visibility = "hidden";
+            vol.style.display = "none";
+        } else if(check.checked == true && check2.checked == true){
+            alert("Desmarque uma das opções")
+            block.remove();
+            cancel.remove();
+            salvo.style.marginTop = "10px";
+        } 
+         
+        document.getElementById("cancel").addEventListener('click', event =>{
+        
+           salvo.style.marginTop = "10px";
 
-        cartao_d.style.backgroundColor = "#FAF2F2";
-        cartao_d.style.overflow = "auto";
+          
 
-        bc.visibility = "visible"
-        bc.style.display = "grid";
-
-        bd.visibility = "visible"
-        bd.style.display = "grid";
-
-        pro.visibility = "hidden";
-        pro.style.display = "none";
-
-        vol.visibility = "visible";
-        vol.style.display = "flex";
-
-        cancel.remove();
-      })
+           block.remove();
+        
+            cartao_c.style.backgroundColor = "#FAF2F2";
+            cartao_c.style.overflow = "auto";
+        
+            cartao_d.style.backgroundColor = "#FAF2F2";
+            cartao_d.style.overflow = "auto";
+            
+            bc.visibility = "visible"
+            bc.style.display = "grid";
+        
+            bd.visibility = "visible"
+            bd.style.display = "grid";
+        
+            pro.visibility = "hidden";
+            pro.style.display = "none";
+        
+            vol.visibility = "visible";
+            vol.style.display = "flex";
+        
+            cancel.remove();
+        })
 
     })
-  })
+   })
 
 }
 
-
+  
 function toggleState3() {
-
+  
   let galleryView = document.getElementById("galleryView");
   let galleryView2 = document.getElementById("galleryView2")
   let tilesView = document.getElementById("tilesView")
@@ -457,22 +457,22 @@ function toggleState3() {
     outer.classList.remove("outerActive");
     galleryView.style.display = "flex";
     tilesView.style.display = "none";
-
-
+    
+    
     while (tilesContainer.hasChildNodes()) {
       tilesContainer.removeChild(tilesContainer.firstChild)
-    }
+      }  
   } else {
     slider.classList.add("active");
     outer.classList.add("outerActive");
     galleryView.style.display = "none";
     tilesView.style.display = "flex"
-
+     
     for (let i = 0; i < imgObject.length - 1; i++) {
       let tileItem = document.createElement("div");
       tileItem.classList.add("tileItem");
       tile.classList.add("tile");
-      tileItem.style.background = "url(" + imgObject[i] + ")";
+      tileItem.style.background =  "url(" + imgObject[i] + ")";
       tilesContainer.appendChild(tileItem);
     }
   };
@@ -492,75 +492,75 @@ let imgObject = [
   "https://coolinary.com.br/wp-content/uploads/2020/09/Bolo-ilha-gelatina-8.jpg",
 ];
 
-let textObject = [
-  {
-    forma: 'redondo',
-    recheio: 'Chocolate',
-    cobertura: 'Chocolate',
-    valor: 'R$ 5,50',
-  },
-  {
-    forma: 'quadrado',
-    recheio: 'Morango',
-    cobertura: 'Caramelo',
-    valor: 'R$ 15,50',
-  },
-  {
-    forma: 'pirâmide',
-    recheio: 'Prestigio',
-    cobertura: 'coco ralado',
-    valor: 'R$ 20,00',
-  },
-  {
-    forma: 'tubo',
-    recheio: 'Macarrão',
-    cobertura: 'Tomate',
-    valor: 'R$ 10,90',
-  },
-  {
-    forma: 'redondo',
-    recheio: 'Chocolate',
-    cobertura: 'Chocolate',
-    valor: 'R$ 5,50',
-  },
-  {
-    forma: 'redondo',
-    recheio: 'Chocolate',
-    cobertura: 'Chocolate',
-    valor: 'R$ 5,50',
-  },
-  {
-    forma: 'redondo',
-    recheio: 'Chocolate',
-    cobertura: 'Chocolate',
-    valor: 'R$ 5,50',
-  },
-  {
-    forma: 'redondo',
-    recheio: 'Chocolate',
-    cobertura: 'Chocolate',
-    valor: 'R$ 5,50',
-  },
-  {
-    forma: 'redondo',
-    recheio: 'Chocolate',
-    cobertura: 'Chocolate',
-    valor: 'R$ 5,50',
-  },
-  {
-    forma: 'redondo',
-    recheio: 'Chocolate',
-    cobertura: 'Chocolate',
-    valor: 'R$ 5,50',
-  },
-  {
-    forma: 'redondo',
-    recheio: 'Chocolate',
-    cobertura: 'Chocolate',
-    valor: 'R$ 5,50',
-  },
-]
-
+  let textObject =[
+    {
+      forma: 'redondo',
+      recheio: 'Chocolate',
+      cobertura: 'Chocolate',
+      valor: 'R$ 5,50',
+    },
+    {
+      forma: 'quadrado',
+      recheio: 'Morango',
+      cobertura: 'Caramelo',
+      valor: 'R$ 15,50',
+    },
+    {
+      forma: 'pirâmide',
+      recheio: 'Prestigio',
+      cobertura: 'coco ralado',
+      valor: 'R$ 20,00',
+    },
+    {
+      forma: 'tubo',
+      recheio: 'Macarrão',
+      cobertura: 'Tomate',
+      valor: 'R$ 10,90',
+    },
+    {
+      forma: 'redondo',
+      recheio: 'Chocolate',
+      cobertura: 'Chocolate',
+      valor: 'R$ 5,50',
+    },
+    {
+      forma: 'redondo',
+      recheio: 'Chocolate',
+      cobertura: 'Chocolate',
+      valor: 'R$ 5,50',
+    },
+    {
+      forma: 'redondo',
+      recheio: 'Chocolate',
+      cobertura: 'Chocolate',
+      valor: 'R$ 5,50',
+    },
+    {
+      forma: 'redondo',
+      recheio: 'Chocolate',
+      cobertura: 'Chocolate',
+      valor: 'R$ 5,50',
+    },
+    {
+      forma: 'redondo',
+      recheio: 'Chocolate',
+      cobertura: 'Chocolate',
+      valor: 'R$ 5,50',
+    },
+    {
+      forma: 'redondo',
+      recheio: 'Chocolate',
+      cobertura: 'Chocolate',
+      valor: 'R$ 5,50',
+    },
+    {
+      forma: 'redondo',
+      recheio: 'Chocolate',
+      cobertura: 'Chocolate',
+      valor: 'R$ 5,50',
+    },
+  ]
+    
 let mainImg = 0;
 let prevImg = imgObject.length - 1;
 let nextImg = 1;
@@ -576,64 +576,64 @@ function loadGallery() {
   let mainView3 = document.getElementById("mainView3");
   mainView.style.background = "url(" + imgObject[mainImg] + ")";
   mainView2.style.background = "url(" + imgObject[mainImg] + ")";
-  // mainView3.style.background = "url(" + imgObject[mainImg] + ")";
+  mainView3.style.background = "url(" + imgObject[mainImg] + ")";
   document.getElementById("texto").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor;
   console.log("teste")
   if (check.checked == true || check5.checked == true) {
 
     document.getElementById("texto2").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Cartão de Débito";
-    // document.getElementById("texto3").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Cartão de Débito";
-
+    document.getElementById("texto3").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Cartão de Débito";
+  
     extra.style.display = "none";
     chave.style.display = "none";
     baixar.style.display = "none";
-  } else if (check2.checked == true || check6.checked == true) {
+  } else if(check2.checked == true || check6.checked == true) {
 
     document.getElementById("texto2").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Cartão de Crédito";
-    // document.getElementById("texto3").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Cartão de Crédito";
-
+    document.getElementById("texto3").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Cartão de Crédito";
+  
     extra.style.display = "none";
     chave.style.display = "none";
     baixar.style.display = "none";
   } else if (check3.checked == true || check7.checked == true) {
     document.getElementById("texto2").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Pix";
-    // document.getElementById("texto3").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Pix";
-
-    // chave.style.display = "flex";
-    // baixar.style.display = "none";
-  } else if (check4.checked == true || check8.checked == true) {
+    document.getElementById("texto3").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Pix";
+  
+    chave.style.display = "flex";
+    baixar.style.display = "none";
+  } else if(check4.checked == true || check8.checked == true) {
     document.getElementById("texto2").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Boleto Bancário";
-    // document.getElementById("texto3").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Boleto Bancário";
-
-    // chave.style.display = "none";
-    // baixar.style.display = "flex";
+    document.getElementById("texto3").innerHTML = "Forma : " + textObject[mainText].forma + "<br>" + "<br>" + "Recheio : " + textObject[mainImg].recheio + "<br>" + "<br>" + "Cobertura : " + textObject[mainImg].cobertura + "<br>" + "<br>" + "Preço : " + textObject[nextImg].valor + "<br>" + "<br>" + "Forma de Pagamento : " + "Boleto Bancário";
+ 
+    chave.style.display = "none";
+    baixar.style.display = "flex";
   }
-
+  
   mainView.style.backgroundSize = "cover";
   mainView2.style.backgroundSize = "cover";
-  // mainView3.style.backgroundSize = "cover";
+  mainView3.style.backgroundSize = "cover";
 
 
   let leftView = document.getElementById("leftView");
-  leftView.style.background = "url(" + imgObject[prevImg] + ")";
+  leftView.style.background = "url(" + imgObject[prevImg] +")";
   leftView.style.backgroundSize = "cover";
   let leftView2 = document.getElementById("leftView2");
-  leftView2.style.background = "url(" + imgObject[prevImg] + ")";
+  leftView2.style.background = "url(" + imgObject[prevImg] +")";
   leftView2.style.backgroundSize = "cover";
-  // let leftView3 = document.getElementById("leftView3");
-  // leftView3.style.background = "url(" + imgObject[prevImg] +")";
-  // leftView3.style.backgroundSize = "cover"
-
+  let leftView3 = document.getElementById("leftView3");
+  leftView3.style.background = "url(" + imgObject[prevImg] +")";
+  leftView3.style.backgroundSize = "cover"
+  
   let rightView = document.getElementById("rightView");
-  rightView.style.background = "url(" + imgObject[nextImg] + ")";
+  rightView.style.background = "url(" + imgObject[nextImg] +")";
   rightView.style.backgroundSize = "cover";
   let rightView2 = document.getElementById("rightView2");
-  rightView2.style.background = "url(" + imgObject[nextImg] + ")";
+  rightView2.style.background = "url(" + imgObject[nextImg] +")";
   rightView2.style.backgroundSize = "cover";
-  // let rightView3 = document.getElementById("rightView3");
-  // rightView3.style.background = "url(" + imgObject[nextImg] +")";
-  // rightView3.style.backgroundSize = "cover";
-
+  let rightView3 = document.getElementById("rightView3");
+  rightView3.style.background = "url(" + imgObject[nextImg] +")";
+  rightView3.style.backgroundSize = "cover";
+  
 };
 
 function scrollRight() {
@@ -642,13 +642,13 @@ function scrollRight() {
 
   prevImg = mainImg;
   mainImg = nextImg;
-  if (nextImg >= (imgObject.length - 1)) {
+  if (nextImg >= (imgObject.length -1)) {
     nextImg = 0;
     nextText = 0;
   } else {
     nextImg++;
-    nextText++;
-  };
+    nextText ++;
+  }; 
   loadGallery();
 };
 
@@ -658,11 +658,11 @@ function scrollLeft() {
 
   nextImg = mainImg;
   mainImg = prevImg;
-
+   
   if (prevImg === 0 && prevText === 0) {
     prevImg = imgObject.length - 1;
     prevText = textObject.length - 1;
-
+    
   } else {
     prevImg--;
     prevText--;
@@ -674,13 +674,13 @@ document.getElementById("navRight").addEventListener("click", scrollRight);
 document.getElementById("navLeft").addEventListener("click", scrollLeft);
 document.getElementById("navRight2").addEventListener("click", scrollRight);
 document.getElementById("navLeft2").addEventListener("click", scrollLeft);
-// document.getElementById("navRight3").addEventListener("click", scrollRight);
-// document.getElementById("navLeft3").addEventListener("click", scrollLeft);
+document.getElementById("navRight3").addEventListener("click", scrollRight);
+document.getElementById("navLeft3").addEventListener("click", scrollLeft);
 
-document.addEventListener('keyup', function (e) {
-  if (e.keyCode === 37) {
+document.addEventListener('keyup',function(e){
+    if (e.keyCode === 37) {
     scrollLeft();
-  } else if (e.keyCode === 39) {
+  } else if(e.keyCode === 39) {
     scrollRight();
   }
 });
