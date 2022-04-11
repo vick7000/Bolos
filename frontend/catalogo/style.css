@@ -1,69 +1,25 @@
 @font-face {
     font-family: cupid;
-    src: url(../docs/Pinky\ Cupid.otf);
+    src: url(/frontend/docs/Pinky\ Cupid.otf);
     
 }
 
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    max-width: 100%;
-    max-height: 100%;
     font-family: cupid;
+    
+    
 }
 
 html{
     background: url("../assets/a_auto_x2.jpg") no-repeat center center fixed;
 }
 
-.lista{
-    height: 80px;
-}
-
-
-.lista{
-    top: 0;
-    color: #5f4444;
-    width: 100vw;
-    height: 25vh;
-    background-image: linear-gradient(to bottom, #f1d1d1a3, #f3e1e197);
-    border: 1px solid #000;
-    
-
-}
-
-.title{
-    display: flex;
-    width: 100vw;
-    text-align: center;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#men{
-    margin-left: 2%;
-}
-#logo {
-    /* margin-left: 0%;
-    margin-right: 41vw;
-    height: 300px;
-    cursor: pointer; */
-    
-}
-
 .header {
     display: none;
 }
-
-/* .col-3 {width: 25%;}
-
-.col-12 {width: 100%;} */
-
-/* [class*="col-"] {
-    float: left;
-    padding: 15px;
-  } */
 
 .row::after {
     content: "";
@@ -79,15 +35,18 @@ html{
     
 }
 
-.menu ul {
+.ul{
     list-style-type: none;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 10% 21% 22% 17% 7% 7%;
     justify-content: space-evenly;
     font-size: 2.7rem;
-
 }
 
+.ul .hhome{
+    
+}
 .submenu  {
     display: none;
 }
@@ -132,10 +91,21 @@ html{
     display: none;
 }
 
+.ul> #sair{
+    display: block;
+    justify-content: space-around;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 42px;
+    /* font-size: 0.7em;
+    transition: 0.5s; */
+}
+
 #carrinho {
     width: 80px;
     height: 80px;
-    margin-left: 60px;
+    margin-left: 0px;
     cursor: pointer;
 }
 
@@ -205,7 +175,7 @@ html{
 
 a {
     cursor: pointer;
-    margin-left: 20px;
+    margin-left: 2px;
 }
 
 .cad{
@@ -285,36 +255,29 @@ a {
     cursor: pointer;
 }
 
-.tt{
+/* .tt{
     font-size: 1.5rem;
     margin-top: 5px;
     margin-bottom: 5px;
-}
+} */
 
-.par{
+/* .par{
     font-size: 1.5em;
-}
+} */
 
-.x {
-    /* text-align: start; */
+/* .x {
+    text-align: start;
     cursor: pointer;
-    /* margin: 0rem auto; */
+    margin: 0rem auto;
     
-}
+} */
 
 .bloco1 {
     display: block; /* Ou grid */ 
     background-image: url("../assets/bg_madeira.jpg");
     background-size: 100%;
     width: 100vw;
-    /* height: 151vw; */
     justify-content: space-evenly;
-    /* grid-template-areas: 
-                "item1  item1"
-                "marquee  marquee"
-                "item3  item3"
-                "item4  item4" 
-    ; */
     overflow-y:hidden;
 
 }
@@ -567,15 +530,6 @@ a {
     #men{
         margin-left: 2%;
     }
-    #logo {
-        /* margin-left: 0%;
-        margin-right: 41vw;
-        height: 200px;
-        cursor: pointer; */
-        
-    }
-    
-    
     
     #men{
         width: 5%;

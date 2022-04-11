@@ -9,12 +9,6 @@ var bairro = document.getElementById("bairro");
 var cep = document.getElementById("cep");
 var complemento = document.getElementById("comp"); //nao obrigatório
 
-var nome_cartao = document.getElementById("titular");
-var numero = document.getElementById("number");
-var emissao = document.getElementById("dc");
-var validade = document.getElementById("val");
-var codigo = document.getElementById("codigo");
-var pix = document.getElementById("pixis"); //nao obrigatório
 
 var mod2 = document.querySelector(".modal2");
 var im = document.getElementById("aa");
@@ -33,9 +27,43 @@ const host = JSON.parse(localStorage.getItem("userdata"))
 // console.log(host[0].id)
 // console.log(host)
 
-// function load(){
+function login(){
+    let user = document.getElementById("user");
+    let login = document.getElementById("login");
+    let user2 = document.getElementById("user2");
+    let login2 = document.getElementById("login2"); 
+    let sair = document.getElementById("sair");
+    let carrinho = document.getElementById("carrinho");
+    let carrmob = document.querySelector(".carrmob");
+    let sair2 = document.querySelector(".sair2");
+    let username = JSON.parse(localStorage.getItem("userdata"));
 
-// }
+    if(username != null) {
+        user.style.display = "block";
+        login.style.display = "none";
+        user2.style.display = "block";
+        login2.style.display = "none";
+        sair.style.display = "block";
+        carrinho.style.display = "block";
+        carrmob.style.display = "block";
+        sair2.style.display = "block";
+
+        user.innerHTML = username[0].nome;
+        user.setAttribute('href', '../usuario/index.html');
+        user2.innerHTML = username[0].nome;
+        user2.setAttribute('href', '../usuario/index.html');
+    } else {
+        user.style.display = "none";
+        login.style.display = "flex";
+        user.style.display = "none";
+        login.style.display = "flex";
+        sair.style.display = "none";
+        carrinho.style.display = "none";
+        carrmob.style.display = "none";
+        sair2.style.display = "none";
+    }
+    
+}
 
 function sair () {
     localStorage.clear()
@@ -51,14 +79,7 @@ async function alterando () {
         telefone: tel.value,
         endereco: rua.value + " - " + num.value + " - " + bairro.value,
         cep: cep.value,
-        complemento: complemento.value,
-        nome_titular: nome_cartao.value,
-        numero: numero.value,
-        data_criacao: emissao.value,
-        validade: validade.value,
-        codigo: codigo.value,
-        pix: pix.value,
-
+        complemento: complemento.value
     };
     console.log(data)
     

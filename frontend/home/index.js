@@ -12,6 +12,7 @@ var username = JSON.parse(localStorage.getItem("userdata"));
 var montado = JSON.parse(localStorage.getItem("userConfig"));
 
 console.log(username)
+console.log(montado)
 function logando(){
     console.log("asdasdad")
     
