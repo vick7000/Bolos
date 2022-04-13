@@ -44,38 +44,7 @@ class usuario extends Model {
                     type: DataTypes.STRING(150),
                     allowNull: false,
 
-                },
-
-                nome_titular: {
-                    type: DataTypes.STRING(150),
-                    allowNull: true,
-                },
-
-                numero:{
-                    type: DataTypes.STRING(150),
-                    allowNull: true,
-                },
-
-                data_criacao:{
-                    type: DataTypes.STRING(150),
-                    allowNull: true,
-                },
-
-                validade:{
-                    type: DataTypes.STRING(150),
-                    allowNull: true,
-                },
-
-                codigo:{
-                    type: DataTypes.INTEGER,
-                    allowNull: true,
-                },
-
-                pix:{
-                    type: DataTypes.STRING(500),
-                    allowNull: true,
                 }
-
 
             },
             {

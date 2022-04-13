@@ -61,37 +61,35 @@ function conection() {
 
 
 
-async function cadas () {
-    let data = JSON.stringify({
+function cadas () {
+    let data = {
         nome: nome.value,
         email: cadEmail.value,
         senha: md5(cadSenha.value),
         telefone: tel.value,
         endereco: rua.value + " " + num.value + " " + bairro.value,
         cep: cep.value,
-        complemento: complemento.value,
-        nome_titular: nome_cartao.value,
-        numero: numero.value,
-        data_criacao: emissao.value,
-        validade: validade.value,
-        codigo: codigo.value,
-        pix: pix.value,
+        complemento: complemento.value
 
-    });
-    try{
-        await fetch("http://localhost:5000/usuario", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(data),
-        })
-        window.location.href = "../home";
-
-    }catch(e){
-        console.log(e)
-    }
-
+    };
+    fetch("http://localhost:5000/usuario", {
+        method: "POST",
+        headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+        
+        
+    })
+    .then(res => res.json())
+    .then(dados => {
+        console.log(dados)
+        if(dados != null){
+            localStorage.setItem("userdata", JSON.stringify(data));
+            window.location.href = "../home";
+        }
+    })
 }
 
 // function del (){

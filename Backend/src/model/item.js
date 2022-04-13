@@ -12,11 +12,11 @@ class item extends Model {
                         key: 'id',
                     }
                 },
-                quantidade: {
-                    type: DataTypes.INTEGER,
-                    allowNull: false,
-                },
-                    
+                custo: {
+                    type: DataTypes.FLOAT(5,2),
+                    allowNull: true,
+                }
+                
             },
             {
                 sequelize: datacon,

@@ -35,7 +35,7 @@ const read = async (req, res) => {
     ];
 
     if(id_pedido !== undefined){
-        filtro.include[0].where = {id: id_perfil}
+        filtro.include[0].where = {id: id_pedido}
     }
 
     const ret = await Pedido.findAll(filtro);

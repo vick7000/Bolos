@@ -11,6 +11,7 @@ var btn = document.querySelector("#botao")
 var username = JSON.parse(localStorage.getItem("userdata"));
 var montado = JSON.parse(localStorage.getItem("userConfig"));
 
+
 console.log(username)
 console.log(montado)
 function logando(){
@@ -118,8 +119,16 @@ function verificarLogin() {
         carrmob.style.display = "block";
         sair2.style.display = "block";
 
-        user.innerHTML = username[0].nome;
-        user.setAttribute('href', '../usuario/index.html');
+        if(username.nome != null){
+            user.innerHTML = username.nome;
+            user.setAttribute('href', '../usuario/index.html');
+        }else{
+
+                        
+            user.innerHTML = username[0].nome;
+            user.setAttribute('href', '../usuario/index.html');
+        }
+
         user2.innerHTML = username[0].nome;
         user2.setAttribute('href', '../usuario/index.html');
     } else {
