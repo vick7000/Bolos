@@ -39,7 +39,7 @@ function conection() {
 
     });
 
-    const url = "http://localhost:5000/login";
+    const url = "http://10.87.207.4:5000/login";
 
     fetch(url, {
         method: "POST",
@@ -72,7 +72,7 @@ function cadas () {
         complemento: complemento.value
 
     };
-    fetch("http://localhost:5000/usuario", {
+    fetch("http://10.87.207.4:5000/usuario", {
         method: "POST",
         headers: {
             Accept: "application/json",

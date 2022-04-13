@@ -28,7 +28,7 @@ function logando(){
         // {}
         
     }else {
-        fetch("http://localhost:5000/item", {
+        fetch("http://10.87.207.4:5000/item", {
         method : "POST",
         headers : {
             "Content-Type": "application/json"

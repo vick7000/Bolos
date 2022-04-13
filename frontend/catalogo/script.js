@@ -119,7 +119,7 @@ function load(){
         sair2.style.display = "none";
     }
     
-    fetch("http://localhost:5000/bolo")
+    fetch("http://10.87.207.4:5000/bolo")
     
     .then(res => { return res.json() })
     .then(data => {

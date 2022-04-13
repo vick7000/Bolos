@@ -480,8 +480,8 @@ function toggleState3() {
 var pedidos = localStorage.getItem("imgData");
 
 let imgObject = [
-  "../assets/bboloCFM.png",
-  //  pedidos,
+  // "../assets/bboloCFM.png",
+   pedidos,
   
   "../assets/z.png",
 ];
